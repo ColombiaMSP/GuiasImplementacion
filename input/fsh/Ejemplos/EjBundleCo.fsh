@@ -13,7 +13,8 @@ Description: "Ejemplo de Bundle"
 
 
 //DocReference
-* entry[DocumentRef].fullUrl = "DocumentReference/DocumentReferenceCo"
+//* entry[DocumentRef].fullUrl = "DocumentReference/DocumentReferenceCo"
+* entry[DocumentRef].fullUrl = "urn:uuid:852399a9-c9ca-429e-9c8a-e39c23c093f4"
 * entry[DocumentRef].resource = DocumentReferenceColombia
 * entry[DocumentRef].request.method = #POST
 * entry[DocumentRef].request.url = "DocumentReference"
@@ -53,7 +54,7 @@ Description: "Ejemplo de Bundle"
 * entry[Medicaciones].request.url = "MedicationStatement"
 
 //Patient
-* entry[Patient].fullUrl = "Patient/PacienteColombianoMinimo"
+* entry[Patient].fullUrl = "urn:uuid:9fa12cbc-f37b-11ec-b939-0242ac120002"
 * entry[Patient].resource = PacienteColombianoMinimo
 * entry[Patient].request.method = #POST
 * entry[Patient].request.url = "Patient"
