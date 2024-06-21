@@ -8,18 +8,20 @@
 
     verificacion: <code> java -version </code>
 
-2. Jekyllrd --> https://jekyllrb.com/docs/installation/windows/
-verificacion:  <code> jekyll -version  </code>
+2. Jekyllrd --> https://jekyllrb.com/docs/installation/
+
+    * verificacion:  <code> jekyll -version  </code>
 
 3. Nodejs: https://nodejs.org/en
-verificacion: 
+
+    * verificacion: 
      <code> node --version  </code>
      <code> npm --version  </code>
 
 4. Gestor Paquetes: 
  <code> npm install -g fsh-sushi  </code>
 
-verificacion: 
+    * verificacion: 
      <code> sushi help  </code>
 
 
