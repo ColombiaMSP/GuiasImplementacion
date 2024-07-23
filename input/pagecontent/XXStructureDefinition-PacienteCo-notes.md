@@ -1,1 +1,0 @@
-## Parametros de búsqueda:

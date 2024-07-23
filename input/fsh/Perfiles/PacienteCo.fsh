@@ -2,7 +2,7 @@
 Profile: PacienteCo
 Parent:         Patient
 Title:          "Paciente Co"
-Description:    "Especificación de datos del recurso Patient, tomando como referencia las definiciones de la resolución 866"
+Description:    "Especificación de datos del recurso Patient, tomando como referencia las definiciones de la resolución 866."
 * ^name = "PersonaColombia"
 
 
@@ -97,11 +97,13 @@ autorreconocimiento al momento de la atención"
 
 
 //-------------Etnia
+/*
 * extension contains $canonicaEtnia named etnia 0..1 MS
 * extension[etnia] ^short = "Extension para Etnia."
 * extension[etnia] ^definition = "Identificador para determinar la pertenencia étnica de la persona."
 * extension[etnia].valueCodeableConcept from EtniaVS
 
+*/
 
 //------------Dirección
 * address and address.city and address.country MS
@@ -170,14 +172,11 @@ Description: "Extension utilizada entro del Patient para representar Etnia de un
 
 
 /*------------COMUNIDAD ETNICA-----------------------------------------*/
-/*Extension: PaisExtens
-Id: PaisExtens
-Title: "Pais"
-Description: "...."
+Extension: ComunidadEtnica
+Id: co-patient-comunidadetnica
+Description: "Extension utilizada entro del Patient para representar la comunidad etnica de una persona."
 
-* ^url = "http://minsalud.gov.co/hci/ComunidadEtnica"
-* valueCodeableConcept 0..1
-* valueCodeableConcept from PaisesVS (extensible)*/
+* valueString 0..1
 
 
 

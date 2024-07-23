@@ -14,7 +14,7 @@ Usage : #example
 
 
 
-Instance : OrganizacionPrestadorEjemplo
+Instance : OrganizacionPrestadorEjemplo2
 InstanceOf : OrganizacionCo
 Description: "Organización Prestadora de Salud."
 

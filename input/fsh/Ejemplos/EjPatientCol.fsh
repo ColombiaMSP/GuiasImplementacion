@@ -47,6 +47,7 @@ Usage: #example
 * extension[disability].valueCodeableConcept = $csDiscap#01 "Discapacidad física"
 
 //Etnia
+
 * extension[co-patient-etnia].url = $canonicaEtnia
 * extension[co-patient-etnia].valueCodeableConcept = $csEtnea#01 "Indigena"
 
