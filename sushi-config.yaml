@@ -11,7 +11,8 @@ canonical: https://www.minsalud.gov.co/ihc/fhir
 version: 0.4.3
 name: CoreCO-ImplementationGuide
 
-title: Interoperabilidad de Historia Clínica - Colombia
+#title: Interoperabilidad de Historia Clínica - Colombia
+title: GUIA EN DESARROLLO - Colombia (v 0.4.3)
 status: draft
 publisher: 
   name: MSP Colombia

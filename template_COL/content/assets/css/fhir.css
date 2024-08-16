@@ -1,13 +1,17 @@
 #segment-footer>.container {
-    background-color:#3366cc;
+     background-color:#3366cc; 
+   
 }
 
 .navbar-inverse {
-    background-color:#3366cc;
+     background-color:#3366cc; 
+
 }
 
+
 .navbar-inverse .navbar-nav>li>a:hover {
-    background-color:#3366cc;
+    background-color:#3366cc; 
+
 }
 
 #family-nav {

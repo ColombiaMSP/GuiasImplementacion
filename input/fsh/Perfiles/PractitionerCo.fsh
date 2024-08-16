@@ -1,22 +1,28 @@
 Profile:        PractitionerCo
 Parent:         Practitioner
 Title:          "Profesional Co"
-Description:    "Medico que realiza la atención"
+Description:    "Una persona con responsabilidad formal en la prestación de servicios de salud o servicios relacionados."
 * ^name = "MedicoColombiano"
 //* ^url = "http://minsalud.gov.co/hci/StructureDefinition/MedicoCol"
 
 //------------Identificadores, campo 36 de la norma
 * identifier ^short = "Identificación del profesional."
-* identifier ^definition = "Elemento de dato que contiene el nombre y número de identificación de una determinada persona 
-para efectos de identidad e individualización."
+* identifier ^definition = "Identificación del profesional de la salud."
 
 * identifier 1.. MS
 * identifier.type 1.. MS
+
+* identifier.type ^short = "Descripción del tipo de identificación del profesional de la salud."
+* identifier.type ^definition = "Descripción del tipo de identificación del profesional de la salud"
+
 * identifier.type.coding.code from IdentificadoresProfesionalVS
-//* identifier.type.coding.system from IdentificadoresPersonaCS
+* identifier.type.coding.code ^short = "Tipo de identificación del documento del profesional del profesional de la salud."
+* identifier.type.coding.code ^definition = "Codificación del tipo de identificación del documento del profesional del profesional de la salud."
 
-* identifier.value 1.. MS
-
-* identifier.type.extension ^definition = "Se usa esta extensión para agregarle al tipo de documento el país de origen de este" 
+* identifier.type.extension ^short = "Extensión para representar país del documento de identificación del profesional de la salud."
+* identifier.type.extension ^definition = "Extensión para representar país del documento de identificación del profesional de la salud." 
 * identifier.type.extension contains Pais named pais_origen 1..1  
 
+* identifier.value 1.. MS
+* identifier.value ^short = "Número de documento de identificación del profesional de la salud."
+* identifier.value ^definition = "Número de documento de identificación del profesional de la salud."
