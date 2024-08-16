@@ -1,0 +1,36 @@
+/* ---------------------Identificadores de PERSONA ---------------------------*/
+CodeSystem: IdentificadoresPersonaCS
+Id: IdspersonaColombia
+Title: "Identificadores de Persona"
+Description: "Elemento de dato que contiene el nombre y número de identificación de una determinada persona para efectos de identidad e individualización" 
+* ^name = "IdspersonaColombia"
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^date = "2010-01-29"
+* ^publisher = "MSP Colombia."
+* ^content = #complete
+
+* #CC "Cédula ciudadanía" "Cédula ciudadanía del paciente."
+* #CE "Cédula de extranjería" "Cédula de extranjería"
+* #CD "Carné diplomático" "Carné diplomático"
+* #PA "Pasaporte" "Pasaporte"
+* #SC "Salvoconducto de permanencia" "Salvoconducto de permanencia"
+* #PT "Permiso Temporal de Permanencia" "Permiso Temporal de Permanencia"
+* #PE "Permiso Especial de Permanencia" "Permiso Especial de Permanencia"
+* #RC "Registro civil" "Registro civil"
+* #TI "Tarjeta de identidad" "Tarjeta de identidad"
+* #CN "Certificado de nacido vivo" "Certificado de nacido vivo"
+* #DE "Documento Extranjero" "Documento Extranjero"
+
+ValueSet: IdentificadoresPersonaVS
+Title: "Identificadores de Persona"
+Description:  "Identificadores de Persona Colombia."
+* ^experimental = false
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-01-01T00:00:00-05:00"
+* ^jurisdiction = urn:iso:std:iso:3166#COL "Colombia"
+* ^publisher = "COL"
+
+* include codes from system IdspersonaColombia

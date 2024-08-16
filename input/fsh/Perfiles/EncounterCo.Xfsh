@@ -3,16 +3,22 @@ Profile: EncounterCo
 Parent: Encounter
 Id: EncounterCo
 Title: "Encounter co"
-Description: "Se describe c....."
+Description: "Se describe el encuentro entre el profesional y el paciente"
 
 
+//---paciente
+* patient only Reference(PacienteCo)
+* patient MS
+* patient.reference 1.. MS
+
+* patient ^short = "Paciente"
+* patient ^definition = "..." 
 
 
+* period.start MS
+* period.end MS
 
-
-
-
-
+* status 
 /*
 
 /* DE MHD: 

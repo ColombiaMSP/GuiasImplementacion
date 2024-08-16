@@ -12,7 +12,7 @@ Description:    "Especificación de datos del recurso Patient, tomando como refe
     Nombre patronímico que aparece en segundo lugar en el documento de identidad.
     Primera palabra del nombre que aparece en primer lugar en el documento de identidad
     Segunda palabra del nombre que aparece en segundo lugar en el documento de identidad
-    */
+*/
 
 * name 1.. MS
 * name.family and name.given MS
@@ -82,8 +82,8 @@ para efectos de identidad e individualización."
 
 * extension contains $patient-genderIdentity named identidadGenero 0..1 MS
 
-
-* extension[genderIdentity].valueCodeableConcept from IdentidadGeneroVS
+* extension[genderIdentity].valueCodeableConcept from IdentidadGeneroVS (required)
+* extension[genderIdentity].valueCodeableConcept ^short = "Valor correspondiente a identidad de genero."
 * extension[genderIdentity] ^short = "Extension para Identidad de Género."
 * extension[genderIdentity] ^definition = "Es la construcción social que existe sobre los cuerpos o el conjunto de reglas y convenciones establecidas por la sociedad que definen las pautas de comportamiento a seguir por hombres y mujeres, de tal forma que las personas se identifican con un género específico por 
 autorreconocimiento al momento de la atención"
