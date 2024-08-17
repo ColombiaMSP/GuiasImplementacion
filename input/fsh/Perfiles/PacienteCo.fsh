@@ -97,13 +97,18 @@ autorreconocimiento al momento de la atención"
 
 
 //-------------Etnia
-/*
+
 * extension contains $canonicaEtnia named etnia 0..1 MS
 * extension[etnia] ^short = "Extension para Etnia."
 * extension[etnia] ^definition = "Identificador para determinar la pertenencia étnica de la persona."
 * extension[etnia].valueCodeableConcept from EtniaVS
 
-*/
+// ------------ Comunidad Etnica
+* extension contains $canonicaComunidadEtnica named comunidadetnica 0..1 MS
+* extension[comunidadetnica] ^short = "Extension para Comunidad Etnica"
+* extension[comunidadetnica] ^definition = "Descripcion para determinar la comunidad étnica de la persona."
+
+
 
 //------------Dirección
 * address and address.city and address.country MS
@@ -174,7 +179,7 @@ Description: "Extension utilizada entro del Patient para representar Etnia de un
 /*------------COMUNIDAD ETNICA-----------------------------------------*/
 Extension: ComunidadEtnica
 Id: co-patient-comunidadetnica
-Description: "Extension utilizada entro del Patient para representar la comunidad etnica de una persona."
+Description: "Extension utilizada dentro del Paciente Co, para representar la comunidad etnica de una persona."
 
 * valueString 0..1
 

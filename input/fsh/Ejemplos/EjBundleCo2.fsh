@@ -45,6 +45,11 @@ Description: "Ejemplo de Bundle"
 * entry[Alergias].request.method = #POST
 * entry[Alergias].request.url = "AllergyIntolerance"
 
+//Alergia-Intolerancia
+* entry[Alergias].fullUrl = "uuid:urn:6da4367e-aa63-4637-b1ff-28eeae429137"
+* entry[Alergias].resource = AlergiaColombia3
+* entry[Alergias].request.method = #POST
+* entry[Alergias].request.url = "AllergyIntolerance"
 
 //Medicaction
 * entry[Medicaciones].fullUrl = "uuid:urn:0bb7532e-171a-4a0b-adc3-0a9c0c5cafe2"
@@ -54,41 +59,88 @@ Description: "Ejemplo de Bundle"
 
 //Patient
 * entry[Patient].fullUrl = "urn:uuid:2f8d6332-e339-457d-b5e8-1a140a1f3ea1"
-* entry[Patient].resource = PacienteColombianoMinimo2
+* entry[Patient].resource = PacienteColombianoCompleto
 * entry[Patient].request.method = #POST
 * entry[Patient].request.url = "Patient"
 
 //-----------------------------------------------------------------------------------------------------------------------------------
 
-//--------------Ejemplo 3 - paciente resumido
-
-Instance: PacienteColombianoMinimo2
+Instance: PacienteColombianoCompleto
 InstanceOf: PacienteCo
-Description: "Ejemplo de Paciente Mínimo2."
+Description: "Ejemplo Completo de paciente Colombiano."
 
 Usage: #example
+* meta.versionId = "1"
+* meta.lastUpdated = "2021-10-13T22:23:44.162Z"
+* meta.profile = $canonicaPaciente 
+
+* name[0].given = "Miguel"
+* name[0].given[1] = "Angel"
+
+* name[0].family = "López"
+* name[0].family.extension[mothers-family].valueString = "Ortíz"
+
+* gender = #male
+
+* birthDate = "1974-12-25"
+* birthDate.extension.url = "http://hl7.org/fhir/StructureDefinition/patient-birthTime"
+* birthDate.extension.valueDateTime = "1974-12-25T14:35:45-05:00"
+
+//?* identifier[0].type.coding.code = #CC
+//* identifier.type.coding.system = $cs_identper#CC
 
 * identifier[0].type.coding.system = $cs_identper //* identifier.type.coding.system = $cs_identper
 * identifier[0].type.coding.code = #CC //* identifier.type.coding.code = #CC
 * identifier[0].type.coding.display = "Cédula ciudadanía"
 
-* identifier[0].value = "98765"
+* identifier[0].value = "12345"
+* identifier[0].system = "http://minsalud.gov.co/ihc/ide/170/CC"
 * identifier[0].assigner.display = "Registraduria Nacional"
-
 
 * identifier[0].type.extension.url = $Pais
 * identifier[0].type.extension.valueCodeableConcept.coding.system = "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"
 * identifier[0].type.extension.valueCodeableConcept.coding.code = #170 "Colombia"
+	
 
-* name[0].given = "Luis"
-* name[0].given[1] = "Alberto"
+//identidad de genero:
+* extension[genderIdentity].url = $patient-genderIdentity
+* extension[genderIdentity].valueCodeableConcept =  $cs_identGenero#03 "Transgénero" 
 
-* name[0].family = "Sanchez"
-* name[0].family.extension[mothers-family].valueString = "Martinez"
 
-* gender = #male
+//discapacidad
+* extension[disability].url = $canonicaDiscap
+* extension[disability].valueCodeableConcept = $csDiscap#01 "Discapacidad física"
 
-* birthDate = "1974-12-25"
+//Etnia
+
+* extension[co-patient-etnia].url = $canonicaEtnia
+* extension[co-patient-etnia].valueCodeableConcept = $csEtnea#01 "Indigena"
+
+//nacionalidad:
+* extension[co-patient-nacionalidad].url = $Nacionalidad
+* extension[co-patient-nacionalidad].valueCodeableConcept = https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS#170 "Colombia"
+
+
+* address.city = "Medellín"
+
+//nombre completo: ANA MARIA PEREZ(paterno) RIVAS (materno)
+
+//ComunidadEtnica
+
+* extension[co-patient-comunidadetnica].url = $canonicaComunidadEtnica
+* extension[co-patient-comunidadetnica].valueString = "palanquera"
+
+// * address.city.extension.code="5001"
+
+* address.country = #152 "colombia"
+//{system}#{code} "{display text}"
+
+* address.extension.url = $ZonaResidencia
+//* address.extension.valueCodeableConcept.coding.code = $zonaresidenciaCS#02 "Rural"
+
+* address.extension.valueCodeableConcept = $zonaresidenciaCS#02 "Rural" 
+//* address.state = "15"
+
 
 
 // -------------------------------------------------------------------------------------------------------//
@@ -147,6 +199,25 @@ Usage: #example
 * extension[TipoAlergia].valueCodeableConcept.coding.system = "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS"
 
 
+Instance: AlergiaColombia3
+InstanceOf: AlergiaCo
+Usage: #example
+
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active
+* verificationStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#confirmed
+//* code = http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips#no-known-allergies "No known allergies"
+//* code = http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips#no-known-allergies "No known allergies"
+* code.text = "alergia a gluten"
+//* code.coding.system = "http://hl7.org/fhir/sid/icd-10"
+
+//* patient = Reference(Patient/eumfh-39-07) "Alexander Heig (inject 39-07)"
+
+* patient =  Reference(urn:uuid:2f8d6332-e339-457d-b5e8-1a140a1f3ea1) "Paciente Colombiano"
+
+* extension[TipoAlergia].url = "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-AllergyIntolerance-tipo"
+* extension[TipoAlergia].valueCodeableConcept.coding.code = #01
+* extension[TipoAlergia].valueCodeableConcept.coding.system = "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS"
+
 
 
 //-------------------------------------------------------------------------------------------------
@@ -197,7 +268,7 @@ Description: "Ejemplo de Documento RDA Colombiano."
 * section[sectionAlergias].text.status = #generated
 * section[sectionAlergias].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">ALERGIAS</div>"
 * section[sectionAlergias].entry = Reference(uuid:urn:39f0ed16-7137-409e-a9f0-22553f6e7b82)
-
+* section[sectionAlergias].entry = Reference(uuid:urn:6da4367e-aa63-4637-b1ff-28eeae429137)
 
 //--------------------------------------------------------------------------
 

@@ -51,6 +51,11 @@ Usage: #example
 * extension[co-patient-etnia].url = $canonicaEtnia
 * extension[co-patient-etnia].valueCodeableConcept = $csEtnea#01 "Indigena"
 
+//ComunidadEtnica
+
+* extension[co-patient-comunidadetnica].url = $canonicaComunidadEtnica
+* extension[co-patient-comunidadetnica].valueString = "palanquera"
+
 //nacionalidad:
 * extension[co-patient-nacionalidad].url = $Nacionalidad
 * extension[co-patient-nacionalidad].valueCodeableConcept = https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS#170 "Colombia"

@@ -29,7 +29,7 @@ Ejemplo: Organization/reg-05
     ```
 
 
-    ```json
+    ```
     {
         "resourceType": "DocumentReference",
        ....

@@ -11,6 +11,7 @@ El catálogo de regiones, se identifica como id que
 ---------------------
 El perfil Organizacion Co se deriva del recurso FHIR Organization. Este perfil establece los requisitos mínimos para que un recurso Organizacion Co registre, busque y obtenga información demográfica y administrativa básica sobre un prestador de servicios de salud o direcciones departamentales. Especifica los elementos principales, extensiones, vocabularios y conjuntos de valores que DEBEN estar presentes, y define las restricciones sobre cómo se deben utilizar estos elementos.
 
-## Ejemplos de escenarios de uso:
-A continuación, se muestran ejemplos de escenarios de uso para este perfil:
+**Ejemplos de escenarios de uso:**
+
+A continuación, se muestran ejemplos de escenarios de uso para este perfil
 

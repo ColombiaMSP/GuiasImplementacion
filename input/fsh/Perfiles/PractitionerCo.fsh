@@ -5,8 +5,18 @@ Description:    "Una persona con responsabilidad formal en la prestación de ser
 * ^name = "MedicoColombiano"
 //* ^url = "http://minsalud.gov.co/hci/StructureDefinition/MedicoCol"
 
+/*
+* ^purpose = """
+    * This profile is intended to support workflows where:
+      * this happens; or
+      * that happens
+    * This profile is not intended to support workflows where:
+      * nothing happens
+  """
+*/
+
 //------------Identificadores, campo 36 de la norma
-* identifier ^short = "Identificación del profesional."
+* identifier ^short = "Identificación del profesional de la salud."
 * identifier ^definition = "Identificación del profesional de la salud."
 
 * identifier 1.. MS

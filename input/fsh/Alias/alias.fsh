@@ -34,7 +34,8 @@ Alias: $CUPSvs = https://www.minsalud.gov.co/ihc/fhir/ValueSet/CUPS
 Alias: $Pais = https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-pais
 Alias: $Nacionalidad = https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-patient-nacionalidad
 Alias: $ZonaResidencia = https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-address-zonaResidencia
-Alias: $canonicaEtnia = https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-patient-etnia   
+Alias: $canonicaEtnia = https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-patient-etnia  
+Alias: $canonicaComunidadEtnica = https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-patient-comunidadetnica
 //co-etnia //Etnia
 //Alias: $Nacionalidad = https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-nacionalidad
 

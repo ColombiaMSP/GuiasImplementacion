@@ -1,17 +1,26 @@
-#### Versión: 0.5 , _2024-AGOSTO_
+#### Versión: 0.4.3 , _2024-AGOSTO_ (EN DESARROLLO)
 
  **PACIENTE CO:**
- - Modificación de tipos de id persona (aplicado a paciente co) de acuerdo a valores de que contempla tabla evolución.  
- - Agregado de aclaraciones de sexo de acuerdo a informacion de 866, campo 01: Hombre, 02: ...  
- - Agregado de extension de comunidades etnicas, sin catálogo definido.  
- - En campo Address - dirección, modficación de ciudad para poner de acuerdo a catálogo DIVIPOLA.
+ - [OK] Agregado de extension de comunidades étnicas, sin catálogo definido.
+ - [OK] Actualizacion de ejemplo de PacienteColombianoCompleto para contener nueva extensión: comunidades étnicas.
+ - [PENDIENTE] Modificación de tipos de id persona (aplicado a paciente co) de acuerdo a valores de que contempla tabla evolución.  
+ - [PENDIENTE] Agregado de aclaraciones de sexo de acuerdo a informacion de 866, campo 01: Hombre, 02: Mujer, 03: Indeterminado/ Intersexual. 
+ - [PENDIENTE] En campo Address - dirección, modficación de ciudad para poner de acuerdo a catálogo DIVIPOLA.
 
  **ORGANIZATION CO:**
-  - Agregado de explicación de tipos de organización y como se debe referenciar dentro de debe incluir.
+  - [OK] Mejoras en Descripciones de campos.
+  - [IDEA] Agregado de explicación de tipos de organización y como se debe referenciar dentro de debe incluir.
 
- **Páginas nuevas:**
+ **PROFESIONAL:**
+  - [OK] Mejoras en Descripciones de campos.
+  - [PENDIENTE] DEtallar que se busca en tabla de RETUS.
 
---------------------------------------------------------------------------------------------------------
+ **EJEMPLOS:**
+ - [OK] Nuevo ejemplo de Bundle -transaction-, con indentificadores uuid para cada entrada. 
+ 
+
+**--------------------------------------------------------------------------------------------------------**
+
 
 #### Versión: 0.4.2 , _2023-08-23_
   - Se agrega Actualización a perfil de Alergias
