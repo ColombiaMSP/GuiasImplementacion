@@ -10,7 +10,7 @@ Profile:        AlergiaCo
 Parent:         AllergyIntolerance
 Title:          "Alergias Co"
 Description:    "Alergias del paciente"
-
+//--* . ^comment = "pendiente"
 //---paciente
 * patient only Reference(PacienteCo)
 * patient MS

@@ -4,7 +4,7 @@ Logical: Model866
 Parent: $Base
 Id: Model866
 Title: "DVC"
-Description: "Data elements for Digital Vaccination Certificate."
+Description: "Ejemplo de modelo."
 Characteristics: #can-be-target
 * ^meta.profile[0] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition"
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablestructuredefinition"
