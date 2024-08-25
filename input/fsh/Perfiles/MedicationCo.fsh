@@ -1,23 +1,23 @@
 Profile:        MedicationStatementCo
 Parent:         MedicationStatement
 Title:          "Medication Statement Co"
-Description:    "Medicación del paciente"
-
+* . ^short = "Registro de medicamentos prescritos a un paciente."
 
 //---paciente
 * subject only Reference(PacienteCo)
 * subject MS
 * subject.reference 1.. MS
 
-* subject ^short = "Paciente sobre al que corresponde la Medicacion." 
-* subject ^definition = "Paciente sobre al que corresponde la Medicacion." 
+* subject ^short = "Referencia al paciente al que se le ha prescrito el medicamento." 
+* subject ^definition = "Paciente al que se le ha prescrito el medicamento." 
+//* subject ^comment = "comentatio adicional"
 
-* status MS
+* subject.reference ^short = "Cadena de referencia específica del paciente al que se le ha prescrito el medicamento." 
 
-//* medication[x] only $CUMSvs // $CodeableConcept-uv-ips // or Reference($Medication-uv-ips)
-//* medication[x] MS
-//* medication[x] ^definition = "....."
 
+* status MS 
+* status ^short =  "Estado actual del uso del medicamento por parte del paciente."
+* subject ^definition = "Estado actual del uso del medicamento por parte del paciente."
 
 //pendiente
 * medicationCodeableConcept 0..1 MS
@@ -26,12 +26,16 @@ Description:    "Medicación del paciente"
 * medicationCodeableConcept from CUMSVS (extensible)
 
 * medicationCodeableConcept ^sliceName = "medicationCodeableConcept"
-* medicationCodeableConcept ^short = "Code for the medication being administered or an absent or unknown medication"
-* medicationCodeableConcept ^definition = "Code for the medication being administered or a negated/excluded medication statement.  If negated, this describes a categorical negated statement (e.g., \"No known medications\")."
+* medicationCodeableConcept ^short = "Código que identifica el medicamento prescripto al paciente."
+* medicationCodeableConcept ^definition = "Código que identifica el medicamento prescripto al paciente."
 * medicationCodeableConcept ^binding.strength = #preferred
 
 * medicationCodeableConcept ^binding.extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][+].extension[purpose].valueCode = #candidate
 * medicationCodeableConcept ^binding.extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][=].extension[valueSet].valueCanonical = https://www.minsalud.gov.co/ihc/fhir/ValueSet/IUMVS
+
+
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // * code ^binding.extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][+].extension[purpose].valueCode = #candidate
 // * code ^binding.extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][=].extension[valueSet].valueCanonical = http://id.who.int/icd/release/11/mms

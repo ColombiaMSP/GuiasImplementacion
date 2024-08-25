@@ -1,19 +1,9 @@
 Profile:        PractitionerCo
 Parent:         Practitioner
 Title:          "Profesional Co"
-Description:    "Una persona con responsabilidad formal en la prestación de servicios de salud o servicios relacionados."
 * ^name = "MedicoColombiano"
-//* ^url = "http://minsalud.gov.co/hci/StructureDefinition/MedicoCol"
+* . ^short = "Una persona con responsabilidad formal en la prestación de servicios de salud o servicios relacionados."
 
-/*
-* ^purpose = """
-    * This profile is intended to support workflows where:
-      * this happens; or
-      * that happens
-    * This profile is not intended to support workflows where:
-      * nothing happens
-  """
-*/
 
 //------------Identificadores, campo 36 de la norma
 * identifier ^short = "Identificación del profesional de la salud."
@@ -36,3 +26,16 @@ Description:    "Una persona con responsabilidad formal en la prestación de ser
 * identifier.value 1.. MS
 * identifier.value ^short = "Número de documento de identificación del profesional de la salud."
 * identifier.value ^definition = "Número de documento de identificación del profesional de la salud."
+
+
+//------------------------------------------------------------------------------------------
+
+/*
+* ^purpose = """
+    * This profile is intended to support workflows where:
+      * this happens; or
+      * that happens
+    * This profile is not intended to support workflows where:
+      * nothing happens
+  """
+*/

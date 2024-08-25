@@ -38,15 +38,15 @@ menu:
   Transacciones: transacciones.html
   Terminología: terminologia.html
   Perfiles:
-    "Paciente": StructureDefinition-PacienteCo.html
+    "--Paciente": StructureDefinition-PacienteCo.html
     "Profesional": StructureDefinition-PractitionerCo.html
     "Organización": StructureDefinition-OrganizacionCo.html
     "Condition": StructureDefinition-ConditionCo.html
     "Alergias": StructureDefinition-AlergiaCo.html
     "Medicamentos": StructureDefinition-MedicationStatementCo.html
-    "RDA": StructureDefinition-CompositionCo.html
-    "DocumentoREF": StructureDefinition-DocumentReferenceCo.html
-    "BundleCo": StructureDefinition-BundleCo.html
+    "--RDA": StructureDefinition-CompositionCo.html
+    "--DocumentoREF": StructureDefinition-DocumentReferenceCo.html
+    "--BundleCo": StructureDefinition-BundleCo.html
   Resumen: 
     "Versiones": versiones.html
     "Resumen": artifacts.html

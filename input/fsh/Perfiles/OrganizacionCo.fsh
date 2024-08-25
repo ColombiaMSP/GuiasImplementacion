@@ -1,7 +1,7 @@
 Profile:        OrganizacionCo
 Parent:         Organization
 Title:          "Organizacion Co"
-//Description:    "Organización de Salud"
+* . ^short = "Una entidad que responde por el plan de beneficios en salud en el SGSSS."
 
 * active 1..
 * active 
