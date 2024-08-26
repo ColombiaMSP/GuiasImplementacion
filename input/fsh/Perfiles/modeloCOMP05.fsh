@@ -16,8 +16,7 @@ Description: "Composition0_5"
 * seccionMEDICACION 0..1  Reference(Section05) "IPS: MedciacionActual" "IPS: MedciacionActual"
 * seccionALERGIAS 0..1  Reference(Section05) "IPS: Alergias" "IPS: Alergias"
 
-* seccionCausa 0..1  Reference(Section05) "RDA: CausaAtencion" "RDA: CausaAtencion"
-* seccionDIAGNOSTICOS  0..1  Reference(Section05) "RDA: Diagnosticos" "RDA: Diagnosticos"
+* seccionDIAGNOSTICOS  0..1  Reference(Section05) "RDA: Diagnosticos" "RDA: Diagnosticos1"
 * seccionMEDICACIONINDIC  0..1 Reference(Section05)  "RDA: MedicacionIndicada" "RDA: DiagMedicacionIndicadanosticos"
 * seccionRDAOTROSDETALLES 0..1 Reference(Section05)  "RDA: a definir"
 

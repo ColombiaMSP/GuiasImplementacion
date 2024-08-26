@@ -10,6 +10,7 @@ Title:          "Profesional Co"
 * identifier ^definition = "Identificación del profesional de la salud."
 
 * identifier 1.. MS
+
 * identifier.type 1.. MS
 
 * identifier.type ^short = "Descripción del tipo de identificación del profesional de la salud."
