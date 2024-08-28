@@ -1,6 +1,5 @@
 {
-  "resourceType" : "Bundle",
-  "id" : "17Vars",
+  "resourceType" : "Bundle", 
   "meta" : {
     "profile" : ["https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/BundleCo"]
   },
