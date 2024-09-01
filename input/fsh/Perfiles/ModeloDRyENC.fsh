@@ -49,3 +49,6 @@ Description: "Encounter0.5"
 * ingreso 0..1 string "VAR: 20 - Via de ingreso" "VAR: 20 - Via de ingreso"
 * destino 0..1 string "Var: 41 - Condición y destino del usuario al egreso"
 
+* class 1..1 "Identificador para determinar la forma en el cual se realiza o
+ entrega la tecnología de salud al usuario en relación con un grupo de servicios"
+

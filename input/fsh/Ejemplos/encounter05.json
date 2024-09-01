@@ -1,0 +1,141 @@
+{
+    "resourceType": "Encounter",
+    "period": {
+        "start": "2024-01-17T16:00:00+10:00",
+        "end": "2024-01-17T16:30:00+10:00"
+    },
+    "type": [
+        {
+            "coding": [
+                {
+                    "system": "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/CSModalidad",
+                    "code": "01",
+                    "display": "Intramural"
+                }
+            ]
+        }
+    ],
+    "class": [
+        {
+            "coding": [
+                {
+                    "system": "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/CSGrupoServicios",
+                    "code": "05",
+                    "display": "Atención inmediata"
+                }
+            ]
+        }
+    ],
+    "reason": [
+        {
+            "coding": [
+                {
+                    "system": "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/CSMotivoAtencion",
+                    "code": "21",
+                    "display": "Accidente de trabajo"
+                }
+            ]
+        }
+    ],
+    "location": {
+        "physicalType": {
+            "coding": [
+                {
+                    "system": "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/CSLugarAtencionTipo",
+                    "code": "05",
+                    "display": "Institucional "
+                }
+            ]
+        },
+        "location": {
+            "display": "Sede X - Nombre descriptivo y direccion de sede donde se realizó la atencion"
+        }
+    },
+    "diagnosis": [
+        {
+            "condition": [
+                {
+                    "reference": "Referencia-->CONDITION 1 CO"
+                }
+            ],
+            "use": [
+                {
+                    "coding": [
+                        {
+                            "system": "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/CSTipoDiagnostico",
+                            "code": "Prin",
+                            "display": "Principal"
+                        }
+                    ]
+                }
+            ],
+            "extension": [
+                {
+                    "url": "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/TipoDiag",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/CSTipoDiagnostico",
+                                "code": "02",
+                                "display": "Confirmado Nuevo"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "condition": [
+                {
+                    "reference": "Referencia-->CONDITION 2 CO"
+                }
+            ],
+            "use": [
+                {
+                    "coding": [
+                        {
+                            "system": "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/CSTipoDiagnostico",
+                            "code": "Rel",
+                            "display": "Relacionado"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "hospitalization": {
+        "admitSource": {
+            "coding": [
+                {
+                    "system": "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/CSViaIngreso",
+                    "code": "01",
+                    "display": "Demanda espontánea"
+                }
+            ]
+        },
+        "destination": {
+            "location": {
+                "display": "Sede X - Nombre descriptivo y direccion de sede a la cual se deriva"
+            }
+        },
+        "dischargeDisposition": {
+            "coding": [
+                {
+                    "system": "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/CSDestino",
+                    "code": "01",
+                    "display": "Paciente con destino a su domicilio"
+                }
+            ]
+        }
+    },
+    "subject": {
+        "reference": "Referencia-->PACIENTE"
+    },
+    "participant": [
+        {
+            "actor": {
+                "reference": "Referencia --> PROFESIONAL"
+            }
+        }
+    ]
+  }
