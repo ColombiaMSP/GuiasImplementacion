@@ -15,6 +15,10 @@
   - [OK] Mejoras en Descripciones de campos.
   - [PENDIENTE] DEtallar que se busca en tabla de RETUS.
 
+ **Condition-MedicationStatement-AllergyIntolerance:**
+  - [OK] Mejoras en Descripciones de campos.
+
+
  **EJEMPLOS:**
  - [OK] Nuevo ejemplo de Bundle -transaction-, con indentificadores uuid para cada entrada. 
  

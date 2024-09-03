@@ -75,7 +75,7 @@
                     "valueCodeableConcept": {
                         "coding": [
                             {
-                                "system": "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/CSTipoDiagnostico",
+                                "system": "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/CSEstadoDiagnostico",
                                 "code": "02",
                                 "display": "Confirmado Nuevo"
                             }
