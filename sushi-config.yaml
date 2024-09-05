@@ -38,7 +38,7 @@ menu:
   Transacciones: transacciones.html
   Terminología: terminologia.html
   Perfiles:
-    "--Paciente": StructureDefinition-PacienteCo.html
+    "Paciente": StructureDefinition-PacienteCo.html
     "Profesional": StructureDefinition-PractitionerCo.html
     "Organización": StructureDefinition-OrganizacionCo.html
     "Condition": StructureDefinition-ConditionCo.html

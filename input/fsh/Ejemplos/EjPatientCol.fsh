@@ -66,10 +66,9 @@ Usage: #example
 //nombre completo: ANA MARIA PEREZ(paterno) RIVAS (materno)
 
 
-
 // * address.city.extension.code="5001"
 
-* address.country = #152 "colombia"
+* address.country = "Colombia"
 //{system}#{code} "{display text}"
 
 * address.extension.url = $ZonaResidencia
@@ -82,7 +81,7 @@ Usage: #example
 
 //-----Ejemplo paciente 2- Extranjero
 
-
+/*
 
 Instance: PacienteExtranjero
 InstanceOf: PacienteCo
@@ -120,7 +119,7 @@ Usage: #example
 * birthDate.extension.url = "http://hl7.org/fhir/StructureDefinition/patient-birthTime"
 * birthDate.extension.valueDateTime = "1974-12-25T14:35:45-05:00"
 
-
+*/
 
 //--------------Ejemplo 3 - paciente resumido
 

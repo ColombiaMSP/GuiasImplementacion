@@ -2,8 +2,9 @@
 Profile: PacienteCo
 Parent:         Patient
 Title:          "Paciente Co"
-Description:    "Especificación de datos del recurso Patient, tomando como referencia las definiciones de la resolución 866."
+//Description:    "Especificación de datos del recurso Patient, tomando como referencia las definiciones de la resolución 866."
 * ^name = "PersonaColombia"
+* . ^short = "Información sobre del individuo que recibe la prestación de servicios de salud."
 
 
 //---------Nombres y Apellidos
@@ -18,20 +19,22 @@ Description:    "Especificación de datos del recurso Patient, tomando como refe
 * name.family and name.given MS
 * name.family 1..
 
-* name.family ^short = "Apellidos del paciente."
+* name.family ^short = "Apellido(s) del individuo."
 
-* name.family.extension contains
-     //utilizamos solo extension para el segundo apellido, el materno.
-    $humanname-mothers-family named SegundoApellido 0..
+//utilizamos solo extension para el segundo apellido, el materno.
+* name.family.extension contains $humanname-mothers-family named SegundoApellido 0..
+* name.family.extension ^short = "Segundo Apellido del individuo."
+   
 * name.given 1..
-* name.given ^short = "Nombres del paciente."
+* name.given ^short = "Nombre(s) del individuo."
 
-* name ^short = "Nombres y Apellidos del Paciente."
+* name ^short = "Nombre(s) y Apellido(s) del individuo."
 * name ^definition = "Nombre patronímico que aparece en el documento de identidad."
 
 
 //---------------Sexo    
-* gender ^short = "Sexo de nacimiento: male | female | other | unknown (requerido)"
+
+* gender ^short = "Sexo biológico del individuo al nacer: male | female | other | unknown (requerido)"
 * gender ^definition = "Identificador para determinar las características genéticas, endocrinas y morfológicas del cuerpo al nacer."
 * gender 1..1 MS
 * gender from $VS_gender (required)
@@ -47,11 +50,14 @@ identidad o que declare el individuo.  */
 identidad o que declare el individuo."
 * birthDate 1..1
 * birthDate.extension contains  http://hl7.org/fhir/StructureDefinition/patient-birthTime named horaNacimiento 0..1 MS
-* birthDate.extension ^short = "Extension para representar Fecha y Hora de nacimiento de la persona."
+* birthDate.extension ^short = "Extensión para representar la fecha y hora de nacimiento del individuo."
+
+* birthDate.extension[horaNacimiento] ^short = "Fecha y hora de nacimiento del individuo."
+
 
 
 //------------Identificadores
-* identifier ^short = "Identificación del paciente."
+* identifier ^short = "Identificación del individuo."
 * identifier ^definition = "Elemento de dato que contiene el nombre y número de identificación de una determinada persona 
 para efectos de identidad e individualización."
 
@@ -60,13 +66,14 @@ para efectos de identidad e individualización."
 * identifier.value ^short = "Número que indica la identificación."
 
 * identifier.type 1.. MS
-* identifier.type ^short = "Tipo de indentificación."
+* identifier.type ^short = "Tipo de identificación del individuo."
 * identifier.type.coding.code from IdentificadoresPersonaVS
 * identifier.type.coding 1.. MS
 * identifier.type.coding.code 1.. MS
+* identifier.type.coding.code ^short = "Codificación del país del documento de identificación del individuo."
 
-* identifier.type.extension ^short = "Extension para representar pais del documento."
-* identifier.type.extension ^definition = "Se usa esta extensión para agregarle al tipo de documento el país de origen de este" 
+* identifier.type.extension ^short = "Extensión para representar país del documento de identificación del individuo."
+// identifier.type.extension ^definition = "Se usa esta extensión para agregarle al tipo de documento el país de origen de este" 
 * identifier.type.extension contains Pais named pais_origen 1..1  
 
 
@@ -74,8 +81,9 @@ para efectos de identidad e individualización."
 
 * extension contains $canonicaDiscap named discapacidad 0..* MS
 * extension[disability].valueCodeableConcept from DiscapacidadVS
-* extension[disability] ^short = "Extension para la Discapacidad."
+* extension[disability] ^short = "Discapacidad del individuo."
 * extension[disability] ^definition = "Identificador para determinar la categoría de discapacidad de acuerdo con el dominio o dominios donde se presente la deficiencia o deficiencias corporales del solicitante."
+* extension[disability].valueCodeableConcept ^short = "Valor de la categoría de la discapacidad del individuo."
 
 
 //-------------Identidad de Género
@@ -84,14 +92,17 @@ para efectos de identidad e individualización."
 
 * extension[genderIdentity].valueCodeableConcept from IdentidadGeneroVS (required)
 * extension[genderIdentity].valueCodeableConcept ^short = "Valor correspondiente a identidad de genero."
-* extension[genderIdentity] ^short = "Extension para Identidad de Género."
+* extension[genderIdentity] ^short = "Identidad de género del individuo."
 * extension[genderIdentity] ^definition = "Es la construcción social que existe sobre los cuerpos o el conjunto de reglas y convenciones establecidas por la sociedad que definen las pautas de comportamiento a seguir por hombres y mujeres, de tal forma que las personas se identifican con un género específico por 
 autorreconocimiento al momento de la atención"
+
+* extension[genderIdentity].valueCodeableConcept ^short = "Valor de la identidad de género del individuo."
+
 
 
 //-------------Nacionalidad
 * extension contains Nacionalidad named nacionalidad 0.. 
-* extension[nacionalidad] ^short = "Extension para la Nacionalidad."
+* extension[nacionalidad] ^short = "País de nacionalidad del individuo."
 * extension[nacionalidad] ^definition = "Nemónico del país que determina el vínculo jurídico entre un individuo y un Estado"
 //Para hacer uso de esta extensión se debe agregar el path: extension.url = ´nacionalidad´
 
@@ -99,35 +110,36 @@ autorreconocimiento al momento de la atención"
 //-------------Etnia
 
 * extension contains $canonicaEtnia named etnia 0..1 MS
-* extension[etnia] ^short = "Extension para Etnia."
+* extension[etnia] ^short = "Pertenencia étnica del individuo."
 * extension[etnia] ^definition = "Identificador para determinar la pertenencia étnica de la persona."
 * extension[etnia].valueCodeableConcept from EtniaVS
 
 // ------------ Comunidad Etnica
 * extension contains $canonicaComunidadEtnica named comunidadetnica 0..1 MS
-* extension[comunidadetnica] ^short = "Extension para Comunidad Etnica"
+* extension[comunidadetnica] ^short = "Comunidad Etnica del individuo."
 * extension[comunidadetnica] ^definition = "Descripcion para determinar la comunidad étnica de la persona."
 
 
 
 //------------Dirección
 * address and address.city and address.country MS
+* address  ^short = "Ubicación de la residencia del individuo."
 
 //ciudad - municipio (pide en la norma, el nombre, por eso la extension)
-* address.city ^short = "Campo : Municipio"
-* address.city ^definition = "Campo para Municipio"
+* address.city ^short = "Nombre del municipio de residencia del individuo."
+* address.city ^definition = "Nombre del municipio de residencia del individuo."
 * address.city
 //* address.city from $municipioVs (required)
 
 
 //pendiente restringuir conjunto de valores a los paises
-* address.country ^short = "Campo para País de Residencia"
-* address.country ^definition = "Campo para País de Residencia"
+* address.country ^short = "Nombre del país de residencia del individuo."
+* address.country ^definition = "Nombre del país de residencia del individuo."
 
 
 //Define la categorización de las áreas geográficas identificadas y delimitadas dentro del territorio nacional con objetos y actividades especializadas.
 * address.extension contains ZonaResidencia named ZonaResidencia 0..1 
-* address.extension[ZonaResidencia] ^short = "Extension para describir la zona de residencia."
+* address.extension[ZonaResidencia] ^short = "Extensión para representar la zona de la residencia del individuo."
 
 * extension ^short = "Se describen las diferentes extensiones. Se referencias de acuerdo a la 'url'."
 //* extension ^definition = "Existen 4 extensiones: .... ."
