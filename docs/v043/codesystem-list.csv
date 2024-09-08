@@ -1,0 +1,8 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Used
+https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS,0.4.3,draft,,AlergiasCS,Tipo Alergia,"Antecedente de Alergia",
+https://www.minsalud.gov.co/ihc/fhir/CodeSystem/DiscapacidadCS,0.4.3,draft,,DiscapacidadCS,Discapacidad,"Identificador para determinar la categoría de discapacidad de  acuerdo con el dominio o dominios donde se presente la deficiencia o deficiencias corporales del solicitante",
+https://www.minsalud.gov.co/ihc/fhir/CodeSystem/EtniaCS,0.4.3,draft,,Etnia,Etnia,"Identificador para determinar la pertenencia étnica de la persona.",
+https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdentidadGeneroCS,0.4.3,draft,,IdentidadGenero,Identidad de genero,"Identidad de Género.",
+https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia,0.4.3,active,,IdspersonaColombia,Identificadores de Persona,"Elemento de dato que contiene el nombre y número de identificación de una determinada persona para efectos de identidad e individualización",
+https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS,0.4.3,active,,PaisesCS,Códigos del País CS,"Codigos definidos para la identificación de países segun norma ISO3166-N",
+https://www.minsalud.gov.co/ihc/fhir/CodeSystem/ZonaResidenciaCS,0.4.3,draft,,ZonaResidencia,Zona de residencia,"Identificador para representar la Zona.",

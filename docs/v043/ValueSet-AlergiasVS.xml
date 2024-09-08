@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="AlergiasVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet AlergiasVS</b></p><a name="AlergiasVS"> </a><a name="hcAlergiasVS"> </a><a name="AlergiasVS-es-CO"> </a><ul><li>Include all codes defined in <a href="CodeSystem-AlergiasCS.html"><code>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS</code></a></li></ul></div>
+  </text>
+  <url value="https://www.minsalud.gov.co/ihc/fhir/ValueSet/AlergiasVS"/>
+  <version value="0.4.3"/>
+  <name value="AlergiasVS"/>
+  <title value="Tipo Alergia"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-01-01T00:00:00-05:00"/>
+  <publisher value="MSP Colombia"/>
+  <contact>
+    <name value="MSP Colombia"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.minsalud.gov.co/"/>
+    </telecom>
+  </contact>
+  <description value="Tipo Alergia"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CO"/>
+      <display value="Colombia"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.minsalud.gov.co/ihc/fhir/Practitioner/ProfesionalColombia> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ProfesionalColombia"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo"^^xsd:anyURI ;
+       fhir:link <https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner ProfesionalColombia</b></p><a name=\"ProfesionalColombia\"> </a><a name=\"hcProfesionalColombia\"> </a><a name=\"ProfesionalColombia-es-CO\"> </a><p><b>identifier</b>: Cédula ciudadanía/12345</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:extension ( [
+         fhir:url [ fhir:v "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-pais"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "170" ]
+           ] )
+         ]
+       ] ) ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "CC" ] ;
+         fhir:display [ fhir:v "Cédula ciudadanía" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "12345" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "Registraduria Nacional" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

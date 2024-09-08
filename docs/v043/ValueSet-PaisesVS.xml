@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="PaisesVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet PaisesVS</b></p><a name="PaisesVS"> </a><a name="hcPaisesVS"> </a><a name="PaisesVS-es-CO"> </a><ul><li>Include all codes defined in <a href="CodeSystem-PaisesCS.html"><code>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</code></a></li></ul></div>
+  </text>
+  <url value="https://www.minsalud.gov.co/ihc/fhir/ValueSet/PaisesVS"/>
+  <version value="0.4.3"/>
+  <name value="PaisesVS"/>
+  <title value="Códigos del País"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-01-01T00:00:00-05:00"/>
+  <publisher value="MSP Colombia"/>
+  <contact>
+    <name value="MSP Colombia"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.minsalud.gov.co/"/>
+    </telecom>
+  </contact>
+  <description value="Codigos definidos para la identificación de países segun norma ISO3166-N"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CO"/>
+      <display value="Colombia"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
+    </include>
+  </compose>
+</ValueSet>

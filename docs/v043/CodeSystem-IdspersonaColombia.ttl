@@ -1,0 +1,88 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "IdspersonaColombia"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IdspersonaColombia</b></p><a name=\"IdspersonaColombia\"> </a><a name=\"hcIdspersonaColombia\"> </a><a name=\"IdspersonaColombia-es-CO\"> </a><p>This case-sensitive code system <code>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">CC<a name=\"IdspersonaColombia-CC\"> </a></td><td>Cédula ciudadanía</td><td>Cédula ciudadanía del paciente.</td></tr><tr><td style=\"white-space:nowrap\">CE<a name=\"IdspersonaColombia-CE\"> </a></td><td>Cédula de extranjería</td><td>Cédula de extranjería</td></tr><tr><td style=\"white-space:nowrap\">CD<a name=\"IdspersonaColombia-CD\"> </a></td><td>Carné diplomático</td><td>Carné diplomático</td></tr><tr><td style=\"white-space:nowrap\">PA<a name=\"IdspersonaColombia-PA\"> </a></td><td>Pasaporte</td><td>Pasaporte</td></tr><tr><td style=\"white-space:nowrap\">SC<a name=\"IdspersonaColombia-SC\"> </a></td><td>Salvoconducto de permanencia</td><td>Salvoconducto de permanencia</td></tr><tr><td style=\"white-space:nowrap\">PT<a name=\"IdspersonaColombia-PT\"> </a></td><td>Permiso Temporal de Permanencia</td><td>Permiso Temporal de Permanencia</td></tr><tr><td style=\"white-space:nowrap\">PE<a name=\"IdspersonaColombia-PE\"> </a></td><td>Permiso Especial de Permanencia</td><td>Permiso Especial de Permanencia</td></tr><tr><td style=\"white-space:nowrap\">RC<a name=\"IdspersonaColombia-RC\"> </a></td><td>Registro civil</td><td>Registro civil</td></tr><tr><td style=\"white-space:nowrap\">TI<a name=\"IdspersonaColombia-TI\"> </a></td><td>Tarjeta de identidad</td><td>Tarjeta de identidad</td></tr><tr><td style=\"white-space:nowrap\">CN<a name=\"IdspersonaColombia-CN\"> </a></td><td>Certificado de nacido vivo</td><td>Certificado de nacido vivo</td></tr><tr><td style=\"white-space:nowrap\">DE<a name=\"IdspersonaColombia-DE\"> </a></td><td>Documento Extranjero</td><td>Documento Extranjero</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.4.3"] ; # 
+  fhir:name [ fhir:v "IdspersonaColombia"] ; # 
+  fhir:title [ fhir:v "Identificadores de Persona"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2010-01-29"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "MSP Colombia"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MSP Colombia" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.minsalud.gov.co/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Elemento de dato que contiene el nombre y número de identificación de una determinada persona para efectos de identidad e individualización"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CO" ] ;
+       fhir:display [ fhir:v "Colombia" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "11"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "CC" ] ;
+     fhir:display [ fhir:v "Cédula ciudadanía" ] ;
+     fhir:definition [ fhir:v "Cédula ciudadanía del paciente." ]
+  ] [
+     fhir:code [ fhir:v "CE" ] ;
+     fhir:display [ fhir:v "Cédula de extranjería" ] ;
+     fhir:definition [ fhir:v "Cédula de extranjería" ]
+  ] [
+     fhir:code [ fhir:v "CD" ] ;
+     fhir:display [ fhir:v "Carné diplomático" ] ;
+     fhir:definition [ fhir:v "Carné diplomático" ]
+  ] [
+     fhir:code [ fhir:v "PA" ] ;
+     fhir:display [ fhir:v "Pasaporte" ] ;
+     fhir:definition [ fhir:v "Pasaporte" ]
+  ] [
+     fhir:code [ fhir:v "SC" ] ;
+     fhir:display [ fhir:v "Salvoconducto de permanencia" ] ;
+     fhir:definition [ fhir:v "Salvoconducto de permanencia" ]
+  ] [
+     fhir:code [ fhir:v "PT" ] ;
+     fhir:display [ fhir:v "Permiso Temporal de Permanencia" ] ;
+     fhir:definition [ fhir:v "Permiso Temporal de Permanencia" ]
+  ] [
+     fhir:code [ fhir:v "PE" ] ;
+     fhir:display [ fhir:v "Permiso Especial de Permanencia" ] ;
+     fhir:definition [ fhir:v "Permiso Especial de Permanencia" ]
+  ] [
+     fhir:code [ fhir:v "RC" ] ;
+     fhir:display [ fhir:v "Registro civil" ] ;
+     fhir:definition [ fhir:v "Registro civil" ]
+  ] [
+     fhir:code [ fhir:v "TI" ] ;
+     fhir:display [ fhir:v "Tarjeta de identidad" ] ;
+     fhir:definition [ fhir:v "Tarjeta de identidad" ]
+  ] [
+     fhir:code [ fhir:v "CN" ] ;
+     fhir:display [ fhir:v "Certificado de nacido vivo" ] ;
+     fhir:definition [ fhir:v "Certificado de nacido vivo" ]
+  ] [
+     fhir:code [ fhir:v "DE" ] ;
+     fhir:display [ fhir:v "Documento Extranjero" ] ;
+     fhir:definition [ fhir:v "Documento Extranjero" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

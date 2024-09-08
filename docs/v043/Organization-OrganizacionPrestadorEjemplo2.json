@@ -1,0 +1,17 @@
+{
+  "resourceType" : "Organization",
+  "id" : "OrganizacionPrestadorEjemplo2",
+  "meta" : {
+    "profile" : ["https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/OrganizacionCo"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization OrganizacionPrestadorEjemplo2</b></p><a name=\"OrganizacionPrestadorEjemplo2\"> </a><a name=\"hcOrganizacionPrestadorEjemplo2\"> </a><a name=\"OrganizacionPrestadorEjemplo2-es-CO\"> </a><p><b>identifier</b>: <code>https://www.minsalud.gov.co/ihc/codigosOrganizacionSGSSS</code>/31412</p><p><b>active</b>: true</p><p><b>name</b>: Hospital de Colombia</p></div>"
+  },
+  "identifier" : [{
+    "system" : "https://www.minsalud.gov.co/ihc/codigosOrganizacionSGSSS",
+    "value" : "31412"
+  }],
+  "active" : true,
+  "name" : "Hospital de Colombia"
+}

@@ -1,0 +1,34 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.minsalud.gov.co/ihc/fhir/Condition/ConditionColombia2> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ConditionColombia2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo"^^xsd:anyURI ;
+       fhir:link <https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition ConditionColombia2</b></p><a name=\"ConditionColombia2\"> </a><a name=\"hcConditionColombia2\"> </a><a name=\"ConditionColombia2-es-CO\"> </a><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/sid/icd-10 E10.4}\">Diabetes Tipo 1, con complicaciones neurologicas</span></p><p><b>subject</b>: <a href=\"Bundle-BundleColombiaCo2.html#urn-uuid-2f8d6332-e339-457d-b5e8-1a140a1f3ea1\">Bundle: type = transaction; timestamp = 2022-03-03 10:30:00+0000</a></p></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-10"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "E10.4" ] ;
+       fhir:display [ fhir:v "Type 1 diabetes mellitus : With neurological complications" ]
+     ] ) ;
+     fhir:text [ fhir:v "Diabetes Tipo 1, con complicaciones neurologicas" ]
+  ] ; # 
+  fhir:subject [
+     fhir:reference [ fhir:v "urn:uuid:2f8d6332-e339-457d-b5e8-1a140a1f3ea1" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

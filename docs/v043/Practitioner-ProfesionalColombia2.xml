@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="ProfesionalColombia2"/>
+  <meta>
+    <profile value="https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner ProfesionalColombia2</b></p><a name="ProfesionalColombia2"> </a><a name="hcProfesionalColombia2"> </a><a name="ProfesionalColombia2-es-CO"> </a><p><b>identifier</b>: Cédula ciudadanía/12345</p></div>
+  </text>
+  <identifier>
+    <type>
+      <extension url="https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-pais">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
+            <code value="170"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <coding>
+        <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia"/>
+        <code value="CC"/>
+        <display value="Cédula ciudadanía"/>
+      </coding>
+    </type>
+    <value value="12345"/>
+    <assigner>
+      <display value="Registraduria Nacional"/>
+    </assigner>
+  </identifier>
+</Practitioner>

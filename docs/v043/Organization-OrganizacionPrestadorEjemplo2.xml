@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="OrganizacionPrestadorEjemplo2"/>
+  <meta>
+    <profile value="https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/OrganizacionCo"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization OrganizacionPrestadorEjemplo2</b></p><a name="OrganizacionPrestadorEjemplo2"> </a><a name="hcOrganizacionPrestadorEjemplo2"> </a><a name="OrganizacionPrestadorEjemplo2-es-CO"> </a><p><b>identifier</b>: <code>https://www.minsalud.gov.co/ihc/codigosOrganizacionSGSSS</code>/31412</p><p><b>active</b>: true</p><p><b>name</b>: Hospital de Colombia</p></div>
+  </text>
+  <identifier>
+    <system value="https://www.minsalud.gov.co/ihc/codigosOrganizacionSGSSS"/>
+    <value value="31412"/>
+  </identifier>
+  <active value="true"/>
+  <name value="Hospital de Colombia"/>
+</Organization>

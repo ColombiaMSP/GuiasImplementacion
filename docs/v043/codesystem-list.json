@@ -1,0 +1,60 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS",
+      "version" : "0.4.3",
+      "status" : "draft",
+      "name" : "AlergiasCS",
+      "title" : "Tipo Alergia",
+      "description" : "Antecedente de Alergia"
+    },
+    {
+      "url" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/DiscapacidadCS",
+      "version" : "0.4.3",
+      "status" : "draft",
+      "name" : "DiscapacidadCS",
+      "title" : "Discapacidad",
+      "description" : "Identificador para determinar la categoría de discapacidad de\r\nacuerdo con el dominio o dominios donde se presente la deficiencia o deficiencias corporales del solicitante"
+    },
+    {
+      "url" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/EtniaCS",
+      "version" : "0.4.3",
+      "status" : "draft",
+      "name" : "Etnia",
+      "title" : "Etnia",
+      "description" : "Identificador para determinar la pertenencia étnica de la persona."
+    },
+    {
+      "url" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdentidadGeneroCS",
+      "version" : "0.4.3",
+      "status" : "draft",
+      "name" : "IdentidadGenero",
+      "title" : "Identidad de genero",
+      "description" : "Identidad de Género."
+    },
+    {
+      "url" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia",
+      "version" : "0.4.3",
+      "status" : "active",
+      "name" : "IdspersonaColombia",
+      "title" : "Identificadores de Persona",
+      "description" : "Elemento de dato que contiene el nombre y número de identificación de una determinada persona para efectos de identidad e individualización"
+    },
+    {
+      "url" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS",
+      "version" : "0.4.3",
+      "status" : "active",
+      "name" : "PaisesCS",
+      "title" : "Códigos del País CS",
+      "description" : "Codigos definidos para la identificación de países segun norma ISO3166-N"
+    },
+    {
+      "url" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/ZonaResidenciaCS",
+      "version" : "0.4.3",
+      "status" : "draft",
+      "name" : "ZonaResidencia",
+      "title" : "Zona de residencia",
+      "description" : "Identificador para representar la Zona."
+    }
+  ]
+}

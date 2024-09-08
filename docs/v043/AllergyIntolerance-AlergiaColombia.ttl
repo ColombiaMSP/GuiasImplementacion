@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.minsalud.gov.co/ihc/fhir/AllergyIntolerance/AlergiaColombia> a fhir:AllergyIntolerance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AlergiaColombia"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo"^^xsd:anyURI ;
+       fhir:link <https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance AlergiaColombia</b></p><a name=\"AlergiaColombia\"> </a><a name=\"hcAlergiaColombia\"> </a><a name=\"AlergiaColombia-es-CO\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}\">Confirmed</span></p><p><b>code</b>: <span title=\"Codes:\">alergia a nueces</span></p><p><b>patient</b>: <a href=\"Patient-PacienteColombiano.html\">Paciente Colombiano</a></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-AllergyIntolerance-tipo"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "03" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:text [ fhir:v "alergia a nueces" ]
+  ] ; # 
+  fhir:patient [
+     fhir:link <https://www.minsalud.gov.co/ihc/fhir/Patient/PacienteColombiano> ;
+     fhir:reference [ fhir:v "Patient/PacienteColombiano" ] ;
+     fhir:display [ fhir:v "Paciente Colombiano" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
