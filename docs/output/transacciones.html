@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.FHIR.CO.CORECO\Transacciones - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+<!-- Placeholder for child template header declarations header-logo-left-->
+
+<div id="hl7-nav-left">
+    <a id="logo" no-external="true" href="https://www.minsalud.gov.co/">
+        <img height="60" alt="Ministerio de Salud de Colombia" src="MinSaludCo.png" />
+    </a>
+</div>
+
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">GUIA EN DESARROLLO - Colombia (v 0.4.3)</span>
+            <br/>
+            <span style="display:inline-block;">0.4.3 - ci-build
+
+
+
+  <img alt="Colombia flag" src="assets/images/col.svg" height="16" title="Colombia"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Inicio</a>
+  </li>
+  <li>
+    <a href="Aspectos-Generales.html">Generalidades</a>
+  </li>
+  <li>
+    <a href="rda.html">RDA</a>
+  </li>
+  <li>
+    <a href="transacciones.html">Transacciones</a>
+  </li>
+  <li>
+    <a href="terminologia.html">Terminología</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Perfiles
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="StructureDefinition-PacienteCo.html">Paciente</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-PractitionerCo.html">Profesional</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-OrganizacionCo.html">Organización</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-ConditionCo.html">Condition</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-AlergiaCo.html">Alergias</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-MedicationStatementCo.html">Medicamentos</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-CompositionCo.html">--RDA</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-DocumentReferenceCo.html">--DocumentoREF</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-BundleCo.html">--BundleCo</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Resumen
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="versiones.html">Versiones</a>
+      </li>
+      <li>
+        <a href="artifacts.html">Resumen</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Transacciones</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">GUIA EN DESARROLLO - Colombia (v 0.4.3) - Local Development build (v0.4.3) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://www.minsalud.gov.co/ihc/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Transacciones</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#guardar-documento" id="markdown-toc-guardar-documento">Guardar Documento.</a></li>
+  <li><a href="#buscar-documento-de-un-paciente" id="markdown-toc-buscar-documento-de-un-paciente">Buscar Documento de un paciente.</a></li>
+  <li><a href="#obtener-documento" id="markdown-toc-obtener-documento">Obtener Documento.</a></li>
+</ul>
+
+</div>
+
+<p>La siguiente sección, describe como serán las transacciones con la plataforma. En la primera parte se representa el guardar Documento, a continuación Buscar Documentos de un paciente y por ultimo obtener un documento especifico.</p>
+
+<h3 id="guardar-documento">Guardar Documento.</h3>
+<p>Desde el prestador se debe generar un RDA válido,  y se debe construir un Bundle para su envio mediante un POST a los servicios de la Plataforma de la IHC.  En la plataforma el RDA es recibido, validado y consolidado dentro del repositorio territorial con los respectivos identificadores nacionales y es indexado en el recurso DocumentReference.  La Plataforma responde con un mensaje del resultado de la transacción.</p>
+
+<p>Perfil de Bundle de RDA: <a href="StructureDefinition-BundleCo.html">BundleCo</a></p>
+
+<div>
+<?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="154px" preserveAspectRatio="none" style="width:544px;height:154px;background:#FFFFFF;" version="1.1" viewBox="0 0 544 154" width="544px" zoomAndPan="magnify"><defs /><g><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="43" x2="43" y1="37.6094" y2="118.3125" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="486" x2="486" y1="37.6094" y2="118.3125" /><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="76" x="5" y="5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="12" y="26.5332">Prestador</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="76" x="5" y="117.3125" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="12" y="138.8457">Prestador</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="104" x="434" y="5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="441" y="26.5332">PlataformaIHC</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="104" x="434" y="117.3125" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="441" y="138.8457">PlataformaIHC</text><polygon fill="#181818" points="474,65.9609,484,69.9609,474,73.9609,478,69.9609" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="43" x2="480" y1="69.9609" y2="69.9609" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="419" x="50" y="65.1045">POST Bundle (DocumentReference, Composition, Condition, Patient, ...)</text><polygon fill="#181818" points="54,96.3125,44,100.3125,54,104.3125,50,100.3125" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="48" x2="485" y1="100.3125" y2="100.3125" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="204" x="60" y="95.4561">{ 201 ok,  201 ok,  201 ok,  201 ok}</text></g></svg>
+</div>
+
+<h3 id="buscar-documento-de-un-paciente">Buscar Documento de un paciente.</h3>
+
+<p>Utilizando el identificador del paciente, desde el prestador se genera una operación de consulta GET hacia la Plataforma de la IHC al recurso DocumentReference.  Esta operación retorna un bundle con  las distintas instancias que existen para el paciente dentro del recurso DocumentReference.</p>
+
+<div>
+<?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="154px" preserveAspectRatio="none" style="width:626px;height:154px;background:#FFFFFF;" version="1.1" viewBox="0 0 626 154" width="626px" zoomAndPan="magnify"><defs /><g><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="43" x2="43" y1="37.6094" y2="118.3125" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="568" x2="568" y1="37.6094" y2="118.3125" /><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="76" x="5" y="5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="12" y="26.5332">Prestador</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="76" x="5" y="117.3125" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="12" y="138.8457">Prestador</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="104" x="516" y="5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="523" y="26.5332">PlataformaIHC</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="104" x="516" y="117.3125" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="523" y="138.8457">PlataformaIHC</text><polygon fill="#181818" points="556,65.9609,566,69.9609,556,73.9609,560,69.9609" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="43" x2="562" y1="69.9609" y2="69.9609" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="501" x="50" y="65.1045">GET DocumentReference (patient.identifier=&lt;ej:1234&gt;&amp;patient.identifier-type=&lt;ej:CC&gt;)</text><polygon fill="#181818" points="54,96.3125,44,100.3125,54,104.3125,50,100.3125" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="48" x2="567" y1="100.3125" y2="100.3125" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="169" x="60" y="95.4561">Bundle (DocumentReference)</text></g></svg>
+</div>
+
+<!-- #### Mandatory Search Parameters:
+
+The following search parameters, search parameter combinations and search parameter [modifiers], [comparators], [chains] and [composites] SHALL be supported.  the  modifiers, comparators, chains and composites that are listed as optional SHOULD be supported:
+
+1. **SHALL** support searching for all medication statements for a patient. The server application represents the medication using either an inline code or a contained or external reference to the Medication resource. using the **[`patient`](SearchParameter-us-core-medicationstatement-patient.html)** search parameter:
+
+    - including optional support for these `_include` parameters: `MedicationStatement:medication`
+
+    `GET [base]/MedicationStatement?patient=[reference]`
+
+    Example:
+    
+      1. GET [base]/MedicationStatement?patient=14676
+      1. GET [base]/MedicationStatement?patient=14676&amp;_include=MedicationStatement:medication
+
+    *Implementation Notes:* Fetches a bundle of all MedicationStatement resources for the specified patient. Mandatory for client to support the _include parameter. Optional for server to support the _include parameter. ([how to search by reference])
+ -->
+<h3 id="obtener-documento">Obtener Documento.</h3>
+
+<p>A partir de la información desplegada al usuario, por el bundle obtenido en 4.2, el usuario selecciona un RDA específico a ser visualizado.  Esta selección genera un GET sobre un recurso Composition dentro del repositorio territorial correspondiente en la plataforma de IHC. Acorde con la selección, la plataforma retorna un Bundle con el recurso Composition en donde se encuentran los contenidos del RDA.</p>
+
+<div>
+<?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="154px" preserveAspectRatio="none" style="width:429px;height:154px;background:#FFFFFF;" version="1.1" viewBox="0 0 429 154" width="429px" zoomAndPan="magnify"><defs /><g><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="43" x2="43" y1="37.6094" y2="118.3125" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="371" x2="371" y1="37.6094" y2="118.3125" /><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="76" x="5" y="5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="12" y="26.5332">Prestador</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="76" x="5" y="117.3125" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="12" y="138.8457">Prestador</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="104" x="319" y="5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="326" y="26.5332">PlataformaIHC</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="104" x="319" y="117.3125" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="326" y="138.8457">PlataformaIHC</text><polygon fill="#181818" points="359,65.9609,369,69.9609,359,73.9609,363,69.9609" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="43" x2="365" y1="69.9609" y2="69.9609" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="184" x="50" y="65.1045">GET Composition/id/$document</text><polygon fill="#181818" points="54,96.3125,44,100.3125,54,104.3125,50,100.3125" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="48" x2="370" y1="100.3125" y2="100.3125" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="304" x="60" y="95.4561">Bundle (type=document, Composition, Condition, ...)</text></g></svg>
+</div>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.minsalud.gov.co/">MSP Colombia</a>.  Package hl7.fhir.co.CoreCO#0.4.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Sep 9, 2024 15:47-0300">2024-09-09</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

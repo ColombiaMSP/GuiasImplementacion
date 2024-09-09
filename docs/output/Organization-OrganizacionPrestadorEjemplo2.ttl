@@ -1,0 +1,29 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.minsalud.gov.co/ihc/fhir/Organization/OrganizacionPrestadorEjemplo2> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "OrganizacionPrestadorEjemplo2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/OrganizacionCo"^^xsd:anyURI ;
+       fhir:link <https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/OrganizacionCo>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization OrganizacionPrestadorEjemplo2</b></p><a name=\"OrganizacionPrestadorEjemplo2\"> </a><a name=\"hcOrganizacionPrestadorEjemplo2\"> </a><a name=\"OrganizacionPrestadorEjemplo2-es-CO\"> </a><p><b>identifier</b>: <code>https://www.minsalud.gov.co/ihc/codigosOrganizacionSGSSS</code>/31412</p><p><b>active</b>: true</p><p><b>name</b>: Hospital de Colombia</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://www.minsalud.gov.co/ihc/codigosOrganizacionSGSSS"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "31412" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name [ fhir:v "Hospital de Colombia"] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,113 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://www.minsalud.gov.co/ihc/fhir/ValueSet/AlergiasVS",
+      "version" : "0.4.3",
+      "status" : "active",
+      "name" : "AlergiasVS",
+      "title" : "Tipo Alergia",
+      "description" : "Tipo Alergia",
+      "systems" : ["https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS"]
+    },
+    {
+      "url" : "https://www.minsalud.gov.co/ihc/fhir/ValueSet/CIE10VS",
+      "version" : "0.4.3",
+      "status" : "active",
+      "name" : "CIE10VS",
+      "title" : "Codificacion CIE10 ValueSet",
+      "description" : "Conjunto de Valores de Codificacion CIE10",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10"]
+    },
+    {
+      "url" : "https://www.minsalud.gov.co/ihc/fhir/ValueSet/CUMSVS",
+      "version" : "0.4.3",
+      "status" : "active",
+      "name" : "CUMSVS",
+      "title" : "Codificacion CUMS",
+      "description" : "Conjunto de Valores de Codificacion CUMS",
+      "systems" : ["https://www.minsalud.gov.co/CodeSystem/CUMS"]
+    },
+    {
+      "url" : "https://www.minsalud.gov.co/ihc/fhir/ValueSet/DiscapacidadVS",
+      "version" : "0.4.3",
+      "status" : "active",
+      "name" : "DiscapacidadVS",
+      "title" : "Discapacidad",
+      "description" : "Códigos de Discapacidad",
+      "systems" : [
+        "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/DiscapacidadCS"
+      ]
+    },
+    {
+      "url" : "https://www.minsalud.gov.co/ihc/fhir/ValueSet/EtniaVS",
+      "version" : "0.4.3",
+      "status" : "active",
+      "name" : "EtniaVS",
+      "title" : "Etnia",
+      "description" : "Conjunto de valores para la Etnia.",
+      "systems" : ["https://www.minsalud.gov.co/ihc/fhir/CodeSystem/EtniaCS"]
+    },
+    {
+      "url" : "https://www.minsalud.gov.co/ihc/fhir/ValueSet/IUMVS",
+      "version" : "0.4.3",
+      "status" : "active",
+      "name" : "IUMVS",
+      "title" : "Codificacion IUM",
+      "description" : "Conjunto de Valores de Codificacion IUM",
+      "systems" : ["https://www.minsalud.gov.co/CodeSystem/IUM"]
+    },
+    {
+      "url" : "https://www.minsalud.gov.co/ihc/fhir/ValueSet/IdentidadGeneroVS",
+      "version" : "0.4.3",
+      "status" : "active",
+      "name" : "IdentidadGeneroVS",
+      "title" : "Identidad de Genero",
+      "description" : "Conjunto de Valores para identidad de Género.",
+      "systems" : [
+        "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdentidadGeneroCS"
+      ]
+    },
+    {
+      "url" : "https://www.minsalud.gov.co/ihc/fhir/ValueSet/IdentificadoresPersonaVS",
+      "version" : "0.4.3",
+      "status" : "active",
+      "name" : "IdentificadoresPersonaVS",
+      "title" : "Identificadores de Persona",
+      "description" : "Identificadores de Persona Colombia.",
+      "systems" : [
+        "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia"
+      ]
+    },
+    {
+      "url" : "https://www.minsalud.gov.co/ihc/fhir/ValueSet/IdentificadoresProfesionalVS",
+      "version" : "0.4.3",
+      "status" : "active",
+      "name" : "IdentificadoresProfesionalVS",
+      "title" : "Identificadores de Profesional",
+      "description" : "Identificadores de Profesional Colombia.",
+      "systems" : [
+        "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia"
+      ]
+    },
+    {
+      "url" : "https://www.minsalud.gov.co/ihc/fhir/ValueSet/PaisesVS",
+      "version" : "0.4.3",
+      "status" : "active",
+      "name" : "PaisesVS",
+      "title" : "Códigos del País",
+      "description" : "Codigos definidos para la identificación de países segun norma ISO3166-N",
+      "systems" : ["https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"]
+    },
+    {
+      "url" : "https://www.minsalud.gov.co/ihc/fhir/ValueSet/ZonaResidenciaVS",
+      "version" : "0.4.3",
+      "status" : "active",
+      "name" : "ZonaResidenciaVS",
+      "title" : "Zona de residencia",
+      "description" : "Conjunto de valores para la zona de residencia.",
+      "systems" : [
+        "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/ZonaResidenciaCS"
+      ]
+    }
+  ]
+}

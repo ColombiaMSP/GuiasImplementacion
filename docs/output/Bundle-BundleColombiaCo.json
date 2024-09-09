@@ -1,0 +1,335 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "BundleColombiaCo",
+  "meta" : {
+    "profile" : ["https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/BundleCo"]
+  },
+  "type" : "transaction",
+  "timestamp" : "2022-03-03T10:30:00Z",
+  "entry" : [{
+    "fullUrl" : "http://acme.com/ehr/fhir/DocumentReference/DocumentReferenceColombia",
+    "resource" : {
+      "resourceType" : "DocumentReference",
+      "id" : "DocumentReferenceColombia",
+      "meta" : {
+        "profile" : ["https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DocumentReference_DocumentReferenceColombia\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference DocumentReferenceColombia</b></p><a name=\"DocumentReferenceColombia\"> </a><a name=\"hcDocumentReferenceColombia\"> </a><a name=\"DocumentReferenceColombia-es-CO\"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 60591-5}\">Patient summary Document</span></p><p><b>subject</b>: <a href=\"Patient-PacienteColombianoMinimo.html\">Luis Alberto Sanchez  Male, DoB: 1974-12-25 ( Cédula ciudadanía: 98765)</a></p><p><b>date</b>: 2022-03-03 10:30:00+0000</p><p><b>author</b>: <a href=\"Organization/OrganizacionPrestadorEjemplo\">Organization/OrganizacionPrestadorEjemplo</a></p><p><b>custodian</b>: <a href=\"Organization-OrganizacionRegionEjemplo.html\">Organization DIRECCION DEPARTAMENTAL DE CUNDINAMARCA</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>application/fhir+json</td><td><a href=\"Composition-CompositionColombia.html\">Composition Resumen de Paciente Colombia</a></td></tr></table></blockquote></div>"
+      },
+      "status" : "current",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "60591-5"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/PacienteColombianoMinimo"
+      },
+      "date" : "2022-03-03T10:30:00Z",
+      "author" : [{
+        "reference" : "Organization/OrganizacionPrestadorEjemplo"
+      }],
+      "custodian" : {
+        "reference" : "Organization/OrganizacionRegionEjemplo"
+      },
+      "content" : [{
+        "attachment" : {
+          "contentType" : "application/fhir+json",
+          "url" : "Composition/CompositionColombia"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "DocumentReference"
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/Practitioner/ProfesionalColombia",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "ProfesionalColombia",
+      "meta" : {
+        "profile" : ["https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_ProfesionalColombia\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner ProfesionalColombia</b></p><a name=\"ProfesionalColombia\"> </a><a name=\"hcProfesionalColombia\"> </a><a name=\"ProfesionalColombia-es-CO\"> </a><p><b>identifier</b>: Cédula ciudadanía/12345</p></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "extension" : [{
+            "url" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-pais",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS",
+                "code" : "170"
+              }]
+            }
+          }],
+          "coding" : [{
+            "system" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia",
+            "code" : "CC",
+            "display" : "Cédula ciudadanía"
+          }]
+        },
+        "value" : "12345",
+        "assigner" : {
+          "display" : "Registraduria Nacional"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Practitioner"
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/Composition/CompositionColombia",
+    "resource" : {
+      "resourceType" : "Composition",
+      "id" : "CompositionColombia",
+      "meta" : {
+        "profile" : ["https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_CompositionColombia\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition CompositionColombia</b></p><a name=\"CompositionColombia\"> </a><a name=\"hcCompositionColombia\"> </a><a name=\"CompositionColombia-es-CO\"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 60591-5}\">Patient Summary Document</span></p><p><b>date</b>: 2022-03-05 18:30:00+0100</p><p><b>author</b>: <a href=\"Practitioner-ProfesionalColombia.html\">Practitioner: identifier = Cédula ciudadanía: 12345</a></p><p><b>title</b>: Resumen de Paciente Colombia</p><p><b>custodian</b>: <a href=\"Organization-OrganizacionRegionEjemplo.html\">Organization DIRECCION DEPARTAMENTAL DE CUNDINAMARCA</a></p></div>"
+      },
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "60591-5",
+          "display" : "Patient Summary Document"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/PacienteColombiano"
+      },
+      "date" : "2022-03-05T18:30:00+01:00",
+      "author" : [{
+        "reference" : "Practitioner/ProfesionalColombia"
+      }],
+      "title" : "Resumen de Paciente Colombia",
+      "custodian" : {
+        "reference" : "Organization/OrganizacionRegionEjemplo"
+      },
+      "section" : [{
+        "title" : "Condiciones del Paciente",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "11450-4",
+            "display" : "Problem list Reported"
+          }]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">CONDICIONES</div>"
+        },
+        "entry" : [{
+          "reference" : "Condition/ConditionColombia"
+        }]
+      },
+      {
+        "title" : "Medicamentos",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "10160-0",
+            "display" : "Hx of Medication use"
+          }]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">MEDICAMENTOS</div>"
+        },
+        "entry" : [{
+          "reference" : "MedicationStatement/MedicationStatementColombia"
+        }]
+      },
+      {
+        "title" : "Alergias",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48765-2",
+            "display" : "Allergies and adverse reactions Document"
+          }]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">ALERGIAS</div>"
+        },
+        "entry" : [{
+          "reference" : "AllergyIntolerance/AlergiaColombia"
+        }]
+      }]
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Composition"
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/Condition/ConditionColombia",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "ConditionColombia",
+      "meta" : {
+        "profile" : ["https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_ConditionColombia\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition ConditionColombia</b></p><a name=\"ConditionColombia\"> </a><a name=\"hcConditionColombia\"> </a><a name=\"ConditionColombia-es-CO\"> </a><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/sid/icd-10 E10.4}\">Diabetes Tipo 1, con complicaciones neurologicas</span></p><p><b>subject</b>: <a href=\"Patient-PacienteColombiano.html\">Miguel Angel López  Male, DoB: 1974-12-25 ( Cédula ciudadanía: 12345)</a></p></div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-10",
+          "code" : "E10.4",
+          "display" : "Type 1 diabetes mellitus : With neurological complications"
+        }],
+        "text" : "Diabetes Tipo 1, con complicaciones neurologicas"
+      },
+      "subject" : {
+        "reference" : "Patient/PacienteColombiano"
+      }
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Condition"
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/Patient/PacienteColombianoMinimo",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "PacienteColombianoMinimo",
+      "meta" : {
+        "profile" : ["https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PacienteCo"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_PacienteColombianoMinimo\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient PacienteColombianoMinimo</b></p><a name=\"PacienteColombianoMinimo\"> </a><a name=\"hcPacienteColombianoMinimo\"> </a><a name=\"PacienteColombianoMinimo-es-CO\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Luis Alberto Sanchez  Male, DoB: 1974-12-25 ( Cédula ciudadanía: 98765)</p><hr/></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "extension" : [{
+            "url" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-pais",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS",
+                "code" : "170"
+              }]
+            }
+          }],
+          "coding" : [{
+            "system" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia",
+            "code" : "CC",
+            "display" : "Cédula ciudadanía"
+          }]
+        },
+        "value" : "98765",
+        "assigner" : {
+          "display" : "Registraduria Nacional"
+        }
+      }],
+      "name" : [{
+        "family" : "Sanchez",
+        "_family" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family",
+            "valueString" : "Martinez"
+          }]
+        },
+        "given" : ["Luis",
+        "Alberto"]
+      }],
+      "gender" : "male",
+      "birthDate" : "1974-12-25"
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Patient"
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/AllergyIntolerance/AlergiaColombia",
+    "resource" : {
+      "resourceType" : "AllergyIntolerance",
+      "id" : "AlergiaColombia",
+      "meta" : {
+        "profile" : ["https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"AllergyIntolerance_AlergiaColombia\"> </a><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance AlergiaColombia</b></p><a name=\"AlergiaColombia\"> </a><a name=\"hcAlergiaColombia\"> </a><a name=\"AlergiaColombia-es-CO\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}\">Confirmed</span></p><p><b>code</b>: <span title=\"Codes:\">alergia a nueces</span></p><p><b>patient</b>: <a href=\"Patient-PacienteColombiano.html\">Paciente Colombiano</a></p></div>"
+      },
+      "extension" : [{
+        "url" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-AllergyIntolerance-tipo",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS",
+            "code" : "03"
+          }]
+        }
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code" : "active"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code" : "confirmed"
+        }]
+      },
+      "code" : {
+        "text" : "alergia a nueces"
+      },
+      "patient" : {
+        "reference" : "Patient/PacienteColombiano",
+        "display" : "Paciente Colombiano"
+      }
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "AllergyIntolerance"
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/MedicationStatement/MedicationStatementColombia",
+    "resource" : {
+      "resourceType" : "MedicationStatement",
+      "id" : "MedicationStatementColombia",
+      "meta" : {
+        "profile" : ["https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationStatement_MedicationStatementColombia\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationStatement MedicationStatementColombia</b></p><a name=\"MedicationStatementColombia\"> </a><a name=\"hcMedicationStatementColombia\"> </a><a name=\"MedicationStatementColombia-es-CO\"> </a><p><b>status</b>: Active</p><p><b>medication</b>: <span title=\"Codes:{https://www.minsalud.gov.co/CodeSystem/CUMS 20038383}\">10.4 MG DE MONTELUKAST SODICO EQUIVALENTE A MONTELUKAST</span></p><p><b>subject</b>: <a href=\"Patient-PacienteColombiano.html\">Miguel Angel López  Male, DoB: 1974-12-25 ( Cédula ciudadanía: 12345)</a></p></div>"
+      },
+      "status" : "active",
+      "medicationCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://www.minsalud.gov.co/CodeSystem/CUMS",
+          "code" : "20038383",
+          "display" : "10.4 MG DE MONTELUKAST SODICO EQUIVALENTE A MONTELUKAST"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/PacienteColombiano"
+      }
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "MedicationStatement"
+    }
+  }]
+}

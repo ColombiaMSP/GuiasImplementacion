@@ -1,0 +1,402 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "BundleColombiaCo2",
+  "meta" : {
+    "profile" : ["https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/BundleCo"]
+  },
+  "type" : "transaction",
+  "timestamp" : "2022-03-03T10:30:00Z",
+  "entry" : [{
+    "fullUrl" : "urn:uuid:391699f0-f37b-11ec-b939-0242ac120002",
+    "resource" : {
+      "resourceType" : "DocumentReference",
+      "id" : "DocumentReferenceColombia2",
+      "meta" : {
+        "profile" : ["https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DocumentReference_DocumentReferenceColombia2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference DocumentReferenceColombia2</b></p><a name=\"DocumentReferenceColombia2\"> </a><a name=\"hcDocumentReferenceColombia2\"> </a><a name=\"DocumentReferenceColombia2-es-CO\"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 60591-5}\">Patient summary Document</span></p><p><b>subject</b>: <a href=\"Bundle-BundleColombiaCo2.html#urn-uuid-2f8d6332-e339-457d-b5e8-1a140a1f3ea1\">Bundle: type = transaction; timestamp = 2022-03-03 10:30:00+0000</a></p><p><b>date</b>: 2022-03-03 10:30:00+0000</p><p><b>author</b>: <a href=\"Organization/OrganizacionPrestadorEjemplo\">Organization/OrganizacionPrestadorEjemplo</a></p><p><b>custodian</b>: <a href=\"Organization-OrganizacionRegionEjemplo.html\">Organization DIRECCION DEPARTAMENTAL DE CUNDINAMARCA</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>application/fhir+json</td><td><a href=\"Bundle-BundleColombiaCo2.html#urn-uuid-ae5a4562-f379-4e27-b5e6-3c49746812be\">Bundle: type = transaction; timestamp = 2022-03-03 10:30:00+0000</a></td></tr></table></blockquote></div>"
+      },
+      "status" : "current",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "60591-5"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:2f8d6332-e339-457d-b5e8-1a140a1f3ea1"
+      },
+      "date" : "2022-03-03T10:30:00Z",
+      "author" : [{
+        "reference" : "Organization/OrganizacionPrestadorEjemplo"
+      }],
+      "custodian" : {
+        "reference" : "Organization/OrganizacionRegionEjemplo"
+      },
+      "content" : [{
+        "attachment" : {
+          "contentType" : "application/fhir+json",
+          "url" : "urn:uuid:ae5a4562-f379-4e27-b5e6-3c49746812be"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "DocumentReference"
+    }
+  },
+  {
+    "fullUrl" : "uuid:urn:149226c1-efcb-4b86-bb2c-ed8d95c986c3",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "ProfesionalColombia2",
+      "meta" : {
+        "profile" : ["https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_ProfesionalColombia2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner ProfesionalColombia2</b></p><a name=\"ProfesionalColombia2\"> </a><a name=\"hcProfesionalColombia2\"> </a><a name=\"ProfesionalColombia2-es-CO\"> </a><p><b>identifier</b>: Cédula ciudadanía/12345</p></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "extension" : [{
+            "url" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-pais",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS",
+                "code" : "170"
+              }]
+            }
+          }],
+          "coding" : [{
+            "system" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia",
+            "code" : "CC",
+            "display" : "Cédula ciudadanía"
+          }]
+        },
+        "value" : "12345",
+        "assigner" : {
+          "display" : "Registraduria Nacional"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Practitioner"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:ae5a4562-f379-4e27-b5e6-3c49746812be",
+    "resource" : {
+      "resourceType" : "Composition",
+      "id" : "CompositionColombia2",
+      "meta" : {
+        "profile" : ["https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_CompositionColombia2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition CompositionColombia2</b></p><a name=\"CompositionColombia2\"> </a><a name=\"hcCompositionColombia2\"> </a><a name=\"CompositionColombia2-es-CO\"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 60591-5}\">Patient Summary Document</span></p><p><b>date</b>: 2022-03-05 18:30:00+0100</p><p><b>author</b>: <a href=\"Bundle-BundleColombiaCo2.html#uuid-urn-149226c1-efcb-4b86-bb2c-ed8d95c986c3\">Bundle: type = transaction; timestamp = 2022-03-03 10:30:00+0000</a></p><p><b>title</b>: Resumen de Paciente Colombia</p><p><b>custodian</b>: <a href=\"Organization-OrganizacionRegionEjemplo.html\">Organization DIRECCION DEPARTAMENTAL DE CUNDINAMARCA</a></p></div>"
+      },
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "60591-5",
+          "display" : "Patient Summary Document"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:2f8d6332-e339-457d-b5e8-1a140a1f3ea1"
+      },
+      "date" : "2022-03-05T18:30:00+01:00",
+      "author" : [{
+        "reference" : "uuid:urn:149226c1-efcb-4b86-bb2c-ed8d95c986c3"
+      }],
+      "title" : "Resumen de Paciente Colombia",
+      "custodian" : {
+        "reference" : "Organization/OrganizacionRegionEjemplo"
+      },
+      "section" : [{
+        "title" : "Condiciones del Paciente",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "11450-4",
+            "display" : "Problem list Reported"
+          }]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">CONDICIONES</div>"
+        },
+        "entry" : [{
+          "reference" : "uuid:urn:9d1a0c5e-b128-412b-b26d-77b563875e8f"
+        }]
+      },
+      {
+        "title" : "Medicamentos",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "10160-0",
+            "display" : "Hx of Medication use"
+          }]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">MEDICAMENTOS</div>"
+        },
+        "entry" : [{
+          "reference" : "uuid:urn:0bb7532e-171a-4a0b-adc3-0a9c0c5cafe2"
+        }]
+      },
+      {
+        "title" : "Alergias",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48765-2",
+            "display" : "Allergies and adverse reactions Document"
+          }]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">ALERGIAS</div>"
+        },
+        "entry" : [{
+          "reference" : "uuid:urn:6da4367e-aa63-4637-b1ff-28eeae429137"
+        }]
+      }]
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Composition"
+    }
+  },
+  {
+    "fullUrl" : "uuid:urn:9d1a0c5e-b128-412b-b26d-77b563875e8f",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "ConditionColombia2",
+      "meta" : {
+        "profile" : ["https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_ConditionColombia2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition ConditionColombia2</b></p><a name=\"ConditionColombia2\"> </a><a name=\"hcConditionColombia2\"> </a><a name=\"ConditionColombia2-es-CO\"> </a><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/sid/icd-10 E10.4}\">Diabetes Tipo 1, con complicaciones neurologicas</span></p><p><b>subject</b>: <a href=\"Bundle-BundleColombiaCo2.html#urn-uuid-2f8d6332-e339-457d-b5e8-1a140a1f3ea1\">Bundle: type = transaction; timestamp = 2022-03-03 10:30:00+0000</a></p></div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-10",
+          "code" : "E10.4",
+          "display" : "Type 1 diabetes mellitus : With neurological complications"
+        }],
+        "text" : "Diabetes Tipo 1, con complicaciones neurologicas"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:2f8d6332-e339-457d-b5e8-1a140a1f3ea1"
+      }
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Condition"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:2f8d6332-e339-457d-b5e8-1a140a1f3ea1",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "PacienteColombianoCompleto",
+      "meta" : {
+        "versionId" : "1",
+        "lastUpdated" : "2021-10-13T22:23:44.162Z",
+        "profile" : ["https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PacienteCo"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_PacienteColombianoCompleto\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient PacienteColombianoCompleto</b></p><a name=\"PacienteColombianoCompleto\"> </a><a name=\"hcPacienteColombianoCompleto\"> </a><a name=\"PacienteColombianoCompleto-es-CO\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: versionId: id (PrimitiveType/Patient.meta.versionId): element = id -&gt; versionId=id[1]; Last updated: 2021-10-13 22:23:44+0000</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PacienteCo.html\">Paciente Co</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Miguel Angel López  Male, DoB: 1974-12-25 ( Cédula ciudadanía: 12345)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">Medellín 152 </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Extensión utilizada para representar Nacionalidad.\"><a href=\"StructureDefinition-co-patient-nacionalidad.html\"/></td><td colspan=\"3\"><span title=\"Codes:{https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS 170}\">Colombia</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Extension utilizada dentro del Paciente Co, para representar la comunidad etnica de una persona.\"><a href=\"StructureDefinition-co-patient-comunidadetnica.html\"/></td><td colspan=\"3\">palanquera</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The gender the patient identifies with. The Patient's gender identity is used as guidance (e.g. for staff) about how to interact with the patient.\"><a href=\"http://hl7.org/fhir/R4/extension-patient-genderidentity.html\">genderIdentity</a></td><td colspan=\"3\"><span title=\"Codes:{https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdentidadGeneroCS 03}\">Transgénero</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Value(s) identifying physical or mental condition(s) that limits a person's movements, senses, or activities.\"><a href=\"http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-patient-disability.html\">Patient Disability</a></td><td colspan=\"3\"><span title=\"Codes:{https://www.minsalud.gov.co/ihc/fhir/CodeSystem/DiscapacidadCS 01}\">Discapacidad física</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Extension utilizada entro del Patient para representar Etnia de una persona.\"><a href=\"StructureDefinition-co-patient-etnia.html\"/></td><td colspan=\"3\"><span title=\"Codes:{https://www.minsalud.gov.co/ihc/fhir/CodeSystem/EtniaCS 01}\">Indigena</span></td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdentidadGeneroCS",
+            "code" : "03",
+            "display" : "Transgénero"
+          }]
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/patient-disability",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/DiscapacidadCS",
+            "code" : "01",
+            "display" : "Discapacidad física"
+          }]
+        }
+      },
+      {
+        "url" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-patient-etnia",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/EtniaCS",
+            "code" : "01",
+            "display" : "Indigena"
+          }]
+        }
+      },
+      {
+        "url" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-patient-nacionalidad",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS",
+            "code" : "170",
+            "display" : "Colombia"
+          }]
+        }
+      },
+      {
+        "url" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-patient-comunidadetnica",
+        "valueString" : "palanquera"
+      }],
+      "identifier" : [{
+        "type" : {
+          "extension" : [{
+            "url" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-pais",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS",
+                "code" : "170"
+              }]
+            }
+          }],
+          "coding" : [{
+            "system" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia",
+            "code" : "CC",
+            "display" : "Cédula ciudadanía"
+          }]
+        },
+        "system" : "http://minsalud.gov.co/ihc/ide/170/CC",
+        "value" : "12345",
+        "assigner" : {
+          "display" : "Registraduria Nacional"
+        }
+      }],
+      "name" : [{
+        "family" : "López",
+        "_family" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family",
+            "valueString" : "Ortíz"
+          }]
+        },
+        "given" : ["Miguel",
+        "Angel"]
+      }],
+      "gender" : "male",
+      "birthDate" : "1974-12-25",
+      "_birthDate" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
+          "valueDateTime" : "1974-12-25T14:35:45-05:00"
+        }]
+      },
+      "address" : [{
+        "extension" : [{
+          "url" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-address-zonaResidencia",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/ZonaResidenciaCS",
+              "code" : "02",
+              "display" : "Rural"
+            }]
+          }
+        }],
+        "city" : "Medellín",
+        "country" : "152"
+      }]
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Patient"
+    }
+  },
+  {
+    "fullUrl" : "uuid:urn:6da4367e-aa63-4637-b1ff-28eeae429137",
+    "resource" : {
+      "resourceType" : "AllergyIntolerance",
+      "id" : "AlergiaColombia3",
+      "meta" : {
+        "profile" : ["https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"AllergyIntolerance_AlergiaColombia3\"> </a><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance AlergiaColombia3</b></p><a name=\"AlergiaColombia3\"> </a><a name=\"hcAlergiaColombia3\"> </a><a name=\"AlergiaColombia3-es-CO\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}\">Confirmed</span></p><p><b>code</b>: <span title=\"Codes:\">alergia a gluten</span></p><p><b>patient</b>: <a href=\"Bundle-BundleColombiaCo2.html#urn-uuid-2f8d6332-e339-457d-b5e8-1a140a1f3ea1\">Paciente Colombiano</a></p></div>"
+      },
+      "extension" : [{
+        "url" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-AllergyIntolerance-tipo",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS",
+            "code" : "01"
+          }]
+        }
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code" : "active"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code" : "confirmed"
+        }]
+      },
+      "code" : {
+        "text" : "alergia a gluten"
+      },
+      "patient" : {
+        "reference" : "urn:uuid:2f8d6332-e339-457d-b5e8-1a140a1f3ea1",
+        "display" : "Paciente Colombiano"
+      }
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "AllergyIntolerance"
+    }
+  },
+  {
+    "fullUrl" : "uuid:urn:0bb7532e-171a-4a0b-adc3-0a9c0c5cafe2",
+    "resource" : {
+      "resourceType" : "MedicationStatement",
+      "id" : "MedicationStatementColombia2",
+      "meta" : {
+        "profile" : ["https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationStatement_MedicationStatementColombia2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationStatement MedicationStatementColombia2</b></p><a name=\"MedicationStatementColombia2\"> </a><a name=\"hcMedicationStatementColombia2\"> </a><a name=\"MedicationStatementColombia2-es-CO\"> </a><p><b>status</b>: Active</p><p><b>medication</b>: <span title=\"Codes:{https://www.minsalud.gov.co/CodeSystem/CUMS 20038383}\">10.4 MG DE MONTELUKAST SODICO EQUIVALENTE A MONTELUKAST</span></p><p><b>subject</b>: <a href=\"Bundle-BundleColombiaCo2.html#urn-uuid-2f8d6332-e339-457d-b5e8-1a140a1f3ea1\">Bundle: type = transaction; timestamp = 2022-03-03 10:30:00+0000</a></p></div>"
+      },
+      "status" : "active",
+      "medicationCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://www.minsalud.gov.co/CodeSystem/CUMS",
+          "code" : "20038383",
+          "display" : "10.4 MG DE MONTELUKAST SODICO EQUIVALENTE A MONTELUKAST"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:2f8d6332-e339-457d-b5e8-1a140a1f3ea1"
+      }
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "MedicationStatement"
+    }
+  }]
+}

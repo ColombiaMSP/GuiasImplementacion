@@ -1,0 +1,46 @@
+{
+  "resourceType" : "Patient",
+  "id" : "PacienteColombianoMinimo",
+  "meta" : {
+    "profile" : ["https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PacienteCo"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient PacienteColombianoMinimo</b></p><a name=\"PacienteColombianoMinimo\"> </a><a name=\"hcPacienteColombianoMinimo\"> </a><a name=\"PacienteColombianoMinimo-es-CO\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Luis Alberto Sanchez  Male, DoB: 1974-12-25 ( Cédula ciudadanía: 98765)</p><hr/></div>"
+  },
+  "identifier" : [{
+    "type" : {
+      "extension" : [{
+        "url" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-pais",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS",
+            "code" : "170"
+          }]
+        }
+      }],
+      "coding" : [{
+        "system" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia",
+        "code" : "CC",
+        "display" : "Cédula ciudadanía"
+      }]
+    },
+    "value" : "98765",
+    "assigner" : {
+      "display" : "Registraduria Nacional"
+    }
+  }],
+  "name" : [{
+    "family" : "Sanchez",
+    "_family" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family",
+        "valueString" : "Martinez"
+      }]
+    },
+    "given" : ["Luis",
+    "Alberto"]
+  }],
+  "gender" : "male",
+  "birthDate" : "1974-12-25"
+}

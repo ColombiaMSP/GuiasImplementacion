@@ -1,0 +1,97 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.minsalud.gov.co/ihc/fhir/Composition/CompositionColombia2> a fhir:Composition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CompositionColombia2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo"^^xsd:anyURI ;
+       fhir:link <https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition CompositionColombia2</b></p><a name=\"CompositionColombia2\"> </a><a name=\"hcCompositionColombia2\"> </a><a name=\"CompositionColombia2-es-CO\"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 60591-5}\">Patient Summary Document</span></p><p><b>date</b>: 2022-03-05 18:30:00+0100</p><p><b>author</b>: <a href=\"Bundle-BundleColombiaCo2.html#uuid-urn-149226c1-efcb-4b86-bb2c-ed8d95c986c3\">Bundle: type = transaction; timestamp = 2022-03-03 10:30:00+0000</a></p><p><b>title</b>: Resumen de Paciente Colombia</p><p><b>custodian</b>: <a href=\"Organization-OrganizacionRegionEjemplo.html\">Organization DIRECCION DEPARTAMENTAL DE CUNDINAMARCA</a></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:60591-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "60591-5" ] ;
+       fhir:display [ fhir:v "Patient Summary Document" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:reference [ fhir:v "urn:uuid:2f8d6332-e339-457d-b5e8-1a140a1f3ea1" ]
+  ] ; # 
+  fhir:date [ fhir:v "2022-03-05T18:30:00+01:00"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:reference [ fhir:v "uuid:urn:149226c1-efcb-4b86-bb2c-ed8d95c986c3" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Resumen de Paciente Colombia"] ; # 
+  fhir:custodian [
+     fhir:link <https://www.minsalud.gov.co/ihc/fhir/Organization/OrganizacionRegionEjemplo> ;
+     fhir:reference [ fhir:v "Organization/OrganizacionRegionEjemplo" ]
+  ] ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "Condiciones del Paciente" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:11450-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "11450-4" ] ;
+         fhir:display [ fhir:v "Problem list Reported" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">CONDICIONES</div>"
+     ] ;
+     fhir:entry ( [
+       fhir:reference [ fhir:v "uuid:urn:9d1a0c5e-b128-412b-b26d-77b563875e8f" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Medicamentos" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:10160-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "10160-0" ] ;
+         fhir:display [ fhir:v "Hx of Medication use" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">MEDICAMENTOS</div>"
+     ] ;
+     fhir:entry ( [
+       fhir:reference [ fhir:v "uuid:urn:0bb7532e-171a-4a0b-adc3-0a9c0c5cafe2" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Alergias" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:48765-2 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "48765-2" ] ;
+         fhir:display [ fhir:v "Allergies and adverse reactions Document" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">ALERGIAS</div>"
+     ] ;
+     fhir:entry ( [
+       fhir:reference [ fhir:v "uuid:urn:6da4367e-aa63-4637-b1ff-28eeae429137" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

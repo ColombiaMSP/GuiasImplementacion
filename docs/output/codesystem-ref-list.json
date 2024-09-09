@@ -1,0 +1,119 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "oids" : ["2.16.840.1.113883.4.642.4.2"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-administrative-gender.html" : "AdministrativeGender"
+    },
+    {
+      "url" : "http://hl7.org/fhir/sid/icd-10",
+      "version" : "2.1.1",
+      "status" : "retired",
+      "name" : "Icd10",
+      "title" : "ICD-10",
+      "description" : "International Classification of Diseases revision 10 (ICD 10)",
+      "oids" : ["2.16.840.1.113883.6.3"],
+      "uses" : {
+      },
+      "ValueSet-CIE10VS.html" : "Codificacion CIE10 ValueSet"
+    },
+    {
+      "url" : "http://loinc.org",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "LOINC",
+      "title" : "Logical Observation Identifiers, Names and Codes (LOINC)",
+      "description" : "LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.",
+      "oids" : ["2.16.840.1.113883.6.1"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes",
+      "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes"
+    },
+    {
+      "url" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS",
+      "version" : "0.4.3",
+      "status" : "draft",
+      "name" : "AlergiasCS",
+      "title" : "Tipo Alergia",
+      "description" : "Antecedente de Alergia",
+      "uses" : {
+      },
+      "ValueSet-AlergiasVS.html" : "Tipo Alergia"
+    },
+    {
+      "url" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/DiscapacidadCS",
+      "version" : "0.4.3",
+      "status" : "draft",
+      "name" : "DiscapacidadCS",
+      "title" : "Discapacidad",
+      "description" : "Identificador para determinar la categoría de discapacidad de\r\nacuerdo con el dominio o dominios donde se presente la deficiencia o deficiencias corporales del solicitante",
+      "uses" : {
+      },
+      "ValueSet-DiscapacidadVS.html" : "Discapacidad"
+    },
+    {
+      "url" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/EtniaCS",
+      "version" : "0.4.3",
+      "status" : "draft",
+      "name" : "Etnia",
+      "title" : "Etnia",
+      "description" : "Identificador para determinar la pertenencia étnica de la persona.",
+      "uses" : {
+      },
+      "ValueSet-EtniaVS.html" : "Etnia"
+    },
+    {
+      "url" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdentidadGeneroCS",
+      "version" : "0.4.3",
+      "status" : "draft",
+      "name" : "IdentidadGenero",
+      "title" : "Identidad de genero",
+      "description" : "Identidad de Género.",
+      "uses" : {
+      },
+      "ValueSet-IdentidadGeneroVS.html" : "Identidad de Genero"
+    },
+    {
+      "url" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia",
+      "version" : "0.4.3",
+      "status" : "active",
+      "name" : "IdspersonaColombia",
+      "title" : "Identificadores de Persona",
+      "description" : "Elemento de dato que contiene el nombre y número de identificación de una determinada persona para efectos de identidad e individualización",
+      "uses" : {
+      },
+      "ValueSet-IdentificadoresProfesionalVS.html" : "Identificadores de Profesional",
+      "ValueSet-IdentificadoresPersonaVS.html" : "Identificadores de Persona"
+    },
+    {
+      "url" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS",
+      "version" : "0.4.3",
+      "status" : "active",
+      "name" : "PaisesCS",
+      "title" : "Códigos del País CS",
+      "description" : "Codigos definidos para la identificación de países segun norma ISO3166-N",
+      "uses" : {
+      },
+      "ValueSet-PaisesVS.html" : "Códigos del País"
+    },
+    {
+      "url" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/ZonaResidenciaCS",
+      "version" : "0.4.3",
+      "status" : "draft",
+      "name" : "ZonaResidencia",
+      "title" : "Zona de residencia",
+      "description" : "Identificador para representar la Zona.",
+      "uses" : {
+      },
+      "ValueSet-ZonaResidenciaVS.html" : "Zona de residencia"
+    }
+  ]
+}
