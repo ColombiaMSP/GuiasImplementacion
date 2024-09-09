@@ -1,0 +1,44 @@
+A continuación de describen los archivos para modifcar colores y titulos:
+
+
+    1. Cambiar los colores : 
+    Buscar los archisos: fhir.css y project.css , y cambiar lo que dice debajo:
+
+
+        -----------------------------------------
+        fhir.css
+        -----------------------------------------
+        #segment-footer>.container {
+            background-color:#cc4533; 
+        /* cambiar aca por : #3366CC */
+        }
+        ....
+
+
+        .navbar-inverse {
+            background-color:#cc4533;
+            /* cambiar aca por : #3366CC */
+        }
+
+
+        .navbar-inverse .navbar-nav>li>a:hover {
+            background-color:#cc4533;
+        /* cambiar aca por : #3366CC */
+        }
+
+        -----------------------------------------
+        project.css     
+        -----------------------------------------
+
+        :root {
+
+        --ig-status-text-color: #525252; /* 1. IG Title and status text color */
+        --navbar-bg-color: #cc4533; /* 2. Header container color */
+        /* cambiar aca por : #3366CC */
+        --footer-bg-color: #707070; /* 3.
+
+
+
+    2. sushi-config.yaml
+    ... cambiar la linea...
+    title: GUIA EN DESARROLLO - Colombia (v 0.4.3)
