@@ -1,0 +1,66 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "DiscapacidadCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DiscapacidadCS</b></p><a name=\"DiscapacidadCS\"> </a><a name=\"hcDiscapacidadCS\"> </a><a name=\"DiscapacidadCS-es-CO\"> </a><p>This case-sensitive code system <code>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/DiscapacidadCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"DiscapacidadCS-01\"> </a></td><td>Discapacidad física</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"DiscapacidadCS-02\"> </a></td><td>Discapacidad visual</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"DiscapacidadCS-03\"> </a></td><td>Discapacidad auditiva</td></tr><tr><td style=\"white-space:nowrap\">04<a name=\"DiscapacidadCS-04\"> </a></td><td>Discapacidad intelectual</td></tr><tr><td style=\"white-space:nowrap\">05<a name=\"DiscapacidadCS-05\"> </a></td><td>Discapacidad sicosocial</td></tr><tr><td style=\"white-space:nowrap\">06<a name=\"DiscapacidadCS-06\"> </a></td><td>Sordoceguera</td></tr><tr><td style=\"white-space:nowrap\">07<a name=\"DiscapacidadCS-07\"> </a></td><td>Discapacidad múltiple</td></tr><tr><td style=\"white-space:nowrap\">08<a name=\"DiscapacidadCS-08\"> </a></td><td>Sin discapacidad</td></tr></table></div>"
+  },
+  "url" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/DiscapacidadCS",
+  "version" : "0.4.3",
+  "name" : "DiscapacidadCS",
+  "title" : "Discapacidad",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-09-05T17:47:22-03:00",
+  "publisher" : "MSP Colombia",
+  "contact" : [{
+    "name" : "MSP Colombia",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.minsalud.gov.co/"
+    }]
+  }],
+  "description" : "Identificador para determinar la categoría de discapacidad de\r\nacuerdo con el dominio o dominios donde se presente la deficiencia o deficiencias corporales del solicitante",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CO",
+      "display" : "Colombia"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 8,
+  "concept" : [{
+    "code" : "01",
+    "display" : "Discapacidad física"
+  },
+  {
+    "code" : "02",
+    "display" : "Discapacidad visual"
+  },
+  {
+    "code" : "03",
+    "display" : "Discapacidad auditiva"
+  },
+  {
+    "code" : "04",
+    "display" : "Discapacidad intelectual"
+  },
+  {
+    "code" : "05",
+    "display" : "Discapacidad sicosocial"
+  },
+  {
+    "code" : "06",
+    "display" : "Sordoceguera"
+  },
+  {
+    "code" : "07",
+    "display" : "Discapacidad múltiple"
+  },
+  {
+    "code" : "08",
+    "display" : "Sin discapacidad"
+  }]
+}

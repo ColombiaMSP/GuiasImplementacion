@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="IdentidadGeneroCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem IdentidadGeneroCS</b></p><a name="IdentidadGeneroCS"> </a><a name="hcIdentidadGeneroCS"> </a><a name="IdentidadGeneroCS-es-CO"> </a><p>This case-sensitive code system <code>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdentidadGeneroCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">01<a name="IdentidadGeneroCS-01"> </a></td><td>Masculino</td></tr><tr><td style="white-space:nowrap">02<a name="IdentidadGeneroCS-02"> </a></td><td>Femenino</td></tr><tr><td style="white-space:nowrap">03<a name="IdentidadGeneroCS-03"> </a></td><td>Transgénero</td></tr><tr><td style="white-space:nowrap">04<a name="IdentidadGeneroCS-04"> </a></td><td>Neutro</td></tr><tr><td style="white-space:nowrap">05<a name="IdentidadGeneroCS-05"> </a></td><td>No lo declara</td></tr></table></div>
+  </text>
+  <url value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdentidadGeneroCS"/>
+  <version value="0.4.3"/>
+  <name value="IdentidadGenero"/>
+  <title value="Identidad de genero"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-09-05T17:47:22-03:00"/>
+  <publisher value="MSP Colombia"/>
+  <contact>
+    <name value="MSP Colombia"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.minsalud.gov.co/"/>
+    </telecom>
+  </contact>
+  <description value="Identidad de Género."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CO"/>
+      <display value="Colombia"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="01"/>
+    <display value="Masculino"/>
+  </concept>
+  <concept>
+    <code value="02"/>
+    <display value="Femenino"/>
+  </concept>
+  <concept>
+    <code value="03"/>
+    <display value="Transgénero"/>
+  </concept>
+  <concept>
+    <code value="04"/>
+    <display value="Neutro"/>
+  </concept>
+  <concept>
+    <code value="05"/>
+    <display value="No lo declara"/>
+  </concept>
+</CodeSystem>

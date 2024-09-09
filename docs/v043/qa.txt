@@ -2,8 +2,8 @@ CoreCOImplementationGuide : Validation Results
 =========================================
 
 err = 28, warn = 45, info = 23
-IG Publisher Version: 1.6.18 Out of date - current version is 1.6.22
-Generated Thu Sep 05 17:50:18 UYT 2024. FHIR version 4.0.1 for hl7.fhir.co.CoreCO#0.4.3 (canonical = https://www.minsalud.gov.co/ihc/fhir)
+IG Publisher Version: 1.6.18 Out of date - current version is 1.6.23
+Generated Mon Sep 09 18:42:25 UYT 2024. FHIR version 4.0.1 for hl7.fhir.co.CoreCO#0.4.3 (canonical = https://www.minsalud.gov.co/ihc/fhir)
  Build Errors : 4 / 33 / 0
  C:\GuiasImplementacion\fsh-generated\resources\AllergyIntolerance-AlergiaColombia : 0 / 0 / 2
  C:\GuiasImplementacion\fsh-generated\resources\AllergyIntolerance-AlergiaColombia2 : 0 / 0 / 2

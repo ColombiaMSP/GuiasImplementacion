@@ -1,0 +1,795 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 4, errors = 28, warn = 45, info = 23-->
+<head>
+  <title>CoreCOImplementationGuide : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for CoreCOImplementationGuide</h1>
+ <p>Generated Thu Sep 05 17:50:18 UYT 2024, FHIR version 4.0.1 for hl7.fhir.co.CoreCO#0.4.3 (canonical = <a href="https://www.minsalud.gov.co/ihc/fhir">https://www.minsalud.gov.co/ihc/fhir</a> (<a href="https://www.minsalud.gov.co/ihc/fhir/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.6.18, which is out of date. The current version is v1.6.22 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.co.CoreCO, Canonical = https://www.minsalud.gov.co/ihc/fhir</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Publication Request:</td><td><ul><li>The file package-list.json should not exist in the root folder <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li>Error fetching package-list from https://www.minsalud.gov.co/ihc/fhir: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li>This IG has never been published, so the version should start with '0.' or include a patch version e.g. '-ballot' <img src="icon-warning.png" height="16px" width="16px"/></li>
+<li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
+</ul>
+</td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\GuiasImplementacion\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.co.CoreCO</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.4.3</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://www.minsalud.gov.co/ihc/fhir</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\GuiasImplementacion\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">6.0.2 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/6.0.2</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\GuiasImplementacion\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALElEQVR4Xu3IsQ0AIAwEsez6+89AqKGGJj7JzVWS+mm3zgcAAMxwDQAAgFcaYAVAgNGLTjgAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: minsalud#0.1.0 -&gt; fhir.base.template#current. Tools: 0.1.0</para></div></td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
+ <tr><td>Terminology Server(s):</td><td><a href="http://tx.fhir.org/r4">http://tx.fhir.org/r4</a> (<a href="qa-txservers.html">details</a>)</td></tr>
+ <tr><td>HTA Analysis:</td><td><a href="qa-hta.html">All OK</a></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Draft Dependencies:</td><td><ul>
+  <li>
+hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R4/extension-patient-genderidentity.html">genderIdentity</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/allergyintolerance.html">AllergyIntolerance</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
+ (12 uses),     <a href="http://hl7.org/fhir/R4/valueset-allergyintolerance-clinical.html">AllergyIntoleranceClinicalStatusCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-allergyintolerance-verification.html">AllergyIntoleranceVerificationStatusCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-allergy-intolerance-type.html">AllergyIntoleranceType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-allergy-intolerance-category.html">AllergyIntoleranceCategory</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-allergy-intolerance-criticality.html">AllergyIntoleranceCriticality</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-allergyintolerance-code.html">AllergyIntoleranceSubstance/Product,ConditionAndNegationCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
+ (13 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
+ (12 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
+ (11 uses),     <a href="http://hl7.org/fhir/R4/valueset-substance-code.html">SubstanceCode</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-clinical-findings.html">SNOMEDCTClinicalFindings</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-reaction-event-severity.html">AllergyIntoleranceSeverity</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-route-codes.html">SNOMEDCTRouteCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/composition.html">Composition</a>
+ (14 uses),     <a href="http://hl7.org/fhir/R4/valueset-composition-status.html">CompositionStatus</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-doc-typecodes.html">FHIRDocumentTypeCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-composition-attestation-mode.html">CompositionAttestationMode</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+ (19 uses),     <a href="http://hl7.org/fhir/R4/valueset-document-relationship-type.html">DocumentRelationshipType</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-doc-section-codes.html">DocumentSectionCodes</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/valueset-list-mode.html">ListMode</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/valueset-list-order.html">ListOrderCodes</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/valueset-list-empty-reason.html">ListEmptyReasons</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
+ (7 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-clinical.html">ConditionClinicalStatusCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-ver-status.html">ConditionVerificationStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-category.html">ConditionCategoryCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-severity.html">Condition/DiagnosisSeverity</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-code.html">Condition/Problem/DiagnosisCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-body-site.html">SNOMEDCTBodyStructures</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-stage.html">ConditionStage</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/clinicalimpression.html">ClinicalImpression</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-stage-type.html">ConditionStageType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html">ManifestationAndSymptomCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/documentreference.html">DocumentReference</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-document-reference-status.html">DocumentReferenceStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/episodeofcare.html">EpisodeOfCare</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/medicationstatement.html">MedicationStatement</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-statement-status.html">Medication Status Codes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-reason-medication-status-codes.html">SNOMEDCTDrugTherapyStatusCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-statement-category.html">Medication usage category codes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/medication.html">Medication</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-codes.html">SNOMEDCTMedicationCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-organization-type.html">OrganizationType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-contactentity-type.html">ContactEntityType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/endpoint.html">Endpoint</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/extension-regex.html">regex</a>
+ (2 uses)
+  </li>
+  <li>
+hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureDefinition-resource-sort.html">ResourceSortExt</a>
+ (55 uses)
+  </li>
+</ul>
+</td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://www.minsalud.gov.co/ihc/fhir (Problem #1 with package-list.json at https://www.minsalud.gov.co/ihc/fhir: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target)</td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>IPS Comparison:</td><td> n/a</td></tr>
+ <tr><td>Summary:</td><td> errors = 28, warn = 45, info = 23, broken links = 4</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>4</b></td><td><b>33</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GuiasImplementacion_fsh-generated_resources_Bundle-BundleColombiaCo"><b>C:\GuiasImplementacion\fsh-generated\resources\Bundle-BundleColombiaCo</b></a></td><td><b>9</b></td><td><b>1</b></td><td><b>3</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GuiasImplementacion_fsh-generated_resources_Bundle-BundleColombiaCo2"><b>C:\GuiasImplementacion\fsh-generated\resources\Bundle-BundleColombiaCo2</b></a></td><td><b>13</b></td><td><b>1</b></td><td><b>7</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__GuiasImplementacion_fsh-generated_resources_Condition-ConditionColombia"><b>C:\GuiasImplementacion\fsh-generated\resources\Condition-ConditionColombia</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__GuiasImplementacion_fsh-generated_resources_Condition-ConditionColombia2"><b>C:\GuiasImplementacion\fsh-generated\resources\Condition-ConditionColombia2</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GuiasImplementacion_fsh-generated_resources_DocumentReference-DocumentReferenceColombia"><b>C:\GuiasImplementacion\fsh-generated\resources\DocumentReference-DocumentReferenceColombia</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GuiasImplementacion_fsh-generated_resources_DocumentReference-DocumentReferenceColombia2"><b>C:\GuiasImplementacion\fsh-generated\resources\DocumentReference-DocumentReferenceColombia2</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GuiasImplementacion_fsh-generated_resources_MedicationStatement-MedicationStatementColombia"><b>C:\GuiasImplementacion\fsh-generated\resources\MedicationStatement-MedicationStatementColombia</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__GuiasImplementacion_fsh-generated_resources_MedicationStatement-MedicationStatementColombia2"><b>C:\GuiasImplementacion\fsh-generated\resources\MedicationStatement-MedicationStatementColombia2</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__GuiasImplementacion_fsh-generated_resources_StructureDefinition-co-AllergyIntolerance-tipo"><b>C:\GuiasImplementacion\fsh-generated\resources\StructureDefinition-co-AllergyIntolerance-tipo</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__GuiasImplementacion_fsh-generated_resources_StructureDefinition-co-address-zonaResidencia"><b>C:\GuiasImplementacion\fsh-generated\resources\StructureDefinition-co-address-zonaResidencia</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__GuiasImplementacion_fsh-generated_resources_StructureDefinition-co-pais"><b>C:\GuiasImplementacion\fsh-generated\resources\StructureDefinition-co-pais</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__GuiasImplementacion_fsh-generated_resources_StructureDefinition-co-patient-comunidadetnica"><b>C:\GuiasImplementacion\fsh-generated\resources\StructureDefinition-co-patient-comunidadetnica</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__GuiasImplementacion_fsh-generated_resources_StructureDefinition-co-patient-etnia"><b>C:\GuiasImplementacion\fsh-generated\resources\StructureDefinition-co-patient-etnia</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__GuiasImplementacion_fsh-generated_resources_StructureDefinition-co-patient-nacionalidad"><b>C:\GuiasImplementacion\fsh-generated\resources\StructureDefinition-co-patient-nacionalidad</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__GuiasImplementacion_fsh-generated_resources_ValueSet-CUMSVS"><b>C:\GuiasImplementacion\fsh-generated\resources\ValueSet-CUMSVS</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__GuiasImplementacion_fsh-generated_resources_ValueSet-IUMVS"><b>C:\GuiasImplementacion\fsh-generated\resources\ValueSet-IUMVS</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/AlergiaCo.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ConditionCo.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/MedicationStatementCo.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/OrganizacionCo.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/PacienteCo.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/PractitionerCo.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource AllergyIntolerance/AlergiaColombia.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource AllergyIntolerance/AlergiaColombia2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource AllergyIntolerance/AlergiaColombia3.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource DocumentReference/DocumentReferenceColombia.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource DocumentReference/DocumentReferenceColombia2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output\AllergyIntolerance-AlergiaColombia&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/script at Line 241, column 4</b></td><td><b>warning</b></td><td title=""><b>The &lt;script&gt; containing the javascript 'try {       var curr'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 168 other files)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output\AllergyIntolerance-AlergiaColombia&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/script at Line 264, column 4</b></td><td><b>warning</b></td><td title=""><b>The &lt;script&gt; containing the javascript '$(document).ready(fu'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 356 other files)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output\AllergyIntolerance-AlergiaColombia&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/script at Line 304, column 4</b></td><td><b>warning</b></td><td title=""><b>The &lt;script&gt; containing the javascript 'anchors.options.visi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (also in 356 other files)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-BundleColombiaCo.html#l431">output\Bundle-BundleColombiaCo&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/blockquote&#8203;/p&#8203;/a at Line 246, column 1188</a></b></td><td><b>error</b></td><td><b>The link 'Organization/OrganizacionPrestadorEjemplo' for &quot;Organization/OrganizacionPrestadorEjemplo&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-BundleColombiaCo2.html#l431">output\Bundle-BundleColombiaCo2&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/blockquote&#8203;/p&#8203;/a at Line 246, column 1187</a></b></td><td><b>error</b></td><td><b>The link 'Organization/OrganizacionPrestadorEjemplo' for &quot;Organization/OrganizacionPrestadorEjemplo&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="DocumentReference-DocumentReferenceColombia.html#l408">output\DocumentReference-DocumentReferenceColombia&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 246, column 612</a></b></td><td><b>error</b></td><td><b>The link 'Organization/OrganizacionPrestadorEjemplo' for &quot;Organization/OrganizacionPrestadorEjemplo&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="DocumentReference-DocumentReferenceColombia2.html#l408">output\DocumentReference-DocumentReferenceColombia2&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 246, column 647</a></b></td><td><b>error</b></td><td><b>The link 'Organization/OrganizacionPrestadorEjemplo' for &quot;Organization/OrganizacionPrestadorEjemplo&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output\StructureDefinition-AlergiaCo&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: AllergyIntolerance,AllergyIntolerance.asserter,AllergyIntolerance.category,AllergyIntolerance.clinicalStatus,AllergyIntolerance.code,AllergyIntolerance.code.coding,AllergyIntolerance.code.extension,AllergyIntolerance.code.id,AllergyIntolerance.code.text,AllergyIntolerance.contained,AllergyIntolerance.criticality,AllergyIntolerance.encounter,AllergyIntolerance.extension,AllergyIntolerance.extension.2,AllergyIntolerance.id,AllergyIntolerance.identifier,AllergyIntolerance.implicitRules,AllergyIntolerance.language,AllergyIntolerance.lastOccurrence,AllergyIntolerance.meta,AllergyIntolerance.modifierExtension,AllergyIntolerance.note,AllergyIntolerance.onset_x_,AllergyIntolerance.patient,AllergyIntolerance.patient.display,AllergyIntolerance.patient.extension,AllergyIntolerance.patient.id,AllergyIntolerance.patient.identifier,AllergyIntolerance.patient.reference,AllergyIntolerance.patient.type,AllergyIntolerance.reaction,AllergyIntolerance.reaction.description,AllergyIntolerance.reaction.exposureRoute,AllergyIntolerance.reaction.extension,AllergyIntolerance.reaction.id,AllergyIntolerance.reaction.manifestation,AllergyIntolerance.reaction.modifierExtension,AllergyIntolerance.reaction.note,AllergyIntolerance.reaction.onset,AllergyIntolerance.reaction.severity,AllergyIntolerance.reaction.substance,AllergyIntolerance.recordedDate,AllergyIntolerance.recorder,AllergyIntolerance.text,AllergyIntolerance.type,AllergyIntolerance.verificationStatus,d-AllergyIntolerance,d-AllergyIntolerance.clinicalStatus,d-AllergyIntolerance.code,d-AllergyIntolerance.code.text,d-AllergyIntolerance.extension,d-AllergyIntolerance.extension.2,d-AllergyIntolerance.patient,d-AllergyIntolerance.patient.reference,d-AllergyIntolerance.verificationStatus,k-AllergyIntolerance,k-AllergyIntolerance.clinicalStatus,k-AllergyIntolerance.code,k-AllergyIntolerance.code.text,k-AllergyIntolerance.extension,k-AllergyIntolerance.extension.2,k-AllergyIntolerance.implicitRules,k-AllergyIntolerance.modifierExtension,k-AllergyIntolerance.patient,k-AllergyIntolerance.patient.reference,k-AllergyIntolerance.verificationStatus,s-summary</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output\StructureDefinition-BundleCo&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: Bundle,Bundle.entry,Bundle.entry.2,Bundle.entry.3,Bundle.entry.4,Bundle.entry.5,Bundle.entry.6,Bundle.entry.7,Bundle.entry.8,Bundle.entry.9,Bundle.entry.extension,Bundle.entry.extension.2,Bundle.entry.extension.3,Bundle.entry.extension.4,Bundle.entry.extension.5,Bundle.entry.extension.6,Bundle.entry.extension.7,Bundle.entry.extension.8,Bundle.entry.fullUrl,Bundle.entry.fullUrl.2,Bundle.entry.fullUrl.3,Bundle.entry.fullUrl.4,Bundle.entry.fullUrl.5,Bundle.entry.fullUrl.6,Bundle.entry.fullUrl.7,Bundle.entry.fullUrl.8,Bundle.entry.id,Bundle.entry.id.2,Bundle.entry.id.3,Bundle.entry.id.4,Bundle.entry.id.5,Bundle.entry.id.6,Bundle.entry.id.7,Bundle.entry.id.8,Bundle.entry.link,Bundle.entry.link.2,Bundle.entry.link.3,Bundle.entry.link.4,Bundle.entry.link.5,Bundle.entry.link.6,Bundle.entry.link.7,Bundle.entry.link.8,Bundle.entry.modifierExtension,Bundle.entry.modifierExtension.2,Bundle.entry.modifierExtension.3,Bundle.entry.modifierExtension.4,Bundle.entry.modifierExtension.5,Bundle.entry.modifierExtension.6,Bundle.entry.modifierExtension.7,Bundle.entry.modifierExtension.8,Bundle.entry.request,Bundle.entry.request.2,Bundle.entry.request.3,Bundle.entry.request.4,Bundle.entry.request.5,Bundle.entry.request.6,Bundle.entry.request.7,Bundle.entry.request.8,Bundle.entry.request.extension,Bundle.entry.request.extension.2,Bundle.entry.request.extension.3,Bundle.entry.request.extension.4,Bundle.entry.request.extension.5,Bundle.entry.request.extension.6,Bundle.entry.request.extension.7,Bundle.entry.request.extension.8,Bundle.entry.request.id,Bundle.entry.request.id.2,Bundle.entry.request.id.3,Bundle.entry.request.id.4,Bundle.entry.request.id.5,Bundle.entry.request.id.6,Bundle.entry.request.id.7,Bundle.entry.request.id.8,Bundle.entry.request.ifMatch,Bundle.entry.request.ifMatch.2,Bundle.entry.request.ifMatch.3,Bundle.entry.request.ifMatch.4,Bundle.entry.request.ifMatch.5,Bundle.entry.request.ifMatch.6,Bundle.entry.request.ifMatch.7,Bundle.entry.request.ifMatch.8,Bundle.entry.request.ifModifiedSince,Bundle.entry.request.ifModifiedSince.2,Bundle.entry.request.ifModifiedSince.3,Bundle.entry.request.ifModifiedSince.4,Bundle.entry.request.ifModifiedSince.5,Bundle.entry.request.ifModifiedSince.6,Bundle.entry.request.ifModifiedSince.7,Bundle.entry.request.ifModifiedSince.8,Bundle.entry.request.ifNoneExist,Bundle.entry.request.ifNoneExist.2,Bundle.entry.request.ifNoneExist.3,Bundle.entry.request.ifNoneExist.4,Bundle.entry.request.ifNoneExist.5,Bundle.entry.request.ifNoneExist.6,Bundle.entry.request.ifNoneExist.7,Bundle.entry.request.ifNoneExist.8,Bundle.entry.request.ifNoneMatch,Bundle.entry.request.ifNoneMatch.2,Bundle.entry.request.ifNoneMatch.3,Bundle.entry.request.ifNoneMatch.4,Bundle.entry.request.ifNoneMatch.5,Bundle.entry.request.ifNoneMatch.6,Bundle.entry.request.ifNoneMatch.7,Bundle.entry.request.ifNoneMatch.8,Bundle.entry.request.method,Bundle.entry.request.method.2,Bundle.entry.request.method.3,Bundle.entry.request.method.4,Bundle.entry.request.method.5,Bundle.entry.request.method.6,Bundle.entry.request.method.7,Bundle.entry.request.method.8,Bundle.entry.request.modifierExtension,Bundle.entry.request.modifierExtension.2,Bundle.entry.request.modifierExtension.3,Bundle.entry.request.modifierExtension.4,Bundle.entry.request.modifierExtension.5,Bundle.entry.request.modifierExtension.6,Bundle.entry.request.modifierExtension.7,Bundle.entry.request.modifierExtension.8,Bundle.entry.request.url,Bundle.entry.request.url.2,Bundle.entry.request.url.3,Bundle.entry.request.url.4,Bundle.entry.request.url.5,Bundle.entry.request.url.6,Bundle.entry.request.url.7,Bundle.entry.request.url.8,Bundle.entry.resource,Bundle.entry.resource.2,Bundle.entry.resource.3,Bundle.entry.resource.4,Bundle.entry.resource.5,Bundle.entry.resource.6,Bundle.entry.resource.7,Bundle.entry.resource.8,Bundle.entry.response,Bundle.entry.response.2,Bundle.entry.response.3,Bundle.entry.response.4,Bundle.entry.response.5,Bundle.entry.response.6,Bundle.entry.response.7,Bundle.entry.response.8,Bundle.entry.response.etag,Bundle.entry.response.etag.2,Bundle.entry.response.etag.3,Bundle.entry.response.etag.4,Bundle.entry.response.etag.5,Bundle.entry.response.etag.6,Bundle.entry.response.etag.7,Bundle.entry.response.etag.8,Bundle.entry.response.extension,Bundle.entry.response.extension.2,Bundle.entry.response.extension.3,Bundle.entry.response.extension.4,Bundle.entry.response.extension.5,Bundle.entry.response.extension.6,Bundle.entry.response.extension.7,Bundle.entry.response.extension.8,Bundle.entry.response.id,Bundle.entry.response.id.2,Bundle.entry.response.id.3,Bundle.entry.response.id.4,Bundle.entry.response.id.5,Bundle.entry.response.id.6,Bundle.entry.response.id.7,Bundle.entry.response.id.8,Bundle.entry.response.lastModified,Bundle.entry.response.lastModified.2,Bundle.entry.response.lastModified.3,Bundle.entry.response.lastModified.4,Bundle.entry.response.lastModified.5,Bundle.entry.response.lastModified.6,Bundle.entry.response.lastModified.7,Bundle.entry.response.lastModified.8,Bundle.entry.response.location,Bundle.entry.response.location.2,Bundle.entry.response.location.3,Bundle.entry.response.location.4,Bundle.entry.response.location.5,Bundle.entry.response.location.6,Bundle.entry.response.location.7,Bundle.entry.response.location.8,Bundle.entry.response.modifierExtension,Bundle.entry.response.modifierExtension.2,Bundle.entry.response.modifierExtension.3,Bundle.entry.response.modifierExtension.4,Bundle.entry.response.modifierExtension.5,Bundle.entry.response.modifierExtension.6,Bundle.entry.response.modifierExtension.7,Bundle.entry.response.modifierExtension.8,Bundle.entry.response.outcome,Bundle.entry.response.outcome.2,Bundle.entry.response.outcome.3,Bundle.entry.response.outcome.4,Bundle.entry.response.outcome.5,Bundle.entry.response.outcome.6,Bundle.entry.response.outcome.7,Bundle.entry.response.outcome.8,Bundle.entry.response.status,Bundle.entry.response.status.2,Bundle.entry.response.status.3,Bundle.entry.response.status.4,Bundle.entry.response.status.5,Bundle.entry.response.status.6,Bundle.entry.response.status.7,Bundle.entry.response.status.8,Bundle.entry.search,Bundle.entry.search.2,Bundle.entry.search.3,Bundle.entry.search.4,Bundle.entry.search.5,Bundle.entry.search.6,Bundle.entry.search.7,Bundle.entry.search.8,Bundle.entry.search.extension,Bundle.entry.search.extension.2,Bundle.entry.search.extension.3,Bundle.entry.search.extension.4,Bundle.entry.search.extension.5,Bundle.entry.search.extension.6,Bundle.entry.search.extension.7,Bundle.entry.search.extension.8,Bundle.entry.search.id,Bundle.entry.search.id.2,Bundle.entry.search.id.3,Bundle.entry.search.id.4,Bundle.entry.search.id.5,Bundle.entry.search.id.6,Bundle.entry.search.id.7,Bundle.entry.search.id.8,Bundle.entry.search.mode,Bundle.entry.search.mode.2,Bundle.entry.search.mode.3,Bundle.entry.search.mode.4,Bundle.entry.search.mode.5,Bundle.entry.search.mode.6,Bundle.entry.search.mode.7,Bundle.entry.search.mode.8,Bundle.entry.search.modifierExtension,Bundle.entry.search.modifierExtension.2,Bundle.entry.search.modifierExtension.3,Bundle.entry.search.modifierExtension.4,Bundle.entry.search.modifierExtension.5,Bundle.entry.search.modifierExtension.6,Bundle.entry.search.modifierExtension.7,Bundle.entry.search.modifierExtension.8,Bundle.entry.search.score,Bundle.entry.search.score.2,Bundle.entry.search.score.3,Bundle.entry.search.score.4,Bundle.entry.search.score.5,Bundle.entry.search.score.6,Bundle.entry.search.score.7,Bundle.entry.search.score.8,Bundle.id,Bundle.identifier,Bundle.implicitRules,Bundle.language,Bundle.link,Bundle.link.extension,Bundle.link.id,Bundle.link.modifierExtension,Bundle.link.relation,Bundle.link.url,Bundle.meta,Bundle.signature,Bundle.timestamp,Bundle.total,Bundle.type,d-Bundle,d-Bundle.entry,d-Bundle.entry.2,d-Bundle.entry.3,d-Bundle.entry.4,d-Bundle.entry.5,d-Bundle.entry.6,d-Bundle.entry.7,d-Bundle.entry.8,d-Bundle.entry.9,d-Bundle.entry.request,d-Bundle.entry.request.2,d-Bundle.entry.request.3,d-Bundle.entry.request.4,d-Bundle.entry.request.5,d-Bundle.entry.request.6,d-Bundle.entry.request.7,d-Bundle.entry.request.method,d-Bundle.entry.request.method.2,d-Bundle.entry.request.method.3,d-Bundle.entry.request.method.4,d-Bundle.entry.request.method.5,d-Bundle.entry.request.method.6,d-Bundle.entry.request.method.7,d-Bundle.entry.resource,d-Bundle.entry.resource.2,d-Bundle.entry.resource.3,d-Bundle.entry.resource.4,d-Bundle.entry.resource.5,d-Bundle.entry.resource.6,d-Bundle.entry.resource.7,d-Bundle.entry.resource.8,d-Bundle.type,k-Bundle,k-Bundle.entry,k-Bundle.entry.2,k-Bundle.entry.3,k-Bundle.entry.4,k-Bundle.entry.5,k-Bundle.entry.6,k-Bundle.entry.7,k-Bundle.entry.8,k-Bundle.entry.9,k-Bundle.entry.modifierExtension,k-Bundle.entry.modifierExtension.2,k-Bundle.entry.modifierExtension.3,k-Bundle.entry.modifierExtension.4,k-Bundle.entry.modifierExtension.5,k-Bundle.entry.modifierExtension.6,k-Bundle.entry.modifierExtension.7,k-Bundle.entry.modifierExtension.8,k-Bundle.entry.request,k-Bundle.entry.request.2,k-Bundle.entry.request.3,k-Bundle.entry.request.4,k-Bundle.entry.request.method,k-Bundle.entry.request.method.2,k-Bundle.entry.request.method.3,k-Bundle.entry.request.method.4,k-Bundle.entry.request.modifierExtension,k-Bundle.entry.request.modifierExtension.2,k-Bundle.entry.request.modifierExtension.3,k-Bundle.entry.request.modifierExtension.4,k-Bundle.entry.request.url,k-Bundle.entry.request.url.2,k-Bundle.entry.request.url.3,k-Bundle.entry.request.url.4,k-Bundle.entry.resource,k-Bundle.entry.resource.2,k-Bundle.entry.resource.3,k-Bundle.entry.resource.4,k-Bundle.entry.resource.5,k-Bundle.entry.resource.6,k-Bundle.entry.resource.7,k-Bundle.entry.resource.8,k-Bundle.implicitRules,k-Bundle.type,s-summary</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output\StructureDefinition-CompositionCo&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: Composition,Composition.attester,Composition.attester.extension,Composition.attester.id,Composition.attester.mode,Composition.attester.modifierExtension,Composition.attester.party,Composition.attester.time,Composition.author,Composition.category,Composition.confidentiality,Composition.contained,Composition.custodian,Composition.date,Composition.encounter,Composition.event,Composition.event.code,Composition.event.detail,Composition.event.extension,Composition.event.id,Composition.event.modifierExtension,Composition.event.period,Composition.extension,Composition.id,Composition.identifier,Composition.implicitRules,Composition.language,Composition.meta,Composition.modifierExtension,Composition.relatesTo,Composition.relatesTo.code,Composition.relatesTo.extension,Composition.relatesTo.id,Composition.relatesTo.modifierExtension,Composition.relatesTo.target_x_,Composition.section,Composition.section.2,Composition.section.3,Composition.section.4,Composition.section.5,Composition.section.author,Composition.section.author.2,Composition.section.author.3,Composition.section.author.4,Composition.section.code,Composition.section.code.2,Composition.section.code.3,Composition.section.code.4,Composition.section.emptyReason,Composition.section.emptyReason.2,Composition.section.emptyReason.3,Composition.section.emptyReason.4,Composition.section.entry,Composition.section.entry.2,Composition.section.entry.3,Composition.section.entry.4,Composition.section.extension,Composition.section.extension.2,Composition.section.extension.3,Composition.section.extension.4,Composition.section.focus,Composition.section.focus.2,Composition.section.focus.3,Composition.section.focus.4,Composition.section.id,Composition.section.id.2,Composition.section.id.3,Composition.section.id.4,Composition.section.mode,Composition.section.mode.2,Composition.section.mode.3,Composition.section.mode.4,Composition.section.modifierExtension,Composition.section.modifierExtension.2,Composition.section.modifierExtension.3,Composition.section.modifierExtension.4,Composition.section.orderedBy,Composition.section.orderedBy.2,Composition.section.orderedBy.3,Composition.section.orderedBy.4,Composition.section.section,Composition.section.section.2,Composition.section.section.3,Composition.section.section.4,Composition.section.text,Composition.section.text.2,Composition.section.text.3,Composition.section.text.4,Composition.section.title,Composition.section.title.2,Composition.section.title.3,Composition.section.title.4,Composition.status,Composition.subject,Composition.subject.display,Composition.subject.extension,Composition.subject.id,Composition.subject.identifier,Composition.subject.reference,Composition.subject.type,Composition.text,Composition.title,Composition.type,d-Composition,d-Composition.author,d-Composition.custodian,d-Composition.date,d-Composition.section,d-Composition.section.2,d-Composition.section.3,d-Composition.section.4,d-Composition.section.5,d-Composition.section.code,d-Composition.section.code.2,d-Composition.section.code.3,d-Composition.section.code.4,d-Composition.section.entry,d-Composition.section.entry.2,d-Composition.section.entry.3,d-Composition.section.title,d-Composition.section.title.2,d-Composition.section.title.3,d-Composition.status,d-Composition.subject,d-Composition.subject.reference,d-Composition.title,d-Composition.type,k-Composition,k-Composition.author,k-Composition.custodian,k-Composition.date,k-Composition.implicitRules,k-Composition.modifierExtension,k-Composition.section,k-Composition.section.2,k-Composition.section.3,k-Composition.section.4,k-Composition.section.5,k-Composition.section.code,k-Composition.section.code.2,k-Composition.section.code.3,k-Composition.section.code.4,k-Composition.section.entry,k-Composition.section.entry.2,k-Composition.section.entry.3,k-Composition.section.modifierExtension,k-Composition.section.modifierExtension.2,k-Composition.section.modifierExtension.3,k-Composition.section.modifierExtension.4,k-Composition.section.title,k-Composition.section.title.2,k-Composition.section.title.3,k-Composition.status,k-Composition.subject,k-Composition.subject.reference,k-Composition.title,k-Composition.type,s-summary</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output\StructureDefinition-ConditionCo&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: Condition,Condition.abatement_x_,Condition.asserter,Condition.bodySite,Condition.category,Condition.clinicalStatus,Condition.code,Condition.code.coding,Condition.code.coding.code,Condition.code.coding.display,Condition.code.coding.extension,Condition.code.coding.id,Condition.code.coding.system,Condition.code.coding.userSelected,Condition.code.coding.version,Condition.code.extension,Condition.code.id,Condition.code.text,Condition.contained,Condition.encounter,Condition.evidence,Condition.evidence.code,Condition.evidence.detail,Condition.evidence.extension,Condition.evidence.id,Condition.evidence.modifierExtension,Condition.extension,Condition.id,Condition.identifier,Condition.implicitRules,Condition.language,Condition.meta,Condition.modifierExtension,Condition.note,Condition.onset_x_,Condition.recordedDate,Condition.recorder,Condition.severity,Condition.stage,Condition.stage.assessment,Condition.stage.extension,Condition.stage.id,Condition.stage.modifierExtension,Condition.stage.summary,Condition.stage.type,Condition.subject,Condition.subject.display,Condition.subject.extension,Condition.subject.id,Condition.subject.identifier,Condition.subject.reference,Condition.subject.type,Condition.text,Condition.verificationStatus,d-Condition,d-Condition.clinicalStatus,d-Condition.code,d-Condition.code.coding,d-Condition.code.coding.code,d-Condition.code.coding.display,d-Condition.code.coding.system,d-Condition.code.text,d-Condition.subject,d-Condition.subject.reference,d-Condition.verificationStatus,k-Condition,k-Condition.clinicalStatus,k-Condition.code,k-Condition.code.text,k-Condition.implicitRules,k-Condition.modifierExtension,k-Condition.subject,k-Condition.subject.reference,k-Condition.verificationStatus,s-summary</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output\StructureDefinition-DocumentReferenceCo&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: DocumentReference,DocumentReference.authenticator,DocumentReference.author,DocumentReference.author.display,DocumentReference.author.extension,DocumentReference.author.id,DocumentReference.author.identifier,DocumentReference.author.reference,DocumentReference.author.type,DocumentReference.category,DocumentReference.contained,DocumentReference.content,DocumentReference.content.attachment,DocumentReference.content.attachment.contentType,DocumentReference.content.attachment.creation,DocumentReference.content.attachment.data,DocumentReference.content.attachment.extension,DocumentReference.content.attachment.hash,DocumentReference.content.attachment.id,DocumentReference.content.attachment.language,DocumentReference.content.attachment.size,DocumentReference.content.attachment.title,DocumentReference.content.attachment.url,DocumentReference.content.extension,DocumentReference.content.format,DocumentReference.content.id,DocumentReference.content.modifierExtension,DocumentReference.context,DocumentReference.context.encounter,DocumentReference.context.event,DocumentReference.context.extension,DocumentReference.context.facilityType,DocumentReference.context.id,DocumentReference.context.modifierExtension,DocumentReference.context.period,DocumentReference.context.practiceSetting,DocumentReference.context.related,DocumentReference.context.sourcePatientInfo,DocumentReference.custodian,DocumentReference.custodian.display,DocumentReference.custodian.extension,DocumentReference.custodian.id,DocumentReference.custodian.identifier,DocumentReference.custodian.reference,DocumentReference.custodian.type,DocumentReference.date,DocumentReference.description,DocumentReference.docStatus,DocumentReference.extension,DocumentReference.id,DocumentReference.identifier,DocumentReference.implicitRules,DocumentReference.language,DocumentReference.masterIdentifier,DocumentReference.meta,DocumentReference.modifierExtension,DocumentReference.relatesTo,DocumentReference.relatesTo.code,DocumentReference.relatesTo.extension,DocumentReference.relatesTo.id,DocumentReference.relatesTo.modifierExtension,DocumentReference.relatesTo.target,DocumentReference.securityLabel,DocumentReference.status,DocumentReference.subject,DocumentReference.subject.display,DocumentReference.subject.extension,DocumentReference.subject.id,DocumentReference.subject.identifier,DocumentReference.subject.reference,DocumentReference.subject.type,DocumentReference.text,DocumentReference.type,DocumentReference.type.coding,DocumentReference.type.coding.code,DocumentReference.type.coding.display,DocumentReference.type.coding.extension,DocumentReference.type.coding.id,DocumentReference.type.coding.system,DocumentReference.type.coding.userSelected,DocumentReference.type.coding.version,DocumentReference.type.extension,DocumentReference.type.id,DocumentReference.type.text,d-DocumentReference,d-DocumentReference.author,d-DocumentReference.author.reference,d-DocumentReference.content,d-DocumentReference.content.attachment,d-DocumentReference.content.attachment.url,d-DocumentReference.custodian,d-DocumentReference.custodian.reference,d-DocumentReference.date,d-DocumentReference.status,d-DocumentReference.subject,d-DocumentReference.subject.reference,d-DocumentReference.type,d-DocumentReference.type.coding,d-DocumentReference.type.coding.code,d-DocumentReference.type.coding.system,k-DocumentReference,k-DocumentReference.author,k-DocumentReference.author.reference,k-DocumentReference.content,k-DocumentReference.content.attachment,k-DocumentReference.content.attachment.url,k-DocumentReference.content.modifierExtension,k-DocumentReference.custodian,k-DocumentReference.custodian.reference,k-DocumentReference.date,k-DocumentReference.implicitRules,k-DocumentReference.modifierExtension,k-DocumentReference.status,k-DocumentReference.subject,k-DocumentReference.subject.reference,k-DocumentReference.type,k-DocumentReference.type.coding,k-DocumentReference.type.coding.code,k-DocumentReference.type.coding.system,s-summary</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output\StructureDefinition-MedicationStatementCo&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: MedicationStatement,MedicationStatement.basedOn,MedicationStatement.category,MedicationStatement.contained,MedicationStatement.context,MedicationStatement.dateAsserted,MedicationStatement.derivedFrom,MedicationStatement.dosage,MedicationStatement.effective_x_,MedicationStatement.extension,MedicationStatement.id,MedicationStatement.identifier,MedicationStatement.implicitRules,MedicationStatement.informationSource,MedicationStatement.language,MedicationStatement.medication_x_,MedicationStatement.medication_x_.2,MedicationStatement.meta,MedicationStatement.modifierExtension,MedicationStatement.note,MedicationStatement.partOf,MedicationStatement.reasonCode,MedicationStatement.reasonReference,MedicationStatement.status,MedicationStatement.statusReason,MedicationStatement.subject,MedicationStatement.subject.display,MedicationStatement.subject.extension,MedicationStatement.subject.id,MedicationStatement.subject.identifier,MedicationStatement.subject.reference,MedicationStatement.subject.type,MedicationStatement.text,d-MedicationStatement,d-MedicationStatement.medication_x_,d-MedicationStatement.medication_x_.2,d-MedicationStatement.status,d-MedicationStatement.subject,d-MedicationStatement.subject.reference,k-MedicationStatement,k-MedicationStatement.implicitRules,k-MedicationStatement.medication_x_,k-MedicationStatement.medication_x_.2,k-MedicationStatement.modifierExtension,k-MedicationStatement.status,k-MedicationStatement.subject,k-MedicationStatement.subject.reference,s-summary</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output\StructureDefinition-OrganizacionCo&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: Organization,Organization.active,Organization.address,Organization.alias,Organization.contact,Organization.contact.address,Organization.contact.extension,Organization.contact.id,Organization.contact.modifierExtension,Organization.contact.name,Organization.contact.purpose,Organization.contact.telecom,Organization.contained,Organization.endpoint,Organization.extension,Organization.id,Organization.identifier,Organization.identifier.assigner,Organization.identifier.extension,Organization.identifier.id,Organization.identifier.period,Organization.identifier.system,Organization.identifier.type,Organization.identifier.use,Organization.identifier.value,Organization.implicitRules,Organization.language,Organization.meta,Organization.modifierExtension,Organization.name,Organization.partOf,Organization.telecom,Organization.text,Organization.type,d-Organization,d-Organization.active,d-Organization.identifier,d-Organization.identifier.system,d-Organization.identifier.value,d-Organization.name,d-Organization.type,k-Organization,k-Organization.active,k-Organization.identifier,k-Organization.identifier.system,k-Organization.identifier.use,k-Organization.identifier.value,k-Organization.implicitRules,k-Organization.modifierExtension,k-Organization.name,k-Organization.type,s-summary</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output\StructureDefinition-PacienteCo&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: Patient,Patient.active,Patient.address,Patient.address.city,Patient.address.country,Patient.address.district,Patient.address.extension,Patient.address.extension.2,Patient.address.id,Patient.address.line,Patient.address.period,Patient.address.postalCode,Patient.address.state,Patient.address.text,Patient.address.type,Patient.address.use,Patient.birthDate,Patient.birthDate.extension,Patient.birthDate.extension.2,Patient.birthDate.id,Patient.birthDate.value,Patient.communication,Patient.communication.extension,Patient.communication.id,Patient.communication.language,Patient.communication.modifierExtension,Patient.communication.preferred,Patient.contact,Patient.contact.address,Patient.contact.extension,Patient.contact.gender,Patient.contact.id,Patient.contact.modifierExtension,Patient.contact.name,Patient.contact.organization,Patient.contact.period,Patient.contact.relationship,Patient.contact.telecom,Patient.contained,Patient.deceased_x_,Patient.extension,Patient.extension.2,Patient.extension.3,Patient.extension.4,Patient.extension.5,Patient.extension.6,Patient.extension.extension,Patient.extension.extension.2,Patient.extension.id,Patient.extension.id.2,Patient.extension.url,Patient.extension.url.2,Patient.extension.value_x_,Patient.extension.value_x_.2,Patient.gender,Patient.generalPractitioner,Patient.id,Patient.identifier,Patient.identifier.assigner,Patient.identifier.extension,Patient.identifier.id,Patient.identifier.period,Patient.identifier.system,Patient.identifier.type,Patient.identifier.type.coding,Patient.identifier.type.coding.code,Patient.identifier.type.coding.display,Patient.identifier.type.coding.extension,Patient.identifier.type.coding.id,Patient.identifier.type.coding.system,Patient.identifier.type.coding.userSelected,Patient.identifier.type.coding.version,Patient.identifier.type.extension,Patient.identifier.type.extension.2,Patient.identifier.type.id,Patient.identifier.type.text,Patient.identifier.use,Patient.identifier.value,Patient.implicitRules,Patient.language,Patient.link,Patient.link.extension,Patient.link.id,Patient.link.modifierExtension,Patient.link.other,Patient.link.type,Patient.managingOrganization,Patient.maritalStatus,Patient.meta,Patient.modifierExtension,Patient.multipleBirth_x_,Patient.name,Patient.name.extension,Patient.name.family,Patient.name.family.extension,Patient.name.family.extension.2,Patient.name.family.id,Patient.name.family.value,Patient.name.given,Patient.name.id,Patient.name.period,Patient.name.prefix,Patient.name.suffix,Patient.name.text,Patient.name.use,Patient.photo,Patient.telecom,Patient.text,d-Patient,d-Patient.address,d-Patient.address.city,d-Patient.address.country,d-Patient.address.extension,d-Patient.address.extension.2,d-Patient.birthDate,d-Patient.birthDate.extension,d-Patient.birthDate.extension.2,d-Patient.extension,d-Patient.extension.2,d-Patient.extension.3,d-Patient.extension.4,d-Patient.extension.5,d-Patient.extension.6,d-Patient.extension.value_x_,d-Patient.extension.value_x_.2,d-Patient.gender,d-Patient.identifier,d-Patient.identifier.type,d-Patient.identifier.type.coding,d-Patient.identifier.type.coding.code,d-Patient.identifier.type.extension,d-Patient.identifier.type.extension.2,d-Patient.identifier.type.extension.3,d-Patient.identifier.value,d-Patient.name,d-Patient.name.family,d-Patient.name.family.extension,d-Patient.name.family.extension.2,d-Patient.name.given,k-Patient,k-Patient.active,k-Patient.address,k-Patient.address.city,k-Patient.address.country,k-Patient.address.extension,k-Patient.address.extension.2,k-Patient.address.use,k-Patient.birthDate,k-Patient.birthDate.extension,k-Patient.birthDate.extension.2,k-Patient.deceased_x_,k-Patient.extension,k-Patient.extension.2,k-Patient.extension.3,k-Patient.extension.4,k-Patient.extension.5,k-Patient.extension.6,k-Patient.extension.extension,k-Patient.extension.extension.2,k-Patient.extension.url,k-Patient.extension.url.2,k-Patient.extension.value_x_,k-Patient.extension.value_x_.2,k-Patient.gender,k-Patient.identifier,k-Patient.identifier.type,k-Patient.identifier.type.coding,k-Patient.identifier.type.coding.code,k-Patient.identifier.type.extension,k-Patient.identifier.type.extension.2,k-Patient.identifier.use,k-Patient.identifier.value,k-Patient.implicitRules,k-Patient.link,k-Patient.link.modifierExtension,k-Patient.link.other,k-Patient.link.type,k-Patient.modifierExtension,k-Patient.name,k-Patient.name.family,k-Patient.name.family.extension,k-Patient.name.family.extension.2,k-Patient.name.given,k-Patient.name.use,s-summary</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output\StructureDefinition-PractitionerCo&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: Practitioner,Practitioner.active,Practitioner.address,Practitioner.birthDate,Practitioner.communication,Practitioner.contained,Practitioner.extension,Practitioner.gender,Practitioner.id,Practitioner.identifier,Practitioner.identifier.assigner,Practitioner.identifier.extension,Practitioner.identifier.id,Practitioner.identifier.period,Practitioner.identifier.system,Practitioner.identifier.type,Practitioner.identifier.type.coding,Practitioner.identifier.type.coding.code,Practitioner.identifier.type.coding.display,Practitioner.identifier.type.coding.extension,Practitioner.identifier.type.coding.id,Practitioner.identifier.type.coding.system,Practitioner.identifier.type.coding.userSelected,Practitioner.identifier.type.coding.version,Practitioner.identifier.type.extension,Practitioner.identifier.type.extension.2,Practitioner.identifier.type.id,Practitioner.identifier.type.text,Practitioner.identifier.use,Practitioner.identifier.value,Practitioner.implicitRules,Practitioner.language,Practitioner.meta,Practitioner.modifierExtension,Practitioner.name,Practitioner.photo,Practitioner.qualification,Practitioner.qualification.code,Practitioner.qualification.extension,Practitioner.qualification.id,Practitioner.qualification.identifier,Practitioner.qualification.issuer,Practitioner.qualification.modifierExtension,Practitioner.qualification.period,Practitioner.telecom,Practitioner.text,d-Practitioner,d-Practitioner.identifier,d-Practitioner.identifier.type,d-Practitioner.identifier.type.coding,d-Practitioner.identifier.type.coding.code,d-Practitioner.identifier.type.extension,d-Practitioner.identifier.type.extension.2,d-Practitioner.identifier.type.extension.3,d-Practitioner.identifier.value,k-Practitioner,k-Practitioner.identifier,k-Practitioner.identifier.type,k-Practitioner.identifier.type.extension,k-Practitioner.identifier.type.extension.2,k-Practitioner.identifier.use,k-Practitioner.identifier.value,k-Practitioner.implicitRules,k-Practitioner.modifierExtension,s-summary</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output\StructureDefinition-co-AllergyIntolerance-tipo&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: Extension,Extension.extension,Extension.id,Extension.url,Extension.value_x_,Extension.value_x_.coding,Extension.value_x_.coding.code,Extension.value_x_.coding.display,Extension.value_x_.coding.extension,Extension.value_x_.coding.id,Extension.value_x_.coding.system,Extension.value_x_.coding.userSelected,Extension.value_x_.coding.version,Extension.value_x_.extension,Extension.value_x_.id,Extension.value_x_.text,d-Extension,d-Extension.extension,d-Extension.url,d-Extension.value_x_,d-Extension.value_x_.coding,d-Extension.value_x_.coding.code,d-Extension.value_x_.coding.display,d-Extension.value_x_.coding.system,d-Extension.value_x_.text,s-summary</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output\StructureDefinition-co-address-zonaResidencia&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: Extension,Extension.extension,Extension.id,Extension.url,Extension.value_x_,Extension.value_x_.2,d-Extension,d-Extension.extension,d-Extension.url,d-Extension.value_x_,d-Extension.value_x_.2,s-summary</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output\StructureDefinition-co-pais.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: Extension,Extension.extension,Extension.id,Extension.url,Extension.value_x_,Extension.value_x_.2,d-Extension,d-Extension.extension,d-Extension.url,d-Extension.value_x_,d-Extension.value_x_.2,s-summary</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output\StructureDefinition-co-patient-comunidadetnica&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: Extension,Extension.extension,Extension.id,Extension.url,Extension.value_x_,Extension.value_x_.2,d-Extension,d-Extension.extension,d-Extension.url,d-Extension.value_x_,d-Extension.value_x_.2,s-summary</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output\StructureDefinition-co-patient-etnia&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: Extension,Extension.extension,Extension.id,Extension.url,Extension.value_x_,d-Extension,d-Extension.extension,d-Extension.url,d-Extension.value_x_,s-summary</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output\StructureDefinition-co-patient-nacionalidad&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: Extension,Extension.extension,Extension.id,Extension.url,Extension.value_x_,Extension.value_x_.2,d-Extension,d-Extension.extension,d-Extension.url,d-Extension.value_x_,d-Extension.value_x_.2,s-summary</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>1</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>2</b></td><td><b>warning</b></td><td title=""><b>An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>3</b></td><td><b>warning</b></td><td title=""><b>An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>4</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GuiasImplementacion_fsh-generated_resources_Bundle-BundleColombiaCo"> </a>
+<h2><a href="Bundle-BundleColombiaCo.html">fsh-generated\resources\Bundle-BundleColombiaCo.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(22)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-BundleCo.html">Bundle Co</a></li><li>Bundle.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-DocumentReferenceCo.html">Referencia de Documentos</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/documentreference.html">DocumentReference</a> and <i>this.</i><a href="StructureDefinition-DocumentReferenceCo.html">Referencia de Documentos</a> (por el elemento meta)</li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-PractitionerCo.html">Profesional Co</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a> and <i>this.</i><a href="StructureDefinition-PractitionerCo.html">Profesional Co</a> (por el elemento meta)</li><li>Bundle.entry[2].resource: Validated against <i>this.</i><a href="StructureDefinition-CompositionCo.html">Documento Co</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a> and <i>this.</i><a href="StructureDefinition-CompositionCo.html">Documento Co</a> (por el elemento meta)</li><li>Bundle.entry[3].resource: Validated against <i>this.</i><a href="StructureDefinition-ConditionCo.html">Condition Co</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/condition.html">Condition</a> and <i>this.</i><a href="StructureDefinition-ConditionCo.html">Condition Co</a> (por el elemento meta)</li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-PacienteCo.html">Paciente Co</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-PacienteCo.html">Paciente Co</a> (por el elemento meta)</li><li>Bundle.entry[5].resource: Validated against <i>this.</i><a href="StructureDefinition-AlergiaCo.html">Alergias Co</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/allergyintolerance.html">AllergyIntolerance</a> and <i>this.</i><a href="StructureDefinition-AlergiaCo.html">Alergias Co</a> (por el elemento meta)</li><li>Bundle.entry[6].resource: Validated against <i>this.</i><a href="StructureDefinition-MedicationStatementCo.html">Medication Statement Co</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationstatement.html">MedicationStatement</a> and <i>this.</i><a href="StructureDefinition-MedicationStatementCo.html">Medication Statement Co</a> (por el elemento meta)</li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0] (l11/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotSlice"><b>Este elemento no coincide con ninguna partición conocida  defined in the profile https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/BundleCo|0.4.3 y las particiones están CERRADAS: Bundle.entry[0]: No coincide con la partición 'DocumentRef' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo')), Bundle.entry[0]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo|0.4.3, Bundle.entry[0]: No coincide con la partición 'Profesional' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo')), Bundle.entry[0]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo|0.4.3, Bundle.entry[0]: No coincide con la partición 'RDA' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo')), Bundle.entry[0]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo|0.4.3, Bundle.entry[0]: No coincide con la partición 'Diagnosticos' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo')), Bundle.entry[0]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo|0.4.3, Bundle.entry[0]: No coincide con la partición 'Alergias' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo')), Bundle.entry[0]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo|0.4.3, Bundle.entry[0]: No coincide con la partición 'Medicaciones' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo')), Bundle.entry[0]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo|0.4.3, Bundle.entry[0]: No coincide con la partición 'Patient' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PacienteCo')), Bundle.entry[0]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PacienteCo|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[2] (l102/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotSlice"><b>Este elemento no coincide con ninguna partición conocida  defined in the profile https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/BundleCo|0.4.3 y las particiones están CERRADAS: Bundle.entry[2]: No coincide con la partición 'DocumentRef' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo')), Bundle.entry[2]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo|0.4.3, Bundle.entry[2]: No coincide con la partición 'Profesional' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo')), Bundle.entry[2]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo|0.4.3, Bundle.entry[2]: No coincide con la partición 'RDA' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo')), Bundle.entry[2]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo|0.4.3, Bundle.entry[2]: No coincide con la partición 'Diagnosticos' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo')), Bundle.entry[2]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo|0.4.3, Bundle.entry[2]: No coincide con la partición 'Alergias' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo')), Bundle.entry[2]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo|0.4.3, Bundle.entry[2]: No coincide con la partición 'Medicaciones' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo')), Bundle.entry[2]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo|0.4.3, Bundle.entry[2]: No coincide con la partición 'Patient' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PacienteCo')), Bundle.entry[2]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PacienteCo|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[6] (l352/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotSlice"><b>Este elemento no coincide con ninguna partición conocida  defined in the profile https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/BundleCo|0.4.3 y las particiones están CERRADAS: Bundle.entry[6]: No coincide con la partición 'DocumentRef' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo')), Bundle.entry[6]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo|0.4.3, Bundle.entry[6]: No coincide con la partición 'Profesional' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo')), Bundle.entry[6]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo|0.4.3, Bundle.entry[6]: No coincide con la partición 'RDA' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo')), Bundle.entry[6]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo|0.4.3, Bundle.entry[6]: No coincide con la partición 'Diagnosticos' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo')), Bundle.entry[6]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo|0.4.3, Bundle.entry[6]: No coincide con la partición 'Alergias' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo')), Bundle.entry[6]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo|0.4.3, Bundle.entry[6]: No coincide con la partición 'Medicaciones' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo')), Bundle.entry[6]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo|0.4.3, Bundle.entry[6]: No coincide con la partición 'Patient' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PacienteCo')), Bundle.entry[6]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PacienteCo|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Bundle.entry:DocumentRef': a matching slice is required, but not found (from https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/BundleCo|0.4.3). Note that other slices are allowed in addition to this required slice</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Bundle.entry:RDA': a matching slice is required, but not found (from https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/BundleCo|0.4.3). Note that other slices are allowed in addition to this required slice</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*DocumentReference&#8203;/DocumentReferenceColombia*&#8203;/&#8203;.author[0] (l42&#8203;/c12)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Incapaz de resolver el recurso con la referencia 'Organization/OrganizacionPrestadorEjemplo'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;.author[0] (l42&#8203;/c12)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Incapaz de resolver el recurso con la referencia 'Organization/OrganizacionPrestadorEjemplo'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;.section[1]&#8203;.entry[0] (l154&#8203;/c16)</b></td><td><b>error</b></td><td title="Reference_REF_CantMatchChoice"><b>No se puede encontrar una coincidencia para el perfil MedicationStatement/MedicationStatementColombia entre las opciones: https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle&#8203;.entry[2]&#8203;.resource&#8203;.section[1]&#8203;.entry[0] (l154&#8203;/c16)</a></b></td><td><b>Slicing Information</b></td><td><b>Detalles para MedicationStatement/MedicationStatementColombia coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo|0.4.3</b> <span id="sl45" class="flip" onclick="flip('l45')">Show Reasoning</span><div id="l45" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[6].resource/*MedicationStatement/MedicationStatementColombia*/.medication.ofType(CodeableConcept).coding[0]: Error reading Http Response from http://tx.fhir.org/r4: Error parsing JSON source: Unexpected char '&lt;' in json stream at Line 1 (path=[null])</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[3]&#8203;.resource&#8203;/*Condition&#8203;/ConditionColombia*&#8203;/&#8203;.code (l220&#8203;/c10)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/sid/icd-10|2019-covid-expanded</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[3]&#8203;.resource&#8203;/*Condition&#8203;/ConditionColombia*&#8203;/ (l212&#8203;/c8)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[5]&#8203;.resource&#8203;/*AllergyIntolerance&#8203;/AlergiaColombia*&#8203;/&#8203;.extension[0]&#8203;.value&#8203;.ofType(CodeableConcept) (l317&#8203;/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[6]&#8203;.resource&#8203;/*MedicationStatement&#8203;/MedicationStatementColombia*&#8203;/&#8203;.medication&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l370&#8203;/c10)</b></td><td><b>error</b></td><td title=""><b>Error reading Http Response from http://tx.fhir.org/r4: Error parsing JSON source: Unexpected char '&lt;' in json stream at Line 1 (path=[null])</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GuiasImplementacion_fsh-generated_resources_Bundle-BundleColombiaCo2"> </a>
+<h2><a href="Bundle-BundleColombiaCo2.html">fsh-generated\resources\Bundle-BundleColombiaCo2.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(22)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-BundleCo.html">Bundle Co</a></li><li>Bundle.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-DocumentReferenceCo.html">Referencia de Documentos</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/documentreference.html">DocumentReference</a> and <i>this.</i><a href="StructureDefinition-DocumentReferenceCo.html">Referencia de Documentos</a> (por el elemento meta)</li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-PractitionerCo.html">Profesional Co</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a> and <i>this.</i><a href="StructureDefinition-PractitionerCo.html">Profesional Co</a> (por el elemento meta)</li><li>Bundle.entry[2].resource: Validated against <i>this.</i><a href="StructureDefinition-CompositionCo.html">Documento Co</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a> and <i>this.</i><a href="StructureDefinition-CompositionCo.html">Documento Co</a> (por el elemento meta)</li><li>Bundle.entry[3].resource: Validated against <i>this.</i><a href="StructureDefinition-ConditionCo.html">Condition Co</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/condition.html">Condition</a> and <i>this.</i><a href="StructureDefinition-ConditionCo.html">Condition Co</a> (por el elemento meta)</li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-PacienteCo.html">Paciente Co</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-PacienteCo.html">Paciente Co</a> (por el elemento meta)</li><li>Bundle.entry[5].resource: Validated against <i>this.</i><a href="StructureDefinition-AlergiaCo.html">Alergias Co</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/allergyintolerance.html">AllergyIntolerance</a> and <i>this.</i><a href="StructureDefinition-AlergiaCo.html">Alergias Co</a> (por el elemento meta)</li><li>Bundle.entry[6].resource: Validated against <i>this.</i><a href="StructureDefinition-MedicationStatementCo.html">Medication Statement Co</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationstatement.html">MedicationStatement</a> and <i>this.</i><a href="StructureDefinition-MedicationStatementCo.html">Medication Statement Co</a> (por el elemento meta)</li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0] (l11/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotSlice"><b>Este elemento no coincide con ninguna partición conocida  defined in the profile https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/BundleCo|0.4.3 y las particiones están CERRADAS: Bundle.entry[0]: No coincide con la partición 'DocumentRef' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo')), Bundle.entry[0]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo|0.4.3, Bundle.entry[0]: No coincide con la partición 'Profesional' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo')), Bundle.entry[0]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo|0.4.3, Bundle.entry[0]: No coincide con la partición 'RDA' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo')), Bundle.entry[0]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo|0.4.3, Bundle.entry[0]: No coincide con la partición 'Diagnosticos' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo')), Bundle.entry[0]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo|0.4.3, Bundle.entry[0]: No coincide con la partición 'Alergias' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo')), Bundle.entry[0]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo|0.4.3, Bundle.entry[0]: No coincide con la partición 'Medicaciones' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo')), Bundle.entry[0]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo|0.4.3, Bundle.entry[0]: No coincide con la partición 'Patient' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PacienteCo')), Bundle.entry[0]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PacienteCo|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[2] (l102/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotSlice"><b>Este elemento no coincide con ninguna partición conocida  defined in the profile https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/BundleCo|0.4.3 y las particiones están CERRADAS: Bundle.entry[2]: No coincide con la partición 'DocumentRef' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo')), Bundle.entry[2]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo|0.4.3, Bundle.entry[2]: No coincide con la partición 'Profesional' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo')), Bundle.entry[2]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo|0.4.3, Bundle.entry[2]: No coincide con la partición 'RDA' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo')), Bundle.entry[2]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo|0.4.3, Bundle.entry[2]: No coincide con la partición 'Diagnosticos' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo')), Bundle.entry[2]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo|0.4.3, Bundle.entry[2]: No coincide con la partición 'Alergias' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo')), Bundle.entry[2]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo|0.4.3, Bundle.entry[2]: No coincide con la partición 'Medicaciones' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo')), Bundle.entry[2]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo|0.4.3, Bundle.entry[2]: No coincide con la partición 'Patient' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PacienteCo')), Bundle.entry[2]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PacienteCo|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[6] (l437/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotSlice"><b>Este elemento no coincide con ninguna partición conocida  defined in the profile https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/BundleCo|0.4.3 y las particiones están CERRADAS: Bundle.entry[6]: No coincide con la partición 'DocumentRef' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo')), Bundle.entry[6]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo|0.4.3, Bundle.entry[6]: No coincide con la partición 'Profesional' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo')), Bundle.entry[6]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo|0.4.3, Bundle.entry[6]: No coincide con la partición 'RDA' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo')), Bundle.entry[6]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo|0.4.3, Bundle.entry[6]: No coincide con la partición 'Diagnosticos' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo')), Bundle.entry[6]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo|0.4.3, Bundle.entry[6]: No coincide con la partición 'Alergias' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo')), Bundle.entry[6]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo|0.4.3, Bundle.entry[6]: No coincide con la partición 'Medicaciones' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo')), Bundle.entry[6]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo|0.4.3, Bundle.entry[6]: No coincide con la partición 'Patient' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PacienteCo')), Bundle.entry[6]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PacienteCo|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Bundle.entry:DocumentRef': a matching slice is required, but not found (from https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/BundleCo|0.4.3). Note that other slices are allowed in addition to this required slice</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Bundle.entry:RDA': a matching slice is required, but not found (from https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/BundleCo|0.4.3). Note that other slices are allowed in addition to this required slice</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*DocumentReference&#8203;/DocumentReferenceColombia2*&#8203;/&#8203;.author[0] (l42&#8203;/c12)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Incapaz de resolver el recurso con la referencia 'Organization/OrganizacionPrestadorEjemplo'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;.author[0] (l42&#8203;/c12)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Incapaz de resolver el recurso con la referencia 'Organization/OrganizacionPrestadorEjemplo'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[1].fullUrl (l61/c65)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URI_UUID"><b>Los valores URI no pueden empezar con uuid:</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;.section[1]&#8203;.entry[0] (l154&#8203;/c16)</b></td><td><b>error</b></td><td title="Reference_REF_CantMatchChoice"><b>No se puede encontrar una coincidencia para el perfil uuid:urn:0bb7532e-171a-4a0b-adc3-0a9c0c5cafe2 entre las opciones: https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle&#8203;.entry[2]&#8203;.resource&#8203;.section[1]&#8203;.entry[0] (l154&#8203;/c16)</a></b></td><td><b>Slicing Information</b></td><td><b>Detalles para uuid:urn:0bb7532e-171a-4a0b-adc3-0a9c0c5cafe2 coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo|0.4.3</b> <span id="sl59" class="flip" onclick="flip('l59')">Show Reasoning</span><div id="l59" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[6].resource/*MedicationStatement/MedicationStatementColombia2*/.medication.ofType(CodeableConcept).coding[0]: Error reading Http Response from http://tx.fhir.org/r4: Error parsing JSON source: Unexpected char '&lt;' in json stream at Line 1 (path=[null])</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[3].fullUrl (l211/c65)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URI_UUID"><b>Los valores URI no pueden empezar con uuid:</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[3]&#8203;.resource&#8203;/*Condition&#8203;/ConditionColombia2*&#8203;/&#8203;.code (l220&#8203;/c10)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/sid/icd-10|2019-covid-expanded</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[3]&#8203;.resource&#8203;/*Condition&#8203;/ConditionColombia2*&#8203;/ (l212&#8203;/c8)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[4]&#8203;.resource&#8203;/*Patient&#8203;/PacienteColombianoCompleto*&#8203;/&#8203;.extension[0]&#8203;.value&#8203;.ofType(CodeableConcept) (l271&#8203;/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdentidadGeneroCS|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[4]&#8203;.resource&#8203;/*Patient&#8203;/PacienteColombianoCompleto*&#8203;/&#8203;.extension[1]&#8203;.value&#8203;.ofType(CodeableConcept) (l283&#8203;/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://www.minsalud.gov.co/ihc/fhir/CodeSystem/DiscapacidadCS|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[4]&#8203;.resource&#8203;/*Patient&#8203;/PacienteColombianoCompleto*&#8203;/&#8203;.extension[2]&#8203;.value&#8203;.ofType(CodeableConcept) (l295&#8203;/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://www.minsalud.gov.co/ihc/fhir/CodeSystem/EtniaCS|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[4]&#8203;.resource&#8203;/*Patient&#8203;/PacienteColombianoCompleto*&#8203;/&#8203;.address[0]&#8203;.extension[0]&#8203;.value&#8203;.ofType(CodeableConcept) (l370&#8203;/c18)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://www.minsalud.gov.co/ihc/fhir/CodeSystem/ZonaResidenciaCS|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[5].fullUrl (l390/c65)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URI_UUID"><b>Los valores URI no pueden empezar con uuid:</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[5]&#8203;.resource&#8203;/*AllergyIntolerance&#8203;/AlergiaColombia3*&#8203;/&#8203;.extension[0]&#8203;.value&#8203;.ofType(CodeableConcept) (l402&#8203;/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[6].fullUrl (l442/c65)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URI_UUID"><b>Los valores URI no pueden empezar con uuid:</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[6]&#8203;.resource&#8203;/*MedicationStatement&#8203;/MedicationStatementColombia2*&#8203;/&#8203;.medication&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l455&#8203;/c10)</b></td><td><b>error</b></td><td title=""><b>Error reading Http Response from http://tx.fhir.org/r4: Error parsing JSON source: Unexpected char '&lt;' in json stream at Line 1 (path=[null])</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GuiasImplementacion_fsh-generated_resources_Condition-ConditionColombia"> </a>
+<h2><a href="Condition-ConditionColombia.html">fsh-generated\resources\Condition-ConditionColombia.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Condition: Validated against <i>this.</i><a href="StructureDefinition-ConditionCo.html">Condition Co</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Condition.code (l9/c4)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/sid/icd-10|2019-covid-expanded</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Condition (l1/c2)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GuiasImplementacion_fsh-generated_resources_Condition-ConditionColombia2"> </a>
+<h2><a href="Condition-ConditionColombia2.html">fsh-generated\resources\Condition-ConditionColombia2.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>Condition: Validated against <i>this.</i><a href="StructureDefinition-ConditionCo.html">Condition Co</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Condition.code (l9/c4)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/sid/icd-10|2019-covid-expanded</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Condition (l1/c2)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GuiasImplementacion_fsh-generated_resources_DocumentReference-DocumentReferenceColombia"> </a>
+<h2><a href="DocumentReference-DocumentReferenceColombia.html">fsh-generated\resources\DocumentReference-DocumentReferenceColombia.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>DocumentReference: Validated against <i>this.</i><a href="StructureDefinition-DocumentReferenceCo.html">Referencia de Documentos</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>DocumentReference.author[0] (l26/c6)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Incapaz de resolver el recurso con la referencia 'Organization/OrganizacionPrestadorEjemplo'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>DocumentReference.text.div</b></td><td><b>error</b></td><td title=""><b>Hyperlink 'Organization/OrganizacionPrestadorEjemplo' at 'div/p/a' for 'Organization/OrganizacionPrestadorEjemplo' does not resolve</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GuiasImplementacion_fsh-generated_resources_DocumentReference-DocumentReferenceColombia2"> </a>
+<h2><a href="DocumentReference-DocumentReferenceColombia2.html">fsh-generated\resources\DocumentReference-DocumentReferenceColombia2.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>DocumentReference: Validated against <i>this.</i><a href="StructureDefinition-DocumentReferenceCo.html">Referencia de Documentos</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>DocumentReference.author[0] (l26/c6)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Incapaz de resolver el recurso con la referencia 'Organization/OrganizacionPrestadorEjemplo'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>DocumentReference.text.div</b></td><td><b>error</b></td><td title=""><b>Hyperlink 'Organization/OrganizacionPrestadorEjemplo' at 'div/p/a' for 'Organization/OrganizacionPrestadorEjemplo' does not resolve</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GuiasImplementacion_fsh-generated_resources_MedicationStatement-MedicationStatementColombia"> </a>
+<h2><a href="MedicationStatement-MedicationStatementColombia.html">fsh-generated\resources\MedicationStatement-MedicationStatementColombia.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>MedicationStatement: Validated against <i>this.</i><a href="StructureDefinition-MedicationStatementCo.html">Medication Statement Co</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationStatement&#8203;.medication&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l13&#8203;/c4)</b></td><td><b>error</b></td><td title=""><b>Error reading Http Response from http://tx.fhir.org/r4: Error parsing JSON source: Unexpected char '&lt;' in json stream at Line 1 (path=[null])</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GuiasImplementacion_fsh-generated_resources_MedicationStatement-MedicationStatementColombia2"> </a>
+<h2><a href="MedicationStatement-MedicationStatementColombia2.html">fsh-generated\resources\MedicationStatement-MedicationStatementColombia2.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>MedicationStatement: Validated against <i>this.</i><a href="StructureDefinition-MedicationStatementCo.html">Medication Statement Co</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationStatement&#8203;.medication&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l13&#8203;/c4)</b></td><td><b>error</b></td><td title=""><b>Error reading Http Response from http://tx.fhir.org/r4: Error parsing JSON source: Unexpected char '&lt;' in json stream at Line 1 (path=[null])</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GuiasImplementacion_fsh-generated_resources_StructureDefinition-co-AllergyIntolerance-tipo"> </a>
+<h2><a href="StructureDefinition-co-AllergyIntolerance-tipo.html">fsh-generated\resources\StructureDefinition-co-AllergyIntolerance-tipo.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td title=""><b>Review the extension type for co-AllergyIntolerance-tipo: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GuiasImplementacion_fsh-generated_resources_StructureDefinition-co-address-zonaResidencia"> </a>
+<h2><a href="StructureDefinition-co-address-zonaResidencia.html">fsh-generated\resources\StructureDefinition-co-address-zonaResidencia.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td title=""><b>Review the extension type for co-address-zonaResidencia: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GuiasImplementacion_fsh-generated_resources_StructureDefinition-co-pais"> </a>
+<h2><a href="StructureDefinition-co-pais.html">fsh-generated\resources\StructureDefinition-co-pais.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td title=""><b>Review the extension type for co-pais: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GuiasImplementacion_fsh-generated_resources_StructureDefinition-co-patient-comunidadetnica"> </a>
+<h2><a href="StructureDefinition-co-patient-comunidadetnica.html">fsh-generated\resources\StructureDefinition-co-patient-comunidadetnica.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td title=""><b>Review the extension type for co-patient-comunidadetnica: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GuiasImplementacion_fsh-generated_resources_StructureDefinition-co-patient-etnia"> </a>
+<h2><a href="StructureDefinition-co-patient-etnia.html">fsh-generated\resources\StructureDefinition-co-patient-etnia.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td title=""><b>Review the extension type for co-patient-etnia: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GuiasImplementacion_fsh-generated_resources_StructureDefinition-co-patient-nacionalidad"> </a>
+<h2><a href="StructureDefinition-co-patient-nacionalidad.html">fsh-generated\resources\StructureDefinition-co-patient-nacionalidad.json</a> <span id="svi14" class="toggle" onclick="toggle('vi14')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi14')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi14"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td title=""><b>Review the extension type for co-patient-nacionalidad: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GuiasImplementacion_fsh-generated_resources_ValueSet-CUMSVS"> </a>
+<h2><a href="ValueSet-CUMSVS.html">fsh-generated\resources\ValueSet-CUMSVS.json</a> <span id="svi15" class="toggle" onclick="toggle('vi15')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi15')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi15"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.where(id = 'CUMSVS')</b></td><td><b>warning</b></td><td title=""><b>Error from http://tx.fhir.org/r4: Unable to provide support for code system https://www.minsalud.gov.co/CodeSystem/CUMS</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__GuiasImplementacion_fsh-generated_resources_ValueSet-IUMVS"> </a>
+<h2><a href="ValueSet-IUMVS.html">fsh-generated\resources\ValueSet-IUMVS.json</a> <span id="svi16" class="toggle" onclick="toggle('vi16')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi16')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi16"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.where(id = 'IUMVS')</b></td><td><b>warning</b></td><td title=""><b>Error from http://tx.fhir.org/r4: Unable to provide support for code system https://www.minsalud.gov.co/CodeSystem/IUM</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="MSG_DRAFT"> </a>
+<h2>MSG_DRAFT</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="AllergyIntolerance-AlergiaColombia.html">fsh-generated\resources\AllergyIntolerance-AlergiaColombia.json</a></td><td><b>Reference to draft CodeSystem https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="AllergyIntolerance-AlergiaColombia2.html">fsh-generated\resources\AllergyIntolerance-AlergiaColombia2.json</a></td><td><b>Reference to draft CodeSystem https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="AllergyIntolerance-AlergiaColombia3.html">fsh-generated\resources\AllergyIntolerance-AlergiaColombia3.json</a></td><td><b>Reference to draft CodeSystem https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleColombiaCo.html">fsh-generated\resources\Bundle-BundleColombiaCo.json</a></td><td><b>Reference to draft CodeSystem https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleColombiaCo2.html">fsh-generated\resources\Bundle-BundleColombiaCo2.json</a></td><td><b>Reference to draft CodeSystem https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdentidadGeneroCS|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleColombiaCo2.html">fsh-generated\resources\Bundle-BundleColombiaCo2.json</a></td><td><b>Reference to draft CodeSystem https://www.minsalud.gov.co/ihc/fhir/CodeSystem/DiscapacidadCS|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleColombiaCo2.html">fsh-generated\resources\Bundle-BundleColombiaCo2.json</a></td><td><b>Reference to draft CodeSystem https://www.minsalud.gov.co/ihc/fhir/CodeSystem/EtniaCS|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleColombiaCo2.html">fsh-generated\resources\Bundle-BundleColombiaCo2.json</a></td><td><b>Reference to draft CodeSystem https://www.minsalud.gov.co/ihc/fhir/CodeSystem/ZonaResidenciaCS|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleColombiaCo2.html">fsh-generated\resources\Bundle-BundleColombiaCo2.json</a></td><td><b>Reference to draft CodeSystem https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Patient-PacienteColombiano.html">fsh-generated\resources\Patient-PacienteColombiano.json</a></td><td><b>Reference to draft CodeSystem https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdentidadGeneroCS|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Patient-PacienteColombiano.html">fsh-generated\resources\Patient-PacienteColombiano.json</a></td><td><b>Reference to draft CodeSystem https://www.minsalud.gov.co/ihc/fhir/CodeSystem/DiscapacidadCS|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Patient-PacienteColombiano.html">fsh-generated\resources\Patient-PacienteColombiano.json</a></td><td><b>Reference to draft CodeSystem https://www.minsalud.gov.co/ihc/fhir/CodeSystem/EtniaCS|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Patient-PacienteColombiano.html">fsh-generated\resources\Patient-PacienteColombiano.json</a></td><td><b>Reference to draft CodeSystem https://www.minsalud.gov.co/ihc/fhir/CodeSystem/ZonaResidenciaCS|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Patient-PacienteColombianoCompleto.html">fsh-generated\resources\Patient-PacienteColombianoCompleto.json</a></td><td><b>Reference to draft CodeSystem https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdentidadGeneroCS|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Patient-PacienteColombianoCompleto.html">fsh-generated\resources\Patient-PacienteColombianoCompleto.json</a></td><td><b>Reference to draft CodeSystem https://www.minsalud.gov.co/ihc/fhir/CodeSystem/DiscapacidadCS|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Patient-PacienteColombianoCompleto.html">fsh-generated\resources\Patient-PacienteColombianoCompleto.json</a></td><td><b>Reference to draft CodeSystem https://www.minsalud.gov.co/ihc/fhir/CodeSystem/EtniaCS|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Patient-PacienteColombianoCompleto.html">fsh-generated\resources\Patient-PacienteColombianoCompleto.json</a></td><td><b>Reference to draft CodeSystem https://www.minsalud.gov.co/ihc/fhir/CodeSystem/ZonaResidenciaCS|0.4.3</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="MSG_EXPERIMENTAL"> </a>
+<h2>MSG_EXPERIMENTAL</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleColombiaCo.html">fsh-generated\resources\Bundle-BundleColombiaCo.json</a></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/sid/icd-10|2019-covid-expanded</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleColombiaCo2.html">fsh-generated\resources\Bundle-BundleColombiaCo2.json</a></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/sid/icd-10|2019-covid-expanded</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Condition-ConditionColombia.html">fsh-generated\resources\Condition-ConditionColombia.json</a></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/sid/icd-10|2019-covid-expanded</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Condition-ConditionColombia2.html">fsh-generated\resources\Condition-ConditionColombia2.json</a></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/sid/icd-10|2019-covid-expanded</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Reference_REF_CantMatchChoice"> </a>
+<h2>Reference_REF_CantMatchChoice</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-BundleColombiaCo.html">fsh-generated\resources\Bundle-BundleColombiaCo.json</a></td><td><b>No se puede encontrar una coincidencia para el perfil MedicationStatement/MedicationStatementColombia entre las opciones: https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-BundleColombiaCo2.html">fsh-generated\resources\Bundle-BundleColombiaCo2.json</a></td><td><b>No se puede encontrar una coincidencia para el perfil uuid:urn:0bb7532e-171a-4a0b-adc3-0a9c0c5cafe2 entre las opciones: https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Reference_REF_CantResolve"> </a>
+<h2>Reference_REF_CantResolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-BundleColombiaCo.html">fsh-generated\resources\Bundle-BundleColombiaCo.json</a></td><td><b>Incapaz de resolver el recurso con la referencia 'Organization/OrganizacionPrestadorEjemplo'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-BundleColombiaCo.html">fsh-generated\resources\Bundle-BundleColombiaCo.json</a></td><td><b>Incapaz de resolver el recurso con la referencia 'Organization/OrganizacionPrestadorEjemplo'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-BundleColombiaCo2.html">fsh-generated\resources\Bundle-BundleColombiaCo2.json</a></td><td><b>Incapaz de resolver el recurso con la referencia 'Organization/OrganizacionPrestadorEjemplo'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-BundleColombiaCo2.html">fsh-generated\resources\Bundle-BundleColombiaCo2.json</a></td><td><b>Incapaz de resolver el recurso con la referencia 'Organization/OrganizacionPrestadorEjemplo'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="DocumentReference-DocumentReferenceColombia.html">fsh-generated\resources\DocumentReference-DocumentReferenceColombia.json</a></td><td><b>Incapaz de resolver el recurso con la referencia 'Organization/OrganizacionPrestadorEjemplo'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="DocumentReference-DocumentReferenceColombia2.html">fsh-generated\resources\DocumentReference-DocumentReferenceColombia2.json</a></td><td><b>Incapaz de resolver el recurso con la referencia 'Organization/OrganizacionPrestadorEjemplo'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_URI_UUID"> </a>
+<h2>Type_Specific_Checks_DT_URI_UUID</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-BundleColombiaCo2.html">fsh-generated\resources\Bundle-BundleColombiaCo2.json</a></td><td><b>Los valores URI no pueden empezar con uuid:</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-BundleColombiaCo2.html">fsh-generated\resources\Bundle-BundleColombiaCo2.json</a></td><td><b>Los valores URI no pueden empezar con uuid:</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-BundleColombiaCo2.html">fsh-generated\resources\Bundle-BundleColombiaCo2.json</a></td><td><b>Los valores URI no pueden empezar con uuid:</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-BundleColombiaCo2.html">fsh-generated\resources\Bundle-BundleColombiaCo2.json</a></td><td><b>Los valores URI no pueden empezar con uuid:</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Validation_VAL_Profile_Minimum_SLICE"> </a>
+<h2>Validation_VAL_Profile_Minimum_SLICE</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-BundleColombiaCo.html">fsh-generated\resources\Bundle-BundleColombiaCo.json</a></td><td><b>Slice 'Bundle.entry:DocumentRef': a matching slice is required, but not found (from https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/BundleCo|0.4.3). Note that other slices are allowed in addition to this required slice</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-BundleColombiaCo.html">fsh-generated\resources\Bundle-BundleColombiaCo.json</a></td><td><b>Slice 'Bundle.entry:RDA': a matching slice is required, but not found (from https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/BundleCo|0.4.3). Note that other slices are allowed in addition to this required slice</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-BundleColombiaCo2.html">fsh-generated\resources\Bundle-BundleColombiaCo2.json</a></td><td><b>Slice 'Bundle.entry:DocumentRef': a matching slice is required, but not found (from https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/BundleCo|0.4.3). Note that other slices are allowed in addition to this required slice</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-BundleColombiaCo2.html">fsh-generated\resources\Bundle-BundleColombiaCo2.json</a></td><td><b>Slice 'Bundle.entry:RDA': a matching slice is required, but not found (from https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/BundleCo|0.4.3). Note that other slices are allowed in addition to this required slice</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Validation_VAL_Profile_NotSlice"> </a>
+<h2>Validation_VAL_Profile_NotSlice</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-BundleColombiaCo.html">fsh-generated\resources\Bundle-BundleColombiaCo.json</a></td><td><b>Este elemento no coincide con ninguna partición conocida  defined in the profile https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/BundleCo|0.4.3 y las particiones están CERRADAS: Bundle.entry[0]: No coincide con la partición 'DocumentRef' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo')), Bundle.entry[0]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo|0.4.3, Bundle.entry[0]: No coincide con la partición 'Profesional' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo')), Bundle.entry[0]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo|0.4.3, Bundle.entry[0]: No coincide con la partición 'RDA' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo')), Bundle.entry[0]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo|0.4.3, Bundle.entry[0]: No coincide con la partición 'Diagnosticos' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo')), Bundle.entry[0]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo|0.4.3, Bundle.entry[0]: No coincide con la partición 'Alergias' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo')), Bundle.entry[0]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo|0.4.3, Bundle.entry[0]: No coincide con la partición 'Medicaciones' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo')), Bundle.entry[0]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo|0.4.3, Bundle.entry[0]: No coincide con la partición 'Patient' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PacienteCo')), Bundle.entry[0]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PacienteCo|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-BundleColombiaCo.html">fsh-generated\resources\Bundle-BundleColombiaCo.json</a></td><td><b>Este elemento no coincide con ninguna partición conocida  defined in the profile https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/BundleCo|0.4.3 y las particiones están CERRADAS: Bundle.entry[2]: No coincide con la partición 'DocumentRef' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo')), Bundle.entry[2]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo|0.4.3, Bundle.entry[2]: No coincide con la partición 'Profesional' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo')), Bundle.entry[2]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo|0.4.3, Bundle.entry[2]: No coincide con la partición 'RDA' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo')), Bundle.entry[2]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo|0.4.3, Bundle.entry[2]: No coincide con la partición 'Diagnosticos' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo')), Bundle.entry[2]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo|0.4.3, Bundle.entry[2]: No coincide con la partición 'Alergias' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo')), Bundle.entry[2]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo|0.4.3, Bundle.entry[2]: No coincide con la partición 'Medicaciones' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo')), Bundle.entry[2]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo|0.4.3, Bundle.entry[2]: No coincide con la partición 'Patient' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PacienteCo')), Bundle.entry[2]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PacienteCo|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-BundleColombiaCo.html">fsh-generated\resources\Bundle-BundleColombiaCo.json</a></td><td><b>Este elemento no coincide con ninguna partición conocida  defined in the profile https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/BundleCo|0.4.3 y las particiones están CERRADAS: Bundle.entry[6]: No coincide con la partición 'DocumentRef' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo')), Bundle.entry[6]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo|0.4.3, Bundle.entry[6]: No coincide con la partición 'Profesional' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo')), Bundle.entry[6]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo|0.4.3, Bundle.entry[6]: No coincide con la partición 'RDA' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo')), Bundle.entry[6]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo|0.4.3, Bundle.entry[6]: No coincide con la partición 'Diagnosticos' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo')), Bundle.entry[6]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo|0.4.3, Bundle.entry[6]: No coincide con la partición 'Alergias' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo')), Bundle.entry[6]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo|0.4.3, Bundle.entry[6]: No coincide con la partición 'Medicaciones' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo')), Bundle.entry[6]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo|0.4.3, Bundle.entry[6]: No coincide con la partición 'Patient' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PacienteCo')), Bundle.entry[6]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PacienteCo|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-BundleColombiaCo2.html">fsh-generated\resources\Bundle-BundleColombiaCo2.json</a></td><td><b>Este elemento no coincide con ninguna partición conocida  defined in the profile https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/BundleCo|0.4.3 y las particiones están CERRADAS: Bundle.entry[0]: No coincide con la partición 'DocumentRef' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo')), Bundle.entry[0]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo|0.4.3, Bundle.entry[0]: No coincide con la partición 'Profesional' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo')), Bundle.entry[0]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo|0.4.3, Bundle.entry[0]: No coincide con la partición 'RDA' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo')), Bundle.entry[0]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo|0.4.3, Bundle.entry[0]: No coincide con la partición 'Diagnosticos' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo')), Bundle.entry[0]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo|0.4.3, Bundle.entry[0]: No coincide con la partición 'Alergias' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo')), Bundle.entry[0]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo|0.4.3, Bundle.entry[0]: No coincide con la partición 'Medicaciones' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo')), Bundle.entry[0]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo|0.4.3, Bundle.entry[0]: No coincide con la partición 'Patient' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PacienteCo')), Bundle.entry[0]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PacienteCo|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-BundleColombiaCo2.html">fsh-generated\resources\Bundle-BundleColombiaCo2.json</a></td><td><b>Este elemento no coincide con ninguna partición conocida  defined in the profile https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/BundleCo|0.4.3 y las particiones están CERRADAS: Bundle.entry[2]: No coincide con la partición 'DocumentRef' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo')), Bundle.entry[2]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo|0.4.3, Bundle.entry[2]: No coincide con la partición 'Profesional' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo')), Bundle.entry[2]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo|0.4.3, Bundle.entry[2]: No coincide con la partición 'RDA' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo')), Bundle.entry[2]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo|0.4.3, Bundle.entry[2]: No coincide con la partición 'Diagnosticos' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo')), Bundle.entry[2]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo|0.4.3, Bundle.entry[2]: No coincide con la partición 'Alergias' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo')), Bundle.entry[2]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo|0.4.3, Bundle.entry[2]: No coincide con la partición 'Medicaciones' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo')), Bundle.entry[2]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo|0.4.3, Bundle.entry[2]: No coincide con la partición 'Patient' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PacienteCo')), Bundle.entry[2]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PacienteCo|0.4.3</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-BundleColombiaCo2.html">fsh-generated\resources\Bundle-BundleColombiaCo2.json</a></td><td><b>Este elemento no coincide con ninguna partición conocida  defined in the profile https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/BundleCo|0.4.3 y las particiones están CERRADAS: Bundle.entry[6]: No coincide con la partición 'DocumentRef' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo')), Bundle.entry[6]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo|0.4.3, Bundle.entry[6]: No coincide con la partición 'Profesional' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo')), Bundle.entry[6]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo|0.4.3, Bundle.entry[6]: No coincide con la partición 'RDA' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo')), Bundle.entry[6]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo|0.4.3, Bundle.entry[6]: No coincide con la partición 'Diagnosticos' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo')), Bundle.entry[6]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo|0.4.3, Bundle.entry[6]: No coincide con la partición 'Alergias' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo')), Bundle.entry[6]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo|0.4.3, Bundle.entry[6]: No coincide con la partición 'Medicaciones' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo')), Bundle.entry[6]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo|0.4.3, Bundle.entry[6]: No coincide con la partición 'Patient' (discriminador: resource.conformsTo('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PacienteCo')), Bundle.entry[6]: Detalles para Bundle coincidente con el perfil https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PacienteCo|0.4.3</b></td>
+   </tr>
+</table>
+</body>
+</html>
