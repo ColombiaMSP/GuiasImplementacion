@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "CompositionCo"] ; # 
   fhir:title [ fhir:v "Documento Co"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-09-09T18:39:42-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-09-10T08:50:18-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "MSP Colombia"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "MSP Colombia" ] ;
