@@ -5,8 +5,8 @@
     "profile" : ["https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo"]
   },
   "text" : {
-    "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance AlergiaColombia2</b></p><a name=\"AlergiaColombia2\"> </a><a name=\"hcAlergiaColombia2\"> </a><a name=\"AlergiaColombia2-es-CO\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}\">Confirmed</span></p><p><b>code</b>: <span title=\"Codes:\">alergia a nueces</span></p><p><b>patient</b>: <a href=\"Bundle-BundleColombiaCo2.html#urn-uuid-2f8d6332-e339-457d-b5e8-1a140a1f3ea1\">Paciente Colombiano</a></p></div>"
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance AlergiaColombia2</b></p><a name=\"AlergiaColombia2\"> </a><a name=\"hcAlergiaColombia2\"> </a><a name=\"AlergiaColombia2-es-CO\"> </a><p><b>TipoAlergia</b>: <span title=\"Codes:{https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS 03}\">Sustancia del ambiente</span></p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}\">Confirmed</span></p><p><b>code</b>: <span title=\"Codes:\">alergia a nueces</span></p><p><b>patient</b>: <a href=\"Bundle-BundleColombiaCo2.html#urn-uuid-2f8d6332-e339-457d-b5e8-1a140a1f3ea1\">Paciente Colombiano</a></p></div>"
   },
   "extension" : [{
     "url" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-AllergyIntolerance-tipo",

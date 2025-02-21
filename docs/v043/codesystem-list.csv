@@ -1,4 +1,4 @@
-URL,Version,Status,OIDs,Name,Title,Descriptino,Used
+URL,Version,Status,OIDs,Name,Title,Description,Used
 https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS,0.4.3,draft,,AlergiasCS,Tipo Alergia,"Antecedente de Alergia",
 https://www.minsalud.gov.co/ihc/fhir/CodeSystem/DiscapacidadCS,0.4.3,draft,,DiscapacidadCS,Discapacidad,"Identificador para determinar la categoría de discapacidad de  acuerdo con el dominio o dominios donde se presente la deficiencia o deficiencias corporales del solicitante",
 https://www.minsalud.gov.co/ihc/fhir/CodeSystem/EtniaCS,0.4.3,draft,,Etnia,Etnia,"Identificador para determinar la pertenencia étnica de la persona.",

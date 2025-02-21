@@ -284,8 +284,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.161"],
       "uses" : {
       },
-      "StructureDefinition-ConditionCo.html" : "Condition Co",
-      "StructureDefinition-MedicationStatementCo.html" : "Medication Statement Co"
+      "StructureDefinition-MedicationStatementCo.html" : "Medication Statement Co",
+      "StructureDefinition-ConditionCo.html" : "Condition Co"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
@@ -501,14 +501,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-DocumentReferenceCo.html" : "Referencia de Documentos",
-      "StructureDefinition-PacienteCo.html" : "Paciente Co",
-      "StructureDefinition-OrganizacionCo.html" : "Organizacion Co",
-      "StructureDefinition-BundleCo.html" : "Bundle Co",
-      "StructureDefinition-ConditionCo.html" : "Condition Co",
-      "StructureDefinition-PractitionerCo.html" : "Profesional Co",
       "StructureDefinition-MedicationStatementCo.html" : "Medication Statement Co",
+      "StructureDefinition-PacienteCo.html" : "Paciente Co",
+      "StructureDefinition-BundleCo.html" : "Bundle Co",
+      "StructureDefinition-DocumentReferenceCo.html" : "Referencia de Documentos",
+      "StructureDefinition-ConditionCo.html" : "Condition Co",
+      "StructureDefinition-OrganizacionCo.html" : "Organizacion Co",
       "StructureDefinition-CompositionCo.html" : "Documento Co",
+      "StructureDefinition-PractitionerCo.html" : "Profesional Co",
       "StructureDefinition-AlergiaCo.html" : "Alergias Co"
     },
     {
@@ -738,9 +738,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
       "uses" : {
       },
+      "StructureDefinition-MedicationStatementCo.html" : "Medication Statement Co",
       "StructureDefinition-DocumentReferenceCo.html" : "Referencia de Documentos",
       "StructureDefinition-ConditionCo.html" : "Condition Co",
-      "StructureDefinition-MedicationStatementCo.html" : "Medication Statement Co",
       "StructureDefinition-CompositionCo.html" : "Documento Co",
       "StructureDefinition-AlergiaCo.html" : "Alergias Co"
     },
@@ -914,7 +914,10 @@
       "name" : "IUMVS",
       "title" : "Codificacion IUM",
       "description" : "Conjunto de Valores de Codificacion IUM",
-      "systems" : ["https://www.minsalud.gov.co/CodeSystem/IUM"]
+      "systems" : ["https://www.minsalud.gov.co/CodeSystem/IUM"],
+      "uses" : {
+      },
+      "StructureDefinition-MedicationStatementCo.html" : "Medication Statement Co"
     },
     {
       "url" : "https://www.minsalud.gov.co/ihc/fhir/ValueSet/IdentidadGeneroVS",

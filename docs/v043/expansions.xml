@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="c73271aa-af92-4b07-bedf-81c793a507a4"/>
+  <id value="9a01321b-c4ec-4c4e-a319-e20eee0e80cd"/>
   <meta>
-    <lastUpdated value="2024-09-10T08:50:18.460-03:00"/>
+    <lastUpdated value="2025-02-21T13:44:31.640-03:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -16,7 +16,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-AlergiasCS.html">codesystem Tipo Alergia v0.4.3 (CodeSystem)</a>
             </p>
             <p>This value set contains 6 concepts</p>
@@ -29,7 +29,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (es-CO)</b>
                 </td>
               </tr>
               <tr>
@@ -38,7 +38,7 @@
                   <a href="CodeSystem-AlergiasCS.html#AlergiasCS-01">01</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS</td>
-                <td>Medicamento</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -46,7 +46,7 @@
                   <a href="CodeSystem-AlergiasCS.html#AlergiasCS-02">02</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS</td>
-                <td>Alimento</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -54,7 +54,7 @@
                   <a href="CodeSystem-AlergiasCS.html#AlergiasCS-03">03</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS</td>
-                <td>Sustancia del ambiente</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -62,7 +62,7 @@
                   <a href="CodeSystem-AlergiasCS.html#AlergiasCS-04">04</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS</td>
-                <td>Sustancia que entran en contacto con la piel</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -70,7 +70,7 @@
                   <a href="CodeSystem-AlergiasCS.html#AlergiasCS-05">05</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS</td>
-                <td>Picadura de insectos</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -78,7 +78,7 @@
                   <a href="CodeSystem-AlergiasCS.html#AlergiasCS-06">06</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS</td>
-                <td>Otra</td>
+                <td/>
               </tr>
             </table>
           </div>
@@ -94,14 +94,17 @@
           <coding>
             <system value="urn:iso:std:iso:3166"/>
             <code value="CO"/>
-            <display value="Colombia"/>
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8f11c1d5-3367-4caa-b3d7-965361719cee"/>
-          <timestamp value="2024-09-10T08:51:22-03:00"/>
+          <identifier value="urn:uuid:db6457dd-fde7-4a52-9095-c4f3bf442c6d"/>
+          <timestamp value="2025-02-21T13:45:22-03:00"/>
           <total value="6"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="es-CO"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -125,32 +128,26 @@
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS"/>
             <code value="01"/>
-            <display value="Medicamento"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS"/>
             <code value="02"/>
-            <display value="Alimento"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS"/>
             <code value="03"/>
-            <display value="Sustancia del ambiente"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS"/>
             <code value="04"/>
-            <display value="Sustancia que entran en contacto con la piel"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS"/>
             <code value="05"/>
-            <display value="Picadura de insectos"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS"/>
             <code value="06"/>
-            <display value="Otra"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -166,7 +163,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on codesystem ICD-10 version2019-covid-expanded</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on codesystem ICD-10 version2019-covid-expanded</p>
             <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px">This value set has &gt;1000 codes in it. In order to keep the publication size manageable, only a selection (1000 codes) of the whole set of codes is shown</p>
             <table class="codes">
               <tr>
@@ -177,7 +174,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (es-CO)</b>
                 </td>
               </tr>
               <tr>
@@ -7194,16 +7191,19 @@
           <coding>
             <system value="urn:iso:std:iso:3166"/>
             <code value="CO"/>
-            <display value="Colombia"/>
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:525bb7a4-494b-4a2a-b946-63c1079aa9c8"/>
-          <timestamp value="2024-08-14T14:32:06.787Z"/>
+          <identifier value="urn:uuid:acb8250d-ba06-4c61-9571-8b3371225d21"/>
+          <timestamp value="2025-02-21T16:30:45.756Z"/>
           <offset value="0"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="es-CO"/>
           </parameter>
           <parameter>
             <name value="excludeNested"/>
@@ -12239,7 +12239,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-DiscapacidadCS.html">codesystem Discapacidad v0.4.3 (CodeSystem)</a>
             </p>
             <p>This value set contains 8 concepts</p>
@@ -12252,7 +12252,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (es-CO)</b>
                 </td>
               </tr>
               <tr>
@@ -12261,7 +12261,7 @@
                   <a href="CodeSystem-DiscapacidadCS.html#DiscapacidadCS-01">01</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/DiscapacidadCS</td>
-                <td>Discapacidad física</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -12269,7 +12269,7 @@
                   <a href="CodeSystem-DiscapacidadCS.html#DiscapacidadCS-02">02</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/DiscapacidadCS</td>
-                <td>Discapacidad visual</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -12277,7 +12277,7 @@
                   <a href="CodeSystem-DiscapacidadCS.html#DiscapacidadCS-03">03</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/DiscapacidadCS</td>
-                <td>Discapacidad auditiva</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -12285,7 +12285,7 @@
                   <a href="CodeSystem-DiscapacidadCS.html#DiscapacidadCS-04">04</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/DiscapacidadCS</td>
-                <td>Discapacidad intelectual</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -12293,7 +12293,7 @@
                   <a href="CodeSystem-DiscapacidadCS.html#DiscapacidadCS-05">05</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/DiscapacidadCS</td>
-                <td>Discapacidad sicosocial</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -12301,7 +12301,7 @@
                   <a href="CodeSystem-DiscapacidadCS.html#DiscapacidadCS-06">06</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/DiscapacidadCS</td>
-                <td>Sordoceguera</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -12309,7 +12309,7 @@
                   <a href="CodeSystem-DiscapacidadCS.html#DiscapacidadCS-07">07</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/DiscapacidadCS</td>
-                <td>Discapacidad múltiple</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -12317,7 +12317,7 @@
                   <a href="CodeSystem-DiscapacidadCS.html#DiscapacidadCS-08">08</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/DiscapacidadCS</td>
-                <td>Sin discapacidad</td>
+                <td/>
               </tr>
             </table>
           </div>
@@ -12333,14 +12333,17 @@
           <coding>
             <system value="urn:iso:std:iso:3166"/>
             <code value="CO"/>
-            <display value="Colombia"/>
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:dc6d3aad-aadb-4424-baa8-a92d86802cee"/>
-          <timestamp value="2024-09-10T08:51:28-03:00"/>
+          <identifier value="urn:uuid:6b9a479f-f56c-493b-a669-a4757dcebf82"/>
+          <timestamp value="2025-02-21T13:45:28-03:00"/>
           <total value="8"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="es-CO"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -12364,42 +12367,34 @@
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/DiscapacidadCS"/>
             <code value="01"/>
-            <display value="Discapacidad física"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/DiscapacidadCS"/>
             <code value="02"/>
-            <display value="Discapacidad visual"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/DiscapacidadCS"/>
             <code value="03"/>
-            <display value="Discapacidad auditiva"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/DiscapacidadCS"/>
             <code value="04"/>
-            <display value="Discapacidad intelectual"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/DiscapacidadCS"/>
             <code value="05"/>
-            <display value="Discapacidad sicosocial"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/DiscapacidadCS"/>
             <code value="06"/>
-            <display value="Sordoceguera"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/DiscapacidadCS"/>
             <code value="07"/>
-            <display value="Discapacidad múltiple"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/DiscapacidadCS"/>
             <code value="08"/>
-            <display value="Sin discapacidad"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -12415,7 +12410,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-EtniaCS.html">codesystem Etnia v0.4.3 (CodeSystem)</a>
             </p>
             <p>This value set contains 7 concepts</p>
@@ -12428,7 +12423,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (es-CO)</b>
                 </td>
               </tr>
               <tr>
@@ -12437,7 +12432,7 @@
                   <a href="CodeSystem-EtniaCS.html#EtniaCS-01">01</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/EtniaCS</td>
-                <td>Indigena</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -12445,7 +12440,7 @@
                   <a href="CodeSystem-EtniaCS.html#EtniaCS-02">02</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/EtniaCS</td>
-                <td>ROM (Gitanos)</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -12453,7 +12448,7 @@
                   <a href="CodeSystem-EtniaCS.html#EtniaCS-03">03</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/EtniaCS</td>
-                <td>Raizal (San Andrés y Providencia)</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -12461,7 +12456,7 @@
                   <a href="CodeSystem-EtniaCS.html#EtniaCS-04">04</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/EtniaCS</td>
-                <td>Palenquero de San Basilio de Palenque</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -12469,7 +12464,7 @@
                   <a href="CodeSystem-EtniaCS.html#EtniaCS-05">05</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/EtniaCS</td>
-                <td>Negro(a)</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -12477,7 +12472,7 @@
                   <a href="CodeSystem-EtniaCS.html#EtniaCS-06">06</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/EtniaCS</td>
-                <td>Afrocolombiano(a)</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -12485,7 +12480,7 @@
                   <a href="CodeSystem-EtniaCS.html#EtniaCS-99">99</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/EtniaCS</td>
-                <td>Ninguna de las anteriores</td>
+                <td/>
               </tr>
             </table>
           </div>
@@ -12501,14 +12496,17 @@
           <coding>
             <system value="urn:iso:std:iso:3166"/>
             <code value="CO"/>
-            <display value="Colombia"/>
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6284c21c-3955-44d7-b7c0-473634ca9156"/>
-          <timestamp value="2024-09-10T08:51:28-03:00"/>
+          <identifier value="urn:uuid:4828ab8e-861b-44f6-a31f-3b15627fa254"/>
+          <timestamp value="2025-02-21T13:45:28-03:00"/>
           <total value="7"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="es-CO"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -12532,37 +12530,30 @@
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/EtniaCS"/>
             <code value="01"/>
-            <display value="Indigena"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/EtniaCS"/>
             <code value="02"/>
-            <display value="ROM (Gitanos)"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/EtniaCS"/>
             <code value="03"/>
-            <display value="Raizal (San Andrés y Providencia)"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/EtniaCS"/>
             <code value="04"/>
-            <display value="Palenquero de San Basilio de Palenque"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/EtniaCS"/>
             <code value="05"/>
-            <display value="Negro(a)"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/EtniaCS"/>
             <code value="06"/>
-            <display value="Afrocolombiano(a)"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/EtniaCS"/>
             <code value="99"/>
-            <display value="Ninguna de las anteriores"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -12578,7 +12569,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-IdentidadGeneroCS.html">codesystem Identidad de genero v0.4.3 (CodeSystem)</a>
             </p>
             <p>This value set contains 5 concepts</p>
@@ -12591,7 +12582,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (es-CO)</b>
                 </td>
               </tr>
               <tr>
@@ -12600,7 +12591,7 @@
                   <a href="CodeSystem-IdentidadGeneroCS.html#IdentidadGeneroCS-01">01</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdentidadGeneroCS</td>
-                <td>Masculino</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -12608,7 +12599,7 @@
                   <a href="CodeSystem-IdentidadGeneroCS.html#IdentidadGeneroCS-02">02</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdentidadGeneroCS</td>
-                <td>Femenino</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -12616,7 +12607,7 @@
                   <a href="CodeSystem-IdentidadGeneroCS.html#IdentidadGeneroCS-03">03</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdentidadGeneroCS</td>
-                <td>Transgénero</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -12624,7 +12615,7 @@
                   <a href="CodeSystem-IdentidadGeneroCS.html#IdentidadGeneroCS-04">04</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdentidadGeneroCS</td>
-                <td>Neutro</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -12632,7 +12623,7 @@
                   <a href="CodeSystem-IdentidadGeneroCS.html#IdentidadGeneroCS-05">05</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdentidadGeneroCS</td>
-                <td>No lo declara</td>
+                <td/>
               </tr>
             </table>
           </div>
@@ -12648,14 +12639,17 @@
           <coding>
             <system value="urn:iso:std:iso:3166"/>
             <code value="CO"/>
-            <display value="Colombia"/>
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9e8933c0-b9cc-4d6c-a4f2-35a4ac48cdcc"/>
-          <timestamp value="2024-09-10T08:51:29-03:00"/>
+          <identifier value="urn:uuid:415245c0-1979-42d7-853b-c4538471411a"/>
+          <timestamp value="2025-02-21T13:45:28-03:00"/>
           <total value="5"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="es-CO"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -12679,27 +12673,22 @@
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdentidadGeneroCS"/>
             <code value="01"/>
-            <display value="Masculino"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdentidadGeneroCS"/>
             <code value="02"/>
-            <display value="Femenino"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdentidadGeneroCS"/>
             <code value="03"/>
-            <display value="Transgénero"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdentidadGeneroCS"/>
             <code value="04"/>
-            <display value="Neutro"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdentidadGeneroCS"/>
             <code value="05"/>
-            <display value="No lo declara"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -12715,7 +12704,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-IdspersonaColombia.html">codesystem Identificadores de Persona v0.4.3 (CodeSystem)</a>
             </p>
             <p>This value set contains 11 concepts</p>
@@ -12728,7 +12717,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (es-CO)</b>
                 </td>
                 <td>
                   <b>Definition</b>
@@ -12740,7 +12729,7 @@
                   <a href="CodeSystem-IdspersonaColombia.html#IdspersonaColombia-CC">CC</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia</td>
-                <td>Cédula ciudadanía</td>
+                <td/>
                 <td>
                   <div>
                     <p>Cédula ciudadanía del paciente.</p>
@@ -12754,7 +12743,7 @@
                   <a href="CodeSystem-IdspersonaColombia.html#IdspersonaColombia-CE">CE</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia</td>
-                <td>Cédula de extranjería</td>
+                <td/>
                 <td>
                   <div>
                     <p>Cédula de extranjería</p>
@@ -12768,7 +12757,7 @@
                   <a href="CodeSystem-IdspersonaColombia.html#IdspersonaColombia-CD">CD</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia</td>
-                <td>Carné diplomático</td>
+                <td/>
                 <td>
                   <div>
                     <p>Carné diplomático</p>
@@ -12782,7 +12771,7 @@
                   <a href="CodeSystem-IdspersonaColombia.html#IdspersonaColombia-PA">PA</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia</td>
-                <td>Pasaporte</td>
+                <td/>
                 <td>
                   <div>
                     <p>Pasaporte</p>
@@ -12796,7 +12785,7 @@
                   <a href="CodeSystem-IdspersonaColombia.html#IdspersonaColombia-SC">SC</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia</td>
-                <td>Salvoconducto de permanencia</td>
+                <td/>
                 <td>
                   <div>
                     <p>Salvoconducto de permanencia</p>
@@ -12810,7 +12799,7 @@
                   <a href="CodeSystem-IdspersonaColombia.html#IdspersonaColombia-PT">PT</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia</td>
-                <td>Permiso Temporal de Permanencia</td>
+                <td/>
                 <td>
                   <div>
                     <p>Permiso Temporal de Permanencia</p>
@@ -12824,7 +12813,7 @@
                   <a href="CodeSystem-IdspersonaColombia.html#IdspersonaColombia-PE">PE</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia</td>
-                <td>Permiso Especial de Permanencia</td>
+                <td/>
                 <td>
                   <div>
                     <p>Permiso Especial de Permanencia</p>
@@ -12838,7 +12827,7 @@
                   <a href="CodeSystem-IdspersonaColombia.html#IdspersonaColombia-RC">RC</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia</td>
-                <td>Registro civil</td>
+                <td/>
                 <td>
                   <div>
                     <p>Registro civil</p>
@@ -12852,7 +12841,7 @@
                   <a href="CodeSystem-IdspersonaColombia.html#IdspersonaColombia-TI">TI</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia</td>
-                <td>Tarjeta de identidad</td>
+                <td/>
                 <td>
                   <div>
                     <p>Tarjeta de identidad</p>
@@ -12866,7 +12855,7 @@
                   <a href="CodeSystem-IdspersonaColombia.html#IdspersonaColombia-CN">CN</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia</td>
-                <td>Certificado de nacido vivo</td>
+                <td/>
                 <td>
                   <div>
                     <p>Certificado de nacido vivo</p>
@@ -12880,7 +12869,7 @@
                   <a href="CodeSystem-IdspersonaColombia.html#IdspersonaColombia-DE">DE</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia</td>
-                <td>Documento Extranjero</td>
+                <td/>
                 <td>
                   <div>
                     <p>Documento Extranjero</p>
@@ -12902,14 +12891,17 @@
           <coding>
             <system value="urn:iso:std:iso:3166"/>
             <code value="CO"/>
-            <display value="Colombia"/>
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c3f0e873-bd28-4456-9ac0-1e5c73ac3833"/>
-          <timestamp value="2024-09-10T08:51:29-03:00"/>
+          <identifier value="urn:uuid:ecd01f39-7c75-498b-bcc4-f40470c470ad"/>
+          <timestamp value="2025-02-21T13:45:29-03:00"/>
           <total value="11"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="es-CO"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -12929,57 +12921,46 @@
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia"/>
             <code value="CC"/>
-            <display value="Cédula ciudadanía"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia"/>
             <code value="CE"/>
-            <display value="Cédula de extranjería"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia"/>
             <code value="CD"/>
-            <display value="Carné diplomático"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia"/>
             <code value="PA"/>
-            <display value="Pasaporte"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia"/>
             <code value="SC"/>
-            <display value="Salvoconducto de permanencia"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia"/>
             <code value="PT"/>
-            <display value="Permiso Temporal de Permanencia"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia"/>
             <code value="PE"/>
-            <display value="Permiso Especial de Permanencia"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia"/>
             <code value="RC"/>
-            <display value="Registro civil"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia"/>
             <code value="TI"/>
-            <display value="Tarjeta de identidad"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia"/>
             <code value="CN"/>
-            <display value="Certificado de nacido vivo"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia"/>
             <code value="DE"/>
-            <display value="Documento Extranjero"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -12995,7 +12976,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-IdspersonaColombia.html">codesystem Identificadores de Persona v0.4.3 (CodeSystem)</a>
             </p>
             <p>This value set contains 5 concepts</p>
@@ -13008,7 +12989,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (es-CO)</b>
                 </td>
                 <td>
                   <b>Definition</b>
@@ -13020,7 +13001,7 @@
                   <a href="CodeSystem-IdspersonaColombia.html#IdspersonaColombia-CC">CC</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia</td>
-                <td>Cédula ciudadanía</td>
+                <td/>
                 <td>
                   <div>
                     <p>Cédula ciudadanía del paciente.</p>
@@ -13034,7 +13015,7 @@
                   <a href="CodeSystem-IdspersonaColombia.html#IdspersonaColombia-CE">CE</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia</td>
-                <td>Cédula de extranjería</td>
+                <td/>
                 <td>
                   <div>
                     <p>Cédula de extranjería</p>
@@ -13048,7 +13029,7 @@
                   <a href="CodeSystem-IdspersonaColombia.html#IdspersonaColombia-PA">PA</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia</td>
-                <td>Pasaporte</td>
+                <td/>
                 <td>
                   <div>
                     <p>Pasaporte</p>
@@ -13062,7 +13043,7 @@
                   <a href="CodeSystem-IdspersonaColombia.html#IdspersonaColombia-PE">PE</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia</td>
-                <td>Permiso Especial de Permanencia</td>
+                <td/>
                 <td>
                   <div>
                     <p>Permiso Especial de Permanencia</p>
@@ -13076,7 +13057,7 @@
                   <a href="CodeSystem-IdspersonaColombia.html#IdspersonaColombia-TI">TI</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia</td>
-                <td>Tarjeta de identidad</td>
+                <td/>
                 <td>
                   <div>
                     <p>Tarjeta de identidad</p>
@@ -13098,14 +13079,17 @@
           <coding>
             <system value="urn:iso:std:iso:3166"/>
             <code value="CO"/>
-            <display value="Colombia"/>
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:84532bb1-b0d7-4c4d-8dba-db9847ebbe32"/>
-          <timestamp value="2024-09-10T08:51:29-03:00"/>
+          <identifier value="urn:uuid:dcf537bc-6ef1-4096-b8ce-ddc74d170605"/>
+          <timestamp value="2025-02-21T13:45:29-03:00"/>
           <total value="5"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="es-CO"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -13125,27 +13109,22 @@
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia"/>
             <code value="CC"/>
-            <display value="Cédula ciudadanía"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia"/>
             <code value="CE"/>
-            <display value="Cédula de extranjería"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia"/>
             <code value="PA"/>
-            <display value="Pasaporte"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia"/>
             <code value="PE"/>
-            <display value="Permiso Especial de Permanencia"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia"/>
             <code value="TI"/>
-            <display value="Tarjeta de identidad"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -13161,7 +13140,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-PaisesCS.html">codesystem Códigos del País CS v0.4.3 (CodeSystem)</a>
             </p>
             <p>This value set contains 249 concepts</p>
@@ -13174,7 +13153,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (es-CO)</b>
                 </td>
               </tr>
               <tr>
@@ -13183,7 +13162,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-004">004</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Afghanistan</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13191,7 +13170,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-008">008</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Albania</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13199,7 +13178,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-010">010</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Antarctica</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13207,7 +13186,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-012">012</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Algeria</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13215,7 +13194,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-016">016</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>American Samoa</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13223,7 +13202,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-020">020</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Andorra</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13231,7 +13210,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-024">024</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Angola</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13239,7 +13218,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-028">028</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Antigua and Barbuda</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13247,7 +13226,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-031">031</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Azerbaijan</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13255,7 +13234,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-032">032</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Argentina</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13263,7 +13242,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-036">036</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Australia</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13271,7 +13250,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-040">040</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Austria</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13279,7 +13258,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-044">044</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Bahamas</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13287,7 +13266,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-048">048</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Bahrain</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13295,7 +13274,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-050">050</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Bangladesh</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13303,7 +13282,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-051">051</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Armenia</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13311,7 +13290,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-052">052</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Barbados</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13319,7 +13298,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-056">056</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Belgium</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13327,7 +13306,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-060">060</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Bermuda</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13335,7 +13314,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-064">064</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Bhutan</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13343,7 +13322,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-068">068</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Bolivia, Plurinational State of</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13351,7 +13330,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-070">070</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Bosnia and Herzegovina</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13359,7 +13338,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-072">072</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Botswana</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13367,7 +13346,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-074">074</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Bouvet Island</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13375,7 +13354,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-076">076</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Brazil</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13383,7 +13362,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-084">084</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Belize</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13391,7 +13370,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-086">086</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>British Indian Ocean Territory</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13399,7 +13378,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-090">090</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Solomon Islands</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13407,7 +13386,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-092">092</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Virgin Islands, British</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13415,7 +13394,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-096">096</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Brunei Darussalam</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13423,7 +13402,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-100">100</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Bulgaria</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13431,7 +13410,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-104">104</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Myanmar</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13439,7 +13418,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-108">108</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Burundi</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13447,7 +13426,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-112">112</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Belarus</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13455,7 +13434,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-116">116</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Cambodia</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13463,7 +13442,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-120">120</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Cameroon</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13471,7 +13450,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-124">124</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Canada</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13479,7 +13458,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-132">132</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Cabo Verde</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13487,7 +13466,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-136">136</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Cayman Islands</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13495,7 +13474,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-140">140</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Central African Republic</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13503,7 +13482,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-144">144</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Sri Lanka</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13511,7 +13490,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-148">148</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Chad</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13519,7 +13498,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-152">152</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Chile</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13527,7 +13506,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-156">156</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>China</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13535,7 +13514,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-158">158</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Taiwan, Province of China</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13543,7 +13522,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-162">162</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Christmas Island</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13551,7 +13530,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-166">166</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Cocos (Keeling) Islands</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13559,7 +13538,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-170">170</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Colombia</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13567,7 +13546,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-174">174</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Comoros</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13575,7 +13554,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-175">175</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Mayotte</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13583,7 +13562,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-178">178</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Congo</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13591,7 +13570,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-180">180</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Congo, the Democratic Republic of the</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13599,7 +13578,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-184">184</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Cook Islands</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13607,7 +13586,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-188">188</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Costa Rica</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13615,7 +13594,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-191">191</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Croatia</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13623,7 +13602,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-192">192</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Cuba</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13631,7 +13610,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-196">196</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Cyprus</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13639,7 +13618,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-203">203</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Czechia</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13647,7 +13626,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-204">204</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Benin</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13655,7 +13634,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-208">208</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Denmark</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13663,7 +13642,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-212">212</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Dominica</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13671,7 +13650,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-214">214</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Dominican Republic</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13679,7 +13658,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-218">218</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Ecuador</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13687,7 +13666,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-222">222</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>El Salvador</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13695,7 +13674,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-226">226</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Equatorial Guinea</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13703,7 +13682,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-231">231</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Ethiopia</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13711,7 +13690,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-232">232</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Eritrea</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13719,7 +13698,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-233">233</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Estonia</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13727,7 +13706,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-234">234</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Faroe Islands</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13735,7 +13714,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-238">238</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Falkland Islands (Malvinas)</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13743,7 +13722,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-239">239</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>South Georgia and the South Sandwich Islands</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13751,7 +13730,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-242">242</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Fiji</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13759,7 +13738,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-246">246</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Finland</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13767,7 +13746,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-248">248</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Eland Islands</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13775,7 +13754,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-250">250</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>France</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13783,7 +13762,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-254">254</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>French Guiana</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13791,7 +13770,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-258">258</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>French Polynesia</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13799,7 +13778,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-260">260</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>French Southern Territories</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13807,7 +13786,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-262">262</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Djibouti</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13815,7 +13794,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-266">266</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Gabon</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13823,7 +13802,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-268">268</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Georgia</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13831,7 +13810,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-270">270</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Gambia</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13839,7 +13818,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-275">275</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Palestine, State of</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13847,7 +13826,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-276">276</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Germany</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13855,7 +13834,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-288">288</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Ghana</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13863,7 +13842,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-292">292</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Gibraltar</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13871,7 +13850,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-296">296</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Kiribati</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13879,7 +13858,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-300">300</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Greece</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13887,7 +13866,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-304">304</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Greenland</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13895,7 +13874,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-308">308</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Grenada</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13903,7 +13882,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-312">312</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Guadeloupe</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13911,7 +13890,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-316">316</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Guam</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13919,7 +13898,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-320">320</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Guatemala</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13927,7 +13906,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-324">324</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Guinea</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13935,7 +13914,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-328">328</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Guyana</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13943,7 +13922,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-332">332</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Haiti</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13951,7 +13930,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-334">334</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Heard Island and McDonald Islands</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13959,7 +13938,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-336">336</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Holy See</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13967,7 +13946,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-340">340</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Honduras</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13975,7 +13954,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-344">344</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Hong Kong</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13983,7 +13962,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-348">348</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Hungary</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13991,7 +13970,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-352">352</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Iceland</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13999,7 +13978,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-356">356</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>India</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14007,7 +13986,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-360">360</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Indonesia</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14015,7 +13994,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-364">364</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Iran, Islamic Republic of</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14023,7 +14002,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-368">368</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Iraq</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14031,7 +14010,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-372">372</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Ireland</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14039,7 +14018,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-376">376</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Israel</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14047,7 +14026,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-380">380</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Italy</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14055,7 +14034,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-384">384</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Ctte d'Ivoire</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14063,7 +14042,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-388">388</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Jamaica</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14071,7 +14050,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-392">392</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Japan</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14079,7 +14058,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-398">398</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Kazakhstan</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14087,7 +14066,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-400">400</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Jordan</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14095,7 +14074,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-404">404</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Kenya</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14103,7 +14082,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-408">408</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Korea, Democratic People's Republic of</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14111,7 +14090,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-410">410</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Korea, Republic of</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14119,7 +14098,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-414">414</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Kuwait</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14127,7 +14106,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-417">417</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Kyrgyzstan</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14135,7 +14114,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-418">418</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Lao People's Democratic Republic</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14143,7 +14122,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-422">422</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Lebanon</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14151,7 +14130,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-426">426</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Lesotho</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14159,7 +14138,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-428">428</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Latvia</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14167,7 +14146,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-430">430</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Liberia</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14175,7 +14154,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-434">434</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Libya</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14183,7 +14162,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-438">438</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Liechtenstein</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14191,7 +14170,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-440">440</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Lithuania</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14199,7 +14178,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-442">442</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Luxembourg</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14207,7 +14186,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-446">446</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Macao</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14215,7 +14194,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-450">450</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Madagascar</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14223,7 +14202,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-454">454</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Malawi</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14231,7 +14210,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-458">458</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Malaysia</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14239,7 +14218,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-462">462</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Maldives</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14247,7 +14226,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-466">466</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Mali</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14255,7 +14234,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-470">470</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Malta</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14263,7 +14242,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-474">474</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Martinique</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14271,7 +14250,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-478">478</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Mauritania</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14279,7 +14258,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-480">480</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Mauritius</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14287,7 +14266,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-484">484</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Mexico</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14295,7 +14274,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-492">492</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Monaco</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14303,7 +14282,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-496">496</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Mongolia</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14311,7 +14290,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-498">498</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Moldova, Republic of</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14319,7 +14298,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-499">499</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Montenegro</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14327,7 +14306,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-500">500</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Montserrat</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14335,7 +14314,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-504">504</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Morocco</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14343,7 +14322,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-508">508</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Mozambique</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14351,7 +14330,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-512">512</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Oman</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14359,7 +14338,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-516">516</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Namibia</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14367,7 +14346,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-520">520</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Nauru</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14375,7 +14354,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-524">524</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Nepal</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14383,7 +14362,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-528">528</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Netherlands</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14391,7 +14370,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-531">531</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Curagao</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14399,7 +14378,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-533">533</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Aruba</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14407,7 +14386,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-534">534</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Sint Maarten (Dutch part)</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14415,7 +14394,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-535">535</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Bonaire, Sint Eustatius and Saba</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14423,7 +14402,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-540">540</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>New Caledonia</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14431,7 +14410,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-548">548</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Vanuatu</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14439,7 +14418,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-554">554</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>New Zealand</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14447,7 +14426,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-558">558</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Nicaragua</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14455,7 +14434,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-562">562</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Niger</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14463,7 +14442,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-566">566</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Nigeria</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14471,7 +14450,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-570">570</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Niue</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14479,7 +14458,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-574">574</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Norfolk Island</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14487,7 +14466,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-578">578</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Norway</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14495,7 +14474,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-580">580</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Northern Mariana Islands</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14503,7 +14482,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-581">581</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>United States Minor Outlying Islands</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14511,7 +14490,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-583">583</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Micronesia, Federated States of</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14519,7 +14498,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-584">584</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Marshall Islands</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14527,7 +14506,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-585">585</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Palau</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14535,7 +14514,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-586">586</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Pakistan</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14543,7 +14522,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-591">591</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Panama</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14551,7 +14530,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-598">598</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Papua New Guinea</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14559,7 +14538,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-600">600</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Paraguay</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14567,7 +14546,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-604">604</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Peru</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14575,7 +14554,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-608">608</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Philippines</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14583,7 +14562,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-612">612</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Pitcairn</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14591,7 +14570,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-616">616</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Poland</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14599,7 +14578,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-620">620</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Portugal</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14607,7 +14586,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-624">624</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Guinea-Bissau</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14615,7 +14594,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-626">626</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Timor-Leste</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14623,7 +14602,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-630">630</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Puerto Rico</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14631,7 +14610,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-634">634</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Qatar</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14639,7 +14618,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-638">638</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Riunion</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14647,7 +14626,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-642">642</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Romania</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14655,7 +14634,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-643">643</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Russian Federation</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14663,7 +14642,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-646">646</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Rwanda</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14671,7 +14650,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-652">652</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Saint Barthilemy</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14679,7 +14658,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-654">654</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Saint Helena, Ascension and Tristan da Cunha</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14687,7 +14666,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-659">659</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Saint Kitts and Nevis</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14695,7 +14674,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-660">660</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Anguilla</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14703,7 +14682,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-662">662</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Saint Lucia</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14711,7 +14690,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-663">663</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Saint Martin (French part)</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14719,7 +14698,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-666">666</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Saint Pierre and Miquelon</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14727,7 +14706,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-670">670</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Saint Vincent and the Grenadines</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14735,7 +14714,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-674">674</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>San Marino</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14743,7 +14722,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-678">678</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Sao Tome and Principe</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14751,7 +14730,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-682">682</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Saudi Arabia</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14759,7 +14738,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-686">686</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Senegal</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14767,7 +14746,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-688">688</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Serbia</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14775,7 +14754,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-690">690</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Seychelles</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14783,7 +14762,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-694">694</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Sierra Leone</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14791,7 +14770,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-702">702</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Singapore</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14799,7 +14778,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-703">703</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Slovakia</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14807,7 +14786,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-704">704</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Viet Nam</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14815,7 +14794,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-705">705</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Slovenia</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14823,7 +14802,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-706">706</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Somalia</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14831,7 +14810,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-710">710</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>South Africa</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14839,7 +14818,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-716">716</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Zimbabwe</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14847,7 +14826,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-724">724</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Spain</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14855,7 +14834,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-728">728</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>South Sudan</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14863,7 +14842,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-729">729</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Sudan</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14871,7 +14850,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-732">732</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Western Sahara</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14879,7 +14858,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-740">740</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Suriname</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14887,7 +14866,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-744">744</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Svalbard and Jan Mayen</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14895,7 +14874,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-748">748</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Swaziland</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14903,7 +14882,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-752">752</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Sweden</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14911,7 +14890,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-756">756</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Switzerland</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14919,7 +14898,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-760">760</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Syrian Arab Republic</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14927,7 +14906,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-762">762</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Tajikistan</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14935,7 +14914,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-764">764</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Thailand</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14943,7 +14922,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-768">768</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Togo</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14951,7 +14930,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-772">772</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Tokelau</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14959,7 +14938,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-776">776</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Tonga</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14967,7 +14946,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-780">780</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Trinidad and Tobago</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14975,7 +14954,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-784">784</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>United Arab Emirates</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14983,7 +14962,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-788">788</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Tunisia</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14991,7 +14970,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-792">792</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Turkey</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -14999,7 +14978,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-795">795</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Turkmenistan</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -15007,7 +14986,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-796">796</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Turks and Caicos Islands</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -15015,7 +14994,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-798">798</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Tuvalu</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -15023,7 +15002,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-800">800</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Uganda</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -15031,7 +15010,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-804">804</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Ukraine</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -15039,7 +15018,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-807">807</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Macedonia, the former Yugoslav Republic of</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -15047,7 +15026,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-818">818</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Egypt</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -15055,7 +15034,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-826">826</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>United Kingdom</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -15063,7 +15042,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-831">831</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Guernsey</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -15071,7 +15050,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-832">832</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Jersey</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -15079,7 +15058,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-833">833</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Isle of Man</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -15087,7 +15066,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-834">834</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Tanzania, United Republic of</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -15095,7 +15074,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-840">840</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>United States of America</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -15103,7 +15082,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-850">850</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Virgin Islands, U.S.</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -15111,7 +15090,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-854">854</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Burkina Faso</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -15119,7 +15098,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-858">858</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Uruguay</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -15127,7 +15106,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-860">860</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Uzbekistan</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -15135,7 +15114,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-862">862</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Venezuela, Bolivarian Republic of</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -15143,7 +15122,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-876">876</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Wallis and Futuna</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -15151,7 +15130,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-882">882</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Samoa</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -15159,7 +15138,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-887">887</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Yemen</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -15167,7 +15146,7 @@
                   <a href="CodeSystem-PaisesCS.html#PaisesCS-894">894</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS</td>
-                <td>Zambia</td>
+                <td/>
               </tr>
             </table>
           </div>
@@ -15183,14 +15162,17 @@
           <coding>
             <system value="urn:iso:std:iso:3166"/>
             <code value="CO"/>
-            <display value="Colombia"/>
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:46164fe7-79d1-4c58-ac54-80bf6fbeacb0"/>
-          <timestamp value="2024-09-10T08:51:29-03:00"/>
+          <identifier value="urn:uuid:7baaa55c-0222-4d43-b8e4-2e369c8fbdb2"/>
+          <timestamp value="2025-02-21T13:45:29-03:00"/>
           <total value="249"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="es-CO"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -15210,1247 +15192,998 @@
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="004"/>
-            <display value="Afghanistan"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="008"/>
-            <display value="Albania"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="010"/>
-            <display value="Antarctica"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="012"/>
-            <display value="Algeria"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="016"/>
-            <display value="American Samoa"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="020"/>
-            <display value="Andorra"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="024"/>
-            <display value="Angola"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="028"/>
-            <display value="Antigua and Barbuda"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="031"/>
-            <display value="Azerbaijan"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="032"/>
-            <display value="Argentina"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="036"/>
-            <display value="Australia"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="040"/>
-            <display value="Austria"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="044"/>
-            <display value="Bahamas"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="048"/>
-            <display value="Bahrain"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="050"/>
-            <display value="Bangladesh"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="051"/>
-            <display value="Armenia"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="052"/>
-            <display value="Barbados"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="056"/>
-            <display value="Belgium"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="060"/>
-            <display value="Bermuda"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="064"/>
-            <display value="Bhutan"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="068"/>
-            <display value="Bolivia, Plurinational State of"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="070"/>
-            <display value="Bosnia and Herzegovina"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="072"/>
-            <display value="Botswana"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="074"/>
-            <display value="Bouvet Island"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="076"/>
-            <display value="Brazil"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="084"/>
-            <display value="Belize"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="086"/>
-            <display value="British Indian Ocean Territory"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="090"/>
-            <display value="Solomon Islands"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="092"/>
-            <display value="Virgin Islands, British"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="096"/>
-            <display value="Brunei Darussalam"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="100"/>
-            <display value="Bulgaria"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="104"/>
-            <display value="Myanmar"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="108"/>
-            <display value="Burundi"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="112"/>
-            <display value="Belarus"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="116"/>
-            <display value="Cambodia"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="120"/>
-            <display value="Cameroon"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="124"/>
-            <display value="Canada"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="132"/>
-            <display value="Cabo Verde"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="136"/>
-            <display value="Cayman Islands"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="140"/>
-            <display value="Central African Republic"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="144"/>
-            <display value="Sri Lanka"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="148"/>
-            <display value="Chad"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="152"/>
-            <display value="Chile"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="156"/>
-            <display value="China"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="158"/>
-            <display value="Taiwan, Province of China"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="162"/>
-            <display value="Christmas Island"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="166"/>
-            <display value="Cocos (Keeling) Islands"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="170"/>
-            <display value="Colombia"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="174"/>
-            <display value="Comoros"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="175"/>
-            <display value="Mayotte"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="178"/>
-            <display value="Congo"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="180"/>
-            <display value="Congo, the Democratic Republic of the"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="184"/>
-            <display value="Cook Islands"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="188"/>
-            <display value="Costa Rica"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="191"/>
-            <display value="Croatia"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="192"/>
-            <display value="Cuba"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="196"/>
-            <display value="Cyprus"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="203"/>
-            <display value="Czechia"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="204"/>
-            <display value="Benin"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="208"/>
-            <display value="Denmark"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="212"/>
-            <display value="Dominica"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="214"/>
-            <display value="Dominican Republic"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="218"/>
-            <display value="Ecuador"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="222"/>
-            <display value="El Salvador"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="226"/>
-            <display value="Equatorial Guinea"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="231"/>
-            <display value="Ethiopia"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="232"/>
-            <display value="Eritrea"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="233"/>
-            <display value="Estonia"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="234"/>
-            <display value="Faroe Islands"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="238"/>
-            <display value="Falkland Islands (Malvinas)"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="239"/>
-            <display value="South Georgia and the South Sandwich Islands"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="242"/>
-            <display value="Fiji"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="246"/>
-            <display value="Finland"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="248"/>
-            <display value="Eland Islands"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="250"/>
-            <display value="France"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="254"/>
-            <display value="French Guiana"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="258"/>
-            <display value="French Polynesia"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="260"/>
-            <display value="French Southern Territories"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="262"/>
-            <display value="Djibouti"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="266"/>
-            <display value="Gabon"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="268"/>
-            <display value="Georgia"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="270"/>
-            <display value="Gambia"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="275"/>
-            <display value="Palestine, State of"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="276"/>
-            <display value="Germany"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="288"/>
-            <display value="Ghana"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="292"/>
-            <display value="Gibraltar"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="296"/>
-            <display value="Kiribati"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="300"/>
-            <display value="Greece"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="304"/>
-            <display value="Greenland"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="308"/>
-            <display value="Grenada"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="312"/>
-            <display value="Guadeloupe"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="316"/>
-            <display value="Guam"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="320"/>
-            <display value="Guatemala"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="324"/>
-            <display value="Guinea"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="328"/>
-            <display value="Guyana"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="332"/>
-            <display value="Haiti"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="334"/>
-            <display value="Heard Island and McDonald Islands"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="336"/>
-            <display value="Holy See"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="340"/>
-            <display value="Honduras"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="344"/>
-            <display value="Hong Kong"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="348"/>
-            <display value="Hungary"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="352"/>
-            <display value="Iceland"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="356"/>
-            <display value="India"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="360"/>
-            <display value="Indonesia"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="364"/>
-            <display value="Iran, Islamic Republic of"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="368"/>
-            <display value="Iraq"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="372"/>
-            <display value="Ireland"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="376"/>
-            <display value="Israel"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="380"/>
-            <display value="Italy"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="384"/>
-            <display value="Ctte d'Ivoire"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="388"/>
-            <display value="Jamaica"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="392"/>
-            <display value="Japan"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="398"/>
-            <display value="Kazakhstan"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="400"/>
-            <display value="Jordan"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="404"/>
-            <display value="Kenya"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="408"/>
-            <display value="Korea, Democratic People's Republic of"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="410"/>
-            <display value="Korea, Republic of"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="414"/>
-            <display value="Kuwait"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="417"/>
-            <display value="Kyrgyzstan"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="418"/>
-            <display value="Lao People's Democratic Republic"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="422"/>
-            <display value="Lebanon"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="426"/>
-            <display value="Lesotho"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="428"/>
-            <display value="Latvia"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="430"/>
-            <display value="Liberia"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="434"/>
-            <display value="Libya"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="438"/>
-            <display value="Liechtenstein"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="440"/>
-            <display value="Lithuania"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="442"/>
-            <display value="Luxembourg"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="446"/>
-            <display value="Macao"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="450"/>
-            <display value="Madagascar"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="454"/>
-            <display value="Malawi"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="458"/>
-            <display value="Malaysia"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="462"/>
-            <display value="Maldives"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="466"/>
-            <display value="Mali"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="470"/>
-            <display value="Malta"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="474"/>
-            <display value="Martinique"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="478"/>
-            <display value="Mauritania"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="480"/>
-            <display value="Mauritius"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="484"/>
-            <display value="Mexico"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="492"/>
-            <display value="Monaco"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="496"/>
-            <display value="Mongolia"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="498"/>
-            <display value="Moldova, Republic of"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="499"/>
-            <display value="Montenegro"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="500"/>
-            <display value="Montserrat"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="504"/>
-            <display value="Morocco"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="508"/>
-            <display value="Mozambique"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="512"/>
-            <display value="Oman"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="516"/>
-            <display value="Namibia"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="520"/>
-            <display value="Nauru"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="524"/>
-            <display value="Nepal"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="528"/>
-            <display value="Netherlands"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="531"/>
-            <display value="Curagao"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="533"/>
-            <display value="Aruba"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="534"/>
-            <display value="Sint Maarten (Dutch part)"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="535"/>
-            <display value="Bonaire, Sint Eustatius and Saba"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="540"/>
-            <display value="New Caledonia"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="548"/>
-            <display value="Vanuatu"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="554"/>
-            <display value="New Zealand"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="558"/>
-            <display value="Nicaragua"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="562"/>
-            <display value="Niger"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="566"/>
-            <display value="Nigeria"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="570"/>
-            <display value="Niue"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="574"/>
-            <display value="Norfolk Island"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="578"/>
-            <display value="Norway"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="580"/>
-            <display value="Northern Mariana Islands"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="581"/>
-            <display value="United States Minor Outlying Islands"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="583"/>
-            <display value="Micronesia, Federated States of"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="584"/>
-            <display value="Marshall Islands"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="585"/>
-            <display value="Palau"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="586"/>
-            <display value="Pakistan"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="591"/>
-            <display value="Panama"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="598"/>
-            <display value="Papua New Guinea"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="600"/>
-            <display value="Paraguay"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="604"/>
-            <display value="Peru"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="608"/>
-            <display value="Philippines"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="612"/>
-            <display value="Pitcairn"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="616"/>
-            <display value="Poland"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="620"/>
-            <display value="Portugal"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="624"/>
-            <display value="Guinea-Bissau"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="626"/>
-            <display value="Timor-Leste"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="630"/>
-            <display value="Puerto Rico"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="634"/>
-            <display value="Qatar"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="638"/>
-            <display value="Riunion"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="642"/>
-            <display value="Romania"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="643"/>
-            <display value="Russian Federation"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="646"/>
-            <display value="Rwanda"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="652"/>
-            <display value="Saint Barthilemy"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="654"/>
-            <display value="Saint Helena, Ascension and Tristan da Cunha"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="659"/>
-            <display value="Saint Kitts and Nevis"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="660"/>
-            <display value="Anguilla"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="662"/>
-            <display value="Saint Lucia"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="663"/>
-            <display value="Saint Martin (French part)"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="666"/>
-            <display value="Saint Pierre and Miquelon"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="670"/>
-            <display value="Saint Vincent and the Grenadines"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="674"/>
-            <display value="San Marino"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="678"/>
-            <display value="Sao Tome and Principe"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="682"/>
-            <display value="Saudi Arabia"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="686"/>
-            <display value="Senegal"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="688"/>
-            <display value="Serbia"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="690"/>
-            <display value="Seychelles"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="694"/>
-            <display value="Sierra Leone"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="702"/>
-            <display value="Singapore"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="703"/>
-            <display value="Slovakia"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="704"/>
-            <display value="Viet Nam"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="705"/>
-            <display value="Slovenia"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="706"/>
-            <display value="Somalia"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="710"/>
-            <display value="South Africa"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="716"/>
-            <display value="Zimbabwe"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="724"/>
-            <display value="Spain"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="728"/>
-            <display value="South Sudan"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="729"/>
-            <display value="Sudan"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="732"/>
-            <display value="Western Sahara"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="740"/>
-            <display value="Suriname"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="744"/>
-            <display value="Svalbard and Jan Mayen"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="748"/>
-            <display value="Swaziland"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="752"/>
-            <display value="Sweden"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="756"/>
-            <display value="Switzerland"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="760"/>
-            <display value="Syrian Arab Republic"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="762"/>
-            <display value="Tajikistan"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="764"/>
-            <display value="Thailand"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="768"/>
-            <display value="Togo"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="772"/>
-            <display value="Tokelau"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="776"/>
-            <display value="Tonga"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="780"/>
-            <display value="Trinidad and Tobago"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="784"/>
-            <display value="United Arab Emirates"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="788"/>
-            <display value="Tunisia"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="792"/>
-            <display value="Turkey"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="795"/>
-            <display value="Turkmenistan"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="796"/>
-            <display value="Turks and Caicos Islands"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="798"/>
-            <display value="Tuvalu"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="800"/>
-            <display value="Uganda"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="804"/>
-            <display value="Ukraine"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="807"/>
-            <display value="Macedonia, the former Yugoslav Republic of"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="818"/>
-            <display value="Egypt"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="826"/>
-            <display value="United Kingdom"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="831"/>
-            <display value="Guernsey"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="832"/>
-            <display value="Jersey"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="833"/>
-            <display value="Isle of Man"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="834"/>
-            <display value="Tanzania, United Republic of"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="840"/>
-            <display value="United States of America"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="850"/>
-            <display value="Virgin Islands, U.S."/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="854"/>
-            <display value="Burkina Faso"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="858"/>
-            <display value="Uruguay"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="860"/>
-            <display value="Uzbekistan"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="862"/>
-            <display value="Venezuela, Bolivarian Republic of"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="876"/>
-            <display value="Wallis and Futuna"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="882"/>
-            <display value="Samoa"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="887"/>
-            <display value="Yemen"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS"/>
             <code value="894"/>
-            <display value="Zambia"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -16466,7 +16199,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-ZonaResidenciaCS.html">codesystem Zona de residencia v0.4.3 (CodeSystem)</a>
             </p>
             <p>This value set contains 2 concepts</p>
@@ -16479,7 +16212,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (es-CO)</b>
                 </td>
               </tr>
               <tr>
@@ -16488,7 +16221,7 @@
                   <a href="CodeSystem-ZonaResidenciaCS.html#ZonaResidenciaCS-01">01</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/ZonaResidenciaCS</td>
-                <td>Urbana</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -16496,7 +16229,7 @@
                   <a href="CodeSystem-ZonaResidenciaCS.html#ZonaResidenciaCS-02">02</a>
                 </td>
                 <td>https://www.minsalud.gov.co/ihc/fhir/CodeSystem/ZonaResidenciaCS</td>
-                <td>Rural</td>
+                <td/>
               </tr>
             </table>
           </div>
@@ -16512,14 +16245,17 @@
           <coding>
             <system value="urn:iso:std:iso:3166"/>
             <code value="CO"/>
-            <display value="Colombia"/>
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d24b3f8f-26f0-401f-a194-76b36a277440"/>
-          <timestamp value="2024-09-10T08:51:31-03:00"/>
+          <identifier value="urn:uuid:89e39303-247c-4eb8-be48-41f51371acbd"/>
+          <timestamp value="2025-02-21T13:45:30-03:00"/>
           <total value="2"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="es-CO"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -16543,12 +16279,10 @@
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/ZonaResidenciaCS"/>
             <code value="01"/>
-            <display value="Urbana"/>
           </contains>
           <contains>
             <system value="https://www.minsalud.gov.co/ihc/fhir/CodeSystem/ZonaResidenciaCS"/>
             <code value="02"/>
-            <display value="Rural"/>
           </contains>
         </expansion>
       </ValueSet>

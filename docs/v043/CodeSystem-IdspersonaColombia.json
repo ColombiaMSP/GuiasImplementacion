@@ -24,8 +24,7 @@
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "CO",
-      "display" : "Colombia"
+      "code" : "CO"
     }]
   }],
   "caseSensitive" : true,

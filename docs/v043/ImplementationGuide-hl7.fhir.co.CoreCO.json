@@ -10,7 +10,7 @@
   "name" : "CoreCOImplementationGuide",
   "title" : "GUIA EN DESARROLLO - Colombia (v 0.4.3)",
   "status" : "draft",
-  "date" : "2024-09-10T08:50:18-03:00",
+  "date" : "2025-02-21T13:43:19-03:00",
   "publisher" : "MSP Colombia",
   "contact" : [{
     "name" : "MSP Colombia",
@@ -23,8 +23,7 @@
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "CO",
-      "display" : "Colombia"
+      "code" : "CO"
     }]
   }],
   "packageId" : "hl7.fhir.co.CoreCO",
@@ -38,7 +37,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.0.2"
+    "version" : "6.2.0"
   },
   {
     "id" : "hl7ext",
@@ -48,7 +47,7 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.1.0"
+    "version" : "5.2.0"
   }],
   "definition" : {
     "extension" : [{
@@ -339,7 +338,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#0.1.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.3.0"
     },
     {
       "extension" : [{

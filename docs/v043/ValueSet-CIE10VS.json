@@ -3,7 +3,7 @@
   "id" : "CIE10VS",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet CIE10VS</b></p><a name=\"CIE10VS\"> </a><a name=\"hcCIE10VS\"> </a><a name=\"CIE10VS-es-CO\"> </a><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet CIE10VS</b></p><a name=\"CIE10VS\"> </a><a name=\"hcCIE10VS\"> </a><a name=\"CIE10VS-es-CO\"> </a><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a></li></ul></div>"
   },
   "url" : "https://www.minsalud.gov.co/ihc/fhir/ValueSet/CIE10VS",
   "version" : "0.4.3",
@@ -24,8 +24,7 @@
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "CO",
-      "display" : "Colombia"
+      "code" : "CO"
     }]
   }],
   "compose" : {

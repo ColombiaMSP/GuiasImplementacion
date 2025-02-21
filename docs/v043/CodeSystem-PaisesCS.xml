@@ -11,7 +11,7 @@
   <title value="Códigos del País CS"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2024-09-10T08:50:18-03:00"/>
+  <date value="2025-02-21T13:43:19-03:00"/>
   <publisher value="MSP Colombia"/>
   <contact>
     <name value="MSP Colombia"/>
@@ -25,7 +25,6 @@
     <coding>
       <system value="urn:iso:std:iso:3166"/>
       <code value="CO"/>
-      <display value="Colombia"/>
     </coding>
   </jurisdiction>
   <caseSensitive value="true"/>

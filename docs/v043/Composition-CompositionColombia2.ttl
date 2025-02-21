@@ -1,6 +1,7 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -17,7 +18,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition CompositionColombia2</b></p><a name=\"CompositionColombia2\"> </a><a name=\"hcCompositionColombia2\"> </a><a name=\"CompositionColombia2-es-CO\"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 60591-5}\">Patient Summary Document</span></p><p><b>date</b>: 2022-03-05 18:30:00+0100</p><p><b>author</b>: <a href=\"Bundle-BundleColombiaCo2.html#uuid-urn-149226c1-efcb-4b86-bb2c-ed8d95c986c3\">Bundle: type = transaction; timestamp = 2022-03-03 10:30:00+0000</a></p><p><b>title</b>: Resumen de Paciente Colombia</p><p><b>custodian</b>: <a href=\"Organization-OrganizacionRegionEjemplo.html\">Organization DIRECCION DEPARTAMENTAL DE CUNDINAMARCA</a></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition CompositionColombia2</b></p><a name=\"CompositionColombia2\"> </a><a name=\"hcCompositionColombia2\"> </a><a name=\"CompositionColombia2-es-CO\"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 60591-5}\">Patient Summary Document</span></p><p><b>date</b>: 2022-03-05 18:30:00+0100</p><p><b>author</b>: <a href=\"Bundle-BundleColombiaCo2.html#uuid-urn-149226c1-efcb-4b86-bb2c-ed8d95c986c3\">Bundle: type = transaction; timestamp = 2022-03-03 10:30:00+0000</a></p><p><b>title</b>: Resumen de Paciente Colombia</p><p><b>custodian</b>: <a href=\"Organization-OrganizacionRegionEjemplo.html\">Organization DIRECCION DEPARTAMENTAL DE CUNDINAMARCA</a></p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:type [
@@ -52,7 +53,7 @@
      ] ;
      fhir:text [
        fhir:status [ fhir:v "generated" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">CONDICIONES</div>"
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">CONDICIONES</div>"^^rdf:XMLLiteral
      ] ;
      fhir:entry ( [
        fhir:reference [ fhir:v "uuid:urn:9d1a0c5e-b128-412b-b26d-77b563875e8f" ]
@@ -69,7 +70,7 @@
      ] ;
      fhir:text [
        fhir:status [ fhir:v "generated" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">MEDICAMENTOS</div>"
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">MEDICAMENTOS</div>"^^rdf:XMLLiteral
      ] ;
      fhir:entry ( [
        fhir:reference [ fhir:v "uuid:urn:0bb7532e-171a-4a0b-adc3-0a9c0c5cafe2" ]
@@ -86,7 +87,7 @@
      ] ;
      fhir:text [
        fhir:status [ fhir:v "generated" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">ALERGIAS</div>"
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">ALERGIAS</div>"^^rdf:XMLLiteral
      ] ;
      fhir:entry ( [
        fhir:reference [ fhir:v "uuid:urn:6da4367e-aa63-4637-b1ff-28eeae429137" ]

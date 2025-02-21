@@ -7,7 +7,7 @@ https://www.minsalud.gov.co/ihc/fhir/ValueSet/CIE10VS,0.4.3,active,,CIE10VS,Codi
 https://www.minsalud.gov.co/ihc/fhir/ValueSet/CUMSVS,0.4.3,active,,CUMSVS,Codificacion CUMS,"Conjunto de Valores de Codificacion CUMS","StructureDefinition/MedicationStatementCo","Other"
 https://www.minsalud.gov.co/ihc/fhir/ValueSet/DiscapacidadVS,0.4.3,active,,DiscapacidadVS,Discapacidad,"Códigos de Discapacidad","StructureDefinition/PacienteCo","Internal"
 https://www.minsalud.gov.co/ihc/fhir/ValueSet/EtniaVS,0.4.3,active,,EtniaVS,Etnia,"Conjunto de valores para la Etnia.","StructureDefinition/co-patient-etnia","Internal"
-https://www.minsalud.gov.co/ihc/fhir/ValueSet/IUMVS,0.4.3,active,,IUMVS,Codificacion IUM,"Conjunto de Valores de Codificacion IUM",,"Other"
+https://www.minsalud.gov.co/ihc/fhir/ValueSet/IUMVS,0.4.3,active,,IUMVS,Codificacion IUM,"Conjunto de Valores de Codificacion IUM","StructureDefinition/MedicationStatementCo","Other"
 https://www.minsalud.gov.co/ihc/fhir/ValueSet/IdentidadGeneroVS,0.4.3,active,,IdentidadGeneroVS,Identidad de Genero,"Conjunto de Valores para identidad de Género.","StructureDefinition/PacienteCo","Internal"
 https://www.minsalud.gov.co/ihc/fhir/ValueSet/IdentificadoresPersonaVS,0.4.3,active,,IdentificadoresPersonaVS,Identificadores de Persona,"Identificadores de Persona Colombia.","StructureDefinition/PacienteCo","Internal"
 https://www.minsalud.gov.co/ihc/fhir/ValueSet/IdentificadoresProfesionalVS,0.4.3,active,,IdentificadoresProfesionalVS,Identificadores de Profesional,"Identificadores de Profesional Colombia.","StructureDefinition/PractitionerCo","Internal"

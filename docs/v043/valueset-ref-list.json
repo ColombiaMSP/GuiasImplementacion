@@ -111,7 +111,10 @@
       "name" : "IUMVS",
       "title" : "Codificacion IUM",
       "description" : "Conjunto de Valores de Codificacion IUM",
-      "systems" : ["https://www.minsalud.gov.co/CodeSystem/IUM"]
+      "systems" : ["https://www.minsalud.gov.co/CodeSystem/IUM"],
+      "uses" : {
+      },
+      "StructureDefinition-MedicationStatementCo.html" : "Medication Statement Co"
     },
     {
       "url" : "https://www.minsalud.gov.co/ihc/fhir/ValueSet/IdentidadGeneroVS",

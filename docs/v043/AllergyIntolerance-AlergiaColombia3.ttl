@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -15,8 +16,8 @@
      ] )
   ] ; # 
   fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance AlergiaColombia3</b></p><a name=\"AlergiaColombia3\"> </a><a name=\"hcAlergiaColombia3\"> </a><a name=\"AlergiaColombia3-es-CO\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}\">Confirmed</span></p><p><b>code</b>: <span title=\"Codes:\">alergia a gluten</span></p><p><b>patient</b>: <a href=\"Bundle-BundleColombiaCo2.html#urn-uuid-2f8d6332-e339-457d-b5e8-1a140a1f3ea1\">Paciente Colombiano</a></p></div>"
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance AlergiaColombia3</b></p><a name=\"AlergiaColombia3\"> </a><a name=\"hcAlergiaColombia3\"> </a><a name=\"AlergiaColombia3-es-CO\"> </a><p><b>TipoAlergia</b>: <span title=\"Codes:{https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS 01}\">Medicamento</span></p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}\">Confirmed</span></p><p><b>code</b>: <span title=\"Codes:\">alergia a gluten</span></p><p><b>patient</b>: <a href=\"Bundle-BundleColombiaCo2.html#urn-uuid-2f8d6332-e339-457d-b5e8-1a140a1f3ea1\">Paciente Colombiano</a></p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-AllergyIntolerance-tipo"^^xsd:anyURI ] ;

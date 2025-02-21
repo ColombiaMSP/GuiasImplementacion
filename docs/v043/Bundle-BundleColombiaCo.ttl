@@ -1,6 +1,7 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -78,7 +79,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DocumentReference_DocumentReferenceColombia\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference DocumentReferenceColombia</b></p><a name=\"DocumentReferenceColombia\"> </a><a name=\"hcDocumentReferenceColombia\"> </a><a name=\"DocumentReferenceColombia-es-CO\"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 60591-5}\">Patient summary Document</span></p><p><b>subject</b>: <a href=\"Patient-PacienteColombianoMinimo.html\">Luis Alberto Sanchez  Male, DoB: 1974-12-25 ( Cédula ciudadanía: 98765)</a></p><p><b>date</b>: 2022-03-03 10:30:00+0000</p><p><b>author</b>: <a href=\"Organization/OrganizacionPrestadorEjemplo\">Organization/OrganizacionPrestadorEjemplo</a></p><p><b>custodian</b>: <a href=\"Organization-OrganizacionRegionEjemplo.html\">Organization DIRECCION DEPARTAMENTAL DE CUNDINAMARCA</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>application/fhir+json</td><td><a href=\"Composition-CompositionColombia.html\">Composition Resumen de Paciente Colombia</a></td></tr></table></blockquote></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DocumentReference_DocumentReferenceColombia\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference DocumentReferenceColombia</b></p><a name=\"DocumentReferenceColombia\"> </a><a name=\"hcDocumentReferenceColombia\"> </a><a name=\"DocumentReferenceColombia-es-CO\"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 60591-5}\">Patient summary Document</span></p><p><b>subject</b>: <a href=\"Patient-PacienteColombianoMinimo.html\">Luis Alberto Sanchez  Male, DoB: 1974-12-25 ( Cédula ciudadanía: 98765)</a></p><p><b>date</b>: 2022-03-03 10:30:00+0000</p><p><b>author</b>: <a href=\"Organization/OrganizacionPrestadorEjemplo\">Organization/OrganizacionPrestadorEjemplo</a></p><p><b>custodian</b>: <a href=\"Organization-OrganizacionRegionEjemplo.html\">Organization DIRECCION DEPARTAMENTAL DE CUNDINAMARCA</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>application/fhir+json</td><td><a href=\"Composition-CompositionColombia.html\">Composition Resumen de Paciente Colombia</a></td></tr></table></blockquote></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:status [ fhir:v "current"] ; # 
   fhir:type [
@@ -118,7 +119,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_ProfesionalColombia\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner ProfesionalColombia</b></p><a name=\"ProfesionalColombia\"> </a><a name=\"hcProfesionalColombia\"> </a><a name=\"ProfesionalColombia-es-CO\"> </a><p><b>identifier</b>: Cédula ciudadanía/12345</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_ProfesionalColombia\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner ProfesionalColombia</b></p><a name=\"ProfesionalColombia\"> </a><a name=\"hcProfesionalColombia\"> </a><a name=\"ProfesionalColombia-es-CO\"> </a><p><b>identifier</b>: Cédula ciudadanía/12345</p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
      fhir:type [
@@ -154,7 +155,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_CompositionColombia\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition CompositionColombia</b></p><a name=\"CompositionColombia\"> </a><a name=\"hcCompositionColombia\"> </a><a name=\"CompositionColombia-es-CO\"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 60591-5}\">Patient Summary Document</span></p><p><b>date</b>: 2022-03-05 18:30:00+0100</p><p><b>author</b>: <a href=\"Practitioner-ProfesionalColombia.html\">Practitioner: identifier = Cédula ciudadanía: 12345</a></p><p><b>title</b>: Resumen de Paciente Colombia</p><p><b>custodian</b>: <a href=\"Organization-OrganizacionRegionEjemplo.html\">Organization DIRECCION DEPARTAMENTAL DE CUNDINAMARCA</a></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_CompositionColombia\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition CompositionColombia</b></p><a name=\"CompositionColombia\"> </a><a name=\"hcCompositionColombia\"> </a><a name=\"CompositionColombia-es-CO\"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 60591-5}\">Patient Summary Document</span></p><p><b>date</b>: 2022-03-05 18:30:00+0100</p><p><b>author</b>: <a href=\"Practitioner-ProfesionalColombia.html\">Practitioner: identifier = Cédula ciudadanía: 12345</a></p><p><b>title</b>: Resumen de Paciente Colombia</p><p><b>custodian</b>: <a href=\"Organization-OrganizacionRegionEjemplo.html\">Organization DIRECCION DEPARTAMENTAL DE CUNDINAMARCA</a></p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:type [
@@ -191,7 +192,7 @@
      ] ;
      fhir:text [
        fhir:status [ fhir:v "generated" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">CONDICIONES</div>"
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">CONDICIONES</div>"^^rdf:XMLLiteral
      ] ;
      fhir:entry ( [
        fhir:link <https://www.minsalud.gov.co/ihc/fhir/Condition/ConditionColombia> ;
@@ -209,7 +210,7 @@
      ] ;
      fhir:text [
        fhir:status [ fhir:v "generated" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">MEDICAMENTOS</div>"
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">MEDICAMENTOS</div>"^^rdf:XMLLiteral
      ] ;
      fhir:entry ( [
        fhir:link <https://www.minsalud.gov.co/ihc/fhir/MedicationStatement/MedicationStatementColombia> ;
@@ -227,7 +228,7 @@
      ] ;
      fhir:text [
        fhir:status [ fhir:v "generated" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">ALERGIAS</div>"
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">ALERGIAS</div>"^^rdf:XMLLiteral
      ] ;
      fhir:entry ( [
        fhir:link <https://www.minsalud.gov.co/ihc/fhir/AllergyIntolerance/AlergiaColombia> ;
@@ -245,7 +246,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_ConditionColombia\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition ConditionColombia</b></p><a name=\"ConditionColombia\"> </a><a name=\"hcConditionColombia\"> </a><a name=\"ConditionColombia-es-CO\"> </a><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/sid/icd-10 E10.4}\">Diabetes Tipo 1, con complicaciones neurologicas</span></p><p><b>subject</b>: <a href=\"Patient-PacienteColombiano.html\">Miguel Angel López  Male, DoB: 1974-12-25 ( Cédula ciudadanía: 12345)</a></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_ConditionColombia\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition ConditionColombia</b></p><a name=\"ConditionColombia\"> </a><a name=\"hcConditionColombia\"> </a><a name=\"ConditionColombia-es-CO\"> </a><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/sid/icd-10 E10.4}\">Diabetes Tipo 1, con complicaciones neurologicas</span></p><p><b>subject</b>: <a href=\"Patient-PacienteColombiano.html\">Miguel Angel López  Male, DoB: 1974-12-25 ( Cédula ciudadanía: 12345)</a></p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:code [
      fhir:coding ( [
@@ -270,7 +271,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_PacienteColombianoMinimo\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient PacienteColombianoMinimo</b></p><a name=\"PacienteColombianoMinimo\"> </a><a name=\"hcPacienteColombianoMinimo\"> </a><a name=\"PacienteColombianoMinimo-es-CO\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Luis Alberto Sanchez  Male, DoB: 1974-12-25 ( Cédula ciudadanía: 98765)</p><hr/></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_PacienteColombianoMinimo\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient PacienteColombianoMinimo</b></p><a name=\"PacienteColombianoMinimo\"> </a><a name=\"hcPacienteColombianoMinimo\"> </a><a name=\"PacienteColombianoMinimo-es-CO\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Luis Alberto Sanchez  Male, DoB: 1974-12-25 ( Cédula ciudadanía: 98765)</p><hr/></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
      fhir:type [
@@ -300,7 +301,10 @@
        fhir:v "Sanchez" ;
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Martinez" ]
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Martinez"
+         ]
        ] )
      ] ;
      fhir:given ( [ fhir:v "Luis" ] [ fhir:v "Alberto" ] )
@@ -317,8 +321,8 @@
      ] )
   ] ; # 
   fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"AllergyIntolerance_AlergiaColombia\"> </a><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance AlergiaColombia</b></p><a name=\"AlergiaColombia\"> </a><a name=\"hcAlergiaColombia\"> </a><a name=\"AlergiaColombia-es-CO\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}\">Confirmed</span></p><p><b>code</b>: <span title=\"Codes:\">alergia a nueces</span></p><p><b>patient</b>: <a href=\"Patient-PacienteColombiano.html\">Paciente Colombiano</a></p></div>"
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"AllergyIntolerance_AlergiaColombia\"> </a><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance AlergiaColombia</b></p><a name=\"AlergiaColombia\"> </a><a name=\"hcAlergiaColombia\"> </a><a name=\"AlergiaColombia-es-CO\"> </a><p><b>TipoAlergia</b>: <span title=\"Codes:{https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS 03}\">Sustancia del ambiente</span></p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}\">Confirmed</span></p><p><b>code</b>: <span title=\"Codes:\">alergia a nueces</span></p><p><b>patient</b>: <a href=\"Patient-PacienteColombiano.html\">Paciente Colombiano</a></p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-AllergyIntolerance-tipo"^^xsd:anyURI ] ;
@@ -361,7 +365,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationStatement_MedicationStatementColombia\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationStatement MedicationStatementColombia</b></p><a name=\"MedicationStatementColombia\"> </a><a name=\"hcMedicationStatementColombia\"> </a><a name=\"MedicationStatementColombia-es-CO\"> </a><p><b>status</b>: Active</p><p><b>medication</b>: <span title=\"Codes:{https://www.minsalud.gov.co/CodeSystem/CUMS 20038383}\">10.4 MG DE MONTELUKAST SODICO EQUIVALENTE A MONTELUKAST</span></p><p><b>subject</b>: <a href=\"Patient-PacienteColombiano.html\">Miguel Angel López  Male, DoB: 1974-12-25 ( Cédula ciudadanía: 12345)</a></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationStatement_MedicationStatementColombia\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationStatement MedicationStatementColombia</b></p><a name=\"MedicationStatementColombia\"> </a><a name=\"hcMedicationStatementColombia\"> </a><a name=\"MedicationStatementColombia-es-CO\"> </a><p><b>status</b>: Active</p><p><b>medication</b>: <span title=\"Codes:{https://www.minsalud.gov.co/CodeSystem/CUMS 20038383}\">10.4 MG DE MONTELUKAST SODICO EQUIVALENTE A MONTELUKAST</span></p><p><b>subject</b>: <a href=\"Patient-PacienteColombiano.html\">Miguel Angel López  Male, DoB: 1974-12-25 ( Cédula ciudadanía: 12345)</a></p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:medication [

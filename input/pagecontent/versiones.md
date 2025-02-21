@@ -1,4 +1,4 @@
-#### Versión: 0.4.3 , _2024-AGOSTO_ (EN DESARROLLO)
+#### Versión: 0.4.3 , _2025 Febrero_ (EN DESARROLLO)
 
  **PACIENTE CO:**
  - [OK] Agregado de extension de comunidades étnicas, sin catálogo definido.

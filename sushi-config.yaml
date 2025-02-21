@@ -18,7 +18,7 @@ publisher:
   name: MSP Colombia
   url: https://www.minsalud.gov.co/
 description: Ministerio de Salud Colombia - Interoperabilidad de Historia Clínica IHC - 
-jurisdiction: urn:iso:std:iso:3166#CO "Colombia"
+jurisdiction: urn:iso:std:iso:3166#CO
 license: CC0-1.0
 fhirVersion: 4.0.1
 parameters:
