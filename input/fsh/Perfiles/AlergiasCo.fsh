@@ -11,7 +11,7 @@ Title:          "Alergias Co"
 * patient ^short = "Referencia al paciente que presenta la alergia." 
 * patient ^definition = "Referencia al paciente que presenta la alergia." 
 
-* patient.reference ^short = "Cadena de referencia específica al paciente que presenta la alergia." 
+* patient.reference ^short = "Cadena de referencia específica al paciente que presenta la alérgia." 
 * patient.reference ^definition = "Cadena de referencia específica al paciente que presenta la alergia." 
 
 
