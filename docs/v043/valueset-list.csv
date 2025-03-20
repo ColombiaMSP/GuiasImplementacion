@@ -2,6 +2,7 @@ URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
 https://www.minsalud.gov.co/ihc/fhir/ValueSet/AlergiasVS,0.4.3,active,,AlergiasVS,Tipo Alergia,"Tipo Alergia",,"Internal"
 https://www.minsalud.gov.co/ihc/fhir/ValueSet/CIE10VS,0.4.3,active,,CIE10VS,Codificacion CIE10 ValueSet,"Conjunto de Valores de Codificacion CIE10",,"hl7.terminology.r4"
 https://www.minsalud.gov.co/ihc/fhir/ValueSet/CUMSVS,0.4.3,active,,CUMSVS,Codificacion CUMS,"Conjunto de Valores de Codificacion CUMS",,"Other"
+https://www.minsalud.gov.co/ihc/fhir/ValueSet/ConjuntoDocumentosVS,0.4.3,draft,,ConjuntoDocumentosVS,ConjuntoDocumentosVS,"Conjunto de Valores de Documentos.",,"LOINC"
 https://www.minsalud.gov.co/ihc/fhir/ValueSet/DiscapacidadVS,0.4.3,active,,DiscapacidadVS,Discapacidad,"Códigos de Discapacidad",,"Internal"
 https://www.minsalud.gov.co/ihc/fhir/ValueSet/EtniaVS,0.4.3,active,,EtniaVS,Etnia,"Conjunto de valores para la Etnia.",,"Internal"
 https://www.minsalud.gov.co/ihc/fhir/ValueSet/IUMVS,0.4.3,active,,IUMVS,Codificacion IUM,"Conjunto de Valores de Codificacion IUM",,"Other"

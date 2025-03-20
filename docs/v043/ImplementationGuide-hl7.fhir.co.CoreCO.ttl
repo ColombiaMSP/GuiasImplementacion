@@ -16,9 +16,9 @@
   fhir:url [ fhir:v "https://www.minsalud.gov.co/ihc/fhir/ImplementationGuide/hl7.fhir.co.CoreCO"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.4.3"] ; # 
   fhir:name [ fhir:v "CoreCOImplementationGuide"] ; # 
-  fhir:title [ fhir:v "GUIA EN DESARROLLO - Colombia (v 0.4.3)"] ; # 
+  fhir:title [ fhir:v "2025 --> GUIA EN DESARROLLO - Colombia (v 0.4.3)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-02-21T13:43:19-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-03-20T08:51:13-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "MSP Colombia"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "MSP Colombia" ] ;
@@ -1119,6 +1119,24 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://www.minsalud.gov.co/ihc/fhir/ValueSet/ConjuntoDocumentosVS> ;
+         fhir:reference [ fhir:v "ValueSet/ConjuntoDocumentosVS" ]
+       ] ;
+       fhir:name [ fhir:v "ConjuntoDocumentosVS" ] ;
+       fhir:description [ fhir:v "Conjunto de Valores de Documentos." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://www.minsalud.gov.co/ihc/fhir/ValueSet/PaisesVS> ;
          fhir:reference [ fhir:v "ValueSet/PaisesVS" ]
        ] ;
@@ -1193,6 +1211,24 @@
        fhir:reference [
          fhir:link <https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo> ;
          fhir:reference [ fhir:v "StructureDefinition/CompositionCo" ]
+       ] ;
+       fhir:name [ fhir:v "Documento Co" ] ;
+       fhir:description [ fhir:v "Definición de un documento clínico para las necesidades de interoperabilidad en Colombia." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionColV-0-4-3> ;
+         fhir:reference [ fhir:v "StructureDefinition/CompositionColV-0-4-3" ]
        ] ;
        fhir:name [ fhir:v "Documento Co" ] ;
        fhir:description [ fhir:v "Definición de un documento clínico para las necesidades de interoperabilidad en Colombia." ] ;
@@ -1714,6 +1750,24 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceColV-0-4-3> ;
+         fhir:reference [ fhir:v "StructureDefinition/DocumentReferenceColV-0-4-3" ]
+       ] ;
+       fhir:name [ fhir:v "Referencia de Documentos: V 0.43" ] ;
+       fhir:description [ fhir:v "Docuento utilizado para guardar referencias." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "Composition"
          ]
        ] ) ;
@@ -1897,6 +1951,34 @@
            fhir:v "Aspectos-Generales.html"^^xsd:anyURI
          ] ;
          fhir:title [ fhir:v "Aspectos Generales" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "index2.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "index2.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Index 2" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "prueba_mejoras.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "prueba_mejoras.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Prueba Mejoras" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

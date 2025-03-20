@@ -9,9 +9,9 @@
   <url value="https://www.minsalud.gov.co/ihc/fhir/ImplementationGuide/hl7.fhir.co.CoreCO"/>
   <version value="0.4.3"/>
   <name value="CoreCOImplementationGuide"/>
-  <title value="GUIA EN DESARROLLO - Colombia (v 0.4.3)"/>
+  <title value="2025 --&gt; GUIA EN DESARROLLO - Colombia (v 0.4.3)"/>
   <status value="draft"/>
-  <date value="2025-02-21T13:43:19-03:00"/>
+  <date value="2025-03-20T08:51:13-03:00"/>
   <publisher value="MSP Colombia"/>
   <contact>
     <name value="MSP Colombia"/>
@@ -620,6 +620,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/ConjuntoDocumentosVS"/>
+      </reference>
+      <name value="ConjuntoDocumentosVS"/>
+      <description value="Conjunto de Valores de Documentos."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/PaisesVS"/>
       </reference>
       <name value="Códigos del País"/>
@@ -665,6 +676,17 @@
       </extension>
       <reference>
         <reference value="StructureDefinition/CompositionCo"/>
+      </reference>
+      <name value="Documento Co"/>
+      <description value="Definición de un documento clínico para las necesidades de interoperabilidad en Colombia."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/CompositionColV-0-4-3"/>
       </reference>
       <name value="Documento Co"/>
       <description value="Definición de un documento clínico para las necesidades de interoperabilidad en Colombia."/>
@@ -974,6 +996,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DocumentReferenceColV-0-4-3"/>
+      </reference>
+      <name value="Referencia de Documentos: V 0.43"/>
+      <description value="Docuento utilizado para guardar referencias."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Composition"/>
       </extension>
       <reference>
@@ -1081,6 +1114,22 @@
         </extension>
         <nameUrl value="Aspectos-Generales.html"/>
         <title value="Aspectos Generales"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index2.html"/>
+        </extension>
+        <nameUrl value="index2.html"/>
+        <title value="Index 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="prueba_mejoras.html"/>
+        </extension>
+        <nameUrl value="prueba_mejoras.html"/>
+        <title value="Prueba Mejoras"/>
         <generation value="markdown"/>
       </page>
       <page>

@@ -18,4 +18,3 @@ La especificación presentada ha sido definida para el desarrollo del piloto de 
  [Click here to join](https://teams.microsoft.com/l/meetup-join/19%3ameeting_OGJmYmVlM2UtYzVkZi00YWJjLWJlNzMtN2ZkYTVkYTA1Mzlk%40thread.v2/0?context=%7b%22Tid%22%3a%22c620dc48-1d50-4952-8b39-df4d54d74d82%22%2c%22Oid%22%3a%22f9a60b6f-fbcc-48d0-bc8e-d6d742b4b339%22%7d)
 
 [Ministerio de Salud](https://www.minsalud.gov.co/)
-

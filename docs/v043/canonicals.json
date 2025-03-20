@@ -91,6 +91,13 @@
     "name" : "CompositionCo"
   },
   {
+    "id" : "CompositionColV-0-4-3",
+    "type" : "StructureDefinition",
+    "url" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionColV_0_4_3",
+    "version" : "0.4.3",
+    "name" : "CompositionColV_0_4_3"
+  },
+  {
     "id" : "ConditionCo",
     "type" : "StructureDefinition",
     "url" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo",
@@ -103,6 +110,13 @@
     "url" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo",
     "version" : "0.4.3",
     "name" : "DocumentReferenceCo"
+  },
+  {
+    "id" : "DocumentReferenceColV-0-4-3",
+    "type" : "StructureDefinition",
+    "url" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceColV_0_4_3",
+    "version" : "0.4.3",
+    "name" : "DocumentReferenceColV_0_4_3"
   },
   {
     "id" : "MedicationStatementCo",
@@ -194,6 +208,13 @@
     "url" : "https://www.minsalud.gov.co/ihc/fhir/ValueSet/CUMSVS",
     "version" : "0.4.3",
     "name" : "CUMSVS"
+  },
+  {
+    "id" : "ConjuntoDocumentosVS",
+    "type" : "ValueSet",
+    "url" : "https://www.minsalud.gov.co/ihc/fhir/ValueSet/ConjuntoDocumentosVS",
+    "version" : "0.4.3",
+    "name" : "ConjuntoDocumentosVS"
   },
   {
     "id" : "DiscapacidadVS",

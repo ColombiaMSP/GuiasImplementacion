@@ -1,4 +1,4 @@
-/* ---------------------Identificadores de PERSONA ---------------------------*/
+/* PATIENT---------------------Identificadores de PERSONA ---------------------------*/
 CodeSystem: IdentificadoresPersonaCS
 Id: IdspersonaColombia
 Title: "Identificadores de Persona"
@@ -229,6 +229,19 @@ Description:  "ComunidadEtnicaVS"
 
 
 */
+
+
+/* --------------------- Conjutno de tipos de documento ---------------------------*/
+
+ValueSet: ConjuntoDocumentosVS
+Id: ConjuntoDocumentosVS
+Title: "ConjuntoDocumentosVS"
+Description:  "Conjunto de Valores de Documentos."
+
+* $loinc#34105-7 "Nota de consulta"
+* $loinc#34133-9 "Resumen de alta"
+* $loinc#34115-6 "Nota de consulta de emergencia"
+
 
 /* ---------------------CIE10 --------------------------*/
 

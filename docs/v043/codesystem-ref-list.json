@@ -35,6 +35,7 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes",
+      "ValueSet-ConjuntoDocumentosVS.html" : "ConjuntoDocumentosVS",
       "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes"
     },
     {
@@ -90,8 +91,8 @@
       "description" : "Elemento de dato que contiene el nombre y número de identificación de una determinada persona para efectos de identidad e individualización",
       "uses" : {
       },
-      "ValueSet-IdentificadoresProfesionalVS.html" : "Identificadores de Profesional",
-      "ValueSet-IdentificadoresPersonaVS.html" : "Identificadores de Persona"
+      "ValueSet-IdentificadoresPersonaVS.html" : "Identificadores de Persona",
+      "ValueSet-IdentificadoresProfesionalVS.html" : "Identificadores de Profesional"
     },
     {
       "url" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS",

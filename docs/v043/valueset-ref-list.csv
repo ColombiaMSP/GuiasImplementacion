@@ -1,10 +1,11 @@
 URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
 http://hl7.org/fhir/ValueSet/administrative-gender,4.0.1,active,"2.16.840.1.113883.4.642.3.1",AdministrativeGender,AdministrativeGender,"The gender of a person used for administrative purposes.","StructureDefinition/PacienteCo","hl7.fhir.r4.core"
-http://hl7.org/fhir/ValueSet/doc-section-codes,4.0.1,draft,"2.16.840.1.113883.4.642.3.237",DocumentSectionCodes,Document Section Codes,"Document section codes (LOINC codes used in CCDA sections).","StructureDefinition/CompositionCo","LOINC"
+http://hl7.org/fhir/ValueSet/doc-section-codes,4.0.1,draft,"2.16.840.1.113883.4.642.3.237",DocumentSectionCodes,Document Section Codes,"Document section codes (LOINC codes used in CCDA sections).","StructureDefinition/CompositionColV-0-4-3,StructureDefinition/CompositionCo","LOINC"
 http://hl7.org/fhir/ValueSet/doc-typecodes,4.0.1,draft,"2.16.840.1.113883.4.642.3.240",FHIRDocumentTypeCodes,FHIR Document Type Codes,"FHIR Document Codes - all LOINC codes where scale type = 'DOC'.","StructureDefinition/CompositionCo","LOINC"
 https://www.minsalud.gov.co/ihc/fhir/ValueSet/AlergiasVS,0.4.3,active,,AlergiasVS,Tipo Alergia,"Tipo Alergia","StructureDefinition/co-AllergyIntolerance-tipo","Internal"
 https://www.minsalud.gov.co/ihc/fhir/ValueSet/CIE10VS,0.4.3,active,,CIE10VS,Codificacion CIE10 ValueSet,"Conjunto de Valores de Codificacion CIE10","StructureDefinition/ConditionCo","hl7.terminology.r4"
 https://www.minsalud.gov.co/ihc/fhir/ValueSet/CUMSVS,0.4.3,active,,CUMSVS,Codificacion CUMS,"Conjunto de Valores de Codificacion CUMS","StructureDefinition/MedicationStatementCo","Other"
+https://www.minsalud.gov.co/ihc/fhir/ValueSet/ConjuntoDocumentosVS,0.4.3,draft,,ConjuntoDocumentosVS,ConjuntoDocumentosVS,"Conjunto de Valores de Documentos.","StructureDefinition/DocumentReferenceColV-0-4-3,StructureDefinition/CompositionColV-0-4-3","LOINC"
 https://www.minsalud.gov.co/ihc/fhir/ValueSet/DiscapacidadVS,0.4.3,active,,DiscapacidadVS,Discapacidad,"Códigos de Discapacidad","StructureDefinition/PacienteCo","Internal"
 https://www.minsalud.gov.co/ihc/fhir/ValueSet/EtniaVS,0.4.3,active,,EtniaVS,Etnia,"Conjunto de valores para la Etnia.","StructureDefinition/co-patient-etnia","Internal"
 https://www.minsalud.gov.co/ihc/fhir/ValueSet/IUMVS,0.4.3,active,,IUMVS,Codificacion IUM,"Conjunto de Valores de Codificacion IUM","StructureDefinition/MedicationStatementCo","Other"

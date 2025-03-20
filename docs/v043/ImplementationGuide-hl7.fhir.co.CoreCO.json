@@ -8,9 +8,9 @@
   "url" : "https://www.minsalud.gov.co/ihc/fhir/ImplementationGuide/hl7.fhir.co.CoreCO",
   "version" : "0.4.3",
   "name" : "CoreCOImplementationGuide",
-  "title" : "GUIA EN DESARROLLO - Colombia (v 0.4.3)",
+  "title" : "2025 --> GUIA EN DESARROLLO - Colombia (v 0.4.3)",
   "status" : "draft",
-  "date" : "2025-02-21T13:43:19-03:00",
+  "date" : "2025-03-20T08:51:13-03:00",
   "publisher" : "MSP Colombia",
   "contact" : [{
     "name" : "MSP Colombia",
@@ -795,6 +795,18 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/ConjuntoDocumentosVS"
+      },
+      "name" : "ConjuntoDocumentosVS",
+      "description" : "Conjunto de Valores de Documentos.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/PaisesVS"
       },
       "name" : "Códigos del País",
@@ -844,6 +856,18 @@
       }],
       "reference" : {
         "reference" : "StructureDefinition/CompositionCo"
+      },
+      "name" : "Documento Co",
+      "description" : "Definición de un documento clínico para las necesidades de interoperabilidad en Colombia.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/CompositionColV-0-4-3"
       },
       "name" : "Documento Co",
       "description" : "Definición de un documento clínico para las necesidades de interoperabilidad en Colombia.",
@@ -1182,6 +1206,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DocumentReferenceColV-0-4-3"
+      },
+      "name" : "Referencia de Documentos: V 0.43",
+      "description" : "Docuento utilizado para guardar referencias.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Composition"
       }],
       "reference" : {
@@ -1299,6 +1335,24 @@
         }],
         "nameUrl" : "Aspectos-Generales.html",
         "title" : "Aspectos Generales",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "index2.html"
+        }],
+        "nameUrl" : "index2.html",
+        "title" : "Index 2",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "prueba_mejoras.html"
+        }],
+        "nameUrl" : "prueba_mejoras.html",
+        "title" : "Prueba Mejoras",
         "generation" : "markdown"
       },
       {

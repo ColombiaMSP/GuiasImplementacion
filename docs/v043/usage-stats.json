@@ -275,6 +275,10 @@
       {
         "url": "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo",
         "title": "Documento Co"
+      },
+      {
+        "url": "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionColV_0_4_3",
+        "title": "Documento Co"
       }
     ],
     "Condition": [
@@ -287,6 +291,10 @@
       {
         "url": "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo",
         "title": "Referencia de Documentos"
+      },
+      {
+        "url": "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceColV_0_4_3",
+        "title": "Referencia de Documentos: V 0.43"
       }
     ],
     "MedicationStatement": [

@@ -26,7 +26,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.237"],
       "uses" : {
       },
-      "StructureDefinition-CompositionCo.html" : "Documento Co"
+      "StructureDefinition-CompositionCo.html" : "Documento Co",
+      "StructureDefinition-CompositionColV-0-4-3.html" : "Documento Co"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/doc-typecodes",
@@ -77,6 +78,19 @@
       "uses" : {
       },
       "StructureDefinition-MedicationStatementCo.html" : "Medication Statement Co"
+    },
+    {
+      "url" : "https://www.minsalud.gov.co/ihc/fhir/ValueSet/ConjuntoDocumentosVS",
+      "version" : "0.4.3",
+      "status" : "draft",
+      "name" : "ConjuntoDocumentosVS",
+      "title" : "ConjuntoDocumentosVS",
+      "description" : "Conjunto de Valores de Documentos.",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-CompositionColV-0-4-3.html" : "Documento Co",
+      "StructureDefinition-DocumentReferenceColV-0-4-3.html" : "Referencia de Documentos: V 0.43"
     },
     {
       "url" : "https://www.minsalud.gov.co/ihc/fhir/ValueSet/DiscapacidadVS",

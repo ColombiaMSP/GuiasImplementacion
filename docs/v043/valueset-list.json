@@ -28,6 +28,15 @@
       "systems" : ["https://www.minsalud.gov.co/CodeSystem/CUMS"]
     },
     {
+      "url" : "https://www.minsalud.gov.co/ihc/fhir/ValueSet/ConjuntoDocumentosVS",
+      "version" : "0.4.3",
+      "status" : "draft",
+      "name" : "ConjuntoDocumentosVS",
+      "title" : "ConjuntoDocumentosVS",
+      "description" : "Conjunto de Valores de Documentos.",
+      "systems" : ["http://loinc.org"]
+    },
+    {
       "url" : "https://www.minsalud.gov.co/ihc/fhir/ValueSet/DiscapacidadVS",
       "version" : "0.4.3",
       "status" : "active",

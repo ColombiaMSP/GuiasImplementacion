@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="9a01321b-c4ec-4c4e-a319-e20eee0e80cd"/>
+  <id value="50c7d0d3-bca6-4214-8a2e-9b772cbfc3be"/>
   <meta>
-    <lastUpdated value="2025-02-21T13:44:31.640-03:00"/>
+    <lastUpdated value="2025-03-20T08:52:01.741-03:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -97,8 +97,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:db6457dd-fde7-4a52-9095-c4f3bf442c6d"/>
-          <timestamp value="2025-02-21T13:45:22-03:00"/>
+          <identifier value="urn:uuid:a052ac0a-781f-40a8-8b47-308d33698a69"/>
+          <timestamp value="2025-03-20T08:52:44-03:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -12230,6 +12230,118 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="https://www.minsalud.gov.co/ihc/fhir/ValueSet/ConjuntoDocumentosVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.80</p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (es-CO)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-34105-7"> </a>  
+                  <a href="https://loinc.org/34105-7/">34105-7</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-34133-9"> </a>  
+                  <a href="https://loinc.org/34133-9/">34133-9</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-34115-6"> </a>  
+                  <a href="https://loinc.org/34115-6/">34115-6</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.minsalud.gov.co/ihc/fhir/ValueSet/ConjuntoDocumentosVS"/>
+        <version value="0.4.3"/>
+        <name value="ConjuntoDocumentosVS"/>
+        <title value="ConjuntoDocumentosVS"/>
+        <status value="draft"/>
+        <date value="2025-03-20T08:51:13-03:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CO"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:3cd229de-5b2a-45ba-9ae0-f4aceee631c1"/>
+          <timestamp value="2025-03-20T08:52:49-03:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="es-CO"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.80"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.80"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="34105-7"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="34133-9"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="34115-6"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="https://www.minsalud.gov.co/ihc/fhir/ValueSet/DiscapacidadVS"/>
     <resource>
       <ValueSet>
@@ -12336,8 +12448,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6b9a479f-f56c-493b-a669-a4757dcebf82"/>
-          <timestamp value="2025-02-21T13:45:28-03:00"/>
+          <identifier value="urn:uuid:1c84ca58-d078-4f02-95c1-87a52d72cdb4"/>
+          <timestamp value="2025-03-20T08:52:49-03:00"/>
           <total value="8"/>
           <offset value="0"/>
           <parameter>
@@ -12499,8 +12611,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4828ab8e-861b-44f6-a31f-3b15627fa254"/>
-          <timestamp value="2025-02-21T13:45:28-03:00"/>
+          <identifier value="urn:uuid:2df0d98e-2cb8-4a2d-b16d-d013bd5a8666"/>
+          <timestamp value="2025-03-20T08:52:49-03:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -12642,8 +12754,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:415245c0-1979-42d7-853b-c4538471411a"/>
-          <timestamp value="2025-02-21T13:45:28-03:00"/>
+          <identifier value="urn:uuid:63afde9c-d8ae-4525-9f5b-41a50db743de"/>
+          <timestamp value="2025-03-20T08:52:49-03:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -12894,8 +13006,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ecd01f39-7c75-498b-bcc4-f40470c470ad"/>
-          <timestamp value="2025-02-21T13:45:29-03:00"/>
+          <identifier value="urn:uuid:4776a35d-aa5c-40d5-aa5d-c2dc05c2c58c"/>
+          <timestamp value="2025-03-20T08:52:49-03:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -13082,8 +13194,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:dcf537bc-6ef1-4096-b8ce-ddc74d170605"/>
-          <timestamp value="2025-02-21T13:45:29-03:00"/>
+          <identifier value="urn:uuid:c1b084a9-5c3a-471f-8a9a-9180c96a7475"/>
+          <timestamp value="2025-03-20T08:52:50-03:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -15165,8 +15277,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7baaa55c-0222-4d43-b8e4-2e369c8fbdb2"/>
-          <timestamp value="2025-02-21T13:45:29-03:00"/>
+          <identifier value="urn:uuid:3854f4de-1be7-471c-8aa9-9be37d30b8f3"/>
+          <timestamp value="2025-03-20T08:52:50-03:00"/>
           <total value="249"/>
           <offset value="0"/>
           <parameter>
@@ -16248,8 +16360,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:89e39303-247c-4eb8-be48-41f51371acbd"/>
-          <timestamp value="2025-02-21T13:45:30-03:00"/>
+          <identifier value="urn:uuid:bc5430cd-6a22-4a0c-a9dc-f27c22ad1580"/>
+          <timestamp value="2025-03-20T08:52:51-03:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>

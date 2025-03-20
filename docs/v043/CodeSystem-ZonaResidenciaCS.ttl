@@ -19,7 +19,7 @@
   fhir:title [ fhir:v "Zona de residencia"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2025-02-21T13:43:19-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-03-20T08:51:13-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "MSP Colombia"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "MSP Colombia" ] ;
