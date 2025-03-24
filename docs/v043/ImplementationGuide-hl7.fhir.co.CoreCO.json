@@ -10,7 +10,7 @@
   "name" : "CoreCOImplementationGuide",
   "title" : "2025 --> GUIA EN DESARROLLO - Colombia (v 0.4.3)",
   "status" : "draft",
-  "date" : "2025-03-24T09:32:33-03:00",
+  "date" : "2025-03-24T16:25:06-03:00",
   "publisher" : "MSP Colombia",
   "contact" : [{
     "name" : "MSP Colombia",
@@ -57,7 +57,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "2023+"
+        "valueString" : "2025+"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -347,7 +347,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "2023+"
+        "valueString" : "2025+"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
