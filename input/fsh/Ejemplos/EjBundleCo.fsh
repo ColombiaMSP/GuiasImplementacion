@@ -1,27 +1,25 @@
 Instance : BundleColombiaCo
 InstanceOf : BundleCo
-Title : "Bundle Colombiano"
+Title : "Bundle Transaction -Ambulatorio- Colombiano"
 Usage : #example
-Description: "Ejemplo de Bundle"
+Description: "Ejemplo de Bundle de transacción Ambulatoria."
 
 * type = #transaction
 
-//* identifier.system = "https://www.minsalud.gov.co/ihc/documentos"
-//* identifier.value = "123456789"
 
 * timestamp = "2022-03-03T10:30:00Z"
 
 
-//DocReference
+//DocReference -- CASO AMBI
 * entry[DocumentRef].fullUrl = "http://acme.com/ehr/fhir/DocumentReference/DocumentReferenceColombia"
-* entry[DocumentRef].resource = DocumentReferenceColombia
+* entry[DocumentRef].resource = DocumentReferenceAmbulatorio
 * entry[DocumentRef].request.method = #POST
 * entry[DocumentRef].request.url = "DocumentReference"
 
 
 //Composition
 * entry[RDA].fullUrl = "http://acme.com/ehr/fhir/Composition/CompositionColombia"
-* entry[RDA].resource = CompositionColombia
+* entry[RDA].resource = CompositionColombiaAmbulatorio
 * entry[RDA].request.method = #POST
 * entry[RDA].request.url = "Composition"
 

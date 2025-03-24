@@ -1,7 +1,8 @@
 Alias: $loinc = http://loinc.org
 
-Profile: CompositionColV_0_4_3
+Profile: CompositionCo
 Parent: Composition
+Id: CompositionCo
 Title: "Documento Co"
 Description: "Definición de un documento clínico para las necesidades de interoperabilidad en Colombia."
 
@@ -14,12 +15,11 @@ Description: "Definición de un documento clínico para las necesidades de inter
 * status ^definition = "Corresponde al estado del documento."
 
 //--- loinc que representa el tipo de documento ----
-//* type from http://hl7.org/fhir/ValueSet/doc-typecodes (preferred)
+* type from http://hl7.org/fhir/ValueSet/doc-typecodes (preferred)
 * type MS
 * type ^short = "Tipo de Documento"
 * type ^definition = "Especifica el tipo de documento que se ha generado"
-* type.coding.code 1..1
-* type.coding.code from ConjuntoDocumentosVS (preferred) 
+
 
 //* ---- Paciente ----- 
 * subject 1..1 

@@ -1,4 +1,4 @@
-Profile: DocumentReferenceColV_0_4_3
+Profile: DocumentReferenceCo
 Parent: DocumentReference
 Title: "Referencia de Documentos: V 0.43"
 Description: "Docuento utilizado para guardar referencias."

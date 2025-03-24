@@ -1,0 +1,28 @@
+Instance: DocumentReferenceEmergencia
+InstanceOf: DocumentReferenceCo 
+Usage: #example
+
+
+
+* status = #current 
+* date = "2022-03-03T10:30:00Z"
+
+/*
+* $loinc#34105-7 "Nota de consulta"
+* $loinc#34133-9 "Resumen de alta"
+* $loinc#34115-6 "Nota de consulta de emergencia"
+*/
+
+* type.coding.system = "http://loinc.org"
+* type.coding.code = #34115-6
+
+* subject = Reference(Patient/PacienteColombianoMinimo)
+
+* custodian = Reference(Organization/OrganizacionRegionEjemplo)
+
+* author = Reference(Organization/OrganizacionPrestadorEjemplo)
+
+* content.attachment.contentType = #application/fhir+json
+
+* content.attachment.url = "Composition/CompositionColombiaEmergencia"
+

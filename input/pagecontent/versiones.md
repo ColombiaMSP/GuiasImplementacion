@@ -1,5 +1,10 @@
 #### Versión: 0.4.3 , _2025 Febrero_ (EN DESARROLLO)
 
+
+ **GENERAL:**
+- Agregado de Value Set de Tipos de documento
+- Modficado conjunto de valores de DocumentReference y Composition (variable TYPE)
+
  **PACIENTE CO:**
  - [OK] Agregado de extension de comunidades étnicas, sin catálogo definido.
  - [OK] Actualizacion de ejemplo de PacienteColombianoCompleto para contener nueva extensión: comunidades étnicas.

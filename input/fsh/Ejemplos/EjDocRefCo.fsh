@@ -1,39 +1,81 @@
-Instance: DocumentReferenceColombia
+/*
+* $loinc#34105-7 "Nota de consulta"
+* $loinc#34133-9 "Resumen de alta"
+* $loinc#34115-6 "Nota de consulta de emergencia"
+*/
+
+
+/*--------------------------------------------------------------------------------------
+    1. Document Reference Egreso
+--------------------------------------------------------------------------------------*/
+
+Instance: DocumentReferenceEgreso
 InstanceOf: DocumentReferenceCo 
 Usage: #example
-
-
-/* identificador creado por la institucion */
-//* identifier.system = "https://www.minsalud.gov.co/ihc/Documentos" // la idea es tener un system unico para todos los docuemntos.
-//* identifier.value = "timestamp" //enviado por el prestador AAAAMMDDHHMMSSmm 20081231100470-->2008-12-31 10:04:70
-//* api gateway agrega: "BG-1-timestamp" //enviado por el prestador AAAAMMDDHHMMSSmm 20081231100470-->2008-12-31 10:04:70
-// "REGION - Codpretador - timestamp"
-
-/* BORRAR: ---- agregado por el nodo bogota cuando llega, previo a  enviarse a REG nacional
-* masterIdentifier.system = "https://www.minsalud.gov.co/ihc/Documentos/Bogota/ID_Docs" //creado por Nodo.
-* masterIdentifier.value = " -- timestamp.." */
-
-// sgrega api Gateway cuando llega.
-//* identifier.assigner.identifier.value = "codigo de instituacion - 05000" // codigo 
-//* identifier.assigner.identifier.system = "https://www.minsalud.gov.co/ihc/codigosOrganizacionSGSSS"
-//* identifier.assigner.display = "hospital de bogota xxx"
+Title : "DocumentReference de Egreso"
+Description: "Ejemplo de Document Reference de Egreso."
 
 
 * status = #current 
 * date = "2022-03-03T10:30:00Z"
 
-//* type = http://loinc.org#60591-5
+
 * type.coding.system = "http://loinc.org"
-* type.coding.code = #60591-5
+* type.coding.code = #34133-9
+* type.coding.display = "Resumen de alta"
 
 * subject = Reference(Patient/PacienteColombianoMinimo)
-
 * custodian = Reference(Organization/OrganizacionRegionEjemplo)
-
 * author = Reference(Organization/OrganizacionPrestadorEjemplo)
-
 * content.attachment.contentType = #application/fhir+json
-// ANTES: * content.attachment.url = "https://www.minsalud.gov.co/ihc/Bogota/Composition/3213131"
+* content.attachment.url = "Composition/CompositionColombiaEgreso"
 
-* content.attachment.url = "Composition/CompositionColombia"
+/*--------------------------------------------------------------------------------------
+    2. Document Reference Ambulatorio
+--------------------------------------------------------------------------------------*/
+
+Instance: DocumentReferenceAmbulatorio
+InstanceOf: DocumentReferenceCo 
+Usage: #example
+Title : "DocumentReference de Ambulatorio"
+Description: "Ejemplo de Document Reference de Ambulatorio."
+
+* status = #current 
+* date = "2022-03-03T10:30:00Z"
+
+
+* type.coding.system = "http://loinc.org"
+* type.coding.code = #34105-7
+* type.coding.display = "Nota de consulta"
+
+* subject = Reference(Patient/PacienteColombianoMinimo)
+* custodian = Reference(Organization/OrganizacionRegionEjemplo)
+* author = Reference(Organization/OrganizacionPrestadorEjemplo)
+* content.attachment.contentType = #application/fhir+json
+* content.attachment.url = "Composition/CompositionColombiaAmbulatorio"
+
+
+/*--------------------------------------------------------------------------------------
+    3. Document Reference Emergencia
+--------------------------------------------------------------------------------------*/
+
+
+Instance: DocumentReferenceEmergencia
+InstanceOf: DocumentReferenceCo 
+Usage: #example
+Title : "DocumentReference de Emergencia"
+Description: "Ejemplo de Document Reference de Emergencia."
+
+* status = #current 
+* date = "2022-03-03T10:30:00Z"
+
+
+* type.coding.system = "http://loinc.org"
+* type.coding.code = #34115-6
+
+* subject = Reference(Patient/PacienteColombianoMinimo)
+* custodian = Reference(Organization/OrganizacionRegionEjemplo)
+* author = Reference(Organization/OrganizacionPrestadorEjemplo)
+* content.attachment.contentType = #application/fhir+json
+* content.attachment.url = "Composition/CompositionColombiaEmergencia"
 
