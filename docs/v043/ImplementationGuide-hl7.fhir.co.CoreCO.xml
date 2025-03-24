@@ -11,7 +11,7 @@
   <name value="CoreCOImplementationGuide"/>
   <title value="2025 --&gt; GUIA EN DESARROLLO - Colombia (v 0.4.3)"/>
   <status value="draft"/>
-  <date value="2025-03-20T08:51:13-03:00"/>
+  <date value="2025-03-24T09:32:33-03:00"/>
   <publisher value="MSP Colombia"/>
   <contact>
     <name value="MSP Colombia"/>
@@ -478,26 +478,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="AllergyIntolerance"/>
-      </extension>
-      <reference>
-        <reference value="AllergyIntolerance/AlergiaColombia2"/>
-      </reference>
-      <name value="AlergiaColombia2"/>
-      <exampleCanonical value="https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="AllergyIntolerance"/>
-      </extension>
-      <reference>
-        <reference value="AllergyIntolerance/AlergiaColombia3"/>
-      </reference>
-      <name value="AlergiaColombia3"/>
-      <exampleCanonical value="https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -524,19 +504,8 @@
       <reference>
         <reference value="Bundle/BundleColombiaCo"/>
       </reference>
-      <name value="Bundle Colombiano"/>
-      <description value="Ejemplo de Bundle"/>
-      <exampleCanonical value="https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/BundleCo"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/BundleColombiaCo2"/>
-      </reference>
-      <name value="Bundle Colombiano2"/>
-      <description value="Ejemplo de Bundle"/>
+      <name value="Bundle Transaction -Ambulatorio- Colombiano"/>
+      <description value="Ejemplo de Bundle de transacción Ambulatoria."/>
       <exampleCanonical value="https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/BundleCo"/>
     </resource>
     <resource>
@@ -602,17 +571,6 @@
       </reference>
       <name value="ConditionColombia"/>
       <description value="Ejemplo de Condición/Antecedente de Paciente."/>
-      <exampleCanonical value="https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Condition"/>
-      </extension>
-      <reference>
-        <reference value="Condition/ConditionColombia2"/>
-      </reference>
-      <name value="ConditionColombia2"/>
-      <description value="Ejemplo de Condición/Antecedente 2 de Paciente."/>
       <exampleCanonical value="https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo"/>
     </resource>
     <resource>
@@ -683,23 +641,46 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="Composition"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/CompositionColV-0-4-3"/>
+        <reference value="Composition/CompositionColombiaEmergencia"/>
       </reference>
-      <name value="Documento Co"/>
-      <description value="Definición de un documento clínico para las necesidades de interoperabilidad en Colombia."/>
-      <exampleBoolean value="false"/>
+      <name value="Documento RDA --&gt; Consulta de Emergencia"/>
+      <description value="Ejemplo de Documento RDA Colombiano para Emergencia."/>
+      <exampleCanonical value="https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/CompositionColombiaAmbulatorio"/>
+      </reference>
+      <name value="Documento RDA --&gt; Nota de Consulta"/>
+      <description value="Ejemplo de Documento RDA Colombiano para Nota de Consulta."/>
+      <exampleCanonical value="https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/CompositionColombiaEgreso"/>
+      </reference>
+      <name value="Documento RDA --&gt; Resumen de Alta"/>
+      <description value="Ejemplo de Documento RDA Colombiano para Resumen de Alta."/>
+      <exampleCanonical value="https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="DocumentReference"/>
       </extension>
       <reference>
-        <reference value="DocumentReference/DocumentReferenceColombia"/>
+        <reference value="DocumentReference/DocumentReferenceAmbulatorio"/>
       </reference>
-      <name value="DocumentReferenceColombia"/>
+      <name value="DocumentReference de Ambulatorio"/>
+      <description value="Ejemplo de Document Reference de Ambulatorio."/>
       <exampleCanonical value="https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo"/>
     </resource>
     <resource>
@@ -707,9 +688,21 @@
         <valueString value="DocumentReference"/>
       </extension>
       <reference>
-        <reference value="DocumentReference/DocumentReferenceColombia2"/>
+        <reference value="DocumentReference/DocumentReferenceEgreso"/>
       </reference>
-      <name value="DocumentReferenceColombia2"/>
+      <name value="DocumentReference de Egreso"/>
+      <description value="Ejemplo de Document Reference de Egreso."/>
+      <exampleCanonical value="https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DocumentReference"/>
+      </extension>
+      <reference>
+        <reference value="DocumentReference/DocumentReferenceEmergencia"/>
+      </reference>
+      <name value="DocumentReference de Emergencia"/>
+      <description value="Ejemplo de Document Reference de Emergencia."/>
       <exampleCanonical value="https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo"/>
     </resource>
     <resource>
@@ -845,17 +838,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MedicationStatement"/>
-      </extension>
-      <reference>
-        <reference value="MedicationStatement/MedicationStatementColombia2"/>
-      </reference>
-      <name value="MedicationStatementColombia2"/>
-      <description value="Ejemplo de MedicationStatement/MedicaciónPaciente 2."/>
-      <exampleCanonical value="https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -923,17 +905,6 @@
         <valueString value="Patient"/>
       </extension>
       <reference>
-        <reference value="Patient/PacienteColombianoCompleto"/>
-      </reference>
-      <name value="PacienteColombianoCompleto"/>
-      <description value="Ejemplo Completo de paciente Colombiano."/>
-      <exampleCanonical value="https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PacienteCo"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
         <reference value="Patient/PacienteColombianoMinimo"/>
       </reference>
       <name value="PacienteColombianoMinimo"/>
@@ -974,58 +945,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/ProfesionalColombia2"/>
-      </reference>
-      <name value="ProfesionalColombia2"/>
-      <description value="Ejemplo de Profesional Colombiano."/>
-      <exampleCanonical value="https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/DocumentReferenceCo"/>
       </reference>
-      <name value="Referencia de Documentos"/>
-      <description value="Docuento utilizado para guardar referencias."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DocumentReferenceColV-0-4-3"/>
-      </reference>
       <name value="Referencia de Documentos: V 0.43"/>
       <description value="Docuento utilizado para guardar referencias."/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Composition"/>
-      </extension>
-      <reference>
-        <reference value="Composition/CompositionColombia"/>
-      </reference>
-      <name value="Resumen de Paciente Colombia"/>
-      <description value="Ejemplo de Documento RDA Colombiano."/>
-      <exampleCanonical value="https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Composition"/>
-      </extension>
-      <reference>
-        <reference value="Composition/CompositionColombia2"/>
-      </reference>
-      <name value="Resumen de Paciente Colombia"/>
-      <description value="Ejemplo de Documento RDA Colombiano."/>
-      <exampleCanonical value="https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1122,6 +1049,14 @@
         </extension>
         <nameUrl value="index2.html"/>
         <title value="Index 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="mapeo.html"/>
+        </extension>
+        <nameUrl value="mapeo.html"/>
+        <title value="Mapeo"/>
         <generation value="markdown"/>
       </page>
       <page>

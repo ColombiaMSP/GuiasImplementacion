@@ -10,7 +10,7 @@
   "name" : "CoreCOImplementationGuide",
   "title" : "2025 --> GUIA EN DESARROLLO - Colombia (v 0.4.3)",
   "status" : "draft",
-  "date" : "2025-03-20T08:51:13-03:00",
+  "date" : "2025-03-24T09:32:33-03:00",
   "publisher" : "MSP Colombia",
   "contact" : [{
     "name" : "MSP Colombia",
@@ -640,28 +640,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "AllergyIntolerance"
-      }],
-      "reference" : {
-        "reference" : "AllergyIntolerance/AlergiaColombia2"
-      },
-      "name" : "AlergiaColombia2",
-      "exampleCanonical" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "AllergyIntolerance"
-      }],
-      "reference" : {
-        "reference" : "AllergyIntolerance/AlergiaColombia3"
-      },
-      "name" : "AlergiaColombia3",
-      "exampleCanonical" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -690,20 +668,8 @@
       "reference" : {
         "reference" : "Bundle/BundleColombiaCo"
       },
-      "name" : "Bundle Colombiano",
-      "description" : "Ejemplo de Bundle",
-      "exampleCanonical" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/BundleCo"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/BundleColombiaCo2"
-      },
-      "name" : "Bundle Colombiano2",
-      "description" : "Ejemplo de Bundle",
+      "name" : "Bundle Transaction -Ambulatorio- Colombiano",
+      "description" : "Ejemplo de Bundle de transacción Ambulatoria.",
       "exampleCanonical" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/BundleCo"
     },
     {
@@ -775,18 +741,6 @@
       },
       "name" : "ConditionColombia",
       "description" : "Ejemplo de Condición/Antecedente de Paciente.",
-      "exampleCanonical" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Condition"
-      }],
-      "reference" : {
-        "reference" : "Condition/ConditionColombia2"
-      },
-      "name" : "ConditionColombia2",
-      "description" : "Ejemplo de Condición/Antecedente 2 de Paciente.",
       "exampleCanonical" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo"
     },
     {
@@ -864,14 +818,38 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "Composition"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/CompositionColV-0-4-3"
+        "reference" : "Composition/CompositionColombiaEmergencia"
       },
-      "name" : "Documento Co",
-      "description" : "Definición de un documento clínico para las necesidades de interoperabilidad en Colombia.",
-      "exampleBoolean" : false
+      "name" : "Documento RDA --> Consulta de Emergencia",
+      "description" : "Ejemplo de Documento RDA Colombiano para Emergencia.",
+      "exampleCanonical" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Composition"
+      }],
+      "reference" : {
+        "reference" : "Composition/CompositionColombiaAmbulatorio"
+      },
+      "name" : "Documento RDA --> Nota de Consulta",
+      "description" : "Ejemplo de Documento RDA Colombiano para Nota de Consulta.",
+      "exampleCanonical" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Composition"
+      }],
+      "reference" : {
+        "reference" : "Composition/CompositionColombiaEgreso"
+      },
+      "name" : "Documento RDA --> Resumen de Alta",
+      "description" : "Ejemplo de Documento RDA Colombiano para Resumen de Alta.",
+      "exampleCanonical" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo"
     },
     {
       "extension" : [{
@@ -879,9 +857,10 @@
         "valueString" : "DocumentReference"
       }],
       "reference" : {
-        "reference" : "DocumentReference/DocumentReferenceColombia"
+        "reference" : "DocumentReference/DocumentReferenceAmbulatorio"
       },
-      "name" : "DocumentReferenceColombia",
+      "name" : "DocumentReference de Ambulatorio",
+      "description" : "Ejemplo de Document Reference de Ambulatorio.",
       "exampleCanonical" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo"
     },
     {
@@ -890,9 +869,22 @@
         "valueString" : "DocumentReference"
       }],
       "reference" : {
-        "reference" : "DocumentReference/DocumentReferenceColombia2"
+        "reference" : "DocumentReference/DocumentReferenceEgreso"
       },
-      "name" : "DocumentReferenceColombia2",
+      "name" : "DocumentReference de Egreso",
+      "description" : "Ejemplo de Document Reference de Egreso.",
+      "exampleCanonical" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/DocumentReferenceEmergencia"
+      },
+      "name" : "DocumentReference de Emergencia",
+      "description" : "Ejemplo de Document Reference de Emergencia.",
       "exampleCanonical" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo"
     },
     {
@@ -1041,18 +1033,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationStatement"
-      }],
-      "reference" : {
-        "reference" : "MedicationStatement/MedicationStatementColombia2"
-      },
-      "name" : "MedicationStatementColombia2",
-      "description" : "Ejemplo de MedicationStatement/MedicaciónPaciente 2.",
-      "exampleCanonical" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -1126,18 +1106,6 @@
         "valueString" : "Patient"
       }],
       "reference" : {
-        "reference" : "Patient/PacienteColombianoCompleto"
-      },
-      "name" : "PacienteColombianoCompleto",
-      "description" : "Ejemplo Completo de paciente Colombiano.",
-      "exampleCanonical" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PacienteCo"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
         "reference" : "Patient/PacienteColombianoMinimo"
       },
       "name" : "PacienteColombianoMinimo",
@@ -1182,62 +1150,14 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Practitioner"
-      }],
-      "reference" : {
-        "reference" : "Practitioner/ProfesionalColombia2"
-      },
-      "name" : "ProfesionalColombia2",
-      "description" : "Ejemplo de Profesional Colombiano.",
-      "exampleCanonical" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
         "reference" : "StructureDefinition/DocumentReferenceCo"
       },
-      "name" : "Referencia de Documentos",
-      "description" : "Docuento utilizado para guardar referencias.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/DocumentReferenceColV-0-4-3"
-      },
       "name" : "Referencia de Documentos: V 0.43",
       "description" : "Docuento utilizado para guardar referencias.",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Composition"
-      }],
-      "reference" : {
-        "reference" : "Composition/CompositionColombia"
-      },
-      "name" : "Resumen de Paciente Colombia",
-      "description" : "Ejemplo de Documento RDA Colombiano.",
-      "exampleCanonical" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Composition"
-      }],
-      "reference" : {
-        "reference" : "Composition/CompositionColombia2"
-      },
-      "name" : "Resumen de Paciente Colombia",
-      "description" : "Ejemplo de Documento RDA Colombiano.",
-      "exampleCanonical" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo"
     },
     {
       "extension" : [{
@@ -1344,6 +1264,15 @@
         }],
         "nameUrl" : "index2.html",
         "title" : "Index 2",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "mapeo.html"
+        }],
+        "nameUrl" : "mapeo.html",
+        "title" : "Mapeo",
         "generation" : "markdown"
       },
       {

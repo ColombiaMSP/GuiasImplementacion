@@ -1,0 +1,81 @@
+{
+  "resourceType" : "Composition",
+  "id" : "CompositionColombiaAmbulatorio",
+  "meta" : {
+    "profile" : ["https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition CompositionColombiaAmbulatorio</b></p><a name=\"CompositionColombiaAmbulatorio\"> </a><a name=\"hcCompositionColombiaAmbulatorio\"> </a><a name=\"CompositionColombiaAmbulatorio-es-CO\"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 34105-7}\">Nota de consulta</span></p><p><b>date</b>: 2022-03-05 18:30:00+0100</p><p><b>author</b>: <a href=\"Practitioner-ProfesionalColombia.html\">Practitioner: identifier = Cédula ciudadanía: 12345</a></p><p><b>title</b>: Resumen de Paciente Colombia</p><p><b>custodian</b>: <a href=\"Organization-OrganizacionRegionEjemplo.html\">Organization DIRECCION DEPARTAMENTAL DE CUNDINAMARCA</a></p></div>"
+  },
+  "status" : "final",
+  "type" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "34105-7",
+      "display" : "Nota de consulta"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/PacienteColombiano"
+  },
+  "date" : "2022-03-05T18:30:00+01:00",
+  "author" : [{
+    "reference" : "Practitioner/ProfesionalColombia"
+  }],
+  "title" : "Resumen de Paciente Colombia",
+  "custodian" : {
+    "reference" : "Organization/OrganizacionRegionEjemplo"
+  },
+  "section" : [{
+    "title" : "Condiciones del Paciente",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "11450-4",
+        "display" : "Problem list Reported"
+      }]
+    },
+    "text" : {
+      "status" : "generated",
+      "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">CONDICIONES</div>"
+    },
+    "entry" : [{
+      "reference" : "Condition/ConditionColombia"
+    }]
+  },
+  {
+    "title" : "Medicamentos",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "10160-0",
+        "display" : "Hx of Medication use"
+      }]
+    },
+    "text" : {
+      "status" : "generated",
+      "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">MEDICAMENTOS</div>"
+    },
+    "entry" : [{
+      "reference" : "MedicationStatement/MedicationStatementColombia"
+    }]
+  },
+  {
+    "title" : "Alergias",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "48765-2",
+        "display" : "Allergies and adverse reactions Document"
+      }]
+    },
+    "text" : {
+      "status" : "generated",
+      "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">ALERGIAS</div>"
+    },
+    "entry" : [{
+      "reference" : "AllergyIntolerance/AlergiaColombia"
+    }]
+  }]
+}

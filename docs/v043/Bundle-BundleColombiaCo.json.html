@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.FHIR.CO.CORECO\Bundle Colombiano - JSON Representation - FHIR v4.0.1</title>
+    <title>HL7.FHIR.CO.CORECO\Bundle Transaction -Ambulatorio- Colombiano - JSON Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"9.42"}
-    h3,h4,h5,h6{--heading-prefix:"9.42"}</style>
+    <style type="text/css">h2{--heading-prefix:"10.38"}
+    h3,h4,h5,h6{--heading-prefix:"10.38"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -129,19 +129,13 @@
         <a href="StructureDefinition-MedicationStatementCo.html">Medicamentos</a>
       </li>
       <li>
-        <a href="StructureDefinition-CompositionColV-0-4-3.html">RDA0.43</a>
+        <a href="StructureDefinition-CompositionCo.html">RDA</a>
       </li>
       <li>
-        <a href="StructureDefinition-DocumentReferenceColV-0-4-3.html">DocumentoREF0.43</a>
+        <a href="StructureDefinition-DocumentReferenceCo.html">DocumentoReference</a>
       </li>
       <li>
-        <a href="StructureDefinition-CompositionCo.html">--RDA</a>
-      </li>
-      <li>
-        <a href="StructureDefinition-DocumentReferenceCo.html">--DocumentoREF</a>
-      </li>
-      <li>
-        <a href="StructureDefinition-BundleCo.html">--BundleCo</a>
+        <a href="StructureDefinition-BundleCo.html">BundleCo</a>
       </li>
     </ul>
   </li>
@@ -170,7 +164,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Bundle Colombiano</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Bundle Transaction -Ambulatorio- Colombiano</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -228,7 +222,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: Bundle Colombiano - JSON Representation</h2>
+<h2 id="root">: Bundle Transaction -Ambulatorio- Colombiano - JSON Representation</h2>
   <table class="">
     <tr>
 
@@ -265,7 +259,7 @@
       "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://acme.com/ehr/fhir/DocumentReference/DocumentReferenceColombia",
       "<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference">resource</a>" : {
         "<a href="http://hl7.org/fhir/R4/documentreference.html">resourceType</a>" : "DocumentReference",
-        "<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.id">id</a>" : "DocumentReferenceColombia",
+        "<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.id">id</a>" : "DocumentReferenceAmbulatorio",
         "<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
             <a href="StructureDefinition-DocumentReferenceCo.html" style="color: Maroon">&#x1F517;</a> "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo"
@@ -273,14 +267,15 @@
         },
         "<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;DocumentReference_DocumentReferenceColombia\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: DocumentReference DocumentReferenceColombia&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;DocumentReferenceColombia\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcDocumentReferenceColombia\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;DocumentReferenceColombia-es-CO\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Current&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 60591-5}\&quot;&gt;Patient summary Document&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-PacienteColombianoMinimo.html\&quot;&gt;Luis Alberto Sanchez  Male, DoB: 1974-12-25 ( Cédula ciudadanía: 98765)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2022-03-03 10:30:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;a href=\&quot;Organization/OrganizacionPrestadorEjemplo\&quot;&gt;Organization/OrganizacionPrestadorEjemplo&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;custodian&lt;/b&gt;: &lt;a href=\&quot;Organization-OrganizacionRegionEjemplo.html\&quot;&gt;Organization DIRECCION DEPARTAMENTAL DE CUNDINAMARCA&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;content&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Attachments&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;ContentType&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Url&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;application/fhir+json&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Composition-CompositionColombia.html\&quot;&gt;Composition Resumen de Paciente Colombia&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;DocumentReference_DocumentReferenceAmbulatorio\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: DocumentReference DocumentReferenceAmbulatorio&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;DocumentReferenceAmbulatorio\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcDocumentReferenceAmbulatorio\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;DocumentReferenceAmbulatorio-es-CO\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Current&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 34105-7}\&quot;&gt;Nota de consulta&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-PacienteColombianoMinimo.html\&quot;&gt;Luis Alberto Sanchez  Male, DoB: 1974-12-25 ( Cédula ciudadanía: 98765)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2022-03-03 10:30:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;a href=\&quot;Organization/OrganizacionPrestadorEjemplo\&quot;&gt;Organization/OrganizacionPrestadorEjemplo&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;custodian&lt;/b&gt;: &lt;a href=\&quot;Organization-OrganizacionRegionEjemplo.html\&quot;&gt;Organization DIRECCION DEPARTAMENTAL DE CUNDINAMARCA&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;content&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Attachments&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;ContentType&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Url&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;application/fhir+json&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Composition-CompositionColombiaAmbulatorio.html\&quot;&gt;Composition Resumen de Paciente Colombia&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;"
         },
         "<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.status">status</a>" : "current",
         "<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.type">type</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
             {
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "60591-5"
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "34105-7",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Nota de consulta"
             }
           ]
         },
@@ -300,7 +295,7 @@
           {
             "<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.content.attachment">attachment</a>" : {
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.contentType">contentType</a>" : "application/fhir+json",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.url">url</a>" : "Composition/CompositionColombia"
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.url">url</a>" : "Composition/CompositionColombiaAmbulatorio"
             }
           }
         ]
@@ -364,7 +359,7 @@
       "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://acme.com/ehr/fhir/Composition/CompositionColombia",
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition">resource</a>" : {
         "<a href="http://hl7.org/fhir/R4/composition.html">resourceType</a>" : "Composition",
-        "<a href="http://hl7.org/fhir/R4/composition.html#Composition.id">id</a>" : "CompositionColombia",
+        "<a href="http://hl7.org/fhir/R4/composition.html#Composition.id">id</a>" : "CompositionColombiaAmbulatorio",
         "<a href="http://hl7.org/fhir/R4/composition.html#Composition.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
             <a href="StructureDefinition-CompositionCo.html" style="color: Maroon">&#x1F517;</a> "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo"
@@ -372,15 +367,15 @@
         },
         "<a href="http://hl7.org/fhir/R4/composition.html#Composition.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Composition_CompositionColombia\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Composition CompositionColombia&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;CompositionColombia\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcCompositionColombia\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;CompositionColombia-es-CO\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 60591-5}\&quot;&gt;Patient Summary Document&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2022-03-05 18:30:00+0100&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;a href=\&quot;Practitioner-ProfesionalColombia.html\&quot;&gt;Practitioner: identifier = Cédula ciudadanía: 12345&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Resumen de Paciente Colombia&lt;/p&gt;&lt;p&gt;&lt;b&gt;custodian&lt;/b&gt;: &lt;a href=\&quot;Organization-OrganizacionRegionEjemplo.html\&quot;&gt;Organization DIRECCION DEPARTAMENTAL DE CUNDINAMARCA&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Composition_CompositionColombiaAmbulatorio\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Composition CompositionColombiaAmbulatorio&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;CompositionColombiaAmbulatorio\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcCompositionColombiaAmbulatorio\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;CompositionColombiaAmbulatorio-es-CO\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 34105-7}\&quot;&gt;Nota de consulta&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2022-03-05 18:30:00+0100&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;a href=\&quot;Practitioner-ProfesionalColombia.html\&quot;&gt;Practitioner: identifier = Cédula ciudadanía: 12345&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Resumen de Paciente Colombia&lt;/p&gt;&lt;p&gt;&lt;b&gt;custodian&lt;/b&gt;: &lt;a href=\&quot;Organization-OrganizacionRegionEjemplo.html\&quot;&gt;Organization DIRECCION DEPARTAMENTAL DE CUNDINAMARCA&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"
         },
         "<a href="http://hl7.org/fhir/R4/composition.html#Composition.status">status</a>" : "final",
         "<a href="http://hl7.org/fhir/R4/composition.html#Composition.type">type</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
             {
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "60591-5",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Patient Summary Document"
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "34105-7",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Nota de consulta"
             }
           ]
         },
@@ -690,7 +685,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.minsalud.gov.co/">MSP Colombia</a>.  Package hl7.fhir.co.CoreCO#0.4.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 20, 2025 08:52-0300">2025-03-20</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.minsalud.gov.co/">MSP Colombia</a>.  Package hl7.fhir.co.CoreCO#0.4.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 24, 2025 09:33-0300">2025-03-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

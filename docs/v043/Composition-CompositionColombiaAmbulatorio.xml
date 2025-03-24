@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="CompositionColombiaAmbulatorio"/>
+  <meta>
+    <profile value="https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Composition CompositionColombiaAmbulatorio</b></p><a name="CompositionColombiaAmbulatorio"> </a><a name="hcCompositionColombiaAmbulatorio"> </a><a name="CompositionColombiaAmbulatorio-es-CO"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title="Codes:{http://loinc.org 34105-7}">Nota de consulta</span></p><p><b>date</b>: 2022-03-05 18:30:00+0100</p><p><b>author</b>: <a href="Practitioner-ProfesionalColombia.html">Practitioner: identifier = Cédula ciudadanía: 12345</a></p><p><b>title</b>: Resumen de Paciente Colombia</p><p><b>custodian</b>: <a href="Organization-OrganizacionRegionEjemplo.html">Organization DIRECCION DEPARTAMENTAL DE CUNDINAMARCA</a></p></div>
+  </text>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="34105-7"/>
+      <display value="Nota de consulta"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/PacienteColombiano"/>
+  </subject>
+  <date value="2022-03-05T18:30:00+01:00"/>
+  <author>
+    <reference value="Practitioner/ProfesionalColombia"/>
+  </author>
+  <title value="Resumen de Paciente Colombia"/>
+  <custodian>
+    <reference value="Organization/OrganizacionRegionEjemplo"/>
+  </custodian>
+  <section>
+    <title value="Condiciones del Paciente"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="11450-4"/>
+        <display value="Problem list Reported"/>
+      </coding>
+    </code>
+    <text>
+      <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">CONDICIONES</div>
+    </text>
+    <entry>
+      <reference value="Condition/ConditionColombia"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Medicamentos"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="10160-0"/>
+        <display value="Hx of Medication use"/>
+      </coding>
+    </code>
+    <text>
+      <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">MEDICAMENTOS</div>
+    </text>
+    <entry>
+      <reference value="MedicationStatement/MedicationStatementColombia"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Alergias"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="48765-2"/>
+        <display value="Allergies and adverse reactions Document"/>
+      </coding>
+    </code>
+    <text>
+      <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">ALERGIAS</div>
+    </text>
+    <entry>
+      <reference value="AllergyIntolerance/AlergiaColombia"/>
+    </entry>
+  </section>
+</Composition>

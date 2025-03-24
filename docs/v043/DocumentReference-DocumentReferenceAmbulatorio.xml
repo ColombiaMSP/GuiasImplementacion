@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DocumentReference xmlns="http://hl7.org/fhir">
+  <id value="DocumentReferenceAmbulatorio"/>
+  <meta>
+    <profile value="https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DocumentReference DocumentReferenceAmbulatorio</b></p><a name="DocumentReferenceAmbulatorio"> </a><a name="hcDocumentReferenceAmbulatorio"> </a><a name="DocumentReferenceAmbulatorio-es-CO"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title="Codes:{http://loinc.org 34105-7}">Nota de consulta</span></p><p><b>subject</b>: <a href="Patient-PacienteColombianoMinimo.html">Luis Alberto Sanchez  Male, DoB: 1974-12-25 ( Cédula ciudadanía: 98765)</a></p><p><b>date</b>: 2022-03-03 10:30:00+0000</p><p><b>author</b>: <a href="Organization/OrganizacionPrestadorEjemplo">Organization/OrganizacionPrestadorEjemplo</a></p><p><b>custodian</b>: <a href="Organization-OrganizacionRegionEjemplo.html">Organization DIRECCION DEPARTAMENTAL DE CUNDINAMARCA</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class="grid"><tr><td style="display: none">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>application/fhir+json</td><td><a href="Composition-CompositionColombiaAmbulatorio.html">Composition Resumen de Paciente Colombia</a></td></tr></table></blockquote></div>
+  </text>
+  <status value="current"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="34105-7"/>
+      <display value="Nota de consulta"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/PacienteColombianoMinimo"/>
+  </subject>
+  <date value="2022-03-03T10:30:00Z"/>
+  <author>
+    <reference value="Organization/OrganizacionPrestadorEjemplo"/>
+  </author>
+  <custodian>
+    <reference value="Organization/OrganizacionRegionEjemplo"/>
+  </custodian>
+  <content>
+    <attachment>
+      <contentType value="application/fhir+json"/>
+      <url value="Composition/CompositionColombiaAmbulatorio"/>
+    </attachment>
+  </content>
+</DocumentReference>

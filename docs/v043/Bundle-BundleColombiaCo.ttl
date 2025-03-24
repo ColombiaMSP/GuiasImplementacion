@@ -70,7 +70,7 @@
   ] ) . # 
 
 <http://acme.com/ehr/fhir/DocumentReference/DocumentReferenceColombia> a fhir:DocumentReference ;
-  fhir:id [ fhir:v "DocumentReferenceColombia"] ; # 
+  fhir:id [ fhir:v "DocumentReferenceAmbulatorio"] ; # 
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo"^^xsd:anyURI ;
@@ -79,14 +79,15 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DocumentReference_DocumentReferenceColombia\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference DocumentReferenceColombia</b></p><a name=\"DocumentReferenceColombia\"> </a><a name=\"hcDocumentReferenceColombia\"> </a><a name=\"DocumentReferenceColombia-es-CO\"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 60591-5}\">Patient summary Document</span></p><p><b>subject</b>: <a href=\"Patient-PacienteColombianoMinimo.html\">Luis Alberto Sanchez  Male, DoB: 1974-12-25 ( Cédula ciudadanía: 98765)</a></p><p><b>date</b>: 2022-03-03 10:30:00+0000</p><p><b>author</b>: <a href=\"Organization/OrganizacionPrestadorEjemplo\">Organization/OrganizacionPrestadorEjemplo</a></p><p><b>custodian</b>: <a href=\"Organization-OrganizacionRegionEjemplo.html\">Organization DIRECCION DEPARTAMENTAL DE CUNDINAMARCA</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>application/fhir+json</td><td><a href=\"Composition-CompositionColombia.html\">Composition Resumen de Paciente Colombia</a></td></tr></table></blockquote></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DocumentReference_DocumentReferenceAmbulatorio\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference DocumentReferenceAmbulatorio</b></p><a name=\"DocumentReferenceAmbulatorio\"> </a><a name=\"hcDocumentReferenceAmbulatorio\"> </a><a name=\"DocumentReferenceAmbulatorio-es-CO\"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 34105-7}\">Nota de consulta</span></p><p><b>subject</b>: <a href=\"Patient-PacienteColombianoMinimo.html\">Luis Alberto Sanchez  Male, DoB: 1974-12-25 ( Cédula ciudadanía: 98765)</a></p><p><b>date</b>: 2022-03-03 10:30:00+0000</p><p><b>author</b>: <a href=\"Organization/OrganizacionPrestadorEjemplo\">Organization/OrganizacionPrestadorEjemplo</a></p><p><b>custodian</b>: <a href=\"Organization-OrganizacionRegionEjemplo.html\">Organization DIRECCION DEPARTAMENTAL DE CUNDINAMARCA</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>application/fhir+json</td><td><a href=\"Composition-CompositionColombiaAmbulatorio.html\">Composition Resumen de Paciente Colombia</a></td></tr></table></blockquote></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:status [ fhir:v "current"] ; # 
   fhir:type [
      fhir:coding ( [
-       a loinc:60591-5 ;
+       a loinc:34105-7 ;
        fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "60591-5" ]
+       fhir:code [ fhir:v "34105-7" ] ;
+       fhir:display [ fhir:v "Nota de consulta" ]
      ] )
   ] ; # 
   fhir:subject [
@@ -105,7 +106,7 @@
   fhir:content ( [
      fhir:attachment [
        fhir:contentType [ fhir:v "application/fhir+json" ] ;
-       fhir:url [ fhir:v "Composition/CompositionColombia"^^xsd:anyURI ]
+       fhir:url [ fhir:v "Composition/CompositionColombiaAmbulatorio"^^xsd:anyURI ]
      ]
   ] ) . # 
 
@@ -146,7 +147,7 @@
   ] ) . # 
 
 <http://acme.com/ehr/fhir/Composition/CompositionColombia> a fhir:Composition ;
-  fhir:id [ fhir:v "CompositionColombia"] ; # 
+  fhir:id [ fhir:v "CompositionColombiaAmbulatorio"] ; # 
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo"^^xsd:anyURI ;
@@ -155,15 +156,15 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_CompositionColombia\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition CompositionColombia</b></p><a name=\"CompositionColombia\"> </a><a name=\"hcCompositionColombia\"> </a><a name=\"CompositionColombia-es-CO\"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 60591-5}\">Patient Summary Document</span></p><p><b>date</b>: 2022-03-05 18:30:00+0100</p><p><b>author</b>: <a href=\"Practitioner-ProfesionalColombia.html\">Practitioner: identifier = Cédula ciudadanía: 12345</a></p><p><b>title</b>: Resumen de Paciente Colombia</p><p><b>custodian</b>: <a href=\"Organization-OrganizacionRegionEjemplo.html\">Organization DIRECCION DEPARTAMENTAL DE CUNDINAMARCA</a></p></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_CompositionColombiaAmbulatorio\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition CompositionColombiaAmbulatorio</b></p><a name=\"CompositionColombiaAmbulatorio\"> </a><a name=\"hcCompositionColombiaAmbulatorio\"> </a><a name=\"CompositionColombiaAmbulatorio-es-CO\"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 34105-7}\">Nota de consulta</span></p><p><b>date</b>: 2022-03-05 18:30:00+0100</p><p><b>author</b>: <a href=\"Practitioner-ProfesionalColombia.html\">Practitioner: identifier = Cédula ciudadanía: 12345</a></p><p><b>title</b>: Resumen de Paciente Colombia</p><p><b>custodian</b>: <a href=\"Organization-OrganizacionRegionEjemplo.html\">Organization DIRECCION DEPARTAMENTAL DE CUNDINAMARCA</a></p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:type [
      fhir:coding ( [
-       a loinc:60591-5 ;
+       a loinc:34105-7 ;
        fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "60591-5" ] ;
-       fhir:display [ fhir:v "Patient Summary Document" ]
+       fhir:code [ fhir:v "34105-7" ] ;
+       fhir:display [ fhir:v "Nota de consulta" ]
      ] )
   ] ; # 
   fhir:subject [

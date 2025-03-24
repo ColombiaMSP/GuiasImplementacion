@@ -26,21 +26,6 @@
       "sources" : ["2.16.840.1.113883.4.642.3.237"],
       "uses" : {
       },
-      "StructureDefinition-CompositionCo.html" : "Documento Co",
-      "StructureDefinition-CompositionColV-0-4-3.html" : "Documento Co"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/doc-typecodes",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "FHIRDocumentTypeCodes",
-      "title" : "FHIR Document Type Codes",
-      "description" : "FHIR Document Codes - all LOINC codes where scale type = 'DOC'.",
-      "systems" : ["http://loinc.org"],
-      "oids" : ["2.16.840.1.113883.4.642.3.240"],
-      "sources" : ["2.16.840.1.113883.4.642.3.240"],
-      "uses" : {
-      },
       "StructureDefinition-CompositionCo.html" : "Documento Co"
     },
     {
@@ -89,8 +74,8 @@
       "systems" : ["http://loinc.org"],
       "uses" : {
       },
-      "StructureDefinition-CompositionColV-0-4-3.html" : "Documento Co",
-      "StructureDefinition-DocumentReferenceColV-0-4-3.html" : "Referencia de Documentos: V 0.43"
+      "StructureDefinition-CompositionCo.html" : "Documento Co",
+      "StructureDefinition-DocumentReferenceCo.html" : "Referencia de Documentos: V 0.43"
     },
     {
       "url" : "https://www.minsalud.gov.co/ihc/fhir/ValueSet/DiscapacidadVS",

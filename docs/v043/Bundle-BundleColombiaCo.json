@@ -10,19 +10,20 @@
     "fullUrl" : "http://acme.com/ehr/fhir/DocumentReference/DocumentReferenceColombia",
     "resource" : {
       "resourceType" : "DocumentReference",
-      "id" : "DocumentReferenceColombia",
+      "id" : "DocumentReferenceAmbulatorio",
       "meta" : {
         "profile" : ["https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo"]
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DocumentReference_DocumentReferenceColombia\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference DocumentReferenceColombia</b></p><a name=\"DocumentReferenceColombia\"> </a><a name=\"hcDocumentReferenceColombia\"> </a><a name=\"DocumentReferenceColombia-es-CO\"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 60591-5}\">Patient summary Document</span></p><p><b>subject</b>: <a href=\"Patient-PacienteColombianoMinimo.html\">Luis Alberto Sanchez  Male, DoB: 1974-12-25 ( Cédula ciudadanía: 98765)</a></p><p><b>date</b>: 2022-03-03 10:30:00+0000</p><p><b>author</b>: <a href=\"Organization/OrganizacionPrestadorEjemplo\">Organization/OrganizacionPrestadorEjemplo</a></p><p><b>custodian</b>: <a href=\"Organization-OrganizacionRegionEjemplo.html\">Organization DIRECCION DEPARTAMENTAL DE CUNDINAMARCA</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>application/fhir+json</td><td><a href=\"Composition-CompositionColombia.html\">Composition Resumen de Paciente Colombia</a></td></tr></table></blockquote></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DocumentReference_DocumentReferenceAmbulatorio\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference DocumentReferenceAmbulatorio</b></p><a name=\"DocumentReferenceAmbulatorio\"> </a><a name=\"hcDocumentReferenceAmbulatorio\"> </a><a name=\"DocumentReferenceAmbulatorio-es-CO\"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 34105-7}\">Nota de consulta</span></p><p><b>subject</b>: <a href=\"Patient-PacienteColombianoMinimo.html\">Luis Alberto Sanchez  Male, DoB: 1974-12-25 ( Cédula ciudadanía: 98765)</a></p><p><b>date</b>: 2022-03-03 10:30:00+0000</p><p><b>author</b>: <a href=\"Organization/OrganizacionPrestadorEjemplo\">Organization/OrganizacionPrestadorEjemplo</a></p><p><b>custodian</b>: <a href=\"Organization-OrganizacionRegionEjemplo.html\">Organization DIRECCION DEPARTAMENTAL DE CUNDINAMARCA</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>application/fhir+json</td><td><a href=\"Composition-CompositionColombiaAmbulatorio.html\">Composition Resumen de Paciente Colombia</a></td></tr></table></blockquote></div>"
       },
       "status" : "current",
       "type" : {
         "coding" : [{
           "system" : "http://loinc.org",
-          "code" : "60591-5"
+          "code" : "34105-7",
+          "display" : "Nota de consulta"
         }]
       },
       "subject" : {
@@ -38,7 +39,7 @@
       "content" : [{
         "attachment" : {
           "contentType" : "application/fhir+json",
-          "url" : "Composition/CompositionColombia"
+          "url" : "Composition/CompositionColombiaAmbulatorio"
         }
       }]
     },
@@ -91,20 +92,20 @@
     "fullUrl" : "http://acme.com/ehr/fhir/Composition/CompositionColombia",
     "resource" : {
       "resourceType" : "Composition",
-      "id" : "CompositionColombia",
+      "id" : "CompositionColombiaAmbulatorio",
       "meta" : {
         "profile" : ["https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo"]
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_CompositionColombia\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition CompositionColombia</b></p><a name=\"CompositionColombia\"> </a><a name=\"hcCompositionColombia\"> </a><a name=\"CompositionColombia-es-CO\"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 60591-5}\">Patient Summary Document</span></p><p><b>date</b>: 2022-03-05 18:30:00+0100</p><p><b>author</b>: <a href=\"Practitioner-ProfesionalColombia.html\">Practitioner: identifier = Cédula ciudadanía: 12345</a></p><p><b>title</b>: Resumen de Paciente Colombia</p><p><b>custodian</b>: <a href=\"Organization-OrganizacionRegionEjemplo.html\">Organization DIRECCION DEPARTAMENTAL DE CUNDINAMARCA</a></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_CompositionColombiaAmbulatorio\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition CompositionColombiaAmbulatorio</b></p><a name=\"CompositionColombiaAmbulatorio\"> </a><a name=\"hcCompositionColombiaAmbulatorio\"> </a><a name=\"CompositionColombiaAmbulatorio-es-CO\"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 34105-7}\">Nota de consulta</span></p><p><b>date</b>: 2022-03-05 18:30:00+0100</p><p><b>author</b>: <a href=\"Practitioner-ProfesionalColombia.html\">Practitioner: identifier = Cédula ciudadanía: 12345</a></p><p><b>title</b>: Resumen de Paciente Colombia</p><p><b>custodian</b>: <a href=\"Organization-OrganizacionRegionEjemplo.html\">Organization DIRECCION DEPARTAMENTAL DE CUNDINAMARCA</a></p></div>"
       },
       "status" : "final",
       "type" : {
         "coding" : [{
           "system" : "http://loinc.org",
-          "code" : "60591-5",
-          "display" : "Patient Summary Document"
+          "code" : "34105-7",
+          "display" : "Nota de consulta"
         }]
       },
       "subject" : {

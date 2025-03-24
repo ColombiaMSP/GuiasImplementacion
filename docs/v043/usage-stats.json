@@ -275,10 +275,6 @@
       {
         "url": "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo",
         "title": "Documento Co"
-      },
-      {
-        "url": "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionColV_0_4_3",
-        "title": "Documento Co"
       }
     ],
     "Condition": [
@@ -290,10 +286,6 @@
     "DocumentReference": [
       {
         "url": "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo",
-        "title": "Referencia de Documentos"
-      },
-      {
-        "url": "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceColV_0_4_3",
         "title": "Referencia de Documentos: V 0.43"
       }
     ],
@@ -343,15 +335,12 @@
       "Patient.name.family"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-birthTime": [
-      "Bundle.entry.resource.birthDate",
       "Patient.birthDate"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-disability": [
-      "Bundle.entry.resource",
       "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity": [
-      "Bundle.entry.resource",
       "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/regex": [
@@ -391,7 +380,6 @@
       "Bundle.entry.resource"
     ],
     "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-address-zonaResidencia": [
-      "Bundle.entry.resource.address",
       "Patient.address"
     ],
     "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-pais": [
@@ -400,15 +388,12 @@
       "Practitioner.identifier.type"
     ],
     "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-patient-comunidadetnica": [
-      "Bundle.entry.resource",
       "Patient"
     ],
     "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-patient-etnia": [
-      "Bundle.entry.resource",
       "Patient"
     ],
     "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-patient-nacionalidad": [
-      "Bundle.entry.resource",
       "Patient"
     ]
   }

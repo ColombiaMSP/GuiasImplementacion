@@ -46,8 +46,8 @@ var(--publish-box-border); */
 :root {
 
   --ig-status-text-color: #525252; /* 1. IG Title and status text color */
-  --navbar-bg-color: #60894d; /*  #3366CC --- >>  /* 2. Header container color */  
- 
+  /*--navbar-bg-color: #60894d; /*  #3366CC --- >>  /* 2. Header container color */  
+  --navbar-bg-color: #3366CC; /* 2. Header container color */  
   --footer-bg-color: #707070; /* 3. Footer background color*/
   --footer-container-bg-color: #464b57; /* 4. Footer container color */
   --stripe-bg-color: #999999; /* 5. Header strip color */
@@ -60,8 +60,9 @@ var(--publish-box-border); */
   --btn-gradient-end-color-alpha: #ff357ebd; /* 12. Menu item gradient end color (with alpha) */
   --link-color: #428bca; /* 13. Hyperlink text color */
   --link-hover-color: #2a6496; /* 14. Hyperlink text hover color */
+  --publish-box-bg-color:  #f1e6a3;
 
-  --publish-box-bg-color: yellow; /* 15. Publish box background color */
+  /*--publish-box-bg-color: yellow; /* 15. Publish box background color */
   --publish-box-border: 1px solid #0A0008; /* 16.  Publish box border definition */
 
   --toc-box-bg-color: #ffeb7e; /* 17.  TOC box background color */
