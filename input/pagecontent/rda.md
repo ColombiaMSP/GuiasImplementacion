@@ -31,9 +31,3 @@ El modelo del RDA está basado en los siguientes recursos del estándar:
 * FamilyMemberHistory(pendiente), antecedentes
 * Condition, diagnósticos y condición del paciente
 
-
-### Versiones del RDA
-
-* RDA Mínimo, utilizado para la prueba piloto de Bogotá, Cundinamarca, Antioquia, Santander y Valle del Cauca  unicamente tendrá los recursos : DocumentReference, Composition, Patient, Organization, Practitioner y Condition.
-
-* RDA V1, esta version inlcuye los recursos MedicationStatement, Allergy.

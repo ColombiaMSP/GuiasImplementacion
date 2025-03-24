@@ -16,32 +16,32 @@
 <ul class="nav nav-tabs">
 {% if include.active == 'content' %}
   <li class="active">
-    <a href="#">Contenido</a>
+    <a href="#">Content</a>
   </li>
 {% else %}
   <li>
-    <a href="{{include.type}}-{{include.id}}.html">Contenido</a>
+    <a href="{{include.type}}-{{include.id}}.html">Content</a>
   </li>
 {% endif %}
 
 {% if include.active == 'definition' %}
   <li class="active">
-    <a href="#">Descripciones Detalladas</a>
+    <a href="#">Detailed Descriptions</a>
   </li>
 {% else %}
   <li>
-    <a href="{{include.type}}-{{include.id}}-definitions.html">Descripciones Detalladas</a>
+    <a href="{{include.type}}-{{include.id}}-definitions.html">Detailed Descriptions</a>
   </li>
 {% endif %}
 
 {% unless excludemaps == 'y' %}
   {% if include.active == 'mapping' %}
     <li class="active">
-      <a href="#">Mapeos</a>
+      <a href="#">Mappings</a>
     </li>
   {% else %}
     <li>
-      <a href="{{include.type}}-{{include.id}}-mappings.html">Mapeos</a>
+      <a href="{{include.type}}-{{include.id}}-mappings.html">Mappings</a>
     </li>
   {% endif %}
 {% endunless %}
@@ -51,11 +51,11 @@
   {% unless excludeexamples == 'y' %}
     {% if include.active == 'example' %}
       <li class="active">
-        <a href="#">Ejemplos</a>
+        <a href="#">Examples</a>
       </li>
     {% else %}
       <li>
-        <a href="{{include.type}}-{{include.id}}-examples.html">Ejemplos</a>
+        <a href="{{include.type}}-{{include.id}}-examples.html">Examples</a>
       </li>
     {% endif %}
   {% endunless %}
@@ -98,11 +98,11 @@
 {% if  site.data.resources[resource_].['history'] %}
   {% if include.active == 'history' %}
     <li class="active">
-      <a href="#">Historial</a>
+      <a href="#">History</a>
     </li>
   {% else %}
     <li>
-      <a href="{{include.type}}-{{include.id}}.profile.history.html">Historial</a>
+      <a href="{{include.type}}-{{include.id}}.profile.history.html">History</a>
     </li>
   {% endif %}
 {% endif %}
