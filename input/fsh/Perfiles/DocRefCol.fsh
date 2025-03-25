@@ -1,6 +1,6 @@
 Profile: DocumentReferenceCo
 Parent: DocumentReference
-Title: "Referencia de Documentos: V 0.43"
+Title: "Referencia de Documentos"
 Description: "Docuento utilizado para guardar referencias."
 
 

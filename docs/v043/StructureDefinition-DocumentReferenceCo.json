@@ -8,9 +8,9 @@
   "url" : "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo",
   "version" : "0.4.3",
   "name" : "DocumentReferenceCo",
-  "title" : "Referencia de Documentos: V 0.43",
+  "title" : "Referencia de Documentos",
   "status" : "draft",
-  "date" : "2025-03-24T16:25:06-03:00",
+  "date" : "2025-03-25T08:49:07-03:00",
   "publisher" : "MSP Colombia",
   "contact" : [{
     "name" : "MSP Colombia",

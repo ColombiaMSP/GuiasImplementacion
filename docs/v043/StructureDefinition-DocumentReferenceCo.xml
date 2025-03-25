@@ -24,9 +24,9 @@
   <url value="https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo"/>
   <version value="0.4.3"/>
   <name value="DocumentReferenceCo"/>
-  <title value="Referencia de Documentos: V 0.43"/>
+  <title value="Referencia de Documentos"/>
   <status value="draft"/>
-  <date value="2025-03-24T16:25:06-03:00"/>
+  <date value="2025-03-25T08:49:07-03:00"/>
   <publisher value="MSP Colombia"/>
   <contact>
     <name value="MSP Colombia"/>

@@ -33,8 +33,8 @@ Title:          "Medication Statement Co"
 * medicationCodeableConcept ^binding.extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][+].extension[purpose].valueCode = #candidate
 * medicationCodeableConcept ^binding.extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][=].extension[valueSet].valueCanonical = https://www.minsalud.gov.co/ihc/fhir/ValueSet/IUMVS
 
-
-
+* dosage.text MS
+* note MS
 //---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // * code ^binding.extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][+].extension[purpose].valueCode = #candidate

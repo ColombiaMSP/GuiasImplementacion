@@ -286,7 +286,7 @@
     "DocumentReference": [
       {
         "url": "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo",
-        "title": "Referencia de Documentos: V 0.43"
+        "title": "Referencia de Documentos"
       }
     ],
     "MedicationStatement": [
