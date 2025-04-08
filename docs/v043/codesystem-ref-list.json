@@ -90,8 +90,8 @@
       "description" : "Elemento de dato que contiene el nombre y número de identificación de una determinada persona para efectos de identidad e individualización",
       "uses" : {
       },
-      "ValueSet-IdentificadoresPersonaVS.html" : "Identificadores de Persona",
-      "ValueSet-IdentificadoresProfesionalVS.html" : "Identificadores de Profesional"
+      "ValueSet-IdentificadoresProfesionalVS.html" : "Identificadores de Profesional",
+      "ValueSet-IdentificadoresPersonaVS.html" : "Identificadores de Persona"
     },
     {
       "url" : "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS",

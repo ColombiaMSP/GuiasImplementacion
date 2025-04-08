@@ -10,7 +10,7 @@
   "name" : "CoreCOImplementationGuide",
   "title" : "2025 --> GUIA EN DESARROLLO - Colombia (v 0.4.3)",
   "status" : "draft",
-  "date" : "2025-03-25T08:49:07-03:00",
+  "date" : "2025-04-08T14:01:09-03:00",
   "publisher" : "MSP Colombia",
   "contact" : [{
     "name" : "MSP Colombia",
@@ -1260,10 +1260,10 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "index2.html"
+          "valueUrl" : "intercambioPDF.html"
         }],
-        "nameUrl" : "index2.html",
-        "title" : "Index 2",
+        "nameUrl" : "intercambioPDF.html",
+        "title" : "Intercambio PDF",
         "generation" : "markdown"
       },
       {

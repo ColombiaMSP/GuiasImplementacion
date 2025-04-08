@@ -11,7 +11,7 @@
   <name value="CoreCOImplementationGuide"/>
   <title value="2025 --&gt; GUIA EN DESARROLLO - Colombia (v 0.4.3)"/>
   <status value="draft"/>
-  <date value="2025-03-25T08:49:07-03:00"/>
+  <date value="2025-04-08T14:01:09-03:00"/>
   <publisher value="MSP Colombia"/>
   <contact>
     <name value="MSP Colombia"/>
@@ -1045,10 +1045,10 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="index2.html"/>
+          <valueUrl value="intercambioPDF.html"/>
         </extension>
-        <nameUrl value="index2.html"/>
-        <title value="Index 2"/>
+        <nameUrl value="intercambioPDF.html"/>
+        <title value="Intercambio PDF"/>
         <generation value="markdown"/>
       </page>
       <page>
