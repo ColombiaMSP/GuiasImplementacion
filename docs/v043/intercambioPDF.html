@@ -201,7 +201,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#introducción" id="markdown-toc-introducción">Introducción</a></li>
-  <li><a href="#ejemplos" id="markdown-toc-ejemplos">Ejemplos</a></li>
+  <li><a href="#recursos-fhir-que-contiene" id="markdown-toc-recursos-fhir-que-contiene">Recursos FHIR que contiene:</a></li>
   <li><a href="#json" id="markdown-toc-json">JSON</a></li>
   <li><a href="#diagrama-de-arquitectura-general" id="markdown-toc-diagrama-de-arquitectura-general">Diagrama de Arquitectura general.</a></li>
 </ul>
@@ -209,18 +209,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <h3 id="introducción">Introducción</h3>
 
-<p>A continuación, …</p>
+<p>A continuación, se describen ejemplos de como será la estructura de transaccion a realizar con la plataforma, cuando se quiera registrar documentos generados por la aplicacion de PAIWEB, para el registro de Vacunas de un paciente y desde APS …
+Es importante aclarar, que ambos registros, contendran parte de información estructurada, asi como el detalle del documento clinico, en formato PDF.</p>
 
 <hr />
 
-<h3 id="ejemplos">Ejemplos</h3>
-<p>Recursos que contiene:</p>
+<h3 id="recursos-fhir-que-contiene">Recursos FHIR que contiene:</h3>
 
-<p>✅ <strong>Document Reference</strong> que forman parte del SGSSS.</p>
-
-<p>✅ <strong>Patient</strong>: recurso para representar paciente.</p>
-
-<p>✅ <strong>Bundle-document</strong> ….</p>
+<ul>
+  <li>
+    <p>✅ <strong>Document Reference</strong>: documento indice.</p>
+  </li>
+  <li>
+    <p>✅ <strong>Bundle-document</strong> contiene toda la información clinica, asi como la referecencia al PDF.</p>
+  </li>
+  <li>
+    <p>✅ <strong>Patient</strong>: recurso para representar paciente.</p>
+  </li>
+</ul>
 
 <hr />
 
@@ -228,11 +234,37 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>A continuación se despliegan ejemplos de JSON:</p>
 
-<p>1- PAIWEB: <a href="D:\2.COLOMBIA\2025_IG_CO\GuiasImplementacion\input\pagecontent\rdav.jsonc">Descargar RDV.json</a></p>
+<p><em>1- PAIWEB:</em></p>
 
-<p>2- APS: <a href="D:\2.COLOMBIA\2025_IG_CO\GuiasImplementacion\input\pagecontent\RDA.json">Descargar RDX.json</a></p>
+<ul>
+  <li>
+    <p>ℹ️ Formato con comentarios (jsonc): <a href="D:\2.COLOMBIA\2025_IG_CO\GuiasImplementacion\input\pagecontent\RDVpdfC.jsonc">Descargar RDV.jsonc</a></p>
+  </li>
+  <li>
+    <p>ℹ️ Formato json: <a href="D:\2.COLOMBIA\2025_IG_CO\GuiasImplementacion\input\pagecontent\RDVpdf.json">Descargar RDV.json</a></p>
+  </li>
+</ul>
+
+<p><em>2- APS:</em></p>
+
+<ul>
+  <li>
+    <p>ℹ️- Formato con comentarios (jsonc): <a href="D:\2.COLOMBIA\2025_IG_CO\GuiasImplementacion\input\pagecontent\RDVpdfC.jsonc">Descargar RDV.jsonc</a></p>
+  </li>
+  <li>
+    <p>ℹ️- Formato json: <a href="D:\2.COLOMBIA\2025_IG_CO\GuiasImplementacion\input\pagecontent\RDVpdf.json">Descargar RDV.json</a></p>
+  </li>
+</ul>
+
+<hr />
 
 <h3 id="diagrama-de-arquitectura-general">Diagrama de Arquitectura general.</h3>
+
+<p>Diagrama de recursos involucrados:</p>
+
+<div align="left">
+  <img style="border: 1px solid; color: black; width: 50%; height: 50%;" src="DiagramaPDF.png" /> 
+</div>
 
 
 
@@ -259,7 +291,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.minsalud.gov.co/">MSP Colombia</a>.  Package hl7.fhir.co.CoreCO#0.4.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 8, 2025 14:02-0300">2025-04-08</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.minsalud.gov.co/">MSP Colombia</a>.  Package hl7.fhir.co.CoreCO#0.4.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 8, 2025 16:58-0300">2025-04-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
