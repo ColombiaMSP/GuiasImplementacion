@@ -1,0 +1,122 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "timestamp": "2022-03-03T10:30:00Z",
+  "entry": [
+      {
+          "fullUrl": "urn:uuid:391699f0-f37b-11ec-b939-0242ac120003",
+          "resource": {
+              "resourceType": "DocumentReference",
+              "meta": {
+                  "profile": [
+                      "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/DocumentReferenceCo"
+                  ]
+              },
+              "text": {
+                  "status": "generated",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DocumentReference_DocumentReferenceColombia2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference DocumentReferenceColombia2</b></p><a name=\"DocumentReferenceColombia2\"> </a><a name=\"hcDocumentReferenceColombia2\"> </a><a name=\"DocumentReferenceColombia2-es-CO\"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 60591-5}\">Patient summary Document</span></p><p><b>subject</b>: <a href=\"Bundle-BundleColombiaCo2.html#urn-uuid-2f8d6332-e339-457d-b5e8-1a140a1f3ea1\">Bundle: type = transaction; timestamp = 2022-03-03 10:30:00+0000</a></p><p><b>date</b>: 2022-03-03 10:30:00+0000</p><p><b>author</b>: <a href=\"Organization/OrganizacionPrestadorEjemplo\">Organization/OrganizacionPrestadorEjemplo</a></p><p><b>custodian</b>: <a href=\"Organization-OrganizacionRegionEjemplo.html\">Organization DIRECCION DEPARTAMENTAL DE CUNDINAMARCA</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>application/fhir+json</td><td><a href=\"Bundle-BundleColombiaCo2.html#urn-uuid-ae5a4562-f379-4e27-b5e6-3c49746812be\">Bundle: type = transaction; timestamp = 2022-03-03 10:30:00+0000</a></td></tr></table></blockquote></div>"
+              },
+              "status": "current",
+              "type": {
+                  "coding": [
+                      {
+                          "system": "http://loinc.org",
+                          "code": "A-DEFINIR",
+                          "display": "certificado de vacunacion"
+                      }
+                  ]
+              },
+              "subject": {
+                  "reference": "urn:uuid:2f8d6332-e339-457d-b5e8-1a140a1f3ea1"
+              },
+              "date": "2025-03-03T10:30:00Z",
+              "author": [
+                  {
+                      "reference": "Organization/PAIWEB",
+                      "display": "Sistema PAIWEB"
+                  }
+              ],
+              "content": [
+                  {
+                      "attachment": {
+                          "contentType": "application/fhir+json",
+                          "url": "http://servicio.paiweb.com/ID_paciente..."
+                      }
+                  }
+              ]
+          },
+          "request": {
+              "method": "POST",
+              "url": "DocumentReference"
+          }
+      },
+      {
+          "fullUrl": "urn:uuid:2f8d6332-e339-457d-b5e8-1a140a1f3ea1",
+          "resource": {
+              "resourceType": "Patient",
+              "meta": {
+                  "profile": [
+                      "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PacienteCo"
+                  ]
+              },
+              "text": {
+                  "status": "generated",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_PacienteColombianoMinimo2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient PacienteColombianoMinimo2</b></p><a name=\"PacienteColombianoMinimo2\"> </a><a name=\"hcPacienteColombianoMinimo2\"> </a><a name=\"PacienteColombianoMinimo2-es-CO\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Luis Alberto Sanchez  Male, DoB: 1974-12-25 ( Cédula ciudadanía: 98765)</p><hr/></div>"
+              },
+              "identifier": [
+                  {
+                      "type": {
+                          "extension": [
+                              {
+                                  "url": "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-pais",
+                                  "valueCodeableConcept": {
+                                      "coding": [
+                                          {
+                                              "system": "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS",
+                                              "code": "170"
+                                          }
+                                      ]
+                                  }
+                              }
+                          ],
+                          "coding": [
+                              {
+                                  "system": "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IdspersonaColombia",
+                                  "code": "CC",
+                                  "display": "Cédula ciudadanía"
+                              }
+                          ]
+                      },
+                      "value": "98765",
+                      "assigner": {
+                          "display": "Registraduria Nacional"
+                      }
+                  }
+              ],
+              "name": [
+                  {
+                      "family": "Sanchez",
+                      "_family": {
+                          "extension": [
+                              {
+                                  "url": "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family",
+                                  "valueString": "Martinez"
+                              }
+                          ]
+                      },
+                      "given": [
+                          "Luis",
+                          "Alberto"
+                      ]
+                  }
+              ],
+              "gender": "male",
+              "birthDate": "1974-12-25"
+          },
+          "request": {
+              "method": "POST",
+              "url": "Patient"
+          }
+      }
+  ]
+}

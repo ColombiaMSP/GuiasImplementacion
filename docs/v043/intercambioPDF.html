@@ -150,6 +150,9 @@
       </li>
     </ul>
   </li>
+  <li>
+    <a href="intercambioPDF.html">RDA Fuentes Nacionales</a>
+  </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
           </div>  <!-- /.container -->
@@ -200,28 +203,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#introducción" id="markdown-toc-introducción">Introducción</a></li>
+  <li><a href="#introducción-pagina-en-contrucción" id="markdown-toc-introducción-pagina-en-contrucción">Introducción (PAGINA EN CONTRUCCiÓN)</a></li>
   <li><a href="#recursos-fhir-que-contiene" id="markdown-toc-recursos-fhir-que-contiene">Recursos FHIR que contiene:</a></li>
   <li><a href="#json" id="markdown-toc-json">JSON</a></li>
   <li><a href="#diagrama-de-arquitectura-general" id="markdown-toc-diagrama-de-arquitectura-general">Diagrama de Arquitectura general.</a></li>
 </ul>
 
 </div>
-<h3 id="introducción">Introducción</h3>
+<h3 id="introducción-pagina-en-contrucción">Introducción (PAGINA EN CONTRUCCiÓN)</h3>
 
-<p>A continuación, se describen ejemplos de como será la estructura de transaccion a realizar con la plataforma, cuando se quiera registrar documentos generados por la aplicacion de PAIWEB, para el registro de Vacunas de un paciente y desde APS …
-Es importante aclarar, que ambos registros, contendran parte de información estructurada, asi como el detalle del documento clinico, en formato PDF.</p>
-
-<hr />
+<p>A continuación, se describen ejemplos de como será la estructura de transaccion a realizar con la plataforma, cuando se quiera registrar documentos generados por la aplicacion de PAIWEB, para el registro de Vacunas de un paciente.</p>
 
 <h3 id="recursos-fhir-que-contiene">Recursos FHIR que contiene:</h3>
 
 <ul>
   <li>
     <p>✅ <strong>Document Reference</strong>: documento indice.</p>
-  </li>
-  <li>
-    <p>✅ <strong>Bundle-document</strong> contiene toda la información clinica, asi como la referecencia al PDF.</p>
   </li>
   <li>
     <p>✅ <strong>Patient</strong>: recurso para representar paciente.</p>
@@ -237,33 +234,15 @@ Es importante aclarar, que ambos registros, contendran parte de información est
 <p><em>1- PAIWEB:</em></p>
 
 <ul>
-  <li>
-    <p>ℹ️ Formato con comentarios (jsonc): <a href="D:\2.COLOMBIA\2025_IG_CO\GuiasImplementacion\input\pagecontent\RDVpdfC.jsonc">Descargar RDV.jsonc</a></p>
-  </li>
-  <li>
-    <p>ℹ️ Formato json: <a href="D:\2.COLOMBIA\2025_IG_CO\GuiasImplementacion\input\pagecontent\RDVpdf.json">Descargar RDV.json</a></p>
-  </li>
+  <li>ℹ️ Formato con comentarios (jsonc): <a href="D:\2.COLOMBIA\2025_IG_CO\GuiasImplementacion\input\pagecontent\RDVpdfv2.json">Descargar RDV.jsonc</a></li>
 </ul>
-
-<p><em>2- APS:</em></p>
-
-<ul>
-  <li>
-    <p>ℹ️- Formato con comentarios (jsonc): <a href="D:\2.COLOMBIA\2025_IG_CO\GuiasImplementacion\input\pagecontent\RDVpdfC.jsonc">Descargar RDV.jsonc</a></p>
-  </li>
-  <li>
-    <p>ℹ️- Formato json: <a href="D:\2.COLOMBIA\2025_IG_CO\GuiasImplementacion\input\pagecontent\RDVpdf.json">Descargar RDV.json</a></p>
-  </li>
-</ul>
-
-<hr />
 
 <h3 id="diagrama-de-arquitectura-general">Diagrama de Arquitectura general.</h3>
 
 <p>Diagrama de recursos involucrados:</p>
 
 <div align="left">
-  <img style="border: 1px solid; color: black; width: 50%; height: 50%;" src="DiagramaPDF.png" /> 
+  <img style="border: 1px solid; color: black; width: 50%; height: 50%;" src="DiagramaPDF2.png" /> 
 </div>
 
 
@@ -291,7 +270,7 @@ Es importante aclarar, que ambos registros, contendran parte de información est
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.minsalud.gov.co/">MSP Colombia</a>.  Package hl7.fhir.co.CoreCO#0.4.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 8, 2025 16:58-0300">2025-04-08</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.minsalud.gov.co/">MSP Colombia</a>.  Package hl7.fhir.co.CoreCO#0.4.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 10, 2025 19:38-0300">2025-04-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

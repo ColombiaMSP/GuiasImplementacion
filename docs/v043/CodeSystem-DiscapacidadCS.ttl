@@ -19,7 +19,7 @@
   fhir:title [ fhir:v "Discapacidad"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2025-04-08T16:57:34-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-04-10T19:36:54-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "MSP Colombia"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "MSP Colombia" ] ;

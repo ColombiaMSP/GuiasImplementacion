@@ -1,0 +1,19 @@
+{
+  "url" : "https://www.minsalud.gov.co/ihc/fhir/ImplementationGuide/hl7.fhir.co.CoreCO",
+  "name" : "CoreCOImplementationGuide",
+  "title" : "2025 --> GUIA EN DESARROLLO - Colombia (v 0.4.3)",
+  "description" : "Ministerio de Salud Colombia - Interoperabilidad de Historia Clínica IHC -",
+  "status" : "draft",
+  "package-id" : "hl7.fhir.co.CoreCO",
+  "ig-ver" : "0.4.3",
+  "date" : "Thu, 10 Apr, 2025 19:38:24 -0300",
+  "dateISO8601" : "2025-04-10T19:38:24-03:00",
+  "errs" : 35,
+  "warnings" : 48,
+  "hints" : 16,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 942742464
+}
