@@ -18,7 +18,8 @@ A continuación se despliegan ejemplos de JSON:
 
 _1- PAIWEB:_
 
-- ℹ️ Formato con comentarios (jsonc): [Descargar RDV.jsonc](D:\2.COLOMBIA\2025_IG_CO\GuiasImplementacion\input\pagecontent\RDVpdfv2.json) 
+- ℹ️ Formato con comentarios (jsonc): [Descargar RDV.jsonc](D:\2.COLOMBIA\2025_IG_CO\GuiasImplementacion\input\pagecontent\RDV_PAI.jsonc) 
+
 
 
 
