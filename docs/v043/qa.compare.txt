@@ -4,7 +4,7 @@ CoreCOImplementationGuide : Validation Results
 err = 35, warn = 48, info = 16
 $--
 Generated $--. FHIR version $-- for hl7.fhir.co.CoreCO#$-- (canonical = https://www.minsalud.gov.co/ihc/fhir)
- Build Errors : 8 / 30 / 0
+ Build Errors : 9 / 30 / 0
  D:\2.COLOMBIA\2025_IG_CO\GuiasImplementacion\fsh-generated\resources\AllergyIntolerance-AlergiaColombia : 0 / 0 / 2
  D:\2.COLOMBIA\2025_IG_CO\GuiasImplementacion\fsh-generated\resources\Bundle-BundleColombiaCo : 16 / 4 / 23
  D:\2.COLOMBIA\2025_IG_CO\GuiasImplementacion\fsh-generated\resources\CodeSystem-AlergiasCS : 0 / 0 / 1
@@ -89,6 +89,7 @@ WARNING: D:\2.COLOMBIA\2025_IG_CO\GuiasImplementacion\output\StructureDefinition
 WARNING: D:\2.COLOMBIA\2025_IG_CO\GuiasImplementacion\output\StructureDefinition-co-patient-etnia.html: The html source has duplicate anchor Ids: Extension,Extension.extension,Extension.id,Extension.url,Extension.value_x_,d-Extension,d-Extension.extension,d-Extension.url,d-Extension.value_x_,s-summary
 WARNING: D:\2.COLOMBIA\2025_IG_CO\GuiasImplementacion\output\StructureDefinition-co-patient-nacionalidad.html: The html source has duplicate anchor Ids: Extension,Extension.extension,Extension.id,Extension.url,Extension.value_x_,Extension.value_x_.2,d-Extension,d-Extension.extension,d-Extension.url,d-Extension.value_x_,d-Extension.value_x_.2,s-summary
 ERROR: D:\2.COLOMBIA\2025_IG_CO\GuiasImplementacion\output\index.html#/html/body/div/div/div/div/div/p/a at Line 294, column 32: The link 'proyectoihce@minsalud.gov.co' for "proyectoihce@minsalud.gov.co" cannot be resolved
+ERROR: D:\2.COLOMBIA\2025_IG_CO\GuiasImplementacion\output\intercambioPDF.html#/html/body/div/div/div/div/div/ul/li/a at Line 239, column 6: The link 'RDV_PAI.jsonc' for "Descargar RDV.jsonc" cannot be resolved
 ERROR: D:\2.COLOMBIA\2025_IG_CO\GuiasImplementacion\output\prueba_mejoras.html#/html/body/div/div/div/div/div/p/strong/a at Line 299, column 13: The link 'StructureDefinition-Paciente.html' for "Perfiles y Extensiones" cannot be resolved
 ERROR: D:\2.COLOMBIA\2025_IG_CO\GuiasImplementacion\output\prueba_mejoras.html#/html/body/div/div/div/div/div/p/strong/a at Line 300, column 13: The link 'terminologias.html' for "Terminologías y Codificación" cannot be resolved
 ERROR: D:\2.COLOMBIA\2025_IG_CO\GuiasImplementacion\output\prueba_mejoras.html#/html/body/div/div/div/div/div/p/strong/a at Line 301, column 13: The link 'seguridad.html' for "Requisitos de Seguridad" cannot be resolved

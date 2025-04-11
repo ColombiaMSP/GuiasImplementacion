@@ -74,8 +74,8 @@
       "systems" : ["http://loinc.org"],
       "uses" : {
       },
-      "StructureDefinition-DocumentReferenceCo.html" : "Referencia de Documentos",
-      "StructureDefinition-CompositionCo.html" : "Documento Co"
+      "StructureDefinition-CompositionCo.html" : "Documento Co",
+      "StructureDefinition-DocumentReferenceCo.html" : "Referencia de Documentos"
     },
     {
       "url" : "https://www.minsalud.gov.co/ihc/fhir/ValueSet/DiscapacidadVS",

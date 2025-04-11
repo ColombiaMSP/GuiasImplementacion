@@ -68,8 +68,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
-      "StructureDefinition-PractitionerCo.html" : "Profesional Co",
-      "StructureDefinition-PacienteCo.html" : "Paciente Co"
+      "StructureDefinition-PacienteCo.html" : "Paciente Co",
+      "StructureDefinition-PractitionerCo.html" : "Profesional Co"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-category",
@@ -283,8 +283,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.241"],
       "uses" : {
       },
-      "StructureDefinition-DocumentReferenceCo.html" : "Referencia de Documentos",
-      "StructureDefinition-CompositionCo.html" : "Documento Co"
+      "StructureDefinition-CompositionCo.html" : "Documento Co",
+      "StructureDefinition-DocumentReferenceCo.html" : "Referencia de Documentos"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-category",
@@ -439,8 +439,8 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.46"],
       "uses" : {
       },
-      "StructureDefinition-DocumentReferenceCo.html" : "Referencia de Documentos",
-      "StructureDefinition-CompositionCo.html" : "Documento Co"
+      "StructureDefinition-CompositionCo.html" : "Documento Co",
+      "StructureDefinition-DocumentReferenceCo.html" : "Referencia de Documentos"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/document-reference-status",
@@ -468,8 +468,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.244"],
       "uses" : {
       },
-      "StructureDefinition-DocumentReferenceCo.html" : "Referencia de Documentos",
-      "StructureDefinition-CompositionCo.html" : "Documento Co"
+      "StructureDefinition-CompositionCo.html" : "Documento Co",
+      "StructureDefinition-DocumentReferenceCo.html" : "Referencia de Documentos"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/dose-rate-type",
@@ -525,9 +525,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
+      "StructureDefinition-PacienteCo.html" : "Paciente Co",
       "StructureDefinition-OrganizacionCo.html" : "Organizacion Co",
-      "StructureDefinition-PractitionerCo.html" : "Profesional Co",
-      "StructureDefinition-PacienteCo.html" : "Paciente Co"
+      "StructureDefinition-PractitionerCo.html" : "Profesional Co"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -541,9 +541,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
+      "StructureDefinition-PacienteCo.html" : "Paciente Co",
       "StructureDefinition-OrganizacionCo.html" : "Organizacion Co",
-      "StructureDefinition-PractitionerCo.html" : "Profesional Co",
-      "StructureDefinition-PacienteCo.html" : "Paciente Co"
+      "StructureDefinition-PractitionerCo.html" : "Profesional Co"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -557,15 +557,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-DocumentReferenceCo.html" : "Referencia de Documentos",
-      "StructureDefinition-OrganizacionCo.html" : "Organizacion Co",
-      "StructureDefinition-AlergiaCo.html" : "Alergias Co",
       "StructureDefinition-ConditionCo.html" : "Condition Co",
-      "StructureDefinition-CompositionCo.html" : "Documento Co",
       "StructureDefinition-MedicationStatementCo.html" : "Medication Statement Co",
+      "StructureDefinition-CompositionCo.html" : "Documento Co",
       "StructureDefinition-BundleCo.html" : "Bundle Co",
-      "StructureDefinition-PractitionerCo.html" : "Profesional Co",
-      "StructureDefinition-PacienteCo.html" : "Paciente Co"
+      "StructureDefinition-DocumentReferenceCo.html" : "Referencia de Documentos",
+      "StructureDefinition-AlergiaCo.html" : "Alergias Co",
+      "StructureDefinition-PacienteCo.html" : "Paciente Co",
+      "StructureDefinition-OrganizacionCo.html" : "Organizacion Co",
+      "StructureDefinition-PractitionerCo.html" : "Profesional Co"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -808,11 +808,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
       "uses" : {
       },
-      "StructureDefinition-DocumentReferenceCo.html" : "Referencia de Documentos",
-      "StructureDefinition-AlergiaCo.html" : "Alergias Co",
       "StructureDefinition-ConditionCo.html" : "Condition Co",
+      "StructureDefinition-MedicationStatementCo.html" : "Medication Statement Co",
       "StructureDefinition-CompositionCo.html" : "Documento Co",
-      "StructureDefinition-MedicationStatementCo.html" : "Medication Statement Co"
+      "StructureDefinition-DocumentReferenceCo.html" : "Referencia de Documentos",
+      "StructureDefinition-AlergiaCo.html" : "Alergias Co"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/route-codes",
@@ -826,8 +826,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.98"],
       "uses" : {
       },
-      "StructureDefinition-AlergiaCo.html" : "Alergias Co",
-      "StructureDefinition-MedicationStatementCo.html" : "Medication Statement Co"
+      "StructureDefinition-MedicationStatementCo.html" : "Medication Statement Co",
+      "StructureDefinition-AlergiaCo.html" : "Alergias Co"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/search-entry-mode",
@@ -899,8 +899,8 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
       "uses" : {
       },
-      "StructureDefinition-DocumentReferenceCo.html" : "Referencia de Documentos",
-      "StructureDefinition-CompositionCo.html" : "Documento Co"
+      "StructureDefinition-CompositionCo.html" : "Documento Co",
+      "StructureDefinition-DocumentReferenceCo.html" : "Referencia de Documentos"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ConfidentialityClassification",
@@ -962,8 +962,8 @@
       "systems" : ["http://loinc.org"],
       "uses" : {
       },
-      "StructureDefinition-DocumentReferenceCo.html" : "Referencia de Documentos",
-      "StructureDefinition-CompositionCo.html" : "Documento Co"
+      "StructureDefinition-CompositionCo.html" : "Documento Co",
+      "StructureDefinition-DocumentReferenceCo.html" : "Referencia de Documentos"
     },
     {
       "url" : "https://www.minsalud.gov.co/ihc/fhir/ValueSet/DiscapacidadVS",

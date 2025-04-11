@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "CoreCOImplementationGuide"] ; # 
   fhir:title [ fhir:v "2025 --> GUIA EN DESARROLLO - Colombia (v 0.4.3)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-04-11T11:36:21-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-04-11T11:51:22-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "MSP Colombia"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "MSP Colombia" ] ;

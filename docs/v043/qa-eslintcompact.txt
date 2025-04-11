@@ -31,6 +31,7 @@ Generic: line 0, col 0, Warning - The html source has duplicate anchor Ids: Exte
 Generic: line 0, col 0, Warning - The html source has duplicate anchor Ids: Extension,Extension.extension,Extension.id,Extension.url,Extension.value_x_,d-Extension,d-Extension.extension,d-Extension.url,d-Extension.value_x_,s-summary (BUSINESSRULE)
 Generic: line 0, col 0, Warning - The html source has duplicate anchor Ids: Extension,Extension.extension,Extension.id,Extension.url,Extension.value_x_,Extension.value_x_.2,d-Extension,d-Extension.extension,d-Extension.url,d-Extension.value_x_,d-Extension.value_x_.2,s-summary (BUSINESSRULE)
 Generic: line 0, col 0, Error - The link 'proyectoihce@minsalud.gov.co' for "proyectoihce@minsalud.gov.co" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'RDV_PAI.jsonc' for "Descargar RDV.jsonc" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'StructureDefinition-Paciente.html' for "Perfiles y Extensiones" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'terminologias.html' for "Terminologías y Codificación" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'seguridad.html' for "Requisitos de Seguridad" cannot be resolved (NOTFOUND)
