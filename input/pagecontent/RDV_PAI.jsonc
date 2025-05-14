@@ -48,6 +48,18 @@
                              /* 🔴 A definir URL con informacion para poder generar el Certificado */
                         }
                     }
+
+                    "content" : [{
+                        "id" : "a1",
+                        "attachment" : {
+                          "contentType" : "image/jpeg",
+                          "url" : "http://someimagingcenter.org/fhir/Binary/A12345",
+                          "creation" : "2016-03-15",
+                          "height" : 432,
+                          "width" : 640
+                        }
+                      }]
+                    }
                 ]
             },
             "request": {
