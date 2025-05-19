@@ -1,0 +1,171 @@
+Profile: BundleDOCUMENT
+Parent: Bundle
+Title: "Bundle Documento Hospitalización"
+Description: "---- Pendiente de definir el Bundle para el documento."
+
+* type = #document (exactly)
+* timestamp 1..1 MS // La fecha de creación es obligatoria
+
+
+//------Entradas
+* entry MS
+* entry ^slicing.discriminator.type = #profile
+* entry ^slicing.discriminator.path = "resource"
+* entry ^slicing.description = "Corresponde a cada una de las entradas del Bundle-Document."
+* entry ^slicing.rules = #closed
+* entry.resource MS
+
+
+* entry contains
+    Composition 1..1 and
+    Patient 1..1
+
+    // recursos diferentes para cada tipo de documento:
+    //Profesional 1..1 and
+    //Diagnosticos 1..* and    
+    //Alergias 0..* and
+    //Medicaciones 0..* and    
+ 
+  
+* entry[Composition] ^short = "...."
+* entry[Composition] ^definition = "...."
+
+* entry[Composition].resource 1..
+* entry[Composition].resource only CompositionHospitalizacionCo
+
+
+
+/**************************************************************************************************************/
+
+
+Profile: CompositionHospitalizacionCo
+Parent: Composition
+Title: "Documento Hospitalización"
+Description: "---- Pendiente ----"
+
+* status = #final
+* type = $loinc#34133-9 "Resumen de Alta" //34133-9 - Resumen de alta
+	
+    //03:     Internación  	01:    Intramural
+
+
+//----- division de secciones -------
+* section ^slicing.discriminator[0].type = #pattern
+* section ^slicing.discriminator[=].path = "code"
+* section ^slicing.ordered = false
+* section ^slicing.rules = #open
+
+* section ^short = "Sección del documento"
+* section ^definition = "Sección de notificación de datos clínicos."
+
+* section.code 1.. MS
+* section.code from http://hl7.org/fhir/ValueSet/doc-section-codes (example)
+
+
+//--------- Secciones 
+* section contains
+    //contexto previo del paciente
+    sectionAntecendetesDiagnosticos 0..1 MS and
+    sectionAlergiasConocidas 0..1 MS and
+    sectionMedicacionActual 0..1 MS and
+    sectionAntecedentesFamiliares 0..1 MS and
+
+    //-----
+    sectionAntecedentes 0..1 MS and
+    //secciones HOSPITALIZACION
+
+    sectionInformacionAtencion 0..1 MS and
+    sectionDiagnosticosAtencion 0..1 MS and
+    sectionMedicacionSuministrada 0..1 MS and
+    sectionProcedimientosRealizados 0..1 MS and
+    sectionLaboratoriosRealizados 0..1 MS and
+
+     
+    //secciones INDICACIONES
+
+    sectionMedicacionIndicada 0..1 MS and
+    sectionProcedimientosIndicados 0..1 MS and
+    sectionOtrasIndicaciones 0..1 MS and
+
+    //secciones Reporte de la atencion    
+    sectionDocumentoPDFAtencion 0..1 MS
+
+// secciones de la atencion
+
+//-----------------------------------
+
+* section[sectionAntecedentes] contains 
+    section[sectionAntecendetesDiagnosticos] 0..1 MS and
+    section[sectionAlergiasConocidas] 0..1 MS and
+    section[sectionMedicacionActual] 0..1 MS and
+    section[sectionAntecedentesFamiliares] 0..1 MS and
+
+* section[sectionAntecendetesDiagnosticos].section[sectionAntecendetesDiagnosticos].title="NUEVO -- Antecendetes Diagnosticos"
+
+//-----------------------------------
+
+* section[sectionAntecendetesDiagnosticos].title = "Antecendetes Diagnosticos"
+* section[sectionAlergiasConocidas].title = "Alergias Conocidas"
+* section[sectionMedicacionActual].title = "Medicacion Actual"  
+* section[sectionAntecedentesFamiliares].title = "Antecedentes Familiares"
+* section[sectionInformacionAtencion].title = "Información de Atención"
+* section[sectionDiagnosticosAtencion].title = "Diagnosticos de Atención"
+* section[sectionMedicacionSuministrada].title = "Medicacion Suministrada"  
+* section[sectionProcedimientosRealizados].title = "Procedimientos Realizados"
+* section[sectionLaboratoriosRealizados].title = "Laboratorios Realizados"
+* section[sectionMedicacionIndicada].title = "Medicacion Indicada"
+* section[sectionProcedimientosIndicados].title = "Procedimientos Indicados"
+* section[sectionOtrasIndicaciones].title = "Otras Indicaciones"  
+* section[sectionDocumentoPDFAtencion].title = "Documento PDF de Atención"
+
+
+/*******************************************************************************************************/
+/*******************************PARTE 1*****************************************************************/
+/****************************************************************************************************
+//------ 1. Diagnosticos------------
+
+
+* section[sectionDiagnosticos].title = "Diagnosticos Principal"
+* section[sectionDiagnosticos] ^short = "Sección Diagnósticos"
+* section[sectionDiagnosticos] ^definition = "Descripción de lista de diagnósticos determinados en el paciente."
+
+* section[sectionDiagnosticos].code MS 
+* section[sectionDiagnosticos].code = $loinc#11450-4
+
+* section[sectionDiagnosticos].title = "Diagnosticos Principal"
+
+* section[sectionDiagnosticos].entry 1.. MS
+* section[sectionDiagnosticos].entry only Reference(ConditionCo)
+
+//------ 2. Alergias Conocidas------------
+
+* section[sectionAlergiasConocidas] ^short = "Sección Alergias Conocidas"
+* section[sectionAlergiasConocidas] ^definition = "....."
+
+* section[sectionAlergiasConocidas].code MS 
+* section[sectionAlergiasConocidas].code = $loinc#11450-4 //????
+
+* section[sectionAlergiasConocidas].title = "Alergias Conocidas"
+
+* section[sectionAlergiasConocidas].entry 1.. MS
+* section[sectionAlergiasConocidas].entry only Reference(AlergiaCo)
+
+
+/*******************************************************************************************************/
+/*******************************PARTE 2*****************************************************************/
+/*******************************************************************************************************/
+// CONTEXTO Y DETALLES DE LA ATENCIÓN.
+
+
+
+/*******************************************************************************************************/
+/*******************************PARTE 3*****************************************************************/
+/*******************************************************************************************************/
+// INDICACIONES 
+
+
+
+/*******************************************************************************************************/
+/*******************************PARTE 4*****************************************************************/
+/*******************************************************************************************************/
+//PDF

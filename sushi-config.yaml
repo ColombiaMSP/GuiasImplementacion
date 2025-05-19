@@ -12,7 +12,7 @@ version: 0.4.3
 name: CoreCO-ImplementationGuide
 
 #title: Interoperabilidad de Historia Clínica - Colombia
-title: 2025 --> GUIA EN DESARROLLO - Colombia (v 0.4.3)
+title: 2025 --> GUIA EN DESARROLLO - MSP Colombia - Apoyo BID (v 1.0)
 status: draft
 publisher: 
   name: MSP Colombia
@@ -47,6 +47,7 @@ menu:
     "RDA": StructureDefinition-CompositionCo.html    
     "DocumentoReference": StructureDefinition-DocumentReferenceCo.html
     "BundleCo": StructureDefinition-BundleCo.html
+    "Hospitalizacion": StructureDefinition-BundleDOCUMENT.html
 
   #  "--RDA": StructureDefinition-CompositionCo.html
   #  "--DocumentoREF": StructureDefinition-DocumentReferenceCo.html
