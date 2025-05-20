@@ -46,8 +46,9 @@ var(--publish-box-border); */
 :root {
 
   --ig-status-text-color: #525252; /* 1. IG Title and status text color */
-  /*--navbar-bg-color: #60894d; /*  #3366CC --- >>  /* 2. Header container color */  
-  --navbar-bg-color: #3366CC; /* 2. Header container color */  
+  /*--navbar-bg-color: #60894d; /*  
+  AZul normal #3366CC --- >>  /* 2. Header container color */  
+  --navbar-bg-color:  #999999; /* 2. Header container color */  
   --footer-bg-color: #707070; /* 3. Footer background color*/
   --footer-container-bg-color: #464b57; /* 4. Footer container color */
   --stripe-bg-color: #999999; /* 5. Header strip color */
@@ -56,7 +57,7 @@ var(--publish-box-border); */
   --btn-text-color: #e6e6e6; /* 8. Menu button text color */
   --btn-gradient-start-color: #428bca; /* 9. Menu item gradient start color */
   --btn-gradient-end-color: #357ebd; /* 10. Menu item gradient end  color */
-  --btn-gradient-start-color-alpha: #ff428bca; /* 11. Menu item gradient start color (with alpha) */
+  --btn-gradient-start-color-alpha: #ff428ad5; /* 11. Menu item gradient start color (with alpha) */
   --btn-gradient-end-color-alpha: #ff357ebd; /* 12. Menu item gradient end color (with alpha) */
   --link-color: #428bca; /* 13. Hyperlink text color */
   --link-hover-color: #2a6496; /* 14. Hyperlink text hover color */
@@ -177,6 +178,15 @@ body {
   margin-bottom: 4px;
   display: block;
 }
+
+#logo2 {
+  float: right;
+  margin-top: 6px;
+  margin-right: 20px;
+  margin-bottom: 4px;
+  display: block;
+}
+
 #logo img {
   max-width: 100%;
 }
