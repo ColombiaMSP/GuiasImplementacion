@@ -46,15 +46,13 @@ menu:
     "Medicamentos": StructureDefinition-MedicationStatementCo.html
     "RDA": StructureDefinition-CompositionCo.html    
     "DocumentoReference": StructureDefinition-DocumentReferenceCo.html
-    "BundleCo": StructureDefinition-BundleCo.html
-    "Hospitalizacion": StructureDefinition-BundleDOCUMENT.html
+    "BundleCo": StructureDefinition-BundleCo.html   
 
   #  "--RDA": StructureDefinition-CompositionCo.html
   #  "--DocumentoREF": StructureDefinition-DocumentReferenceCo.html
   #  "--BundleCo": StructureDefinition-BundleCo.html
   Hospitalización:
-    "General": mapeoHospitalizacion.html
-    "Transaccion": StructureDefinition-BundleTransactionCo.html
+    "General": mapeoHospitalizacion.html   
     "Bundle-Document": StructureDefinition-BundleDOCUMENT.html
     "Composition-Document": StructureDefinition-CompositionHospitalizacionCo.html
 

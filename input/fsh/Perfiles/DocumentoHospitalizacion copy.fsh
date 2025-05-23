@@ -155,7 +155,10 @@ Description: "Documento para representar la hospitalización del paciente."
 
 // Sección: SoporteDocumental
 * section[SoporteDocumental].entry.reference 1..1
-* section[SoporteDocumental].entry only Reference(Binary)
+* section[SoporteDocumental].entry only Reference(DocumentReference) 
+
+* section[SoporteDocumental].entry ^short = "Referencia a documento"
+* section[SoporteDocumental].entry ^definition = "Referencia a un documento que soporta la información del documento de hospitalización."
 
 
 
@@ -230,7 +233,7 @@ Usage: #example
 
 // Sección: Soporte PDF
 * section[+].title = "Soporte documental"
-* section[=].entry[0] = Reference(Binary-example)
+* section[=].entry[0] = Reference(DocumentReference-example)
 
 
 
