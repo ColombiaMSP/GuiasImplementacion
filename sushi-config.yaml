@@ -8,11 +8,11 @@ id: hl7.fhir.co.CoreCO
 # canonical: https://vulcano.sispropreprod.gov.co/fhir
 
 canonical: https://www.minsalud.gov.co/ihc/fhir
-version: 1.0.0
+version: 0.5
 name: CoreCO-ImplementationGuide
 
 #title: Interoperabilidad de Historia Clínica - Colombia
-title: 2025 --> GUIA EN DESARROLLO - MSP Colombia - Apoyo BID (v 1.0)
+title: Versión _ 0.5 (2025) --> GUIA EN DESARROLLO - MSP Colombia - Apoyo BID
 status: draft
 publisher: 
   name: MSP Colombia
@@ -51,14 +51,16 @@ menu:
   #  "--RDA": StructureDefinition-CompositionCo.html
   #  "--DocumentoREF": StructureDefinition-DocumentReferenceCo.html
   #  "--BundleCo": StructureDefinition-BundleCo.html
-  Hospitalización:
-    "General": mapeoHospitalizacion.html   
-    "Bundle-Document": StructureDefinition-BundleDOCUMENT.html
-    "Composition-Document": StructureDefinition-CompositionHospitalizacionCo.html
+  # Hospitalización:
+  #   "General": mapeoHospitalizacion.html   
+  #   "Bundle-Document": StructureDefinition-BundleDOCUMENT.html
+  #   "Composition-Document": StructureDefinition-CompositionHospitalizacionCo.html
+
+
+  "RDA Fuentes Nacionales": "intercambioPDF.html"
 
   Resumen: 
     "Versiones": versiones.html
     "Resumen": artifacts.html
-
-  "RDA Fuentes Nacionales": "intercambioPDF.html"
-  "Descargas": "descargas.html"
+    "Descargas": descargas.html
+    "Version 0.5": version05.html
