@@ -53,5 +53,6 @@ menu:
   Resumen: 
     "Versiones": versiones.html
     "Resumen": artifacts.html
-    "Descargas": descargas.html
     "Version 0.5": version05.html
+
+  Descargas: descargas.html

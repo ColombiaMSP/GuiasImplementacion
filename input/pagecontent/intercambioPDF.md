@@ -18,13 +18,7 @@ A continuación se despliegan ejemplos de JSON:
 
 _1- PAIWEB:_
 
-<ul>
-  <li>
-    ℹ️ Formato con comentarios (jsonc): 
-    <a href="RDV_PAI.jsonc" download>Descargar RDV.jsonc</a>
-  </li>
-</ul>
-
+* [Descargar RDV.jsonc](RDV_PAI.jsonc)
 
 
 
