@@ -3,7 +3,6 @@ Parent:         AllergyIntolerance
 Title:          "Alergias Co"
 * . ^short = "Alergia o Intolerancia (generalmente: Riesgo de reacción adversa a una sustancia)."
 
-
 * patient only Reference(PacienteCo)
 * patient MS
 * patient.reference 1.. MS
