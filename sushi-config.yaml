@@ -4,9 +4,6 @@
 # │  https://fshschool.org/docs/sushi/configuration/#full-configuration                            │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.co.CoreCO
-# canonical: https://hl7chile.cl/fhir/ig/CoreCL
-# canonical: https://vulcano.sispropreprod.gov.co/fhir
-
 canonical: https://www.minsalud.gov.co/ihc/fhir
 version: 0.5
 name: CoreCO-ImplementationGuide

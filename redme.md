@@ -1,1 +1,0 @@
-Aqui se contendrá las Guías de Implementación de Colombia.
