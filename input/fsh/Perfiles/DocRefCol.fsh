@@ -68,12 +68,24 @@ Description: "Docuento utilizado para guardar referencias."
 * content.attachment.url 1..1 MS
 * content.attachment.url ^short = "Se debe completar URL del recurso Composition RDA, enviado dentro del bundle."
 
+/**************nuevas variables V0.5*********************************************************************/
+* category MS
+* category ^short = "Grupo de servicios al que pertenece el documento."   
+* category.coding 1..1 MS
+* category.coding ^short = "..."  
+* category.coding.code 1..1
+* category.coding.code ^short = "...." 
+* category.coding.code from GrupoServiciosVS (preferred)
 
-/*
-Description: """A profile on the DocumentReference resource for MHD with minimal metadata constraints. 
-- MHD is based on the [IHE Document Sharing](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html) model, 
-- the [3:4.1 Abstract Metadata Model](https://profiles.ihe.net/ITI/TF/Volume3/ch-4.1.html#4.1), and 
-- the use defined here is FHIR DocumentReference implementation of the 
-- ebRIM implementation at [3:4.2.3.2 Document Entry](https://profiles.ihe.net/ITI/TF/Volume3/ch-4.2.html#4.2.3.2).
-- with use-cases and constraints found in [3:4.3 Additional Document Sharing Requirements](https://profiles.ihe.net/ITI/TF/Volume3/ch-4.3.html#4.3)"""
-*/
+
+
+* category MS
+* category ^short = "Grupo de servicios al que pertenece el documento."   
+* category.coding 1..1 MS
+* category.coding ^short = "..."  
+* category.coding.code 1..1
+* category.coding.code ^short = "...." 
+* category.coding.code from GrupoServiciosVS (preferred)
+
+/**************fin nuevas variables V0.5*****************************************************************/
+

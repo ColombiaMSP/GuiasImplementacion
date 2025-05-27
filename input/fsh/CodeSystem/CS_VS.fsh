@@ -259,7 +259,21 @@ Description:  "Conjunto de Valores de Codificacion CIE10"
 
 * include codes from system http://hl7.org/fhir/sid/icd-10
 
-// en este VS traigo toda la terminologia de CIE10.
+
+
+ValueSet: CIE11VS
+Id: CIE11VS
+Title: "Codificacion CIE11 ValueSet"
+Description:  "Conjunto de Valores de Codificacion CIE11"
+* ^experimental = false
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-01-01T00:00:00-05:00"
+* ^jurisdiction = urn:iso:std:iso:3166#COL "Colombia"
+* ^publisher = "COL"
+
+* include codes from system http://hl7.org/fhir/sid/icd-11
+
 
 
 

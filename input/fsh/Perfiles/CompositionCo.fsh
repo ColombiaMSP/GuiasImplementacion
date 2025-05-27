@@ -74,7 +74,8 @@ Description: "Definición de un documento clínico para las necesidades de inter
 * section contains
     sectionDiagnosticos 1..1 MS and
     sectionMedicacion 0..1 MS and
-    sectionAlergias 0..1 MS
+    sectionAlergias 0..1 MS and
+    sectionAntecedentesFamiliares 0..1 MS
 
   
 //------ 1. Diagnosticos------------
@@ -133,6 +134,16 @@ Description: "Definición de un documento clínico para las necesidades de inter
 
 
 
+/*****Antecedentes familiares ***********/
 
 
+* section[sectionAntecedentesFamiliares] ^short = "Sección Antecedentes Familiares."
+* section[sectionAntecedentesFamiliares] ^definition = "Descripción de Antecedentes Familiares."
 
+* section[sectionAntecedentesFamiliares].code MS 
+* section[sectionAntecedentesFamiliares].code = $loinc#111111-1 // LOINC code for family history
+* section[sectionAntecedentesFamiliares].title 1.. MS
+* section[sectionAntecedentesFamiliares].entry 1.. MS
+* section[sectionAntecedentesFamiliares].entry only Reference(FamilyMemberHistory)
+
+/*****Antecedentes familiares ***********/
