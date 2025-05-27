@@ -16,6 +16,9 @@ GrupoServiciosVS.
 * Antecedentes Familiares.
 * Agregado de cie11 a codigos de diagnosticos. 
 
+5. --- Nombre: **RDA Paciente** En versión --- contiene las 17 vars
+
+
 -----------------------------------------------------
 
 ## **IMPORTANTE**  
