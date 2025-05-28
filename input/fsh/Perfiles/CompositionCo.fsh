@@ -44,6 +44,35 @@ Description: "Definición de un documento clínico para las necesidades de inter
 * custodian ^short = "Indica la región que será custodio del documento."
 * custodian ^definition = "Indica la región que será custodio del documento."
 
+
+//* --- Attester : referencia a quien se hace cargo asegurador ----
+* attester 
+* attester.mode MS
+* attester.mode ^short = "Entidad responsable por el plan de beneficios en salud Resumen Digital Básico de Atención en Salud - Paciente"
+* attester.mode="official" // Valor fijo para el modo de atestación
+
+
+* attester.party 1..1
+* attester.party.display 1..1
+* attester.party.display ^short = "Nombre asignado al administrador del plan de beneficios en el SGSSS"
+
+* attester.party.identifier 1..1
+* attester.party.identifier ^short = "Código asignado al administrador del plan de beneficios en el SGSSS."
+
+
+
+* event.period.start MS
+* event.period.start ^short = "Fecha y hora de inicio de la atención"
+
+* event.period.end MS
+* event.period.end ^short = "Fecha y hora de finalización de la atención"
+
+
+//* attester ^short = "Asegurador del documento"
+//* attester ^definition = "Asegurador del documento, quien atestigua la veracidad de los datos ingresados en el documento."    
+//* Asegurador
+
+
 //* --- Fecha -----
 * date MS
 * date ^short = "Fecha de creación del documento"
@@ -144,6 +173,6 @@ Description: "Definición de un documento clínico para las necesidades de inter
 * section[sectionAntecedentesFamiliares].code = $loinc#111111-1 // LOINC code for family history
 * section[sectionAntecedentesFamiliares].title 1.. MS
 * section[sectionAntecedentesFamiliares].entry 1.. MS
-* section[sectionAntecedentesFamiliares].entry only Reference(FamilyMemberHistory)
+* section[sectionAntecedentesFamiliares].entry only Reference(AntecedentesFamiliaresCo)
 
 /*****Antecedentes familiares ***********/

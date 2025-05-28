@@ -18,17 +18,25 @@ Title:          "Condition Co"
 
 * code ^short = "Identificación del diagnóstico principal confirmado o presuntivo con el que egresa el paciente."
 
-* code.coding.code 1..1
-* code.coding.code from CIE10VS (preferred) 
-* code.coding.code ^short = "Código del diagnóstico principal de egreso"
+/********************************/
+* code.coding 1..*
+* code.coding ^slicing.discriminator.type = #value
+* code.coding ^slicing.discriminator.path = "system"
+* code.coding ^slicing.rules = #open
 
-* code.coding.system 1..1
-* code.coding.system = "http://hl7.org/fhir/sid/icd-10"
-* code.coding.system ^short = "Sistema de codificación para el diagnóstico principal de egreso"
+* code.coding contains cie10 0..1 and cie11 0..1
 
-* code.coding.display 1..1
-* code.coding.display ^short = "Descripción del código en sistema de codificación" 
+* code.coding[cie10].system = "http://hl7.org/fhir/sid/icd-10"
+* code.coding[cie10].code from CIE10VS (preferred)
+* code.coding[cie10].display 1..1
+* code.coding[cie10].code 1..1
+* code.coding[cie10].system 1..1
 
+* code.coding[cie11].system = "http://hl7.org/fhir/sid/icd-11"
+* code.coding[cie11].code from CIE11VS (preferred)
+* code.coding[cie11].display 1..1
+* code.coding[cie11].code 1..1
+* code.coding[cie11].system 1..1
 
 * code.text 1..1 MS
 * code.text ^short = "Nombre del diagnóstico principal de egreso."

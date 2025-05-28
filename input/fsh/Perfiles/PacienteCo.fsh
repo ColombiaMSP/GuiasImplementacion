@@ -197,33 +197,3 @@ Description: "Extension utilizada dentro del Paciente Co, para representar la co
 
 
 
-
-
-
-
-/********************************************************BASURAS *********************************/
-/*------------Nacionalidad-----------------------------------------
-//Extension:   PaisOrigenNacionalidad
-Extension:   Nacionalidad
-Id:          Nacionalidad
-Title:       "Codigo de Identificación de países"
-Description: "Esta extensión incluye códigos de paises de origen"
-* value[x] only CodeableConcept
-* value[x] ^short = "Código de País"
-* valueCodeableConcept from PaisesVS (extensible)
-*/
-
-/*-----------------PAISES-----------------------------------------
-ValueSet: PaisesVS
-Id: PaisesVS
-Title: "Códigos del País"
-Description: "Codigos definidos para la identificación de países segun norma ISO3166-N"
-* ^status = #active
-//* include codes from valueset http://hl7.org/fhir/ValueSet/iso3166-1-N
-* include codes from system urn:iso:std:iso:3166
-*/
-
-// Alias: $Pais = https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/Pais
-//* identifier[0].type.extension.url = $Pais
-//* identifier[0].type.extension.valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
-//* identifier[0].type.extension.valueCodeableConcept.coding.code = #170 "Colombia"
