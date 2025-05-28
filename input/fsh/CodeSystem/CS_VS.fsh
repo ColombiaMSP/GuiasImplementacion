@@ -82,14 +82,14 @@ acuerdo con el dominio o dominios donde se presente la deficiencia o deficiencia
 * ^experimental = false
 * ^caseSensitive = true
 
-* #01   "Discapacidad física"
-* #02   "Discapacidad visual"
-* #03   "Discapacidad auditiva"
-* #04   "Discapacidad intelectual"
-* #05   "Discapacidad sicosocial"
-* #06	"Sordoceguera"
-* #07	"Discapacidad múltiple"
-* #08   "Sin discapacidad"
+* #01   "Discapacidad física" "Discapacidad física"
+* #02   "Discapacidad visual" "Discapacidad visual"
+* #03   "Discapacidad auditiva" "Discapacidad auditiva"
+* #04   "Discapacidad intelectual" "Discapacidad intelectual"
+* #05   "Discapacidad sicosocial" "Discapacidad sicosocial"
+* #06	"Sordoceguera" "Sordoceguera"
+* #07	"Discapacidad múltiple" "Discapacidad múltiple"
+* #08   "Sin discapacidad" "Sin discapacidad"
 
 ValueSet: DiscapacidadVS
 Id: DiscapacidadVS
@@ -114,11 +114,11 @@ Description: "Identidad de Género."
 * ^experimental = false
 * ^caseSensitive = true
 
-* #01    "Masculino"
-* #02    "Femenino"
-* #03    "Transgénero"
-* #04    "Neutro"
-* #05    "No lo declara"
+* #01    "Masculino" "Masculino"
+* #02    "Femenino" "Femenino"
+* #03    "Transgénero" "Transgénero"
+* #04    "Neutro" "Neutro"
+* #05    "No lo declara" "No lo declara"
 
 ValueSet: IdentidadGeneroVS
 Id: IdentidadGeneroVS
@@ -142,8 +142,8 @@ Description: "Identificador para representar la Zona."
 * ^experimental = false
 * ^caseSensitive = true
 
-* #01    "Urbana"
-* #02    "Rural"
+* #01    "Urbana" "Urbana"
+* #02    "Rural" "Rural"
 
 
 ValueSet: ZonaResidenciaVS
@@ -169,13 +169,13 @@ Description: "Identificador para determinar la pertenencia étnica de la persona
 * ^experimental = false
 * ^caseSensitive = true
 
-* #01   "Indigena"
-* #02   "ROM (Gitanos)"
-* #03   "Raizal (San Andrés y Providencia)"
-* #04   "Palenquero de San Basilio de Palenque"
-* #05   "Negro(a)"
-* #06   "Afrocolombiano(a)"
-* #99   "Ninguna de las anteriores"
+* #01   "Indigena" "Indigena"
+* #02   "ROM (Gitanos)" "ROM (Gitanos)"
+* #03   "Raizal (San Andrés y Providencia)" "Raizal (San Andrés y Providencia)"
+* #04   "Palenquero de San Basilio de Palenque" "Palenquero de San Basilio de Palenque"
+* #05   "Negro(a)" "Negro(a)"
+* #06   "Afrocolombiano(a)" "Afrocolombiano(a)"
+* #99   "Ninguna de las anteriores" "Ninguna de las anteriores"
 
 ValueSet: EtniaVS
 Id: EtniaVS
@@ -191,45 +191,6 @@ Description:  "Conjunto de valores para la Etnia."
 * include codes from system EtniaCS
 
 
-/* ---------------------Municipios --------------------------
-CodeSystem: municipiosCS
-Id: municipiosCS
-Title: "municipiosCS"
-Description: "Identificador para determinar el municipio."
-* ^name = "municipiosCS"
-
-ValueSet: municipiosVS
-Id: municipiosVS
-Title: "municipiosVS"
-Description:  "Conjunto de valores para el municipio"
-* include codes from system municipiosCS
-*/
-
-//no usado por ahora, están pendiente los conjuntos de valores.
-
-/* ---------------------Comunidad Etnica ---------------------------
-CodeSystem: ComunidadEtnicaCS
-Id: ComunidadEtnicaCS
-Title: "Comunidad Etnica"
-Description:  "Identificador para determinar la comunidad indígena, pueblo ROM o comunidad negra, 
-Afro, palanquera y raizal que pertenece una persona."
-// VER Catalogo de : Según catálogo de referencia de comunidades étnicas,
-// según catálogo de comunidades étnicas vigente.
-* ^name = "CominidadEtnica"
-
-* #01   "Comunidad 1"
-* #02   "Comunidad 2"
-
-
-ValueSet: ComunidadEtnicaCSVS
-Id: ComunidadEtnicaCSVS
-Title: "Comunidad Etnica"
-Description:  "ComunidadEtnicaVS"
-* include codes from system ComunidadEtnicaCS
-
-
-*/
-
 
 /* --------------------- Conjutno de tipos de documento ---------------------------*/
 
@@ -241,6 +202,7 @@ Description:  "Conjunto de Valores de Documentos."
 * $loinc#34105-7 "Nota de consulta"
 * $loinc#34133-9 "Resumen de alta"
 * $loinc#34115-6 "Nota de consulta de emergencia"
+* $loinc#87273-9 "Informe de Vacunación"
 
 
 /* ---------------------CIE10 --------------------------*/

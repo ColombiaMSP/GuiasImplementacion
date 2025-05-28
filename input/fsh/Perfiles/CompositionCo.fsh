@@ -170,7 +170,7 @@ Description: "Definición de un documento clínico para las necesidades de inter
 * section[sectionAntecedentesFamiliares] ^definition = "Descripción de Antecedentes Familiares."
 
 * section[sectionAntecedentesFamiliares].code MS 
-* section[sectionAntecedentesFamiliares].code = $loinc#111111-1 // LOINC code for family history
+* section[sectionAntecedentesFamiliares].code = $loinc#10157-6 // LOINC code for family history 
 * section[sectionAntecedentesFamiliares].title 1.. MS
 * section[sectionAntecedentesFamiliares].entry 1.. MS
 * section[sectionAntecedentesFamiliares].entry only Reference(AntecedentesFamiliaresCo)
