@@ -45,7 +45,7 @@ menu:
     "Índice de Atenciones": StructureDefinition-DocumentReferenceCo.html
     "Bundle Transacción": StructureDefinition-BundleCo.html
   "RDA":
-    "RDA Persona": StructureDefinition-CompositionCo.html  
+    "RDA Paciente": StructureDefinition-CompositionCo.html  
     "RDA Vacunación": intercambioPDF.html 
     "- RDA Hospitalización": encontruccion.html
     "- RDA Consulta Externa": encontruccion.html
