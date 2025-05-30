@@ -168,3 +168,72 @@ Description: "Ejemplo de Documento RDA Colombiano para Resumen de Alta."
 * section[sectionAlergias].entry = Reference(AllergyIntolerance/AlergiaColombia)
 
 
+
+
+
+
+/*--------------------------------------------------------------------------------------
+    1. COMPOSITION COMPLETO
+--------------------------------------------------------------------------------------*/
+
+Instance: CompositionColombiaAmbulatorioCOMPLETO
+InstanceOf: CompositionCo
+Usage: #example
+Title : "Documento RDA COMPLETO--> Nota de Consulta"
+Description: "Ejemplo de Documento RDA Colombiano para Nota de Consulta."
+
+* type = $loinc#34105-7 "Nota de consulta"
+
+* subject = Reference(Patient/PacienteColombiano)
+* date = "2022-03-05T20:30:00+01:00"
+* status = #final
+
+* attester.mode = #official
+* attester.party.display = "ASEGURDADORA EJEMPLO"
+* attester.party.identifier.value = "12345" // identificacion del profesional que atestigua el documento
+
+* event.period.start = "2022-03-05T18:30:00+01:00"
+* event.period.end = "2022-03-05T19:30:00+01:00"
+
+/* otra forma de referencial al profesional, solo con la identificacion.
+* author.identifier.type.coding.system = $cs_identper#CC
+* author.identifier.value = "12345"
+*/
+
+* author = Reference(Practitioner/ProfesionalColombia)
+* title = "Resumen de Paciente Colombia"
+
+* custodian = Reference(Organization/OrganizacionRegionEjemplo)
+
+// ------- seccion de condition, problemas activos.
+* section[sectionDiagnosticos].title = "Condiciones del Paciente"
+
+* section[sectionDiagnosticos].code = http://loinc.org#11450-4 "Problem list Reported"
+* section[sectionDiagnosticos].text.status = #generated
+* section[sectionDiagnosticos].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">CONDICIONES</div>"
+* section[sectionDiagnosticos].entry = Reference(Condition/ConditionColombia)
+
+
+
+// ------- seccion de medicamentos
+* section[sectionMedicacion].title = "Medicamentos"
+
+* section[sectionMedicacion].code = http://loinc.org#10160-0 "Hx of Medication use"
+* section[sectionMedicacion].text.status = #generated
+* section[sectionMedicacion].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">MEDICAMENTOS</div>"
+* section[sectionMedicacion].entry = Reference(MedicationStatement/MedicationStatementColombia)
+
+
+// ------- seccion de Alergias
+* section[sectionAlergias].title = "Alergias"
+
+* section[sectionAlergias].code = http://loinc.org#48765-2 "Allergies and adverse reactions Document"
+* section[sectionAlergias].text.status = #generated
+* section[sectionAlergias].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">ALERGIAS</div>"
+* section[sectionAlergias].entry = Reference(AllergyIntolerance/AlergiaColombia)
+
+//----- secciom de antecedentes familiares
+* section[sectionAntecedentesFamiliares].title = "Antecedentes Familiares"
+* section[sectionAntecedentesFamiliares].code = http://loinc.org#10157-6
+
+* section[sectionAntecedentesFamiliares].entry = Reference(AntecedentesFamiliaresCo/AntecedenteFamiliarEjemplo1)

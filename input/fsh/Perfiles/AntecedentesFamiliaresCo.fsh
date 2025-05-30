@@ -38,15 +38,10 @@ Title:          "Antecedentes Familiares Co"
 * condition.code.coding[cie11].code 1..1
 * condition.code.coding[cie11].system 1..1
 
-* condition.code.text 1..1 MS
+//* condition.code.text 1..1 MS
 * condition.code.text ^short = "Nombre del antecedente familiar de salud."
 * condition.code.text ^definition = "Nombre del antecedente familiar de salud."
 * condition.code.text ^comment = "Comentario adicional sobre el antecedente familiar de salud."
-
-
-
-
-
 
 
 * note MS
@@ -56,7 +51,28 @@ Title:          "Antecedentes Familiares Co"
 * note.text ^short = "Texto de la nota adicional sobre el antecedente familiar de salud."
 * note.text ^definition = "Texto de la nota adicional sobre el antecedente familiar de salud."
 
-
-
 * relationship 1..1 MS
 * relationship from ParentescoVS
+
+
+/*************************************************************************************/
+Instance: AntecedenteFamiliarEjemplo1
+InstanceOf: AntecedentesFamiliaresCo
+Title: "Ejemplo de Antecedente Familiar"
+Description: "Ejemplo de instancia de antecedentes familiares para un paciente conforme al perfil AntecedentesFamiliaresCo"
+Usage: #example
+
+* status = #completed
+* patient =  Reference(PacienteColombiano) "Paciente Colombiano"
+* relationship = $ParentescoCS#01 "Padres" 
+
+* condition[0].code.coding[cie10].system = "http://hl7.org/fhir/sid/icd-10"
+* condition[0].code.coding[cie10].code = #E11
+* condition[0].code.coding[cie10].display = "Diabetes mellitus tipo 2"
+
+* condition[0].code.coding[cie11].system = "http://hl7.org/fhir/sid/icd-11"
+* condition[0].code.coding[cie11].code = #5A11
+* condition[0].code.coding[cie11].display = "Type 2 diabetes mellitus"
+
+* note[0].text = "Padre diagnosticado a los 45 años, sin complicaciones graves hasta el momento."
+/*************************************************************************************/

@@ -12,7 +12,7 @@ Description: "Docuento utilizado para guardar referencias."
 
 * type.coding.code ^short = "Corresponde al tipo de documento que se está enviando"
 * type.coding.code 1..1
-* type.coding.code from ConjuntoDocumentosVS (preferred) 
+* type.coding.code from ConjuntoDocumentosVS (required)
 
 * type.coding.system ^short = "Sistema de codificación"
 * type.coding.system = "http://loinc.org"
@@ -61,7 +61,6 @@ Description: "Docuento utilizado para guardar referencias."
 * author only Reference(OrganizacionCo) 
 
 
-
 //-----------Contenido : Composition ---------
 * content.attachment MS
 * content.attachment ^short = ""
@@ -69,23 +68,13 @@ Description: "Docuento utilizado para guardar referencias."
 * content.attachment.url ^short = "Se debe completar URL del recurso Composition RDA, enviado dentro del bundle."
 
 /**************nuevas variables V0.5*********************************************************************/
-* category MS
+* category 0..1 MS
 * category ^short = "Grupo de servicios al que pertenece el documento."   
 * category.coding 1..1 MS
 * category.coding ^short = "..."  
 * category.coding.code 1..1
 * category.coding.code ^short = "...." 
-* category.coding.code from GrupoServiciosVS (preferred)
-
-
-
-* category MS
-* category ^short = "Grupo de servicios al que pertenece el documento."   
-* category.coding 1..1 MS
-* category.coding ^short = "..."  
-* category.coding.code 1..1
-* category.coding.code ^short = "...." 
-* category.coding.code from GrupoServiciosVS (preferred)
+* category.coding.code from GrupoServiciosVS (required)
 
 /**************fin nuevas variables V0.5*****************************************************************/
 

@@ -24,11 +24,13 @@ Alias: $cs_pais = https://www.minsalud.gov.co/ihc/fhir/CodeSystem/PaisesCS
 Alias: $zonaresidenciaCS = https://www.minsalud.gov.co/ihc/fhir/CodeSystem/ZonaResidenciaCS
 Alias: $CUMScs = https://www.minsalud.gov.co/ihc/fhir/CodeSystem/CUMS
 Alias: $IUMcs = https://www.minsalud.gov.co/ihc/fhir/CodeSystem/IUM
-
+Alias: $ParentescoCS = https://www.minsalud.gov.co/ihc/fhir/ValueSet/ParentescoCS
 
 Alias: $IUMvs = https://www.minsalud.gov.co/ihc/fhir/ValueSet/IUM
 Alias: $CUMSvs = https://www.minsalud.gov.co/ihc/fhir/ValueSet/CUMS
 Alias: $CUPSvs = https://www.minsalud.gov.co/ihc/fhir/ValueSet/CUPS
+Alias: $ParentescoVS = https://www.minsalud.gov.co/ihc/fhir/ValueSet/ParentescoVS
+
 
 //Extensiones Colombia
 Alias: $Pais = https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-pais

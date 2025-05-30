@@ -46,11 +46,10 @@ Description: "Definición de un documento clínico para las necesidades de inter
 
 
 //* --- Attester : referencia a quien se hace cargo asegurador ----
-* attester 
+* attester 0..1 MS
+* attester ^short = "Entidad responsable por el plan de beneficios en salud Resumen Digital Básico de Atención en Salud - Paciente"
 * attester.mode MS
-* attester.mode ^short = "Entidad responsable por el plan de beneficios en salud Resumen Digital Básico de Atención en Salud - Paciente"
-* attester.mode="official" // Valor fijo para el modo de atestación
-
+* attester.mode = #official // Valor fijo para el modo de atestación
 
 * attester.party 1..1
 * attester.party.display 1..1
@@ -60,6 +59,9 @@ Description: "Definición de un documento clínico para las necesidades de inter
 * attester.party.identifier ^short = "Código asignado al administrador del plan de beneficios en el SGSSS."
 
 
+* event 0..1 MS
+* event.period 1..1 MS
+* event.period ^short = "Período de atención médica"
 
 * event.period.start MS
 * event.period.start ^short = "Fecha y hora de inicio de la atención"
