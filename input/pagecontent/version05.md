@@ -24,5 +24,5 @@ GrupoServiciosVS.
 ----------------------------------------------------------------------------------------------
 
 ## **IMPORTANTE**  
-✅ Fecha de Actualización de versión: **29/5/25**. 
+✅ Fecha de Actualización de versión: **30/5/25**. 
 ✅ Archivo Referencia: [Resumen_Digital_Basico_de_Atención_en_Salud_Paciente.xlsx](Resumen_Digital_Basico_de_Atención_en_Salud_Paciente.xlsx)
