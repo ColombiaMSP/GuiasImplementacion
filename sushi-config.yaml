@@ -9,7 +9,7 @@ version: 0.5
 name: CoreCO-ImplementationGuide
 
 #title: Interoperabilidad de Historia Clínica - Colombia
-title: Versión 0.5 --> GUIA EN DESARROLLO - MSP Colombia - Apoyo BID (actualizada - 30/5/2025)
+title: Versión 0.5 --> GUIA EN DESARROLLO - MSP Colombia - Apoyo BID (actualizada - 2/6/2025)
 status: draft
 publisher: 
   name: MSP Colombia
@@ -47,9 +47,9 @@ menu:
   "RDA":
     "RDA Paciente": StructureDefinition-CompositionCo.html  
     "RDA Vacunación": intercambioPDF.html 
-    "RDA Hospitalización": Internacion.html
-    "RDA Consulta Externa": Urgencia.html
-    "RDA Urgencias": Consulta-Externa.html  
+    "RDA Internación": Internacion.html
+    "RDA Consulta Externa": Consulta-Externa.html
+    "RDA Urgencias": Urgencia.html  
 
   Resumen: 
     "Versiones": versiones.html

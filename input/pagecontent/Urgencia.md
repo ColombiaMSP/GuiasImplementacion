@@ -14,11 +14,11 @@
 
 ### Perfiles
 
-    1️⃣ Perfil de Bundle de RDA Consulta Externa: [Bundle RDA Urgencia](StructureDefinition-BundleDOCUMENTConsultaExterna.html).
+1️⃣ Perfil de Bundle de RDA Consulta Externa: [Bundle RDA Urgencia](StructureDefinition-BundleDOCUMENTConsultaExterna.html).
 
-    2️⃣ Perfil de Documento de RDA Consulta Externa: [RDA Urgencia](StructureDefinition-CompositionConsultaExternaCo.html).
+2️⃣ Perfil de Documento de RDA Consulta Externa: [RDA Urgencia](StructureDefinition-CompositionConsultaExternaCo.html).
 
-    3️⃣ ...
+3️⃣ ...
 
 ---
 
