@@ -47,9 +47,9 @@ menu:
   "RDA":
     "RDA Paciente": StructureDefinition-CompositionCo.html  
     "RDA Vacunación": intercambioPDF.html 
-    "- RDA Hospitalización": hospitalizacion.html
-    "- RDA Consulta Externa": encontruccion.html
-    "- RDA Urgencias": encontruccion.html  
+    "RDA Hospitalización": Internacion.html
+    "RDA Consulta Externa": Urgencia.html
+    "RDA Urgencias": Consulta-Externa.html  
 
   Resumen: 
     "Versiones": versiones.html
