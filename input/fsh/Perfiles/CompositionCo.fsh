@@ -128,7 +128,28 @@ Description: "Definición de un documento clínico para las necesidades de inter
 * section[sectionDiagnosticos].entry ^short = "Diagnósticos conocidos actualmente de relevancia para determinaciones clínicas en el paciente."
 //* section[sectionDiagnosticos].entry contains problem 1..* MS
 
+    /*
+    * section[Antecedentes].code = $loinc#11348-0 "Historia médica del paciente"
+    * section[Antecedentes].title = "Antecedentes clínicos"
 
+    // Slicing para subsecciones dentro de Antecedentes
+    * section[Antecedentes].section ^slicing.discriminator[0].type = #pattern
+    * section[Antecedentes].section ^slicing.discriminator[=].path = "code"
+    * section[Antecedentes].section ^slicing.ordered = false
+    * section[Antecedentes].section ^slicing.rules = #open
+
+    * section[Antecedentes].section contains
+        antecedentesDiagnosticos 0..1 and
+        antecedentesFamiliares 0..1
+
+    * section[Antecedentes].section[antecedentesDiagnosticos].code = $loinc#29308-4 "Diagnóstico"
+    * section[Antecedentes].section[antecedentesDiagnosticos].title = "Diagnósticos anteriores"
+    * section[Antecedentes].section[antecedentesDiagnosticos].entry only Reference(ConditionCo)
+
+    * section[Antecedentes].section[antecedentesFamiliares].code = $loinc#10157-6 "Historia familiar"
+    * section[Antecedentes].section[antecedentesFamiliares].title = "Antecedentes familiares"
+    * section[Antecedentes].section[antecedentesFamiliares].entry only Reference(FamilyMemberHistory)
+    */
 
 //------ 2. Medicacion------------
 

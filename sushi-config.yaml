@@ -35,21 +35,21 @@ menu:
   Transacciones: transacciones.html
   Terminología: terminologia.html
   Perfiles:
-    "Paciente": StructureDefinition-PacienteCo.html
-    "Profesional": StructureDefinition-PractitionerCo.html
-    "Organización": StructureDefinition-OrganizacionCo.html  
-    "Diagnosticos": StructureDefinition-ConditionCo.html
-    "Alergias": StructureDefinition-AlergiaCo.html
-    "Medicamentos": StructureDefinition-MedicationStatementCo.html
-    "Antecedentes Familiares": StructureDefinition-AntecedentesFamiliaresCo.html  
+    "- Paciente": StructureDefinition-PacienteCo.html
+    "- Profesional": StructureDefinition-PractitionerCo.html
+    "- Organización": StructureDefinition-OrganizacionCo.html  
+    "* Diagnósticos": StructureDefinition-ConditionCo.html
+    "* Alérgias": StructureDefinition-AlergiaCo.html
+    "* Medicamentos": StructureDefinition-MedicationStatementCo.html
+    "* Antecedentes Familiares": StructureDefinition-AntecedentesFamiliaresCo.html  
     "Índice de Atenciones": StructureDefinition-DocumentReferenceCo.html
     "Bundle Transacción": StructureDefinition-BundleCo.html
   "RDA":
-    "RDA Paciente": StructureDefinition-CompositionCo.html  
-    "RDA Vacunación": intercambioPDF.html 
-    "RDA Internación": Internacion.html
-    "RDA Consulta Externa": Consulta-Externa.html
+    "RDA Paciente": RDA-Paciente.html      
+    "RDA Hospitalización": Internacion.html  
     "RDA Urgencias": Urgencia.html  
+    "RDA Consulta Externa": Consulta-Externa.html
+    "RDA Vacunación": intercambioPDF.html 
 
   Resumen: 
     "Versiones": versiones.html
