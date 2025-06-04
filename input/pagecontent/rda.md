@@ -19,15 +19,78 @@ Se ha definido HL7 FHIR como Lenguaje Comun de Intercambio, y dentro del estanda
 El modelo del RDA está basado en los siguientes recursos del estándar:
 
 * DocumentRefence, indice del Documento RDA.
-* Composition, contexto del RDA:   Fecha, organización, 
+* Composition, contexto del RDA: Fecha, organización,
 * PatientCo, información demográfica del paciente
 * Practitioner, Profesional de salud
 * Organization, Prestador donde se realiza la atención
-* Encounter(pendiente), información general del evento
+* Encounter, información general del evento
 * MedicationStatment, medicamentos que le son administrados al paciente
-* Procedure(pendiente), procedimientos que han sido realizados
-* Observation(pendiente), resultados
+* Procedure, procedimientos que han sido realizados
+* Observation, resultados
 * AlergyIntolerance, tipos de alergia
-* FamilyMemberHistory(pendiente), antecedentes
+* FamilyMemberHistory, antecedentes famjiliares
 * Condition, diagnósticos y condición del paciente
+* RDA PACIENTE-HL7 FHIR
+* Identificación del Prestador de Servicios de Salud
+* Entidad responsable por el plan de beneficios en salud Resumen Digital Básico de Atención en Salud - Paciente
+* Identificación del Paciente
+* Datos Resumen Digital Básico de Atención en Salud - Paciente
+* Antecedentes de salud
+* Listado de Medicamentos ordenados durante la atención
+* Diagnósticos
+* Profesional de salud que dió el alta de Internación / Hospitalización
 
+
+
+
+### RDA HOSPITALIZACION-HL7 FHIR
+
+* Identificación del Prestador de Servicios de Salud Entidad responsable por el plan de beneficios en salud (Internación / Hospitalización)
+* Identificación del Paciente
+* Datos de la Internacion / Hospitalizacion Antecedentes de salud
+* Listado de Procedimientos realizados durante la atención en Salud Internación / Hospitalización (Tecnologías en Salud)
+* Listado de Medicamentos administrados durante la atención en internación / hospitalización (Tecnologías en Salud)
+* Listado de Otras tecnologías en salud administrados durante la internación / hospitalización
+* Diagnósticos
+* Formula de Medicamentos ordenados al egreso de la Internación / Hospitalización (Tecnologías en Salud)
+* Ordenes médicas - procedimientos ordenados al egreso de la Internación / Hospitalización
+* Ordenes médicas - Otras tecnologias en salud ordenadas al egreso de la Internación / Hospitalización
+* Datos incapacidad
+* Profesional de salud que dió el alta de Internación / Hospitalización
+* Documento de soporte de la Internación / Hospitalizacion
+
+
+
+### RDA URGENCIAS-HL7 FHIR
+
+* Identificación del Prestador de Servicios de Salud
+* Entidad responsable por el plan de beneficios en salud (Atención inmediata / Urgencias)
+* Identificación del Paciente
+* Datos de la Atención inmediata / Urgencias
+* Antecedentes de salud
+* Listado de Procedimientos realizados durante la atención en Salud Atención inmediata / Urgencias (Tecnologías en Salud)
+* Listado de Medicamentos administrados durante la Atención inmediata / Urgencias (Tecnologías en Salud)
+* Listado de Otras tecnologías en salud administrados durante la Atención inmediata / Urgencias
+* Diagnósticos
+* Formula de Medicamentos ordenados al egreso de la Atención inmediata / Urgencias (Tecnologías en Salud)
+* Ordenes médicas - procedimientos ordenados al egreso de la Atención inmediata / Urgencias
+* Ordenes médicas - Otras tecnologias en salud ordenadas al egreso de la Atención inmediata / Urgencias
+* Datos incapacidad
+* Profesional de salud que dió el alta de la Atención inmediata / Urgencias
+* Documento de soporte de la Atención inmediata / Urgencias
+
+
+### RDA CONSULTA EXTERNA-HL7 FHIR
+
+* Identificación del Prestador de Servicios de Salud
+* Entidad responsable por el plan de beneficios en salud (Consulta Externa)
+* Identificación del Paciente
+* Datos de la Consulta Externa
+* Antecedentes de salud
+* Diagnósticos
+* Formula de Medicamentos ordenados en Consulta Externa (Tecnologías en Salud)
+* Ordenes médicas - procedimientos ordenados en Consulta Externa
+* Ordenes médicas - Otras tecnologias en salud ordenadas en Consulta Externa
+* Datos incapacidad
+* Profesional de salud que realizó la atención por Consulta Externa
+* Documento de soporte de la Internación / Hospitalizacion
