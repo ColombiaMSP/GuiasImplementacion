@@ -1,0 +1,10 @@
+Profile:        EncounterHospitalizacionCo
+Parent:         Encounter
+Title:          "EncounterHospitalizacion Co"
+* . ^short = "Encuentro de hospitalización del paciente en el servicio de salud (Hospitalización)."
+
+//---paciente
+* subject only Reference(PacienteCo)
+* subject MS
+* subject.reference 1.. MS
+

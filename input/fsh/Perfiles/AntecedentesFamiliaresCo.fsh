@@ -19,6 +19,7 @@ Title:          "Antecedentes Familiares Co"
 * status ^definition = "Estado actual del antecedente familiar de salud."
 
 
+* condition.code 1.. MS
 * condition.code.coding 1..*
 * condition.code.coding ^slicing.discriminator.type = #value
 * condition.code.coding ^slicing.discriminator.path = "system"

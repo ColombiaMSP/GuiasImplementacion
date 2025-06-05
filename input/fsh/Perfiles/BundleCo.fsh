@@ -23,6 +23,7 @@ Description: "Se describe como debe ser el recurso Bundle para transportar Docum
     Diagnosticos 1..* and    
     Alergias 0..* and
     Medicaciones 0..* and    
+    AntecedentesFamiliares 0..* and    
     Patient 1..1
   
 
@@ -92,6 +93,13 @@ Description: "Se describe como debe ser el recurso Bundle para transportar Docum
 * entry[Medicaciones].resource only MedicationStatementCo 
 * entry[Medicaciones].request.method = #POST
 
+/* --------- Antecedentes Familiares ---------*/
+* entry[AntecedentesFamiliares] ^short = "Antecedentes Familiares"
+* entry[AntecedentesFamiliares] ^definition = "Antecedentes Familiares"
+
+* entry[AntecedentesFamiliares].resource 1..
+* entry[AntecedentesFamiliares].resource only AntecedentesFamiliaresCo 
+* entry[AntecedentesFamiliares].request.method = #POST
 
 /* --------- PACIENTE ---------*/
 * entry[Patient] ^short = "Paciente"
