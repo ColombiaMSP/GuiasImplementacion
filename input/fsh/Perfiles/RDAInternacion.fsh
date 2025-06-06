@@ -22,9 +22,16 @@ Description: "---- Pendiente de definir el Bundle para el documento."
 
 * entry contains
     Composition 1..1 and
-    Patient 1..1
+    Patient 1..1 and
+    Antecedentes 0..* MS and
+    AlergiasConocidas 0..* MS and
+    MedicacionActual 0..* MS and
+    //detalles de la atencion:
+    InformacionAtencion 0..* MS and
+    Ordenes 0..* MS and
+    SoporteDocumental 0..* MS
 
- 
+
   
 * entry[Composition] ^short = "...."
 * entry[Composition] ^definition = "...."
@@ -32,7 +39,42 @@ Description: "---- Pendiente de definir el Bundle para el documento."
 * entry[Composition].resource 1..
 * entry[Composition].resource only CompositionInternacionCo
 
+* entry[Patient] ^short = "Paciente"
+* entry[Patient] ^definition = "Paciente al que se le ha realizado la internación."
+* entry[Patient].resource 1..
+* entry[Patient].resource only PacienteCo
 
+* entry[Antecedentes] ^short = "Antecedentes clínicos del paciente"
+* entry[Antecedentes] ^definition = "Antecedentes clínicos del paciente, incluyendo diagnósticos y antecedentes familiares."
+* entry[Antecedentes].resource 1..
+* entry[Antecedentes].resource only ConditionCo
+
+* entry[AlergiasConocidas] ^short = "Alergias conocidas del paciente"
+* entry[AlergiasConocidas] ^definition = "Alergias conocidas del paciente."
+* entry[AlergiasConocidas].resource 1..
+* entry[AlergiasConocidas].resource only AlergiaCo
+
+* entry[MedicacionActual] ^short = "Medicamentos actuales del paciente"
+* entry[MedicacionActual] ^definition = "Medicamentos actuales del paciente."
+* entry[MedicacionActual].resource 1..
+* entry[MedicacionActual].resource only MedicationStatementCo
+
+* entry[InformacionAtencion] ^short = "Información de la atención del paciente"
+* entry[InformacionAtencion] ^definition = "Información de la atención del paciente, incluyendo detalles de la atención, diagnósticos, medicamentos suministrados, procedimientos realizados y laboratorios realizados."
+* entry[InformacionAtencion].resource 1..
+* entry[InformacionAtencion].resource only EncounterHospitalizacionCo
+
+
+* entry[Ordenes] ^short = "Órdenes de tratamiento del paciente"
+* entry[Ordenes] ^definition = "Órdenes de tratamiento del paciente, incluyendo medicamentos ordenados y otras indicaciones."
+
+* entry[Ordenes].resource 1..
+// -- pendeinte --->> * entry[Ordenes].resource only ORDENEES?
+
+* entry[SoporteDocumental] ^short = "Soporte documental del paciente"
+* entry[SoporteDocumental] ^definition = "Soporte documental del paciente, incluyendo referencias a documentos relevantes."
+* entry[SoporteDocumental].resource 1..
+* entry[SoporteDocumental].resource only DocumentReferencePDF
 
 
 
@@ -99,7 +141,7 @@ Description: "Documento para representar la internación del paciente."
 
 * section[Antecedentes].section[antecedentesFamiliares].code = $loinc#10157-6 "Historia familiar"
 * section[Antecedentes].section[antecedentesFamiliares].title = "Antecedentes familiares"
-* section[Antecedentes].section[antecedentesFamiliares].entry only Reference(FamilyMemberHistory)
+* section[Antecedentes].section[antecedentesFamiliares].entry only Reference(AntecedentesFamiliaresCo)
 
 // Sección: Alergias
 * section[AlergiasConocidas].code = $loinc#48765-2 "Historial de alergias"
@@ -128,11 +170,22 @@ Description: "Documento para representar la internación del paciente."
     LaboratoriosRealizados 0..1
 
 
-* section[InformacionAtencion].section[Detalles].entry only Reference(Encounter)
+* section[InformacionAtencion].section[Detalles].entry only Reference(EncounterHospitalizacionCo)
+* section[InformacionAtencion].section[Detalles].title = "Detalles de la atención"
+
 * section[InformacionAtencion].section[Diagnosticos].entry only Reference(ConditionCo)
+* section[InformacionAtencion].section[Diagnosticos].title = "Diagnósticos"
+
+
 * section[InformacionAtencion].section[MedicacionSuministrada].entry only Reference(MedicationAdministration)
+* section[InformacionAtencion].section[MedicacionSuministrada].title = "Medicamentos suministrados"
+
 * section[InformacionAtencion].section[ProcedimientosRealizados].entry only Reference(Procedure)
+* section[InformacionAtencion].section[ProcedimientosRealizados].title = "Procedimientos realizados"
+
 * section[InformacionAtencion].section[LaboratoriosRealizados].entry only Reference(Observation)
+* section[InformacionAtencion].section[LaboratoriosRealizados].title = "Laboratorios realizados"
+
  
  
 //*************************ordeneres***************************************************************/ 
@@ -145,10 +198,19 @@ Description: "Documento para representar la internación del paciente."
 
 * section[Ordenes].section contains
     MedicamentosOrdenados 0..1 and
+    ProcedimientosOrdenados 0..1 and
     OtrasIndicaciones 0..1 
 
-* section[Ordenes].section[MedicamentosOrdenados].entry only Reference(MedicationRequest)
-* section[Ordenes].section[OtrasIndicaciones].entry only Reference(ServiceRequest)
+* section[Ordenes].section[MedicamentosOrdenados].entry only Reference(MedicationRequestCo)
+* section[Ordenes].section[MedicamentosOrdenados].title = "Medicamentos Ordenados"
+//* section[Ordenes].section[MedicamentosOrdenados].code = $loinc#10160-0 "Medicamentos ordenados"
+
+* section[Ordenes].section[ProcedimientosOrdenados].entry only Reference(ServiceRequestProcedureCo)
+* section[Ordenes].section[ProcedimientosOrdenados].title = "Procedimientos Ordenados"
+//* section[Ordenes].section[MedicamentosOrdenados].code = $loinc#10160-0 "Medicamentos ordenados"
+
+* section[Ordenes].section[OtrasIndicaciones].entry only Reference(ServiceRequestCo)
+* section[Ordenes].section[OtrasIndicaciones].title = "Otras Indicaciones"
 
 
    
@@ -156,7 +218,7 @@ Description: "Documento para representar la internación del paciente."
 
 // Sección: SoporteDocumental
 * section[SoporteDocumental].entry.reference 1..1
-* section[SoporteDocumental].entry only Reference(DocumentReference) 
+* section[SoporteDocumental].entry only Reference(DocumentReferencePDF) 
 
 * section[SoporteDocumental].entry ^short = "Referencia a documento"
 * section[SoporteDocumental].entry ^definition = "Referencia a un documento que soporta la información del documento de hospitalización."
@@ -167,75 +229,6 @@ Description: "Documento para representar la internación del paciente."
 /*-------------------------------------------------------------------------------------------------------------------   
 ----------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------*/
-
-
-Instance: CompositionInternacionCo-example
-InstanceOf: CompositionInternacionCo
-Title: "Ejemplo de Documento de Hospitalización"
-Description: "Instancia de ejemplo de hospitalización con secciones anidadas"
-Usage: #example
-
-* status = #final
-* type = $loinc#34133-9 "Resumen de Alta"
-* date = "2024-12-10T14:30:00Z"
-* subject = Reference(PacienteCo-example)
-* title = "Resumen de Alta - Hospitalización"
-* confidentiality = #N
-* author = Reference(Practitioner/ProfesionalColombia)
-* custodian = Reference(Organization/OrganizacionRegionEjemplo)
-
-// Sección: Antecedentes
-* section[+].code = $loinc#11348-0 "Historia médica del paciente"
-* section[=].title = "Antecedentes clínicos"
-
-// Sub-sección: Diagnósticos anteriores
-* section[=].section[+].code = $loinc#29308-4 "Diagnóstico"
-* section[=].section[=].title = "Diagnósticos anteriores"
-* section[=].section[=].entry[0] = Reference(ConditionCo-example)
-
-// Sub-sección: Antecedentes familiares
-* section[=].section[+].code = $loinc#10157-6 "Historia familiar"
-* section[=].section[=].title = "Antecedentes familiares"
-* section[=].section[=].entry[0] = Reference(FamilyMemberHistory-example)
-
-// Sección: Alergias conocidas
-* section[+].code = $loinc#48765-2 "Historial de alergias"
-* section[=].title = "Alergias conocidas"
-* section[=].entry[0] = Reference(AlergiaCo-example)
-
-// Sección: Medicación actual
-* section[+].code = $loinc#10160-0 "Medicación actual"
-* section[=].title = "Medicamentos que el paciente toma actualmente"
-* section[=].entry[0] = Reference(MedicationStatementCo-example)
-
-// Sección: Información de la atención
-* section[+].title = "Información de la atención"
-* section[=].section[+].title = "Detalles de la atención"
-* section[=].section[=].code.text = "Detalles"
-* section[=].section[=].entry[0] = Reference(Encounter-example)
-
-* section[=].section[+].title = "Diagnósticos"
-* section[=].section[=].code.text = "Diagnósticos"
-* section[=].section[=].entry[0] = Reference(ConditionCo-example)
-
-* section[=].section[+].title = "Medicamentos suministrados"
-* section[=].section[=].code.text = "MedicaciónSuministrada"
-* section[=].section[=].entry[0] = Reference(MedicationAdministration-example)
-
-// Sección: Órdenes
-* section[+].title = "Órdenes de tratamiento"
-* section[=].section[+].title = "Medicamentos ordenados"
-* section[=].section[=].code.text = "MedicamentosOrdenados"
-* section[=].section[=].entry[0] = Reference(MedicationRequest-example)
-
-* section[=].section[+].title = "Otras indicaciones"
-* section[=].section[=].code.text = "OtrasIndicaciones"
-* section[=].section[=].entry[0] = Reference(ServiceRequest-example)
-
-// Sección: Soporte PDF
-* section[+].title = "Soporte documental"
-* section[=].entry[0] = Reference(DocumentReference-example)
-
 
 
 /*-------------------------------------------------------------------------------------------------------------------   

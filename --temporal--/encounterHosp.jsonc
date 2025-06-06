@@ -46,17 +46,7 @@
   ],
   "diagnosis": [
     {
-      "condition": {
-        "code": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "123456",
-              "display": "Complications from Roel's TPF chemotherapy on January 28th, 2013"
-            }
-          ],
-          "text": "Complications from Roel's TPF chemotherapy on January 28th, 2013"
-        },
+      "condition": {       
         "display": "Complications from Roel's TPF chemotherapy on January 28th, 2013"
       },
       "use": {

@@ -101,3 +101,33 @@ Description:  "ParentescoVS"
 
 * include codes from system ParentescoCS
 
+
+
+/**********************************************************/
+
+CodeSystem: DiagnosisUseCS
+Id: DiagnosisUseCS
+Title: "Uso del diagnóstico"
+Description: "Uso del diagnóstico en el contexto del encuentro de hospitalización."
+
+
+* ^name = "DiagnosisUseCS"
+* ^status = #active
+
+* #01 "Principal Ingreso" "Principal Ingreso"
+* #02 "Principal Egreso" "Principal Egreso"
+* #03 "Relacionado" "Relacionado"
+* #04 "Causa Muerte" "Causa Muerte" 
+
+
+ValueSet: DiagnosisUseVS
+Id: DiagnosisUseVS
+Description:  "DiagnosisUseVS"
+* ^status = #active
+
+* include codes from system DiagnosisUseCS
+
+
+/**********************************************************/
+
+
