@@ -30,7 +30,8 @@ El modelo del RDA está basado en los siguientes recursos del estándar:
 * AlergyIntolerance, tipos de alergia
 * FamilyMemberHistory, antecedentes famjiliares
 * Condition, diagnósticos y condición del paciente
-* RDA PACIENTE-HL7 FHIR
+
+### RDA PACIENTE-HL7 FHIR
 * Identificación del Prestador de Servicios de Salud
 * Entidad responsable por el plan de beneficios en salud Resumen Digital Básico de Atención en Salud - Paciente
 * Identificación del Paciente
