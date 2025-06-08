@@ -62,7 +62,7 @@ Title:          "Service Request Co"
 Profile:        ServiceRequestProcedureCo
 Parent:         ServiceRequest
 
-Title:          "Solicitud de Procedimiento Co"
+Title:          "Service Request ProcedureCo"
 * . ^short = "Solicitud de procedimiento médico para un paciente."
 
 

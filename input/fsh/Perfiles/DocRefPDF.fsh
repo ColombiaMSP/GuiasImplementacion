@@ -1,6 +1,6 @@
 Profile: DocumentReferencePDF
 Parent: DocumentReference
-Title: "Utilozación de PDF para Documentos de Referencia"
+Title: "DocumentReferencePDF"
 * . ^short = "Referencia de Documentos PDF"
 * . ^definition = "Docuento utilizado para guardar referencias en formato PDF."
 * . ^comment = "Este perfil se utiliza para documentos de referencia que se almacenan en formato PDF."

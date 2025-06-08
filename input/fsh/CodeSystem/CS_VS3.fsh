@@ -33,10 +33,6 @@ Description: "Frecuencia Value Set."
 
 
 
-
-
-
-
 //MotivoSolicitudProcedimientoVS - finalidad de la tecnología en salud
 //https://web.sispro.gov.co/WebPublico/Consultas/ConsultarDetalleReferenciaBasica.aspx?Code=RIPSFinalidadConsultaVersion2
 
@@ -130,3 +126,11 @@ Description: "Motivo de solicitud del procedimiento médico."
 
 
 /*****************************************************************/
+
+/*
+01: Hogar
+02: Comunitario
+03: Escolar
+04: Laboral
+05: Institucional
+*/

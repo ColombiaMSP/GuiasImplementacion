@@ -46,9 +46,9 @@ menu:
     "Bundle Transacción": StructureDefinition-BundleCo.html
   "RDA":
     "RDA Paciente": RDA-Paciente.html      
-    "RDA Hospitalización": Internacion.html  
-    "RDA Urgencias": Urgencia.html  
-    "RDA Consulta Externa": Consulta-Externa.html
+    "RDA Hospitalización": RDA-Internacion.html  
+    "RDA Urgencias": RDA-Urgencia.html  
+    "RDA Consulta Externa": RDA-Consulta-Externa.html
     "RDA Vacunación": intercambioPDF.html 
 
   Resumen: 

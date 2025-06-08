@@ -31,11 +31,14 @@ Title:          "EncounterHospitalizacion Co"
 
 * hospitalization MS
 * hospitalization ^short = "Información sobre la hospitalización del paciente."
-* hospitalization ^definition = "Información sobre la hospitalización del paciente."
 * hospitalization ^comment = "Comentario adicional sobre la hospitalización del paciente."
 
 
 * hospitalization.admitSource MS
+* hospitalization.admitSource ^short = "PENDIENTE - Fuente de admisión del paciente al encuentro de hospitalización."
+* hospitalization.admitSource ^definition = "Fuente de admisión del paciente al encuentro de hospitalización."
+
+//* hospitalization.admitSource from FuenteAdmisiónVS
 
 
 /*******************************************************************************************/
