@@ -22,6 +22,8 @@ Title:          "Procedure Co"
 * code MS
 * code ^short = "Código que identifica el procedimiento médico realizado al paciente."
 * code ^definition = "Código que identifica el procedimiento médico realizado al paciente."
+* code from CUPSVS (extensible)
+
 
 // Código del tipo de procedimiento médico
 * category MS

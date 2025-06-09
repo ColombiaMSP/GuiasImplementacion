@@ -33,10 +33,6 @@ Description: "Frecuencia Value Set."
 
 
 
-//MotivoSolicitudProcedimientoVS - finalidad de la tecnología en salud
-//https://web.sispro.gov.co/WebPublico/Consultas/ConsultarDetalleReferenciaBasica.aspx?Code=RIPSFinalidadConsultaVersion2
-
-
 // tipo de tecnología en salud
 CodeSystem: TipoTecnologiaSaludCS
 Id: TipoTecnologiaSaludCS
@@ -70,9 +66,9 @@ Description: "TipoTecnologiaSaludProcedimientoVS."
 /*************************************/
 ValueSet: TipoTecnologiaSaludMedicamentoVS
 Id: TipoTecnologiaSaludMedicamentoVS
-Title: "TipoTecnologiaSaludProcedimientoVS"
-Description: "TipoTecnologiaSaludProcedimientoVS."
-* ^name = "TipoTecnologiaSaludProcedimientoVS"
+Title: "TipoTecnologiaSaludMedicamentoVS"
+Description: "TipoTecnologiaSaludMedicamentoVS."
+* ^name = "TipoTecnologiaSaludMedicamentoVS"
 * ^experimental = false
 * ^version = "1.0.0"
 
@@ -101,36 +97,58 @@ Description: "TipoTecnologiaOtrasTecnologiasVS."
 /*********************************************************/
 
 
-// tipo de tecnología en salud
-CodeSystem: MotivoSolicitudProcedimientoCS
-Id: MotivoSolicitudProcedimientoCS
-Title: "Motivo de solicitud"
-
-Description: "Motivo de solicitud del procedimiento médico."
-
-* ^name = "MotivoSolicitudProcedimientoCS"
-* ^status = #active 
-
-// https://web.sispro.gov.co/WebPublico/Consultas/ConsultarDetalleReferenciaBasica.aspx?Code=RIPSFinalidadConsultaVersion2
-
-
-ValueSet: MotivoSolicitudProcedimientoVS
-Id: MotivoSolicitudProcedimientoVS
-Title: "Motivo de solicitud del procedimiento médico"
-Description: "Motivo de solicitud del procedimiento médico."
-
-* ^name = "MotivoSolicitudProcedimientoVS"
-* ^experimental = false
-
-* include codes from system MotivoSolicitudProcedimientoCS
 
 
 /*****************************************************************/
 
-/*
-01: Hogar
-02: Comunitario
-03: Escolar
-04: Laboral
-05: Institucional
-*/
+// Entorno donde se realiza la atención
+CodeSystem: EntornoAtencionCS
+Id: EntornoAtencionCS
+Title: "Entorno de atención"
+Description: "Entorno donde se realiza la atención del paciente."
+* ^name = "EntornoAtencionCS"
+* ^status = #active
+* #01 "Hogar" "Hogar"
+* #02 "Comunitario" "Comunitario"
+* #03 "Escolar" "Escolar"
+* #04 "Laboral" "Laboral"
+* #05 "Institucional" "Institucional"
+
+
+ValueSet: EntornoAtencionVS
+Id: EntornoAtencionVS
+Title: "Entorno de atención del paciente"
+Description: "Entorno donde se realiza la atención del paciente."
+* ^name = "EntornoAtencionVS"
+* ^experimental = false
+* ^version = "1.0.0"
+* ^status = #active
+* ^publisher = "COL"
+* ^jurisdiction = urn:iso:std:iso:3166#COL "Colombia"
+* include codes from system EntornoAtencionCS
+
+
+
+
+CodeSystem: TipoDiagnosticoEgresoCS
+Id: TipoDiagnosticoEgresoCS
+Title: "Tipo de diagnóstico principal al egreso"
+Description: "Tipo de diagnóstico principal al egreso"
+* ^name = "TipoDiagnosticoEgresoCS"
+* ^status = #active
+* #01 "Impresión diagnóstica" "Impresión diagnóstica"
+* #02 "Confirmado nuevo" "Confirmado nuevo"
+* #03 "Confirmado repetido" "Confirmado repetido"
+
+ValueSet: TipoDiagnosticoEgresoVS
+Id: TipoDiagnosticoEgresoVS
+Title: "Tipo de diagnóstico principal al egreso"
+Description: "Tipo de diagnóstico principal al egreso"
+* ^name = "TipoDiagnosticoEgresoVS"
+* ^experimental = false
+* ^version = "1.0.0"
+* ^status = #active
+* ^publisher = "COL"
+* ^jurisdiction = urn:iso:std:iso:3166#COL "Colombia"
+* include codes from system TipoDiagnosticoEgresoCS
+	

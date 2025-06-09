@@ -16,6 +16,7 @@ Title:          "Service Request Co"
 * code MS
 * code ^short = "Código que identifica el servicio de salud solicitado para el paciente."
 * code ^definition = "Código que identifica el servicio de salud solicitado para el paciente."
+* code from CUPSVS (preferred)
 
 * authoredOn MS
 
@@ -28,18 +29,6 @@ Title:          "Service Request Co"
 * category ^definition = "Tipo de tecnología en salud."
 * category from TipoTecnologiaOtrasTecnologiasVS
 
-
-// asociar un conjunto de valores estos:
-/*
-06. Dispositivo médico
-07. Componentes sanguíneos
-08. Fluidos orgánicos
-09. Órganos
-10. Tejidos
-11. Células
-12. Producto Soporte Nutricional
-13. Servicio complementario
-*/
 
 
 //Codigo de las otras tecnologías en salud  (código de la tecnología en salud)
@@ -54,7 +43,8 @@ Title:          "Service Request Co"
 * reasonCode ^short = "Finalidad de la tecnología en Salud."
 * reasonCode ^definition = "Finalidad de la tecnología en Salud."
 * reasonCode.text MS
-* reasonCode from MotivoSolicitudProcedimientoVS
+* reasonCode from FinalidadTecnologiaVS
+
 
 
 /**************************************************************************************/
@@ -79,7 +69,7 @@ Title:          "Service Request ProcedureCo"
 * code MS
 * code ^short = "Código que identifica el servicio de salud solicitado para el paciente."
 * code ^definition = "Código que identifica el servicio de salud solicitado para el paciente."
-
+* code from CUPSVS (preferred)
 
 
 //Fecha de prescripción de las otras tecnologías (Tecnología en salud)	
@@ -99,31 +89,19 @@ Title:          "Service Request ProcedureCo"
 * code MS
 * code ^short = "Código de las otras tecnologías en salud (código de la tecnología en salud)."
 * code ^definition = "Código de las otras tecnologías en salud (código de la tecnología en salud)."
+* code from CUPSVS (preferred)
+
 
 
 //Finalidad de la tecnología en Salud	
 * reasonCode MS
-* reasonCode ^short = "Motivo de la solicitud del procedimiento médico."
-* reasonCode ^definition = "Motivo de la solicitud del procedimiento médico."
+* reasonCode ^short = "Finalidad de la tecnología en Salud"
+* reasonCode ^definition = "Finalidad de la tecnología en Salud."
 * reasonCode.text MS
-* reasonCode from MotivoSolicitudProcedimientoVS
+* reasonCode from FinalidadTecnologiaVS
 
 
+* authoredOn MS
+//Fecha de prescripción de las otras tecnologías (Tecnología en salud)	
+* authoredOn ^short = "Fecha de prescripción de las otras tecnologías (Tecnología en salud)."
 
-
-//TipoTecnologiaSaludVS
-//
-/*
-"01. Procedimiento en salud"
-
-
-06. Dispositivo médico
-07. Componentes sanguíneos
-08. Fluidos orgánicos
-09. Órganos
-10. Tejidos
-
-*/
-
-//MotivoSolicitudProcedimientoVS - finalidad de la tecnología en salud:
-//https://web.sispro.gov.co/WebPublico/Consultas/ConsultarDetalleReferenciaBasica.aspx?Code=RIPSFinalidadConsultaVersion2

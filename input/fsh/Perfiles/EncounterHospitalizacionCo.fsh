@@ -24,10 +24,10 @@ Title:          "EncounterHospitalizacion Co"
 
 
 * reasonCode MS
-* reasonCode.text ^short = "Motivo del encuentro de hospitalización."
-* reasonCode.text ^definition = "Motivo del encuentro de hospitalización."
+* reasonCode.text ^short = "Causa que motiva la atención."
+* reasonCode.text ^definition = "Causa que motiva la atención."
 * reasonCode.text MS
-
+* reasonCode from CausaExternaVS
 
 * hospitalization MS
 * hospitalization ^short = "Información sobre la hospitalización del paciente."
@@ -79,6 +79,9 @@ Title:          "EncounterHospitalizacion Co"
 * diagnosis[PrinciaplEgreso].use 1.. MS
 * diagnosis[PrinciaplEgreso].use = $DiagnosisUseCS#02 "Principal Egreso" (exactly)
 
+
+// agregar extension para determinar el tipo de diagnostico princial de egreso? 
+
 * diagnosis[Relacionado].id = "Relacionado"
 * diagnosis[Relacionado].condition only Reference($canonicaCondition)
 * diagnosis[Relacionado].use 1.. MS
@@ -89,7 +92,25 @@ Title:          "EncounterHospitalizacion Co"
 * diagnosis[CausaMuerte].use 1.. MS
 * diagnosis[CausaMuerte].use = $DiagnosisUseCS#04 "Causa Muerte" (exactly)
 
-/***** pendiente modelo completo de lugares ******/
+
+
 * location MS
 * location.location.display MS 
 * location.location.display ^short = "UBICACION DONDE SE REALIZO LA ATENCION."
+* location.location.type MS
+* location.location.type ^short = "Tipo de ubicación donde se realizó la atención al paciente."
+* location.location.type ^definition = "Tipo de ubicación donde se realizó la atención al paciente."
+* location.location.type from EntornoAtencionVS
+
+
+* dischargeDisposition MS
+* dischargeDisposition ^short = "Condición y destino del usuario al egreso."
+* dischargeDisposition ^definition = "Condición y destino del usuario al egreso."
+* dischargeDisposition from DisposicionEgresoVS
+
+* destination MS
+* destination ^short = "Destino del paciente al egreso del encuentro de hospitalización."
+* destination ^definition = "Destino del paciente al egreso del encuentro de hospitalización."
+* destination ^comment = "Comentario adicional sobre el destino del paciente al egreso del encuentro de hospitalización."
+
+* destination.text MS

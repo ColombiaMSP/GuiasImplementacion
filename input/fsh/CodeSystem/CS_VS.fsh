@@ -264,6 +264,28 @@ Description:  "Conjunto de Valores de Codificacion CUMS"
 * include codes from system https://www.minsalud.gov.co/CodeSystem/CUMS
 
 
+
+
+/* ---------------------CUPS --------------------------*/
+
+
+ValueSet: CUPSVS
+Id: CUPSVS
+Title: "Codificacion CUPS"
+Description:  "Conjunto de Valores de Codificacion CUPS"
+
+* ^experimental = false
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-01-01T00:00:00-05:00"
+* ^jurisdiction = urn:iso:std:iso:3166#COL "Colombia"
+* ^publisher = "COL"
+
+
+* include codes from system https://www.minsalud.gov.co/CodeSystem/CUPS
+
+
+
 /* ---------------------IUM --------------------------*/
 
 

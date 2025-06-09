@@ -2,7 +2,6 @@ Profile:        MedicationAdministrationCo
 Parent:         MedicationAdministration
 Title:          "Medication Administration Co"       
 
-
 //---paciente
 * subject only Reference(PacienteCo)
 * subject MS
@@ -36,3 +35,29 @@ Title:          "Medication Administration Co"
 * dosage.dose MS
 * dosage.dose ^short = "Dosis del medicamento administrado al paciente."
 * dosage.dose ^definition = "Dosis del medicamento administrado al paciente."
+
+//Tipo de tecnología en salud	
+* category MS
+* category ^short = "Tipo de tecnología en salud."
+* category ^definition = "Tipo de tecnología en salud."
+
+* category from TipoTecnologiaSaludMedicamentoVS
+
+* reasonCode MS
+* reasonCode ^short = "Finalidad de la tecnología en Salud."
+* reasonCode ^definition = "Finalidad de la tecnología en Salud."
+* reasonCode.text MS
+* reasonCode from FinalidadTecnologiaVS
+
+* performer MS
+* performer ^short = "Información del profesional de la salud que administra el medicamento al paciente."
+* performer ^definition = "Información del profesional de la salud que administra el medicamento al paciente."
+* performer.function MS
+* performer.function ^short = "Función del profesional de la salud que administra el medicamento al paciente."
+* performer.function ^definition = "Función del profesional de la salud que administra el medicamento al paciente."
+* performer.actor MS
+* performer.actor ^short = "Referencia al profesional de la salud que administra el medicamento al paciente."
+
+
+* performer.actor.display ^short = "Nombre del profesional de la salud que administra el medicamento al paciente."
+* performer.actor.display ^definition = "Nombre del profesional de la salud que administra el medicamento al paciente."

@@ -173,17 +173,17 @@ Description: "Documento para representar la internación del paciente."
 * section[InformacionAtencion].section[Detalles].entry only Reference(EncounterHospitalizacionCo)
 * section[InformacionAtencion].section[Detalles].title = "Detalles de la atención"
 
-* section[InformacionAtencion].section[Diagnosticos].entry only Reference(ConditionCo)
-* section[InformacionAtencion].section[Diagnosticos].title = "Diagnósticos"
+* section[InformacionAtencion].section[Diagnosticos].entry only Reference(ConditionCoPrincipal)
+* section[InformacionAtencion].section[Diagnosticos].title = "Diagnóstico Principal"
 
 
 * section[InformacionAtencion].section[MedicacionSuministrada].entry only Reference(MedicationAdministration)
 * section[InformacionAtencion].section[MedicacionSuministrada].title = "Medicamentos suministrados"
 
-* section[InformacionAtencion].section[ProcedimientosRealizados].entry only Reference(Procedure)
+* section[InformacionAtencion].section[ProcedimientosRealizados].entry only Reference(ProcedureCo)
 * section[InformacionAtencion].section[ProcedimientosRealizados].title = "Procedimientos realizados"
 
-* section[InformacionAtencion].section[LaboratoriosRealizados].entry only Reference(Observation)
+* section[InformacionAtencion].section[LaboratoriosRealizados].entry only Reference(ObservationCo)
 * section[InformacionAtencion].section[LaboratoriosRealizados].title = "Laboratorios realizados"
 
  

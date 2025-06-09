@@ -23,7 +23,7 @@ Title:          "Medication Request Co"
 * medicationCodeableConcept 0..1 MS
 //* medicationCodeableConcept only $CUMSvs
 //* medicationCodeableConcept from $absent-or-unknown-medications-uv-ips (extensible)
-* medicationCodeableConcept from CUMSVS (extensible)
+* medicationCodeableConcept from CUMSVS (preferred)
 
 * medicationCodeableConcept ^sliceName = "medicationCodeableConcept"
 * medicationCodeableConcept ^short = "Código que identifica el medicamento prescripto al paciente."
@@ -42,6 +42,7 @@ Title:          "Medication Request Co"
 * dosageInstruction.timing MS
 
 * dosageInstruction.timing.code from FrecuenciaVS
+* dosageInstruction.timing.code ^short = "Duración prescrita del medicamento - Código de unidad de tiempo"
 
 * dosageInstruction.timing ^short = "Frecuencia de la administración del medicamento prescripto al paciente."
 * dosageInstruction.timing ^definition = "Frecuencia de la administración del medicamento prescripto al paciente."
@@ -53,17 +54,31 @@ Title:          "Medication Request Co"
 // * dosageInstruction.timing.repeat.frequency ^definition = "Cantidad de veces que se debe administrar el medicamento prescripto al paciente."
 // * dosageInstruction.timing.repeat.frequency ^comment = "Comentario adicional sobre la cantidad de veces que se debe administrar el medicamento prescripto al paciente."
 * dosageInstruction.timing.repeat.count MS
-
+* dosageInstruction.timing.repeat.count ^short = "Dosis ordena del medicamento - Cantidad total del medicamento que se prescribió para una sola dósis"
 // -- via de administración del medicamento
 
 // Vía de administración de la medicamento  				
 // https://web.sispro.gov.co/WebPublico/Consultas/ConsultarDetalleReferenciaBasica.aspx?Code=VAD 				
 
 * dosageInstruction.route MS
-* dosageInstruction.route ^short = "Vía de administración de la medicamento  ."
+* dosageInstruction.route ^short = "Vía de administración de la medicamento ."
 * dosageInstruction.route ^definition = "Vía de administración de la medicamento  ."
 
 // Fecha de prescripción del medicamento (Tecnología en salud)			
 * authoredOn MS
 * authoredOn ^short = "Fecha de prescripción del medicamento al paciente."  
 * authoredOn ^definition = "Fecha de prescripción del medicamento al paciente."
+
+//Tipo de tecnología en salud	
+* category MS
+* category ^short = "Tipo de tecnología en salud."
+* category ^definition = "Tipo de tecnología en salud."
+* category from TipoTecnologiaSaludMedicamentoVS
+
+
+
+//Finalidad de la tecnología en Salud	
+* reasonCode MS
+* reasonCode ^short = "Finalidad de la tecnología en Salud	."
+* reasonCode ^definition = "Finalidad de la tecnología en Salud	."
+* reasonCode from FinalidadTecnologiaVS
