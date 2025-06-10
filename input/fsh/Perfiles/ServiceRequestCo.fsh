@@ -2,7 +2,8 @@ Profile:        ServiceRequestCo
 Parent:         ServiceRequest
 
 Title:          "Service Request Co"
-* . ^short = "Solicitud de servicio de salud para un paciente."
+* . ^short = "Ordenes médicas - Otras tecnologias en salud ordenadas al egreso de la Internación / Hospitalización."
+
 //---paciente
 * subject only Reference(PacienteCo)
 * subject MS
@@ -33,8 +34,7 @@ Title:          "Service Request Co"
 
 //Codigo de las otras tecnologías en salud  (código de la tecnología en salud)
 * code MS
-* code ^short = "Código de las otras tecnologías en salud (código de la tecnología en salud)."
-
+* code ^short = "Código de las otras tecnologías en salud (código de la tecnología en salud). Pendiente de definir."
 * code ^definition = "Código de las otras tecnologías en salud (código de la tecnología en salud)."
 
 
@@ -53,7 +53,7 @@ Profile:        ServiceRequestProcedureCo
 Parent:         ServiceRequest
 
 Title:          "Service Request ProcedureCo"
-* . ^short = "Solicitud de procedimiento médico para un paciente."
+* . ^short = "Ordenes médicas -  procedimientos ordenados al egreso de la Internación / Hospitalización."
 
 
 //---paciente

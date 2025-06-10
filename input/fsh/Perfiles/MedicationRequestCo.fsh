@@ -14,6 +14,12 @@ Title:          "Medication Request Co"
 
 * subject.reference ^short = "Cadena de referencia específica del paciente al que se le ha prescrito el medicamento." 
 
+//Tipo de tecnología en salud	
+* category MS
+* category ^short = "Tipo de tecnología en salud."
+* category ^definition = "Tipo de tecnología en salud."
+* category from TipoTecnologiaSaludMedicamentoVS
+
 
 * status MS 
 * status ^short =  "Estado actual del uso del medicamento por parte del paciente."
@@ -48,32 +54,22 @@ Title:          "Medication Request Co"
 * dosageInstruction.timing ^definition = "Frecuencia de la administración del medicamento prescripto al paciente."
 * dosageInstruction.timing ^comment = "Comentario adicional sobre la frecuencia de la administración del medicamento prescripto al paciente."
 
-// Frecuencia de  administración del medicamento - Cantidad			
-// * dosageInstruction.timing.repeat.frequency MS
-// * dosageInstruction.timing.repeat.frequency ^short = "Cantidad de veces que se debe administrar el medicamento prescripto al paciente."
-// * dosageInstruction.timing.repeat.frequency ^definition = "Cantidad de veces que se debe administrar el medicamento prescripto al paciente."
-// * dosageInstruction.timing.repeat.frequency ^comment = "Comentario adicional sobre la cantidad de veces que se debe administrar el medicamento prescripto al paciente."
 * dosageInstruction.timing.repeat.count MS
 * dosageInstruction.timing.repeat.count ^short = "Dosis ordena del medicamento - Cantidad total del medicamento que se prescribió para una sola dósis"
 // -- via de administración del medicamento
 
-// Vía de administración de la medicamento  				
-// https://web.sispro.gov.co/WebPublico/Consultas/ConsultarDetalleReferenciaBasica.aspx?Code=VAD 				
-
+//via de administración del medicamento
 * dosageInstruction.route MS
 * dosageInstruction.route ^short = "Vía de administración de la medicamento ."
 * dosageInstruction.route ^definition = "Vía de administración de la medicamento  ."
+* dosageInstruction.route from ViaAdministracionMedicamentoVS
 
 // Fecha de prescripción del medicamento (Tecnología en salud)			
 * authoredOn MS
 * authoredOn ^short = "Fecha de prescripción del medicamento al paciente."  
 * authoredOn ^definition = "Fecha de prescripción del medicamento al paciente."
 
-//Tipo de tecnología en salud	
-* category MS
-* category ^short = "Tipo de tecnología en salud."
-* category ^definition = "Tipo de tecnología en salud."
-* category from TipoTecnologiaSaludMedicamentoVS
+
 
 
 

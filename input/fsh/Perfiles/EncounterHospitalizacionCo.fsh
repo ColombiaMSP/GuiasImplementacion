@@ -75,12 +75,10 @@ Title:          "EncounterHospitalizacion Co"
 * diagnosis[PrincipalIngreso].use = $DiagnosisUseCS#01 "Principal Ingreso" (exactly)
 
 * diagnosis[PrinciaplEgreso].id = "PrinciaplEgreso"
-* diagnosis[PrinciaplEgreso].condition only Reference($canonicaCondition)
+* diagnosis[PrinciaplEgreso].condition only Reference($canonicaConditionPrincipal)
 * diagnosis[PrinciaplEgreso].use 1.. MS
 * diagnosis[PrinciaplEgreso].use = $DiagnosisUseCS#02 "Principal Egreso" (exactly)
 
-
-// agregar extension para determinar el tipo de diagnostico princial de egreso? 
 
 * diagnosis[Relacionado].id = "Relacionado"
 * diagnosis[Relacionado].condition only Reference($canonicaCondition)
@@ -92,25 +90,24 @@ Title:          "EncounterHospitalizacion Co"
 * diagnosis[CausaMuerte].use 1.. MS
 * diagnosis[CausaMuerte].use = $DiagnosisUseCS#04 "Causa Muerte" (exactly)
 
-
+/*****************************************************************************************************/
 
 * location MS
 * location.location.display MS 
-* location.location.display ^short = "UBICACION DONDE SE REALIZO LA ATENCION."
+* location.location.display ^short = "Ubicación donde se realiza la atención."
 * location.location.type MS
 * location.location.type ^short = "Tipo de ubicación donde se realizó la atención al paciente."
 * location.location.type ^definition = "Tipo de ubicación donde se realizó la atención al paciente."
 * location.location.type from EntornoAtencionVS
 
 
-* dischargeDisposition MS
-* dischargeDisposition ^short = "Condición y destino del usuario al egreso."
-* dischargeDisposition ^definition = "Condición y destino del usuario al egreso."
-* dischargeDisposition from DisposicionEgresoVS
+* hospitalization.dischargeDisposition MS
+* hospitalization.dischargeDisposition ^short = "Condición y destino del usuario al egreso."
+* hospitalization.dischargeDisposition ^definition = "Condición y destino del usuario al egreso."
+* hospitalization.dischargeDisposition from DisposicionEgresoVS
 
-* destination MS
-* destination ^short = "Destino del paciente al egreso del encuentro de hospitalización."
-* destination ^definition = "Destino del paciente al egreso del encuentro de hospitalización."
-* destination ^comment = "Comentario adicional sobre el destino del paciente al egreso del encuentro de hospitalización."
-
-* destination.text MS
+* hospitalization.destination MS
+* hospitalization.destination ^short = "Destino del paciente al egreso del encuentro de hospitalización."
+* hospitalization.destination ^definition = "Destino del paciente al egreso del encuentro de hospitalización."
+* hospitalization.destination.display MS
+* hospitalization.destination.display ^short = "Descripción del destino del paciente al egreso del encuentro de hospitalización."

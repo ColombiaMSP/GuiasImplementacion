@@ -13,24 +13,33 @@ Title:          "Observation Co"
 * subject.reference ^short = "Cadena de referencia específica del paciente al que se le ha realizado el informe diagnóstico."
 * subject.reference ^definition = "Cadena de referencia específica del paciente al que se le ha realizado el informe diagnóstico."
 
+//tipo de tecnología en salud
+* category MS
+* category ^short = "Tipo de tecnología en salud."
+* category ^definition = "Tipo de tecnología en salud."
+* category from TipoTecnologiaSaludMedicamentoVS
+
+
 // Fecha de emisión del informe diagnóstico
 * issued MS
-* issued ^short = "Fecha de emisión del informe diagnóstico."
-* issued ^definition = "Fecha de emisión del informe diagnóstico."
+* issued ^short = "Fecha de administración o aplicación de las otras tecnologías en salud"
+* issued ^definition = "Fecha de administración o aplicación de las otras tecnologías en salud."
 
 // Código del informe diagnóstico
 * code MS
 * code ^short = "Código que identifica el informe diagnóstico del paciente."
 * code ^definition = "Código que identifica el informe diagnóstico del paciente."
-//* code from CUPSVS (preferred)
+
 
 // Código del tipo de informe diagnóstico
 * category MS
-* category ^short = "Código que identifica el tipo de informe diagnóstico."
-* category ^definition = "Código que identifica el tipo de informe diagnóstico."
+* category ^short = "Codigo de las otras tecnologías en salud  (código de la tecnología en salud)."
+* category ^definition = "Código que identifica el tipo de informe diagnósticoCodigo de las otras tecnologías en salud  (código de la tecnología en salud)."
 // category from TipoInformeDiagnosticoVS
 
-* valueCodeableConcept 1.. MS
+// Código del resultado del informe diagnóstico
+/** valueCodeableConcept 1.. MS
 * valueCodeableConcept only CodeableConcept
 //* valueCodeableConcept from  
-* valueCodeableConcept ^short = "codificación del resultado del informe diagnóstico."
+* valueCodeableConcept ^short = "codificación del resultado del informe diagnóstico."*/
+

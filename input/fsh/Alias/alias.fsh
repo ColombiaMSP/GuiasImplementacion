@@ -48,6 +48,7 @@ Alias: $canonicaPaciente = https://www.minsalud.gov.co/ihc/fhir/StructureDefinit
 Alias: $canonicaPractitioner = https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/PractitionerCo 
 Alias: $canonicaComposition = https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/CompositionCo 
 Alias: $canonicaCondition = https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCo
+Alias: $canonicaConditionPrincipal = https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/ConditionCoPrincipal
 Alias: $canonicaMedication = https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/MedicationStatementCo
 Alias: $canonicaAlergia = https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/AlergiaCo
 
