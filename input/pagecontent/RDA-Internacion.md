@@ -5,7 +5,7 @@
 ----
 
 ### Perfiles
-En esta sección se describen los perfiles especpigicos realizados para este contexto de atención. 
+En esta sección se describen los perfiles especpificos realizados para este contexto de atención. 
 
 ----
 
@@ -25,7 +25,7 @@ En este apartado se describen las diferentes secciones incluidas en el documento
 
 1️⃣ Seccion que contiene todos los antecedentes de salud del paciente:
 
-✅ **Antecedentes Diagnósiticos**: [Condition Co](StructureDefinition-BundleDOCUMENTInternacion.html).
+✅ **Antecedentes Diagnósiticos**: [Condition Co](StructureDefinition-Conditionco.html).
 
 ✅ **Medicación Actual**: [Medication Statement](StructureDefinition-BundleDOCUMENTInternacion.html).
 
@@ -41,13 +41,13 @@ En este apartado se describen las diferentes secciones incluidas en el documento
 [Encounter Hospitalización](StructureDefinition-EncounterHospitalizacionCo.html).
 
 ✅ **Diagnóstico Principal** - representa el diagnostico princial de la atención, los demas diagnósticos, se encuentran en Encounter.
-[Condition Co](StructureDefinition-Conditionco.html).
+[Condition Co](StructureDefinition-ConditioncoPrincipal.html).
 
 ✅ **Procedimientos Realizados**- En proceso [Procedure Co](StructureDefinition-ProcedureCo.html).
 
 ✅ **Medicación suministrada** - En proceso [Medication AdminstrationCo](StructureDefinition-MedicationAdministrationCo.html).
 
-✅ **Laboratorios Realizados** - En proceso [Diagnostic ReportCo](StructureDefinition-DiagnosticReportCo.html).
+✅ **Otras tecnologías** - En proceso [Observation Co](StructureDefinition-ObservationCo.html).
 
 
 ---
@@ -68,6 +68,12 @@ En este apartado se describen las diferentes secciones incluidas en el documento
 
 
 -----
+
+5️⃣ **Datos de Incapacidad**: Contiene la información asociada a la incapacidad.
+
+✅ **Observation Incapacidad** - [Observation Incapacidad](StructureDefinition-ObservationCoIncapacidad.html).
+
+
 -----
 
 ### Documento de Referencia

@@ -29,7 +29,8 @@ Description: "---- Pendiente de definir el Bundle para el documento."
     //detalles de la atencion:
     InformacionAtencion 0..* MS and
     Ordenes 0..* MS and
-    SoporteDocumental 0..* MS
+    SoporteDocumental 0..* MS and
+    DatosIncapacidad 0..* MS
 
 
   
@@ -67,15 +68,19 @@ Description: "---- Pendiente de definir el Bundle para el documento."
 
 * entry[Ordenes] ^short = "Órdenes de tratamiento del paciente"
 * entry[Ordenes] ^definition = "Órdenes de tratamiento del paciente, incluyendo medicamentos ordenados y otras indicaciones."
-
 * entry[Ordenes].resource 1..
-// -- pendeinte --->> * entry[Ordenes].resource only ORDENEES?
+
+* entry[Ordenes].resource only ServiceRequestCo or MedicationRequestCo or ServiceRequestProcedureCo
 
 * entry[SoporteDocumental] ^short = "Soporte documental del paciente"
 * entry[SoporteDocumental] ^definition = "Soporte documental del paciente, incluyendo referencias a documentos relevantes."
 * entry[SoporteDocumental].resource 1..
 * entry[SoporteDocumental].resource only DocumentReferencePDF
 
+* entry[DatosIncapacidad] ^short = "Datos de incapacidad del paciente"  
+* entry[DatosIncapacidad] ^definition = "Datos de incapacidad del paciente, incluyendo observaciones relacionadas con la incapacidad."
+* entry[DatosIncapacidad].resource 1..
+* entry[DatosIncapacidad].resource only ObservationCoIncapacidad
 
 
 /*-------------------------------------------------------------------------------------------------------------------   
@@ -116,7 +121,8 @@ Description: "Documento para representar la internación del paciente."
     //detalles de la atencion:
     InformacionAtencion 0..1 MS and
     Ordenes 0..1 MS and
-    SoporteDocumental 0..1 MS
+    SoporteDocumental 0..1 MS and
+    DatosIncapacidad 0..1 MS	
 
 
 //**************************informacion antecendetes ******************************************/  
@@ -167,7 +173,7 @@ Description: "Documento para representar la internación del paciente."
     Diagnosticos 0..1 and
     MedicacionSuministrada 0..1 and                    
     ProcedimientosRealizados 0..1 and
-    LaboratoriosRealizados 0..1
+    OtrasTecnologias 0..1
 
 
 * section[InformacionAtencion].section[Detalles].entry only Reference(EncounterHospitalizacionCo)
@@ -177,14 +183,14 @@ Description: "Documento para representar la internación del paciente."
 * section[InformacionAtencion].section[Diagnosticos].title = "Diagnóstico Principal"
 
 
-* section[InformacionAtencion].section[MedicacionSuministrada].entry only Reference(MedicationAdministration)
+* section[InformacionAtencion].section[MedicacionSuministrada].entry only Reference(MedicationAdministrationCo)
 * section[InformacionAtencion].section[MedicacionSuministrada].title = "Medicamentos suministrados"
 
 * section[InformacionAtencion].section[ProcedimientosRealizados].entry only Reference(ProcedureCo)
 * section[InformacionAtencion].section[ProcedimientosRealizados].title = "Procedimientos realizados"
 
-* section[InformacionAtencion].section[LaboratoriosRealizados].entry only Reference(ObservationCo)
-* section[InformacionAtencion].section[LaboratoriosRealizados].title = "Laboratorios realizados"
+* section[InformacionAtencion].section[OtrasTecnologias].entry only Reference(ObservationCo)
+* section[InformacionAtencion].section[OtrasTecnologias].title = "Otras tecnologías realizadas"
 
  
  
@@ -213,26 +219,21 @@ Description: "Documento para representar la internación del paciente."
 * section[Ordenes].section[OtrasIndicaciones].title = "Otras Indicaciones"
 
 
-   
+
 //*************************soporte documental******************************************************/   
 
 // Sección: SoporteDocumental
 * section[SoporteDocumental].entry.reference 1..1
 * section[SoporteDocumental].entry only Reference(DocumentReferencePDF) 
-
+* section[SoporteDocumental].title = "Soporte documental de la Hospitalización"
 * section[SoporteDocumental].entry ^short = "Referencia a documento"
 * section[SoporteDocumental].entry ^definition = "Referencia a un documento que soporta la información del documento de hospitalización."
 
 
+//*************************datos incapacidad******************************************************/
+// Sección: DatosIncapacidad
 
-
-/*-------------------------------------------------------------------------------------------------------------------   
-----------------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------------*/
-
-
-/*-------------------------------------------------------------------------------------------------------------------   
-----------------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------------*/
+* section[DatosIncapacidad].title = "Datos de incapacidad del paciente"
+* section[DatosIncapacidad].entry only Reference(ObservationCoIncapacidad)
 
 

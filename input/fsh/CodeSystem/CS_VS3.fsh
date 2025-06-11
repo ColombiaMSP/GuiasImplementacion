@@ -151,4 +151,4 @@ Description: "Tipo de diagnóstico principal al egreso"
 * ^publisher = "COL"
 * ^jurisdiction = urn:iso:std:iso:3166#COL "Colombia"
 * include codes from system TipoDiagnosticoEgresoCS
-	
+

@@ -17,7 +17,7 @@ Title:          "Observation Co"
 * category MS
 * category ^short = "Tipo de tecnología en salud."
 * category ^definition = "Tipo de tecnología en salud."
-* category from TipoTecnologiaSaludMedicamentoVS
+* category from TipoTecnologiaSaludProcedimientoVS
 
 
 // Fecha de emisión del informe diagnóstico
