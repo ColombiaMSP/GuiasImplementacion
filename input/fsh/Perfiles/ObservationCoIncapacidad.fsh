@@ -1,6 +1,6 @@
 Profile:        ObservationCoIncapacidad
 Parent:         Observation
-Title:          "Observación de la condición de incapacidad del paciente."
+Title:          "ObservationCoIncapacidad"
 Description:   "Perfil de la observación de la condición de incapacidad del paciente."
 
 
