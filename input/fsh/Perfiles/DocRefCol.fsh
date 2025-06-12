@@ -71,9 +71,7 @@ Description: "Docuento utilizado para guardar referencias."
 * category 0..1 MS
 * category ^short = "Grupo de servicios al que pertenece el documento."   
 * category.coding 1..1 MS
-* category.coding ^short = "..."  
 * category.coding.code 1..1
-* category.coding.code ^short = "...." 
 * category.coding.code from GrupoServiciosVS (required)
 
 /**************fin nuevas variables V0.5*****************************************************************/
