@@ -79,3 +79,6 @@ En este apartado se describen las diferentes secciones incluidas en el documento
 ### Documento de Referencia
 
 ✅ Archivo Referencia: [RDAInternacion_Hospitalizacion.xlsx](RDAInternacion_Hospitalizacion.xlsx)
+
+✅ Diagrama de Estructura de Documento RDA Consulta Externa: [Internacion.png](Internacion.png)
+

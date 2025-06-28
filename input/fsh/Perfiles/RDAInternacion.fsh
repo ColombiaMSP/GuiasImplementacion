@@ -2,9 +2,9 @@
 ----------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------*/
 
-Profile: BundleDOCUMENTInternacion
+Profile: BundleDOCInternacion
 Parent: Bundle
-Title: " Bundle DOCUMENT Internacion"
+Title: " Bundle Document Internacion"
 Description: "---- Pendiente de definir el Bundle para el documento."
 
 * type = #document (exactly)
