@@ -40,6 +40,10 @@ Alias: $Nacionalidad = https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/
 Alias: $ZonaResidencia = https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-address-zonaResidencia
 Alias: $canonicaEtnia = https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-patient-etnia  
 Alias: $canonicaComunidadEtnica = https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-patient-comunidadetnica
+
+Alias: $canonicaClasifTriage = https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-encounter-clasiftriage
+Alias: $canonicaTriageFecha = https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-encounter-fechatriage
+
 //co-etnia //Etnia
 //Alias: $Nacionalidad = https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-nacionalidad
 

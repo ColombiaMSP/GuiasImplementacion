@@ -23,16 +23,6 @@ En esta sección se describen los perfiles especpificos realizados para este con
 
 ----
 
-#### Generales: 
-
-1️⃣ Perfil de **Bundle Document** Document de RDA Internación Hospitalización:
-[Bundle Document Hospitalización](StructureDefinition-BundleDOCUMENTInternacion.html).
-
-2️⃣ Perfil de **Composition** Documento de RDA Internación Hospitalización:
-[Composition Hospitalización](StructureDefinition-CompositionInternacionCo.html).
-
-----
-
 #### Detalle de Secciones: 
 
 En este apartado se describen las diferentes secciones incluidas en el documento **Compostion** para poder representar tanto de antecedendentes del paciente, asi como detalles de la atención:

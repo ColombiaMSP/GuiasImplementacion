@@ -109,3 +109,94 @@ Title:          "EncounterUrgencia Co"
 * hospitalization.destination ^definition = "Destino del paciente al egreso del encuentro de hospitalización."
 * hospitalization.destination.display MS
 * hospitalization.destination.display ^short = "Descripción del destino del paciente al egreso del encuentro de hospitalización."
+
+
+
+/*******************************************************/
+
+* extension contains $canonicaClasifTriage named clasiftriage 0..1 MS
+* extension[clasiftriage].valueCodeableConcept from NivelTriageVS
+
+// ------------ Comunidad Etnica
+* extension contains $canonicaTriageFecha named TriageFecha 0..1 MS
+* extension[TriageFecha].valueDateTime 1..1
+
+/**********************************************************/
+//* extension contains TriageInfoExtension named TriageInfo 1..1 MS
+// * extension contains co-AllergyIntolerance-tipo named TipoAlergia 1..1 MS
+
+/*
+
+* extension contains
+    triageClasificacion 1..1 MS and
+    fechaTriage 1..1 MS
+
+
+* extension[triageClasificacion].value[x] only Coding
+//* extension[triageClasificacion].value[x] from http://hl7.org/fhir/us/core/ValueSet/omb-race-category (required)
+* extension[triageClasificacion].valueCodeableConcept from NivelTriageVS
+* extension[triageClasificacion] ^short = "Clasificación del triage del paciente"
+* extension[fechaTriage].value[x] only dateTime
+
+
+/*
+* extension contains $canonicaEtnia named etnia 0..1 MS
+* extension[etnia] ^short = "Pertenencia étnica del individuo."
+* extension[etnia] ^definition = "Identificador para determinar la pertenencia étnica de la persona."
+* extension[etnia].valueCodeableConcept from EtniaVS
+ 
+
+Extension: TriageInfoExtension
+Id: co-triage-info
+Title: "Información de Triage"
+Description: "Extensión para capturar el nivel de triage y la fecha/hora de realización."
+* ^status = #active
+* ^context[0].type = #element
+* ^context[0].expression = "Encounter"
+
+
+// Nivel de triage (CodeableConcept)
+* extension contains nivelTriage 1..1 MS
+* extension[nivelTriage].valueCodeableConcept from NivelTriageVS (required)
+
+// Fecha y hora del triage (dateTime)
+* extension contains fechaTriage 1..1 MS
+* extension[fechaTriage].valueDateTime
+
+*/
+
+/*****************************************************************************/
+ValueSet: NivelTriageVS
+Id: nivel-triage-vs
+Title: "Nivel de Triage"
+Description: "Conjunto de niveles de triage"
+* include codes from system NivelTriageCS
+
+
+CodeSystem: NivelTriageCS
+Id: nivel-triage-cs
+Title: "Triage - Clasificación"
+Description: "Triage - Clasificación"
+* ^status = #active
+
+* #01 "Triage I" "Triage I"
+* #02 "Triage II" "Triage II"
+* #03 "Triage III" "Triage III"
+* #04 "Triage IV" "Triage IV"
+* #05 "Triage V" "Triage V"
+
+/*------------Clasif TTriage------------------------------------------*/
+Extension: ClasifTriage
+Id: co-encounter-clasiftriage
+Description: "para representar la clasificación de triage de una persona."
+
+* value[x] only CodeableConcept
+* valueCodeableConcept from NivelTriageVS
+
+
+/*------------COMUNIDAD ETNICA-----------------------------------------*/
+Extension: fechaTriage
+Id: co-encounter-fechatriage
+Description: "para representar la fecha y hora de realización del triage."
+
+* valueDateTime 1..1
