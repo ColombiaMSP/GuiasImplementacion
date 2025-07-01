@@ -70,3 +70,21 @@ Description: "Vía de administración del medicamento prescripto al paciente."
 * ^publisher = "COL"
 * ^jurisdiction = urn:iso:std:iso:3166#COL "Colombia"
 * include codes from system https://web.sispro.gov.co/WebPublico/Consultas/ConsultarDetalleReferenciaBasica.aspx?Code=VAD
+
+
+
+/*********************************************************************************************************/
+// 20 -- > Vía de administración de la medicamento  	
+
+ValueSet: FuenteAdmisionVS
+Id: FuenteAdmisionVS
+Title: "Fuente de admisión del paciente"
+Description: "Fuente de admisión del paciente al encuentro."
+* ^name = "FuenteAdmisionVS"
+* ^status = #active
+* ^experimental = false
+* ^version = "1.0.0"
+* ^publisher = "COL"
+* ^jurisdiction = urn:iso:std:iso:3166#COL "Colombia"
+* include codes from system https://web.sispro.gov.co/WebPublico/Consultas/ConsultarDetalleReferenciaBasica.aspx?Code=ViaIngresoUsuario
+

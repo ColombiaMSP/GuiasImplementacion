@@ -197,3 +197,11 @@ Description: "Extension utilizada dentro del Paciente Co, para representar la co
 
 
 
+/*------------OCUPACION------------------------------------------
+Extension: Ocupacion
+Id: co-patient-ocupacion
+Description: "Extension utilizada dentro del Paciente Co, para representar la ocupación de una persona."
+
+* value[x] only CodeableConcept
+* valueCodeableConcept from OcupacionVS
+*/

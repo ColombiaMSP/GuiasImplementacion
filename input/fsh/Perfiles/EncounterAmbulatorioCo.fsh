@@ -28,35 +28,30 @@ Title:          "EncounterAmbulatorio Co"
 * reasonCode.text MS
 * reasonCode from CausaExternaVS
 
-/*
-* hospitalization MS
-* hospitalization ^short = "Información sobre la hospitalización del paciente."
-* hospitalization ^comment = "Comentario adicional sobre la hospitalización del paciente."
-
 
 * hospitalization.admitSource MS
-* hospitalization.admitSource ^short = "PENDIENTE - Fuente de admisión del paciente al encuentro de hospitalización."
-* hospitalization.admitSource ^definition = "Fuente de admisión del paciente al encuentro de hospitalización."
+* hospitalization.admitSource ^short = "Fuente de admisión del paciente al encuentro."
+* hospitalization.admitSource ^definition = "Fuente de admisión del paciente al encuentro."
 
-//* hospitalization.admitSource from FuenteAdmisiónVS
+* hospitalization.admitSource from FuenteAdmisionVS
 
-*/
+
 
 /*******************************************************************************************/
 * diagnosis MS
 * diagnosis.use 1.. MS
 * diagnosis.use from DiagnosisUseVS
 
-* diagnosis.use ^short = "Uso del diagnóstico en el contexto del encuentro de hospitalización."
-* diagnosis.use ^definition = "Uso del diagnóstico en el contexto del encuentro de hospitalización."    
-* diagnosis.use ^comment = "Comentario adicional sobre el uso del diagnóstico en el contexto del encuentro de hospitalización."
+* diagnosis.use ^short = "Uso del diagnóstico en el contexto del encuentro."
+* diagnosis.use ^definition = "Uso del diagnóstico en el contexto del encuentro."
+* diagnosis.use ^comment = "Comentario adicional sobre el uso del diagnóstico en el contexto del encuentro."
 
 
 * diagnosis.condition 1.. MS
 * diagnosis.condition.reference 1.. MS
-* diagnosis.condition.reference ^short = "Referencia a la condición médica del paciente relacionada con el encuentro de hospitalización."
-* diagnosis.condition.reference ^definition = "Referencia a la condición médica del paciente relacionada con el encuentro de hospitalización."
-* diagnosis.condition.reference ^comment = "Comentario adicional sobre la condición médica del paciente relacionada con el encuentro de hospitalización."
+* diagnosis.condition.reference ^short = "Referencia a la condición médica del paciente relacionada con el encuentro."
+* diagnosis.condition.reference ^definition = "Referencia a la condición médica del paciente relacionada con el encuentro."
+* diagnosis.condition.reference ^comment = "Comentario adicional sobre la condición médica del paciente relacionada con el encuentro."
 
 
 * diagnosis ^slicing.discriminator.type = #value

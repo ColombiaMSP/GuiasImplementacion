@@ -70,6 +70,7 @@ Description: "Documento para representar la hospitalización del paciente."
     Antecedentes 0..1 MS and
     AlergiasConocidas 0..1 MS and
     MedicacionActual 0..1 MS and
+    Riesgo 0..1 MS and
     //detalles de la atencion:
     InformacionAtencion 0..1 MS and
     Ordenes 0..1 MS and
@@ -111,7 +112,10 @@ Description: "Documento para representar la hospitalización del paciente."
 * section[MedicacionActual].title = "Medicamentos que el paciente toma actualmente"
 * section[MedicacionActual].entry only Reference(MedicationStatementCo)
 
-   
+* section[Riesgo].code = $loinc#88888-8 "Riesgo del paciente"
+* section[Riesgo].title = "Riesgo del paciente"
+* section[Riesgo].entry only Reference(ObservationCoRiesgo)
+
 //**************************informacion de la atencion  *******************************************/    
 
 // Slicing para subsecciones dentro de Antecedentes

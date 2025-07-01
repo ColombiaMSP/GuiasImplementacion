@@ -118,6 +118,7 @@ Description: "Documento para representar la internación del paciente."
     Antecedentes 0..1 MS and
     AlergiasConocidas 0..1 MS and
     MedicacionActual 0..1 MS and
+    Riesgo 0..1 MS and
     //detalles de la atencion:
     InformacionAtencion 0..1 MS and
     Ordenes 0..1 MS and
@@ -158,6 +159,11 @@ Description: "Documento para representar la internación del paciente."
 * section[MedicacionActual].code = $loinc#10160-0 "Medicación actual"
 * section[MedicacionActual].title = "Medicamentos que el paciente toma actualmente"
 * section[MedicacionActual].entry only Reference(MedicationStatementCo)
+
+// Sección: Riesgo
+* section[Riesgo].code = $loinc#88888-8 "Riesgo del paciente"
+* section[Riesgo].title = "Riesgo del paciente"
+* section[Riesgo].entry only Reference(ObservationCoRiesgo)
 
    
 //**************************informacion de la atencion  *******************************************/    
