@@ -14,8 +14,6 @@ Title:          "EncounterAmbulatorio Co"
 * serviceType MS
 * serviceType from ModalidadTecnologiaSaludVS
 
-
-
 // -------inicio y fin de la hospitalización
 * period MS
 * period.start MS
@@ -34,7 +32,6 @@ Title:          "EncounterAmbulatorio Co"
 * hospitalization.admitSource ^definition = "Fuente de admisión del paciente al encuentro."
 
 * hospitalization.admitSource from FuenteAdmisionVS
-
 
 
 /*******************************************************************************************/

@@ -2,10 +2,11 @@
 ----------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------*/
 
-Profile: BundleDOCUMENTConsultaExterna
+Profile: BundleDOCConsultaExterna
 Parent: Bundle
 Title: "Bundle Documento Consulta Externa"
-Description: "---- Pendiente de definir el Bundle para el documento."
+Description: "Representa un documento de consulta externa del paciente."
+
 
 * type = #document (exactly)
 * timestamp 1..1 MS // La fecha de creación es obligatoria
@@ -22,15 +23,61 @@ Description: "---- Pendiente de definir el Bundle para el documento."
 
 * entry contains
     Composition 1..1 and
-    Patient 1..1
+    Patient 1..1 and  
+    Antecedentes 0..* MS and
+    AlergiasConocidas 0..* MS and
+    MedicacionActual 0..* MS and
+    //detalles de la atencion:
+    InformacionAtencion 0..* MS and
+    Ordenes 0..* MS and
+    SoporteDocumental 0..* MS and
+    DatosIncapacidad 0..* MS
+
 
  
   
-* entry[Composition] ^short = "...."
-* entry[Composition] ^definition = "...."
+* entry[Composition] ^short = "Documento Consulta Externa"
+* entry[Composition] ^definition = "Representa un documento de consulta externa del paciente."
 
-* entry[Composition].resource 1..
+* entry[Composition].resource 1..1
 * entry[Composition].resource only CompositionConsultaExternaCo
+
+* entry[Antecedentes] ^short = "Antecedentes clínicos del paciente"
+* entry[Antecedentes] ^definition = "Antecedentes clínicos del paciente, incluyendo diagnósticos y antecedentes familiares."
+* entry[Antecedentes].resource 1..
+* entry[Antecedentes].resource only ConditionCo
+
+* entry[AlergiasConocidas] ^short = "Alergias conocidas del paciente"
+* entry[AlergiasConocidas] ^definition = "Alergias conocidas del paciente."
+* entry[AlergiasConocidas].resource 1..
+* entry[AlergiasConocidas].resource only AlergiaCo
+
+* entry[MedicacionActual] ^short = "Medicamentos actuales del paciente"
+* entry[MedicacionActual] ^definition = "Medicamentos actuales del paciente."
+* entry[MedicacionActual].resource 1..
+* entry[MedicacionActual].resource only MedicationStatementCo
+
+* entry[InformacionAtencion] ^short = "Información de la atención del paciente"
+* entry[InformacionAtencion] ^definition = "Información de la atención del paciente, incluyendo detalles de la atención, diagnósticos, medicamentos suministrados, procedimientos realizados y laboratorios realizados."
+* entry[InformacionAtencion].resource 1..
+* entry[InformacionAtencion].resource only EncounterAmbulatorioCo
+
+
+* entry[Ordenes] ^short = "Órdenes de tratamiento del paciente"
+* entry[Ordenes] ^definition = "Órdenes de tratamiento del paciente, incluyendo medicamentos ordenados y otras indicaciones."
+* entry[Ordenes].resource 1..
+
+* entry[Ordenes].resource only ServiceRequestCo or MedicationRequestCo or ServiceRequestProcedureCo
+
+* entry[SoporteDocumental] ^short = "Soporte documental del paciente"
+* entry[SoporteDocumental] ^definition = "Soporte documental del paciente, incluyendo referencias a documentos relevantes."
+* entry[SoporteDocumental].resource 1..
+* entry[SoporteDocumental].resource only DocumentReferencePDF
+
+* entry[DatosIncapacidad] ^short = "Datos de incapacidad del paciente"  
+* entry[DatosIncapacidad] ^definition = "Datos de incapacidad del paciente, incluyendo observaciones relacionadas con la incapacidad."
+* entry[DatosIncapacidad].resource 1..
+* entry[DatosIncapacidad].resource only ObservationCoIncapacidad
 
 
 
@@ -45,7 +92,8 @@ Title: "Documento Consulta Externa"
 Description: "Documento para representar la consulta externa del paciente."
 
 * status = #final
-* type = $loinc#34133-9 "Resumen de Alta"
+* type = $loinc#34105-7 "Nota de consulta"
+
 
 //* --- Author : referencia a un practitioner----
 * author 1..1 
@@ -74,7 +122,8 @@ Description: "Documento para representar la consulta externa del paciente."
     //detalles de la atencion:
     InformacionAtencion 0..1 MS and
     Ordenes 0..1 MS and
-    SoporteDocumental 0..1 MS
+    SoporteDocumental 0..1 MS and    
+    DatosIncapacidad 0..1 MS	
 
 
 //**************************informacion antecendetes ******************************************/  
@@ -99,7 +148,7 @@ Description: "Documento para representar la consulta externa del paciente."
 
 * section[Antecedentes].section[antecedentesFamiliares].code = $loinc#10157-6 "Historia familiar"
 * section[Antecedentes].section[antecedentesFamiliares].title = "Antecedentes familiares"
-* section[Antecedentes].section[antecedentesFamiliares].entry only Reference(FamilyMemberHistory)
+* section[Antecedentes].section[antecedentesFamiliares].entry only Reference(AntecedentesFamiliaresCo)
 
 // Sección: Alergias
 * section[AlergiasConocidas].code = $loinc#48765-2 "Historial de alergias"
@@ -113,7 +162,7 @@ Description: "Documento para representar la consulta externa del paciente."
 
 
 // Sección: Riesgo
-* section[Riesgo].code = $loinc#88888-8 "Riesgo del paciente"
+* section[Riesgo].code = $loinc#29762-2 "Riesgo del paciente"
 * section[Riesgo].title = "Riesgo del paciente"
 * section[Riesgo].entry only Reference(ObservationCoRiesgo)
 
@@ -129,20 +178,16 @@ Description: "Documento para representar la consulta externa del paciente."
 
 * section[InformacionAtencion].section contains
     Detalles 0..1 and
-    Diagnosticos 0..1 and
-    MedicacionSuministrada 0..1 and                    
-    ProcedimientosRealizados 0..1 and
-    LaboratoriosRealizados 0..1
+    Diagnosticos 0..1
 
 
-* section[InformacionAtencion].section[Detalles].entry only Reference(Encounter)
+* section[InformacionAtencion].section[Detalles].entry only Reference(EncounterAmbulatorioCo)
 * section[InformacionAtencion].section[Diagnosticos].entry only Reference(ConditionCo)
-* section[InformacionAtencion].section[MedicacionSuministrada].entry only Reference(MedicationAdministration)
-* section[InformacionAtencion].section[ProcedimientosRealizados].entry only Reference(Procedure)
-* section[InformacionAtencion].section[LaboratoriosRealizados].entry only Reference(Observation)
- 
- 
+
 //*************************ordeneres***************************************************************/ 
+
+
+
 
 // Slicing para subsecciones ORDENES
 * section[Ordenes].section ^slicing.discriminator[0].type = #pattern
@@ -152,23 +197,37 @@ Description: "Documento para representar la consulta externa del paciente."
 
 * section[Ordenes].section contains
     MedicamentosOrdenados 0..1 and
+    ProcedimientosOrdenados 0..1 and
     OtrasIndicaciones 0..1 
 
-* section[Ordenes].section[MedicamentosOrdenados].entry only Reference(MedicationRequest)
-* section[Ordenes].section[OtrasIndicaciones].entry only Reference(ServiceRequest)
+* section[Ordenes].section[MedicamentosOrdenados].entry only Reference(MedicationRequestCo)
+* section[Ordenes].section[MedicamentosOrdenados].title = "Medicamentos Ordenados"
+//* section[Ordenes].section[MedicamentosOrdenados].code = $loinc#10160-0 "Medicamentos ordenados"
 
+* section[Ordenes].section[ProcedimientosOrdenados].entry only Reference(ServiceRequestProcedureCo)
+* section[Ordenes].section[ProcedimientosOrdenados].title = "Procedimientos Ordenados"
+//* section[Ordenes].section[MedicamentosOrdenados].code = $loinc#10160-0 "Medicamentos ordenados"
+
+* section[Ordenes].section[OtrasIndicaciones].entry only Reference(ServiceRequestCo)
+* section[Ordenes].section[OtrasIndicaciones].title = "Otras Indicaciones"
 
    
 //*************************soporte documental******************************************************/   
 
 // Sección: SoporteDocumental
 * section[SoporteDocumental].entry.reference 1..1
-* section[SoporteDocumental].entry only Reference(DocumentReference) 
+* section[SoporteDocumental].entry only Reference(DocumentReferencePDF) 
 
 * section[SoporteDocumental].entry ^short = "Referencia a documento"
 * section[SoporteDocumental].entry ^definition = "Referencia a un documento que soporta la información del documento de hospitalización."
 
 
+
+//*************************datos incapacidad******************************************************/
+// Sección: DatosIncapacidad
+
+* section[DatosIncapacidad].title = "Datos de incapacidad del paciente"
+* section[DatosIncapacidad].entry only Reference(ObservationCoIncapacidad)
 
 
 /*-------------------------------------------------------------------------------------------------------------------   
