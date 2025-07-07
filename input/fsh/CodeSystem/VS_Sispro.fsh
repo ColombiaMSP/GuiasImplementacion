@@ -88,3 +88,24 @@ Description: "Fuente de admisión del paciente al encuentro."
 * ^jurisdiction = urn:iso:std:iso:3166#COL "Colombia"
 * include codes from system https://web.sispro.gov.co/WebPublico/Consultas/ConsultarDetalleReferenciaBasica.aspx?Code=ViaIngresoUsuario
 
+
+
+/*********************************************************************************************************/
+// 32.2  --- Codigo de la unidad de medida de la Dosis administrada del medicamento institucionalmente 
+
+ValueSet: UnidadMedidaVS
+Id: UnidadMedidaVS
+Title: "Codigo de la unidad de medida de la Dosis administrada del medicamento institucionalmente "
+Description: "Codigo de la unidad de medida de la Dosis administrada del medicamento institucionalmente ."
+* ^name = "UnidadMedidaVS"
+* ^status = #active
+* ^experimental = false
+* ^version = "1.0.0"
+* ^publisher = "COL"
+* ^jurisdiction = urn:iso:std:iso:3166#COL "Colombia"
+* include codes from system https://web.sispro.gov.co/WebPublico/Consultas/ConsultarDetalleReferenciaBasica.aspx?Code=UMM
+
+
+
+
+	

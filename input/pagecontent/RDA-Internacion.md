@@ -33,6 +33,8 @@ En este apartado se describen las diferentes secciones incluidas en el documento
 
 ✅ **Antecedentes Familiares**: [Antecedentes Familiares](StructureDefinition-AntecedentesFamiliaresCo.html).
 
+✅ **Riesgos**: [Riesgos](StructureDefinition-ObservationCoRiesgo.html).
+
 ----
 
 2️⃣ Seccion que contiene información especpifica de la atencion:
@@ -43,11 +45,11 @@ En este apartado se describen las diferentes secciones incluidas en el documento
 ✅ **Diagnóstico Principal** - representa el diagnostico princial de la atención, los demas diagnósticos, se encuentran en Encounter.
 [Condition Co](StructureDefinition-ConditioncoPrincipal.html).
 
-✅ **Procedimientos Realizados**- En proceso [Procedure Co](StructureDefinition-ProcedureCo.html).
+✅ **Procedimientos Realizados**-  [Procedure Co](StructureDefinition-ProcedureCo.html).
 
-✅ **Medicación suministrada** - En proceso [Medication AdminstrationCo](StructureDefinition-MedicationAdministrationCo.html).
+✅ **Medicación suministrada** -  [Medication AdminstrationCo](StructureDefinition-MedicationAdministrationCo.html).
 
-✅ **Otras tecnologías** - En proceso [Observation Co](StructureDefinition-ObservationCo.html).
+✅ **Otras tecnologías** -  [ObservationCO Otros Procedimientos](StructureDefinition-ObservationCoOtrosProcedimientos.html).
 
 
 ---

@@ -61,8 +61,26 @@ Title:          "Medication Administration Co"
 * dosage.dose MS
 * dosage.dose ^short = "Dosis del medicamento administrado al paciente."
 * dosage.dose ^definition = "Dosis del medicamento administrado al paciente."
+* dosage.dose.unit from UnidadMedidaVS
+
+* dosage.dose.value MS
+* dosage.dose.value ^short = "Cantidad del medicamento administrado al paciente."
+* dosage.dose.value ^definition = "Cantidad del medicamento administrado al paciente."
+
+
+
+
 
 //fecha de administración del medicamento
 * effective[x] MS
 * effective[x] ^short = "Fecha de administración del medicamento al paciente."
 * effective[x] ^definition = "Fecha de administración del medicamento al paciente."
+
+* request MS
+* request ^short = "Referencia a la solicitud del medicamento administrado al paciente."
+* request ^definition = "Referencia a la solicitud del medicamento administrado al paciente."
+
+* request.reference MS
+* request.reference ^short = "Referencia específica de la solicitud del medicamento administrado al paciente."
+* request only Reference(MedicationRequestCo)
+

@@ -84,15 +84,14 @@ Title:          "EncounterAmbulatorio Co"
 * location.location.type ^definition = "Tipo de ubicación donde se realizó la atención al paciente."
 * location.location.type from EntornoAtencionVS
 
-/*
+
 * hospitalization.dischargeDisposition MS
 * hospitalization.dischargeDisposition ^short = "Condición y destino del usuario al egreso."
 * hospitalization.dischargeDisposition ^definition = "Condición y destino del usuario al egreso."
 * hospitalization.dischargeDisposition from DisposicionEgresoVS
 
 * hospitalization.destination MS
-* hospitalization.destination ^short = "Destino del paciente al egreso del encuentro de hospitalización."
-* hospitalization.destination ^definition = "Destino del paciente al egreso del encuentro de hospitalización."
+* hospitalization.destination ^short = "Destino del paciente al egreso del encuentro."
+* hospitalization.destination ^definition = "Destino del paciente al egreso del encuentro"
 * hospitalization.destination.display MS
-* hospitalization.destination.display ^short = "Descripción del destino del paciente al egreso del encuentro de hospitalización."
-*/
+* hospitalization.destination.display ^short = "Descripción del destino del paciente al egreso del encuentro."

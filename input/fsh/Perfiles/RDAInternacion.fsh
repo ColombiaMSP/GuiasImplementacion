@@ -83,6 +83,7 @@ Description: "---- Pendiente de definir el Bundle para el documento."
 * entry[DatosIncapacidad].resource only ObservationCoIncapacidad
 
 
+
 /*-------------------------------------------------------------------------------------------------------------------   
 ----------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------*/
@@ -195,7 +196,7 @@ Description: "Documento para representar la internación del paciente."
 * section[InformacionAtencion].section[ProcedimientosRealizados].entry only Reference(ProcedureCo)
 * section[InformacionAtencion].section[ProcedimientosRealizados].title = "Procedimientos realizados"
 
-* section[InformacionAtencion].section[OtrasTecnologias].entry only Reference(ObservationCo)
+* section[InformacionAtencion].section[OtrasTecnologias].entry only Reference(ObservationCoOtrosProcedimientos)
 * section[InformacionAtencion].section[OtrasTecnologias].title = "Otras tecnologías realizadas"
 
  

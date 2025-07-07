@@ -33,6 +33,8 @@ En este apartado se describen las diferentes secciones incluidas en el documento
 
 ✅ **Antecedentes Familiares**: [Antecedentes Familiares](StructureDefinition-AntecedentesFamiliaresCo.html).
 
+✅ **Riesgos**: [Riesgos](StructureDefinition-ObservationCoRiesgo.html).
+
 ----
 
 2️⃣ Seccion que contiene información especpifica de la atencion:

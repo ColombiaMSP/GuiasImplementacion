@@ -32,7 +32,6 @@ Description: "Frecuencia Value Set."
 
 
 
-
 // tipo de tecnología en salud
 CodeSystem: TipoTecnologiaSaludCS
 Id: TipoTecnologiaSaludCS

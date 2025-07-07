@@ -146,7 +146,7 @@ Description: "Documento para representar la hospitalización del paciente."
 * section[InformacionAtencion].section[ProcedimientosRealizados].entry only Reference(ProcedureCo)
 * section[InformacionAtencion].section[ProcedimientosRealizados].title = "Procedimientos realizados"
 
-* section[InformacionAtencion].section[OtrasTecnologias].entry only Reference(ObservationCo)
+* section[InformacionAtencion].section[OtrasTecnologias].entry only Reference(ObservationCoOtrosProcedimientos)
 * section[InformacionAtencion].section[OtrasTecnologias].title = "Otras tecnologías realizadas"
 
  

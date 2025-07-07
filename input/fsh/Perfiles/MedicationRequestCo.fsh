@@ -71,8 +71,6 @@ Title:          "Medication Request Co"
 
 
 
-
-
 //Finalidad de la tecnología en Salud	
 * reasonCode MS
 * reasonCode ^short = "Finalidad de la tecnología en Salud	."

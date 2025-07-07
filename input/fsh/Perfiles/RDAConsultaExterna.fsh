@@ -41,8 +41,8 @@ Description: "---- Pendiente de definir el Bundle para el documento."
 
 Profile: CompositionConsultaExternaCo
 Parent: Composition
-Title: "Documento Hospitalización"
-Description: "Documento para representar la hospitalización del paciente."
+Title: "Documento Consulta Externa"
+Description: "Documento para representar la consulta externa del paciente."
 
 * status = #final
 * type = $loinc#34133-9 "Resumen de Alta"

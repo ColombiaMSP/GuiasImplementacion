@@ -3,11 +3,6 @@
 
 [......................................................]
 
-[......................................................]
-
-[......................................................]
-
-[......................................................]
 
 
 ---
@@ -27,7 +22,7 @@ En esta sección se describen los perfiles especpificos realizados para este con
 
 En este apartado se describen las diferentes secciones incluidas en el documento **Compostion** para poder representar tanto de antecedendentes del paciente, asi como detalles de la atención:
 
-1️⃣ Seccion que contiene todos los antecedentes de salud del paciente:
+1️⃣ Sección que contiene todos los antecedentes de salud del paciente:
 
 ✅ **Antecedentes Diagnósiticos**: [Condition Co](StructureDefinition-Conditionco.html).
 
@@ -37,21 +32,24 @@ En este apartado se describen las diferentes secciones incluidas en el documento
 
 ✅ **Antecedentes Familiares**: [Antecedentes Familiares](StructureDefinition-AntecedentesFamiliaresCo.html).
 
+✅ **Riesgos**: [Riesgos](StructureDefinition-ObservationCoRiesgo.html).
 ----
+
 
 2️⃣ Seccion que contiene información especpifica de la atencion:
 
-✅ **Encounter Urgencia** - representa toda la informacion de la atención.
+✅ **Encounter Urgencia** - Representa toda la información de la atención.
 [Encounter Urgencia](StructureDefinition-EncounterUrgenciaCo.html).
 
-✅ **Diagnóstico Principal** - representa el diagnostico princial de la atención, los demas diagnósticos, se encuentran en Encounter.
+✅ **Diagnóstico Principal** - Representa el diagnóstico princial de la atención, los demas diagnósticos, se encuentran en Encounter.
 [Condition Co](StructureDefinition-ConditioncoPrincipal.html).
 
-✅ **Procedimientos Realizados**- En proceso [Procedure Co](StructureDefinition-ProcedureCo.html).
+✅ **Procedimientos Realizados**-  [Procedure Co](StructureDefinition-ProcedureCo.html).
 
-✅ **Medicación suministrada** - En proceso [Medication AdminstrationCo](StructureDefinition-MedicationAdministrationCo.html).
+✅ **Medicación suministrada** -  [Medication AdminstrationCo](StructureDefinition-MedicationAdministrationCo.html).
 
-✅ **Otras tecnologías** - En proceso [Observation Co](StructureDefinition-ObservationCo.html).
+
+✅ **Otras tecnologías** -  [ObservationCO Otros Procedimientos](StructureDefinition-ObservationCoOtrosProcedimientos.html).
 
 
 ---
