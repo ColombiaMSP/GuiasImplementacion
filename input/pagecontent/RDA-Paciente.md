@@ -1,12 +1,6 @@
 ### Introducción
 
-[......................................................]
-
-[......................................................]
-
-[......................................................]
-
-[......................................................]
+El **Resumen Digital de Atención - Paciente (RDA Paciente)** es un documento digital que hace referencia a la información clínica más importante al finalizar una atención en salud por parte de un profesional de salud e incluye la información sociodemográfica del paciente, este documento es accesible de forma electrónica para garantizar la continuidad asistencial, este permite tener la información .
 
 ### Perfiles
 
@@ -21,19 +15,14 @@
 
 A continuación se detallan los cambios contenidos en la versión 0.5. 
 
-1. Agregado de variable 18 : _Grupo de servicios_.
-CodeSystem y ValueSet : ModalidadTecnologiaSaludCS y ModalidadTecnologiaSaludVS 
+1. Modificación de **DocumentReferece** para incluir las variables 18.1 y 18.2 , se incluyen :
+GrupoServiciosVS.  y Tipo de documento: ConjuntoDocumentosVS (codigos LOINC)
 
-2. Modificación de *DocumentReferece* para incluir las variables 18.1 y 18.2 , se incluyen :
-GrupoServiciosVS. 
-
-3. Modificación en *Document Reference*: Tipo de documento: ConjuntoDocumentosVS (codigos LOINC)
-
-4. Agregado en *Composition*:
+2. Agregado en **Composition**:
 - Datos del asegurador : _Composition.attester_
 - Fecha-hora inicio y fin de atención: _event.period.start_ y _event.period.end_.
 - Antecedentes Familiares: Seccion composition [antecedentesFamiliares]
 
-5. Agregado de *Condition* codigos CIE11 para code.
+3. Agregado de **ConditionCo** codigos CIE11 para code.
 
-6. Nuevo perfil *AntecedentesFamiliaresCo* para representar los antecedentes familiares. Se agrego conjunto lo valores: _ParentescoCS_.
+4. Nuevo perfil **AntecedentesFamiliaresCo** para representar los antecedentes familiares. Se agrego conjunto lo valores: _ParentescoCS_.
