@@ -9,6 +9,7 @@ Title:          "Procedure Co"
 * subject.reference 1.. MS
 * subject ^short = "Referencia al paciente al que se le ha realizado el procedimiento médico."
 * subject ^definition = "Paciente al que se le ha realizado el procedimiento médico."
+
 * subject.reference ^short = "Cadena de referencia específica del paciente al que se le ha realizado el procedimiento médico."
 * subject.reference ^definition = "Cadena de referencia específica del paciente al que se le ha realizado el procedimiento médico."
 

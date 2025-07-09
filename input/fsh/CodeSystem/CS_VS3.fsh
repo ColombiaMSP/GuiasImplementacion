@@ -50,6 +50,10 @@ Description: "Tipo de tecnología en salud"
 * #08 "Fluidos orgánicos" "Fluidos orgánicos"
 * #09 "Órganos" "Órganos"
 * #10 "Tejidos" "Tejidos"
+* #11 "Células" "Células"
+* #12 "Producto Soporte Nutricional" "Producto Soporte Nutricional"
+* #13 "Servicio complementario" "Servicio complementario"
+
 
 /*****************************************************************/
 ValueSet: TipoTecnologiaSaludProcedimientoVS
@@ -92,6 +96,9 @@ Description: "TipoTecnologiaOtrasTecnologiasVS."
 * include  #08 "Fluidos orgánicos" from system TipoTecnologiaSaludCS
 * include  #09 "Órganos" from system TipoTecnologiaSaludCS
 * include  #10 "Tejidos" from system TipoTecnologiaSaludCS
+* include  #11 "Células" from system TipoTecnologiaSaludCS
+* include  #12 "Producto Soporte Nutricional" from system TipoTecnologiaSaludCS
+* include  #13 "Servicio complementario" from system TipoTecnologiaSaludCS
 
 /*********************************************************/
 

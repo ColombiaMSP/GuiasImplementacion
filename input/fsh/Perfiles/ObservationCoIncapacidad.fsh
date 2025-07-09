@@ -13,7 +13,6 @@ Description:   "Perfil de la observación de la condición de incapacidad del pa
 * code MS
 * code = $loinc#99999 "Detalle Incapacidad" (exactly)
 
-
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
@@ -35,7 +34,7 @@ Description:   "Perfil de la observación de la condición de incapacidad del pa
 * component[diasIncapacidad].valueInteger MS
 
 * component[diasMaternal].code = $loinc#99996 "DiasLicenciaMMaternal" 
-* component[diasMaternal].valueString ^short = "Dias de licencia maternal"
+* component[diasMaternal].valueInteger ^short = "Dias de licencia maternal"
 * component[diasMaternal].valueInteger MS
 
 
