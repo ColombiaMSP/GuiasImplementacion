@@ -18,13 +18,14 @@ Title:          "EncounterAmbulatorio Co"
 * period MS
 * period.start MS
 * period.end MS 
+* period.start ^short = "Fecha y hora de inicio de la atención."
+* period.end ^short = "Fecha y hora de finalización de la atención."
 
 
 * reasonCode MS
-* reasonCode.text ^short = "Causa que motiva la atención."
-* reasonCode.text ^definition = "Causa que motiva la atención."
-* reasonCode.text MS
-* reasonCode from CausaExternaVS
+* reasonCode from CausaExternaVS 
+* reasonCode ^short = "Causa que motiva la atención del paciente en el encuentro de urgencia."
+
 
 
 * hospitalization.admitSource MS
