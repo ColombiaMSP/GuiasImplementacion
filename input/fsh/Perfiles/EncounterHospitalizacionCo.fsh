@@ -9,12 +9,12 @@ Title:          "EncounterHospitalizacion Co"
 //-- internacion
 * type MS
 * type = $GrupoServiciosCS#03 "Internación"
-
+* type ^short = "Grupo de servicios."
 
 // ------- modalidad de Tecnología de Salud
 * serviceType MS
 * serviceType from ModalidadTecnologiaSaludVS
-
+* serviceType ^short = "Modalidad de realización de la tecnología de salud."
 
 
 // -------inicio y fin de la hospitalización
@@ -35,11 +35,10 @@ Title:          "EncounterHospitalizacion Co"
 
 
 * hospitalization.admitSource MS
-* hospitalization.admitSource ^short = "PENDIENTE - Fuente de admisión del paciente al encuentro de hospitalización."
-* hospitalization.admitSource ^definition = "Fuente de admisión del paciente al encuentro de hospitalización."
+* hospitalization.admitSource ^short = "Fuente de admisión del paciente al encuentro."
+* hospitalization.admitSource ^definition = "Fuente de admisión del paciente al encuentro."
 
-//* hospitalization.admitSource from FuenteAdmisiónVS
-
+* hospitalization.admitSource from FuenteAdmisionVS
 
 /*******************************************************************************************/
 * diagnosis MS

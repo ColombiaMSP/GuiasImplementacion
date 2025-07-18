@@ -8,11 +8,12 @@ Title:          "EncounterAmbulatorio Co"
 //-- internacion
 * type MS
 * type = $GrupoServiciosCS#01 "Encuentro Ambulatorio" (exactly)
-
+* type ^short = "Grupo de servicios."
 
 // ------- modalidad de Tecnología de Salud
 * serviceType MS
 * serviceType from ModalidadTecnologiaSaludVS
+* serviceType ^short = "Modalidad de realización de la tecnología de salud."
 
 // -------inicio y fin de la hospitalización
 * period MS
@@ -24,7 +25,7 @@ Title:          "EncounterAmbulatorio Co"
 
 * reasonCode MS
 * reasonCode from CausaExternaVS 
-* reasonCode ^short = "Causa que motiva la atención del paciente en el encuentro de urgencia."
+* reasonCode ^short = "Causa que motiva la atención del paciente en el encuentro"
 
 
 

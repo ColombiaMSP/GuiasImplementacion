@@ -11,9 +11,6 @@ Alias: $canonicaDiscap = http://hl7.org/fhir/StructureDefinition/patient-disabil
 Alias: $VS_gender = http://hl7.org/fhir/ValueSet/administrative-gender
 
 
-// prueba
-
-
 //CS
 Alias: $csEtnea = https://www.minsalud.gov.co/ihc/fhir/CodeSystem/EtniaCS
 Alias: $csDiscap = https://www.minsalud.gov.co/ihc/fhir/CodeSystem/DiscapacidadCS

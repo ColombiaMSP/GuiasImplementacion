@@ -72,7 +72,7 @@ Description: "Código Tipo Riesgo Value Set."
 
 /***********************************************************************/
 
-Instance: ObservationCoRiesgo
+Instance: ObservationCoRiesgoExample
 InstanceOf: ObservationCoRiesgo
 * id = "EjemploObservationCoRiesgo"
 

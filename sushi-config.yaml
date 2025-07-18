@@ -32,7 +32,9 @@ menu:
   Inicio: index.html
   Generalidades: Aspectos-Generales.html
   RDA Definición: rda.html
-  Transacciones: transacciones.html
+  Transacciones: 
+    "Detalle": transacciones.html
+    "Transacciones": TransaccionesV2.html   
   Terminología: terminologia.html
   Perfiles:
     "- Paciente": StructureDefinition-PacienteCo.html
@@ -50,9 +52,7 @@ menu:
     "RDA Urgencias": RDA-Urgencia.html  
     "RDA Consulta Externa": RDA-Consulta-Externa.html
     "RDA Vacunación": intercambioPDF.html 
-
   Resumen: 
     "Versiones": versiones.html
-    "Resumen": artifacts.html
-    
+    "Resumen": artifacts.html    
   Descargas: descargas.html

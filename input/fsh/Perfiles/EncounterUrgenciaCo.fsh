@@ -8,10 +8,12 @@ Title:          "EncounterUrgencia Co"
 //-- internacion
 * type MS
 * type = $GrupoServiciosCS#02 "Encuentro de Urgencia" (exactly)
+* type ^short = "Grupo de servicios."
 
 // ------- modalidad de Tecnología de Salud
 * serviceType MS
 * serviceType from ModalidadTecnologiaSaludVS
+* serviceType ^short = "Modalidad de realización de la tecnología de salud."
 
 //prioridad
 * priority MS

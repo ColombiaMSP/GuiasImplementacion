@@ -17,11 +17,15 @@ Description: "Se describe como debe ser el recurso Bundle para transportar Docum
 
 
 * entry contains
+    List 1..1 and
     DocumentRef 1..1 and
-    Profesional 1..1 and
     BundleDocument 1..1 and
     Patient 1..1
   
+
+/*   --------- list ---------*/
+* entry[List] ^short = "Lista."
+* entry[List] ^definition = "Lista."
 
 /*   --------- Document REF ---------*/
 * entry[DocumentRef] ^short = "Document Reference."
@@ -47,17 +51,6 @@ Description: "Se describe como debe ser el recurso Bundle para transportar Docum
 * entry[BundleDocument].request 1..
 * entry[BundleDocument].request.method = #POST
 
-
-/*   --------- Practitioner ---------*/
-* entry[Profesional] ^short = "Profesional."
-* entry[Profesional] ^definition = "Profesional"
-
-* entry[Profesional].resource 1..
-* entry[Profesional].resource only PractitionerCo
-
-//metodo POST
-* entry[Profesional].request 1..
-* entry[Profesional].request.method = #POST
 
 
 /* --------- PACIENTE ---------*/
