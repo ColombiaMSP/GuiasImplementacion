@@ -1,3 +1,5 @@
+Alias: $sistema_codificacion_riesgo_observation = https://www.minsalud.gov.co/ihc/fhir/CodeSystem/discrimicion-riesgoCS
+
 Profile:        ObservationCoRiesgo
 Parent:         Observation
 Title:          "ObservationCoRiesgo"
@@ -28,13 +30,13 @@ Description:   "Perfil de la observación de la condición de riesgo del pacient
     tipoRiesgo 1..1 and
     factorRiesgo 1..1
 
-* component[tipoRiesgo].code = $loinc#01 "TipoRiesgo" 
+* component[tipoRiesgo].code = $sistema_codificacion_riesgo_observation#01 "TipoRiesgo" 
 * component[tipoRiesgo] ^short = "Clasificación del tipo de riesgo."
 
 * component[tipoRiesgo].valueCodeableConcept from CodigoTipoRiesgoVS
 
 
-* component[factorRiesgo].code = $loinc#02 "FactorRiesgo" 
+* component[factorRiesgo].code = $sistema_codificacion_riesgo_observation#02 "FactorRiesgo" 
 * component[factorRiesgo] ^short = "Descripción del factor de riesgo"
 * component[factorRiesgo].valueString MS
 

@@ -33,9 +33,17 @@ Title:          "Procedure Co"
 * category from TipoTecnologiaSaludProcedimientoVS
 
 
+
+//profesional de la salud que realiza el procedimiento médico
 * performer MS
 * performer ^short = "Información del profesional de la salud que realiza el procedimiento médico al paciente."
 * performer ^definition = "Información del profesional de la salud que realiza el procedimiento médico al paciente."
+* performer.actor MS
+* performer.actor ^short = "Referencia al profesional de la salud que realiza el procedimiento médico al paciente."
+* performer.actor.display ^short = "Nombre del profesional de la salud que realiza el procedimiento médico al paciente."
+* performer.actor.display ^definition = "Nombre del profesional de la salud que realiza el procedimiento médico al paciente."
+
+
 
 // Resultado del procedimiento médico
 // Código del resultado del procedimiento médico
@@ -43,3 +51,9 @@ Title:          "Procedure Co"
 * outcome ^short = "Código que identifica el resultado del procedimiento médico."
 * outcome ^definition = "Código que identifica el resultado del procedimiento médico."
 
+// "Finalidad de la tecnología en Salud."
+* reasonCode MS
+* reasonCode ^short = "Finalidad de la tecnología en Salud."
+* reasonCode ^definition = "Finalidad de la tecnología en Salud."
+* reasonCode.text MS
+* reasonCode from FinalidadTecnologiaVS

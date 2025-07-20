@@ -17,14 +17,12 @@ Title: "DocumentReferencePDF"
 
 * subject.reference 1..
 * subject.reference ^short = "URL que referencia al recurso paciente."
-
-
 * subject only Reference(PacienteCo)
 
 
 //-----------Contenido : PDF ---------
 * content.attachment MS
 * content.attachment.url 1..1 MS
-* content.attachment.url ^short = "URL que apunta al documento PDF."
-* content.attachment.url ^definition = "URL que apunta al documento PDF asociado a la referencia."
+* content.attachment.url ^short = "URL que referencia al documento PDF."
+* content.attachment.url ^definition = "URL que referencia al documento PDF asociado a la referencia."
 

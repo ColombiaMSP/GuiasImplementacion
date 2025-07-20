@@ -23,7 +23,11 @@ Title:          "ObservationCoOtrosProcedimientos"
 * code ^short = "Código que identifica el informe diagnóstico del paciente."
 * code ^definition = "Código que identifica el informe diagnóstico del paciente."
 
-* code from TipoTecnologiaSaludProcedimientoVS
 
+//Tipo de tecnología en salud	
+* category MS
+* category ^short = "Tipo de tecnología en salud."
+* category ^definition = "Tipo de tecnología en salud."
+* category from TipoTecnologiaOtrasTecnologiasVS
 
 

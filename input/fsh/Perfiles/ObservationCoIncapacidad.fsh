@@ -1,8 +1,10 @@
+Alias: $sistema_codificacion_incapacidad_observation = https://www.minsalud.gov.co/ihc/fhir/CodeSystem/discrimicion-incapacidadCS
+
+
 Profile:        ObservationCoIncapacidad
 Parent:         Observation
 Title:          "ObservationCoIncapacidad"
 Description:   "Perfil de la observación de la condición de incapacidad del paciente."
-
 
 
 //---paciente
@@ -11,7 +13,7 @@ Description:   "Perfil de la observación de la condición de incapacidad del pa
 * subject.reference 1.. MS
 
 * code MS
-* code = $loinc#99999 "Detalle Incapacidad" (exactly)
+* code = $sistema_codificacion_incapacidad_observation#COD_INCAPACIDAD "Detalle Incapacidad" (exactly)
 
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
@@ -24,16 +26,16 @@ Description:   "Perfil de la observación de la condición de incapacidad del pa
     diasIncapacidad 1..1 and
     diasMaternal 1..1
 
-* component[incapacidadAlcance].code = $loinc#99998 "TipoIncapacidad" 
+* component[incapacidadAlcance].code = $sistema_codificacion_incapacidad_observation#01 "TipoIncapacidad" 
 * component[incapacidadAlcance] ^short = "Tipo Incapacidad"
 
 * component[incapacidadAlcance].valueCodeableConcept from CodigoTipoIncapacidadVS
 
-* component[diasIncapacidad].code = $loinc#99997 "DiasIncapacidad" 
+* component[diasIncapacidad].code = $sistema_codificacion_incapacidad_observation#02 "DiasIncapacidad" 
 * component[diasIncapacidad] ^short = "Dias de incapacidad"
 * component[diasIncapacidad].valueInteger MS
 
-* component[diasMaternal].code = $loinc#99996 "DiasLicenciaMMaternal" 
+* component[diasMaternal].code = $sistema_codificacion_incapacidad_observation#03 "DiasLicenciaMMaternal" 
 * component[diasMaternal].valueInteger ^short = "Dias de licencia maternal"
 * component[diasMaternal].valueInteger MS
 

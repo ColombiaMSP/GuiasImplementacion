@@ -31,7 +31,6 @@ Title:          "Service Request Co"
 * category from TipoTecnologiaOtrasTecnologiasVS
 
 
-
 //Codigo de las otras tecnologías en salud  (código de la tecnología en salud)
 * code MS
 * code ^short = "Código de las otras tecnologías en salud (código de la tecnología en salud). Pendiente de definir."
@@ -100,8 +99,7 @@ Title:          "Service Request ProcedureCo"
 * reasonCode.text MS
 * reasonCode from FinalidadTecnologiaVS
 
-
-* authoredOn MS
 //Fecha de prescripción de las otras tecnologías (Tecnología en salud)	
+* authoredOn MS
 * authoredOn ^short = "Fecha de prescripción de las otras tecnologías (Tecnología en salud)."
 

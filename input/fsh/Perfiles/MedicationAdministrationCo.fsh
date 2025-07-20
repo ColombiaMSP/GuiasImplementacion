@@ -8,9 +8,9 @@ Title:          "Medication Administration Co"
 * subject MS
 * subject.reference 1.. MS
 
-* subject ^short = "Referencia al paciente al que se le ha prescrito el medicamento." 
-* subject ^definition = "Paciente al que se le ha prescrito el medicamento." 
-* subject.reference ^short = "Cadena de referencia específica del paciente al que se le ha prescrito el medicamento." 
+* subject ^short = "Referencia al paciente al que se ha administrado el medicamento." 
+* subject ^definition = "Paciente al que se le ha administrado el medicamento." 
+* subject.reference ^short = "Cadena de referencia específica del paciente al que se le ha administrado el medicamento." 
 
 * status MS 
 * status ^short =  "Estado actual del uso del medicamento por parte del paciente."
@@ -21,8 +21,8 @@ Title:          "Medication Administration Co"
 * medicationCodeableConcept from CUMSVS (preferred)
 
 * medicationCodeableConcept ^sliceName = "medicationCodeableConcept"
-* medicationCodeableConcept ^short = "Código que identifica el medicamento prescripto al paciente."
-* medicationCodeableConcept ^definition = "Código que identifica el medicamento prescripto al paciente."
+* medicationCodeableConcept ^short = "Código que identifica el medicamento administrado al paciente."
+* medicationCodeableConcept ^definition = "Código que identifica el medicamento administrado al paciente."
 * medicationCodeableConcept ^binding.strength = #preferred
 
 * medicationCodeableConcept ^binding.extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][+].extension[purpose].valueCode = #candidate
@@ -47,9 +47,6 @@ Title:          "Medication Administration Co"
 * performer MS
 * performer ^short = "Información del profesional de la salud que administra el medicamento al paciente."
 * performer ^definition = "Información del profesional de la salud que administra el medicamento al paciente."
-* performer.function MS
-* performer.function ^short = "Función del profesional de la salud que administra el medicamento al paciente."
-* performer.function ^definition = "Función del profesional de la salud que administra el medicamento al paciente."
 * performer.actor MS
 * performer.actor ^short = "Referencia al profesional de la salud que administra el medicamento al paciente."
 * performer.actor.display ^short = "Nombre del profesional de la salud que administra el medicamento al paciente."
@@ -69,8 +66,6 @@ Title:          "Medication Administration Co"
 
 
 
-
-
 //fecha de administración del medicamento
 * effective[x] MS
 * effective[x] ^short = "Fecha de administración del medicamento al paciente."
@@ -80,7 +75,6 @@ Title:          "Medication Administration Co"
 * request ^short = "Referencia a la solicitud del medicamento administrado al paciente."
 * request ^definition = "Referencia a la solicitud del medicamento administrado al paciente."
 
-* request.reference MS
 * request.reference ^short = "Referencia específica de la solicitud del medicamento administrado al paciente."
 * request only Reference(MedicationRequestCo)
 
