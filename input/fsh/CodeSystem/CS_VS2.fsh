@@ -118,6 +118,7 @@ Description: "Uso del diagnóstico en el contexto del encuentro de hospitalizaci
 * #02 "Principal Egreso" "Principal Egreso"
 * #03 "Relacionado" "Relacionado"
 * #04 "Causa Muerte" "Causa Muerte" 
+* #05 "Complicacion" "Complicacion"
 
 
 ValueSet: DiagnosisUseVS

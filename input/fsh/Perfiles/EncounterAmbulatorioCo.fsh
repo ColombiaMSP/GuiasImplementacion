@@ -29,10 +29,10 @@ Title:          "EncounterAmbulatorio Co"
 
 
 * hospitalization.admitSource MS
-* hospitalization.admitSource ^short = "Fuente de admisión del paciente al encuentro."
-* hospitalization.admitSource ^definition = "Fuente de admisión del paciente al encuentro."
+* hospitalization.admitSource ^short = "Vía de ingreso del usuario al servicio de salud"
+* hospitalization.admitSource ^definition = "Vía de ingreso del usuario al servicio de salud"
 
-* hospitalization.admitSource from FuenteAdmisionVS
+* hospitalization.admitSource from ViaIngresoUsuarioVS
 
 
 /*******************************************************************************************/

@@ -74,13 +74,13 @@ Description: "Vía de administración del medicamento prescripto al paciente."
 
 
 /*********************************************************************************************************/
-// 20 -- > Vía de administración de la medicamento  	
+// 20 -- > Vía de ingreso al servicio de salud 	
 
-ValueSet: FuenteAdmisionVS
-Id: FuenteAdmisionVS
-Title: "Fuente de admisión del paciente"
-Description: "Fuente de admisión del paciente al encuentro."
-* ^name = "FuenteAdmisionVS"
+ValueSet: ViaIngresoUsuarioVS
+Id: ViaIngresoUsuarioVS
+Title: "Vía de ingreso del usuario al servicio de salud"
+Description: "Vía de ingreso del usuario al servicio de salud."
+* ^name = "ViaIngresoUsuarioVS"
 * ^status = #active
 * ^experimental = false
 * ^version = "1.0.0"

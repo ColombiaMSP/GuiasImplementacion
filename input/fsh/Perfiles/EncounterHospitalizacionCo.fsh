@@ -35,12 +35,12 @@ Title:          "EncounterHospitalizacion Co"
 
 
 * hospitalization.admitSource MS
-* hospitalization.admitSource ^short = "Fuente de admisión del paciente al encuentro."
-* hospitalization.admitSource ^definition = "Fuente de admisión del paciente al encuentro."
+* hospitalization.admitSource ^short = "Vía de ingreso del usuario al servicio de salud"
+* hospitalization.admitSource ^definition = "Vía de ingreso del usuario al servicio de salud"
 
-* hospitalization.admitSource from FuenteAdmisionVS
+* hospitalization.admitSource from ViaIngresoUsuarioVS
 
-/*******************************************************************************************/
+/*******************************************************************/
 * diagnosis MS
 * diagnosis.use 1.. MS
 * diagnosis.use from DiagnosisUseVS
@@ -63,8 +63,9 @@ Title:          "EncounterHospitalizacion Co"
 
 * diagnosis contains
     PrincipalIngreso 1.. MS and
-    PrinciaplEgreso 0..1 MS and
+    PrincipalEgreso 0..1 MS and
     Relacionado 0..1 MS and
+    Complicacion 0..1 MS and
     CausaMuerte 0..1 MS
 
 
@@ -73,11 +74,10 @@ Title:          "EncounterHospitalizacion Co"
 * diagnosis[PrincipalIngreso].use 1.. MS
 * diagnosis[PrincipalIngreso].use = $DiagnosisUseCS#01 "Principal Ingreso" (exactly)
 
-* diagnosis[PrinciaplEgreso].id = "PrinciaplEgreso"
-* diagnosis[PrinciaplEgreso].condition only Reference($canonicaConditionPrincipal)
-* diagnosis[PrinciaplEgreso].use 1.. MS
-* diagnosis[PrinciaplEgreso].use = $DiagnosisUseCS#02 "Principal Egreso" (exactly)
-
+* diagnosis[PrincipalEgreso].id = "PrincipalEgreso"
+* diagnosis[PrincipalEgreso].condition only Reference($canonicaConditionPrincipal)
+* diagnosis[PrincipalEgreso].use 1.. MS
+* diagnosis[PrincipalEgreso].use = $DiagnosisUseCS#02 "Principal Egreso" (exactly)
 
 * diagnosis[Relacionado].id = "Relacionado"
 * diagnosis[Relacionado].condition only Reference($canonicaCondition)
@@ -88,6 +88,12 @@ Title:          "EncounterHospitalizacion Co"
 * diagnosis[CausaMuerte].condition only Reference($canonicaCondition)
 * diagnosis[CausaMuerte].use 1.. MS
 * diagnosis[CausaMuerte].use = $DiagnosisUseCS#04 "Causa Muerte" (exactly)
+
+* diagnosis[Complicacion].id = "Complicacion"
+* diagnosis[Complicacion].condition only Reference($canonicaCondition)
+* diagnosis[Complicacion].use 1.. MS
+* diagnosis[Complicacion].use = $DiagnosisUseCS#05 "Complicacion" (exactly)
+
 
 /*****************************************************************************************************/
 
