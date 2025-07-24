@@ -14,9 +14,9 @@ A continuación se describen los recursos que deben ser incluidos en el Bundle d
 
 | **Entrada** | **Link** | **Descripción** |
 | --- | --- | --- |
-| ✅ **List** | [List](StructureDefinition-Doc.html) | Recurso ... |
-| ✅ **Document Reference** | [Document Reference](StructureDefinition-Doc.html) | Recurso utilizado para realizar el indice de atenciones. |
-| ✅ **Bundle Document** | [RDA Internacion](StructureDefinition-BundleDOCUMENTInternacion.html), [RDA Urgencia](StructureDefinition-BundleDOCUrgencia.html), [RDA Consulta Externa](StructureDefinition-BundleDOCUMENTConsultaExterna.html) | Contiene la información especifica clinica, se debe enviar uno de los tres. |
+| ✅ **List** | [List](https://www.hl7.org/fhir/R4/list.html) | Recurso List |
+| ✅ **Document Reference** | [Document Reference](StructureDefinition-DocumentReferenceCo.html) | Recurso utilizado para realizar el índice de atenciones. |
+| ✅ **Bundle Document** | [RDA Internacion](StructureDefinition-BundleDOCInternacion.html), [RDA Urgencia](StructureDefinition-BundleDOCUrgencia.html), [RDA Consulta Externa](StructureDefinition-BundleDOCConsultaExterna.html) | Contiene la información especifica clinica, se debe enviar uno de los tres. |
 | ✅ **Paciente** | [Paciente Co](StructureDefinition-PacienteCo.html) | Recurso donde se representa la información del paciente. |
 
 ---

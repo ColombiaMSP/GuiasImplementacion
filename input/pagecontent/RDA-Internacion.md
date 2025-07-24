@@ -28,7 +28,7 @@ En este apartado se describen las diferentes secciones incluidas en el documento
 | **Entrada** | **Link** | **Descripción** |
 | --- | --- | --- |
 | ✅ **Antecedentes Diagnósiticos** | [Condition Co](StructureDefinition-Conditionco.html) | Representa los antecedentedes diagnósticos del paciente. |
-| ✅ **Medicación Actual** | [Medication Statement](StructureDefinition-BundleDOCUMENTInternacion.html). | Representa la información de la medicación actual que toma el paciente. |
+| ✅ **Medicación Actual** | [Medication Statement](StructureDefinition-MedicationStatementCo.html). | Representa la información de la medicación actual que toma el paciente. |
 | ✅ **Alergias Conocidas** | [Alergias](StructureDefinition-AlergiaCo.html). | Representa las alergias que tiene el paciente. |
 | ✅ **Antecedentes Familiares** | [Antecedentes Familiares](StructureDefinition-AntecedentesFamiliaresCo.html) | Representa los antecedentes familiares. |
 | ✅ **Riesgos** | [Riesgos](StructureDefinition-ObservationCoRiesgo.html) | Representa los riesgos de salud del paciente. |

@@ -70,7 +70,6 @@ Title:          "Medication Request Co"
 * authoredOn ^definition = "Fecha de prescripción del medicamento al paciente."
 
 
-
 //Finalidad de la tecnología en Salud	
 * reasonCode MS
 * reasonCode ^short = "Finalidad de la tecnología en Salud	."

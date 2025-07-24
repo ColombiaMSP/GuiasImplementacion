@@ -162,7 +162,8 @@ Description: "Documento para representar la internación del paciente."
 * section[MedicacionActual].entry only Reference(MedicationStatementCo)
 
 // Sección: Riesgo
-* section[Riesgo].code = $loinc#88888-8 "Riesgo del paciente"
+// Sección: Riesgo
+* section[Riesgo].code = $loinc#29762-2 "Riesgo del paciente"
 * section[Riesgo].title = "Riesgo del paciente"
 * section[Riesgo].entry only Reference(ObservationCoRiesgo)
 

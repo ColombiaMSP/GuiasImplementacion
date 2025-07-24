@@ -70,7 +70,7 @@ Title:          "EncounterHospitalizacion Co"
 
 
 * diagnosis[PrincipalIngreso].id = "PrincipalIngreso"
-* diagnosis[PrincipalIngreso].condition only Reference($canonicaCondition)
+* diagnosis[PrincipalIngreso].condition only Reference($canonicaConditionPrincipal)
 * diagnosis[PrincipalIngreso].use 1.. MS
 * diagnosis[PrincipalIngreso].use = $DiagnosisUseCS#01 "Principal Ingreso" (exactly)
 

@@ -44,12 +44,10 @@ Title:          "Procedure Co"
 * performer.actor.display ^definition = "Nombre del profesional de la salud que realiza el procedimiento médico al paciente."
 
 
-
 // Resultado del procedimiento médico
-// Código del resultado del procedimiento médico
 * outcome MS
-* outcome ^short = "Código que identifica el resultado del procedimiento médico."
-* outcome ^definition = "Código que identifica el resultado del procedimiento médico."
+* outcome.text MS
+* outcome.text ^short = "Texto descriptivo del resultado del procedimiento médico."
 
 // "Finalidad de la tecnología en Salud."
 * reasonCode MS

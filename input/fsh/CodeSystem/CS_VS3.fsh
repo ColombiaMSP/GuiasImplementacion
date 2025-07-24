@@ -134,8 +134,6 @@ Description: "Entorno donde se realiza la atención del paciente."
 * include codes from system EntornoAtencionCS
 
 
-
-
 CodeSystem: TipoDiagnosticoEgresoCS
 Id: TipoDiagnosticoEgresoCS
 Title: "Tipo de diagnóstico principal al egreso"

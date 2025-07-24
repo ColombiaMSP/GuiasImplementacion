@@ -65,7 +65,7 @@ Description: "Docuento utilizado para guardar referencias."
 * content.attachment MS
 * content.attachment ^short = ""
 * content.attachment.url 1..1 MS
-* content.attachment.url ^short = "Se debe completar URL del recurso Composition RDA, enviado dentro del bundle."
+* content.attachment.url ^short = "Se debe completar URL del recurso RDA, enviado dentro del bundle."
 
 /**************nuevas variables V0.5*********************************************************************/
 * category 0..1 MS
